@@ -1,0 +1,157 @@
+{
+ "image": "130_P3_f72r3",
+ "folio": "f72r3",
+ "scan": "130.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 72,
+  "side": "front (recto)",
+  "panel": "3",
+  "position": "1 of 4 on scan 130",
+  "kind": "foldout panel",
+  "section": "zodiac",
+  "quire": "K",
+  "title": "leaf 72, front (recto), panel 3 — zodiac"
+ },
+ "boundary": {
+  "top": [
+   [
+    6015.9,
+    166.0
+   ],
+   [
+    6539.0,
+    201.2
+   ],
+   [
+    7042.0,
+    251.5
+   ],
+   [
+    7545.0,
+    306.8
+   ],
+   [
+    8048.0,
+    339.5
+   ],
+   [
+    8551.0,
+    359.6
+   ],
+   [
+    8777.4,
+    372.2
+   ]
+  ],
+  "right": [
+   [
+    8777.4,
+    372.2
+   ],
+   [
+    8777.4,
+    1006.0
+   ],
+   [
+    8757.2,
+    1509.0
+   ],
+   [
+    8727.1,
+    2012.0
+   ],
+   [
+    8701.9,
+    2414.4
+   ],
+   [
+    8661.7,
+    2665.9
+   ],
+   [
+    8576.2,
+    2882.2
+   ]
+  ],
+  "bottom": [
+   [
+    8576.2,
+    2882.2
+   ],
+   [
+    8048.0,
+    2872.1
+   ],
+   [
+    7545.0,
+    2874.6
+   ],
+   [
+    7042.0,
+    2887.2
+   ],
+   [
+    6539.0,
+    2877.2
+   ],
+   [
+    6287.5,
+    2847.0
+   ],
+   [
+    5965.6,
+    2816.8
+   ]
+  ],
+  "left": [
+   [
+    5965.6,
+    2816.8
+   ],
+   [
+    5965.6,
+    2263.5
+   ],
+   [
+    5975.6,
+    1836.0
+   ],
+   [
+    5980.7,
+    1509.0
+   ],
+   [
+    5983.2,
+    1136.8
+   ],
+   [
+    5988.2,
+    1031.2
+   ],
+   [
+    6005.8,
+    895.3
+   ],
+   [
+    6010.8,
+    603.6
+   ],
+   [
+    6015.9,
+    166.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Vertical crease/discoloured strip at x~1525-1535 is inside f72r3 (its circles extend to x~1640), not a panel fold. Top edge slopes 33->74.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "image": "126_P0_f69v",
+ "folio": "f69v",
+ "scan": "126.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 69,
+  "side": "back (verso)",
+  "panel": null,
+  "position": "right on scan 126",
+  "kind": "foldout panel",
+  "section": "cosmological",
+  "quire": "J",
+  "title": "leaf 69, back (verso) — cosmological"
+ },
+ "boundary": {
+  "top": [
+   [
+    646.0,
+    168.0
+   ],
+   [
+    710.6,
+    161.5
+   ],
+   [
+    839.8,
+    151.8
+   ],
+   [
+    1033.6,
+    135.7
+   ],
+   [
+    1162.8,
+    129.2
+   ],
+   [
+    1938.0,
+    129.2
+   ],
+   [
+    2325.6,
+    132.4
+   ],
+   [
+    2713.2,
+    135.7
+   ],
+   [
+    2874.7,
+    155.0
+   ],
+   [
+    3049.1,
+    174.4
+   ]
+  ],
+  "right": [
+   [
+    3049.1,
+    174.4
+   ],
+   [
+    3049.1,
+    969.0
+   ],
+   [
+    3042.7,
+    1292.0
+   ],
+   [
+    3036.2,
+    1938.0
+   ],
+   [
+    3029.7,
+    2584.0
+   ],
+   [
+    3023.3,
+    3230.0
+   ],
+   [
+    3016.8,
+    3675.7
+   ]
+  ],
+  "bottom": [
+   [
+    3016.8,
+    3675.7
+   ],
+   [
+    2842.4,
+    3682.2
+   ],
+   [
+    2584.0,
+    3695.1
+   ],
+   [
+    1938.0,
+    3695.1
+   ],
+   [
+    1292.0,
+    3695.1
+   ],
+   [
+    969.0,
+    3691.9
+   ],
+   [
+    626.6,
+    3695.1
+   ]
+  ],
+  "left": [
+   [
+    626.6,
+    3695.1
+   ],
+   [
+    623.4,
+    2907.0
+   ],
+   [
+    626.6,
+    2261.0
+   ],
+   [
+    636.3,
+    1615.0
+   ],
+   [
+    646.0,
+    969.0
+   ],
+   [
+    646.0,
+    168.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "Left page of a book opening; right side = narrow gutter line x~472->467. Left edge ~x97-100; stacked leaf strips x25-96 excluded, incl. a strip with vertical red writing at x~80-95 (y 170-300) which belongs to an underlying leaf - human check. Bottom excludes stacked strips below y~572.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

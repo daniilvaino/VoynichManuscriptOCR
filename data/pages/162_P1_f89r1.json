@@ -1,0 +1,121 @@
+{
+ "image": "162_P1_f89r1",
+ "folio": "f89r1",
+ "scan": "162.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 89,
+  "side": "front (recto)",
+  "panel": "1",
+  "position": "middle on scan 162",
+  "kind": "foldout panel",
+  "section": "pharmaceutical",
+  "quire": "O",
+  "title": "leaf 89, front (recto), panel 1 — pharmaceutical"
+ },
+ "boundary": {
+  "top": [
+   [
+    2839.0,
+    141.6
+   ],
+   [
+    3777.0,
+    132.2
+   ],
+   [
+    4721.2,
+    144.8
+   ],
+   [
+    5215.4,
+    154.2
+   ]
+  ],
+  "right": [
+   [
+    5215.4,
+    154.2
+   ],
+   [
+    5221.7,
+    944.2
+   ],
+   [
+    5228.0,
+    1573.8
+   ],
+   [
+    5231.1,
+    2014.4
+   ],
+   [
+    5228.0,
+    2643.9
+   ],
+   [
+    5224.8,
+    3147.5
+   ],
+   [
+    5224.8,
+    3638.5
+   ]
+  ],
+  "bottom": [
+   [
+    5224.8,
+    3638.5
+   ],
+   [
+    4406.5,
+    3651.1
+   ],
+   [
+    3777.0,
+    3651.1
+   ],
+   [
+    3147.5,
+    3638.5
+   ],
+   [
+    2823.3,
+    3635.4
+   ]
+  ],
+  "left": [
+   [
+    2823.3,
+    3635.4
+   ],
+   [
+    2826.5,
+    3147.5
+   ],
+   [
+    2832.8,
+    2203.2
+   ],
+   [
+    2835.9,
+    1259.0
+   ],
+   [
+    2839.0,
+    141.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Right fold = crease x 828.5-831; own root strokes reach x~829-830 at y 250-320 (tight), f89r2 green wash starts x~835.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -3,6 +3,16 @@
  "folio": "f58r",
  "scan": "115.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 58,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "stars (recipes)",
+  "quire": "H",
+  "title": "leaf 58, front (recto) — stars (recipes)"
+ },
  "boundary": {
   "top": [
    [

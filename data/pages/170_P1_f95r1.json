@@ -1,0 +1,141 @@
+{
+ "image": "170_P1_f95r1",
+ "folio": "f95r1",
+ "scan": "170.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 95,
+  "side": "front (recto)",
+  "panel": "1",
+  "position": "middle on scan 170",
+  "kind": "foldout panel",
+  "section": "herbal",
+  "quire": "Q",
+  "title": "leaf 95, front (recto), panel 1 — herbal"
+ },
+ "boundary": {
+  "top": [
+   [
+    2977.4,
+    190.0
+   ],
+   [
+    3167.5,
+    177.4
+   ],
+   [
+    3801.0,
+    164.7
+   ],
+   [
+    4434.5,
+    158.4
+   ],
+   [
+    5068.0,
+    161.5
+   ],
+   [
+    5365.7,
+    171.0
+   ]
+  ],
+  "right": [
+   [
+    5365.7,
+    171.0
+   ],
+   [
+    5362.6,
+    950.2
+   ],
+   [
+    5365.7,
+    1900.5
+   ],
+   [
+    5378.4,
+    2850.8
+   ],
+   [
+    5378.4,
+    3604.6
+   ]
+  ],
+  "bottom": [
+   [
+    5378.4,
+    3604.6
+   ],
+   [
+    5068.0,
+    3617.3
+   ],
+   [
+    4434.5,
+    3642.6
+   ],
+   [
+    3801.0,
+    3655.3
+   ],
+   [
+    3547.6,
+    3645.8
+   ],
+   [
+    3167.5,
+    3630.0
+   ],
+   [
+    3021.8,
+    3611.0
+   ]
+  ],
+  "left": [
+   [
+    3021.8,
+    3611.0
+   ],
+   [
+    3021.8,
+    3167.5
+   ],
+   [
+    3018.6,
+    2850.8
+   ],
+   [
+    3009.1,
+    2534.0
+   ],
+   [
+    2993.3,
+    1900.5
+   ],
+   [
+    2983.8,
+    1267.0
+   ],
+   [
+    2977.4,
+    633.5
+   ],
+   [
+    2977.4,
+    190.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Middle panel (two climbing plants with red flowers, roots), x 470-849. Left = gutter with stubs, right = fold (dark crease x~847-849 + light band 849-857). Crumpled top edges of stacked leaves above y~25 excluded.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

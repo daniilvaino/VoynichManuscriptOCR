@@ -1,0 +1,193 @@
+{
+ "image": "126_P2_f70r2",
+ "folio": "f70r2",
+ "scan": "126.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 70,
+  "side": "front (recto)",
+  "panel": "2",
+  "position": "left on scan 126",
+  "kind": "foldout panel",
+  "section": "cosmological",
+  "quire": "J",
+  "title": "leaf 70, front (recto), panel 2 — cosmological"
+ },
+ "boundary": {
+  "top": [
+   [
+    5310.1,
+    126.0
+   ],
+   [
+    5684.8,
+    129.2
+   ],
+   [
+    5814.0,
+    132.4
+   ],
+   [
+    6137.0,
+    155.0
+   ],
+   [
+    6460.0,
+    180.9
+   ],
+   [
+    6783.0,
+    197.0
+   ],
+   [
+    7106.0,
+    206.7
+   ],
+   [
+    7429.0,
+    219.6
+   ],
+   [
+    7752.0,
+    226.1
+   ],
+   [
+    8398.0,
+    245.5
+   ],
+   [
+    8701.6,
+    258.4
+   ]
+  ],
+  "right": [
+   [
+    8701.6,
+    258.4
+   ],
+   [
+    8737.2,
+    646.0
+   ],
+   [
+    8769.4,
+    1292.0
+   ],
+   [
+    8772.7,
+    1938.0
+   ],
+   [
+    8772.7,
+    2261.0
+   ],
+   [
+    8743.6,
+    2584.0
+   ],
+   [
+    8688.7,
+    2829.5
+   ],
+   [
+    8627.3,
+    2894.1
+   ],
+   [
+    8620.9,
+    3230.0
+   ],
+   [
+    8604.7,
+    3617.6
+   ],
+   [
+    8588.6,
+    3766.2
+   ]
+  ],
+  "bottom": [
+   [
+    8588.6,
+    3766.2
+   ],
+   [
+    8398.0,
+    3766.2
+   ],
+   [
+    8075.0,
+    3733.9
+   ],
+   [
+    7752.0,
+    3714.5
+   ],
+   [
+    7429.0,
+    3701.6
+   ],
+   [
+    7106.0,
+    3695.1
+   ],
+   [
+    6460.0,
+    3708.0
+   ],
+   [
+    5814.0,
+    3708.0
+   ],
+   [
+    5458.7,
+    3695.1
+   ],
+   [
+    5310.1,
+    3721.0
+   ]
+  ],
+  "left": [
+   [
+    5310.1,
+    3721.0
+   ],
+   [
+    5303.7,
+    2907.0
+   ],
+   [
+    5294.0,
+    2261.0
+   ],
+   [
+    5287.5,
+    1873.4
+   ],
+   [
+    5294.0,
+    1292.0
+   ],
+   [
+    5303.7,
+    646.0
+   ],
+   [
+    5310.1,
+    126.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "Wide panel (~525 px). Internal crease at x~1150 (top) -> 1142 (bottom) crossed by the text block lines (x~1110-1340), treated as internal, not a panel boundary - human check. Right edge has a step at y~440-448 (1345->1335).",
+  "human_note": null,
+  "saved_at": null
+ }
+}

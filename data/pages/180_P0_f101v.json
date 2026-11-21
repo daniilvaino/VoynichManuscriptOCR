@@ -1,0 +1,161 @@
+{
+ "image": "180_P0_f101v",
+ "folio": "f101v",
+ "scan": "180.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 101,
+  "side": "back (verso)",
+  "panel": null,
+  "position": "right on scan 180",
+  "kind": "foldout panel",
+  "section": "pharmaceutical",
+  "quire": "S",
+  "title": "leaf 101, back (verso) — pharmaceutical"
+ },
+ "boundary": {
+  "top": [
+   [
+    453.4,
+    235.1
+   ],
+   [
+    665.3,
+    226.7
+   ],
+   [
+    1064.5,
+    213.8
+   ],
+   [
+    1165.0,
+    234.4
+   ],
+   [
+    1459.9,
+    250.5
+   ],
+   [
+    1683.4,
+    234.4
+   ],
+   [
+    1751.7,
+    220.9
+   ],
+   [
+    1792.9,
+    199.0
+   ],
+   [
+    1935.2,
+    190.0
+   ],
+   [
+    2576.0,
+    173.9
+   ],
+   [
+    2738.9,
+    177.1
+   ]
+  ],
+  "right": [
+   [
+    2738.9,
+    177.1
+   ],
+   [
+    2769.8,
+    321.4
+   ],
+   [
+    2770.5,
+    471.4
+   ],
+   [
+    2791.7,
+    680.1
+   ],
+   [
+    2865.8,
+    1288.0
+   ],
+   [
+    2875.5,
+    1932.0
+   ],
+   [
+    2881.9,
+    2576.0
+   ],
+   [
+    2891.6,
+    3220.0
+   ],
+   [
+    2891.6,
+    3638.6
+   ]
+  ],
+  "bottom": [
+   [
+    2891.6,
+    3638.6
+   ],
+   [
+    2833.6,
+    3670.8
+   ],
+   [
+    2576.0,
+    3703.0
+   ],
+   [
+    1932.0,
+    3715.9
+   ],
+   [
+    1288.0,
+    3722.3
+   ],
+   [
+    708.4,
+    3731.3
+   ],
+   [
+    507.5,
+    3738.4
+   ]
+  ],
+  "left": [
+   [
+    507.5,
+    3738.4
+   ],
+   [
+    469.5,
+    1934.6
+   ],
+   [
+    461.7,
+    1222.3
+   ],
+   [
+    453.4,
+    235.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "LEFT page, not in our list (old split left x 0-423 unassigned): pharma/herbal page (rows of plants, text block y~360-480); left page of the opening before f102r1, so most likely f101v. x 56-449, right side = book gutter (crease x~444-449, narrow leaf stubs x~425-445 at the top). Left of x~56 stacked leaf edges (one strip at x~40-50 shows a few rotated letters, excluded).",
+  "human_note": null,
+  "saved_at": "2026-11-21 14:00:34"
+ }
+}

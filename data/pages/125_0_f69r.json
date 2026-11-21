@@ -3,6 +3,16 @@
  "folio": "f69r",
  "scan": "125.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 69,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "cosmological",
+  "quire": "J",
+  "title": "leaf 69, front (recto) — cosmological"
+ },
  "boundary": {
   "top": [
    [

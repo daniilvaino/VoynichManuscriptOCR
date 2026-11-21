@@ -1,0 +1,145 @@
+{
+ "image": "123_P0_f68r1",
+ "folio": "f68r1",
+ "scan": "123.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 68,
+  "side": "front (recto)",
+  "panel": "1",
+  "position": "right on scan 123",
+  "kind": "foldout panel",
+  "section": "astronomical",
+  "quire": "I",
+  "title": "leaf 68, front (recto), panel 1 — astronomical"
+ },
+ "boundary": {
+  "top": [
+   [
+    264.8,
+    153.1
+   ],
+   [
+    382.8,
+    140.4
+   ],
+   [
+    510.4,
+    127.6
+   ],
+   [
+    701.8,
+    114.8
+   ],
+   [
+    893.2,
+    114.8
+   ],
+   [
+    1084.6,
+    124.4
+   ],
+   [
+    1531.2,
+    130.8
+   ],
+   [
+    1977.8,
+    130.8
+   ],
+   [
+    2459.5,
+    146.7
+   ]
+  ],
+  "right": [
+   [
+    2459.5,
+    146.7
+   ],
+   [
+    2459.5,
+    957.0
+   ],
+   [
+    2465.9,
+    1914.0
+   ],
+   [
+    2465.9,
+    2871.0
+   ],
+   [
+    2462.7,
+    3674.9
+   ]
+  ],
+  "bottom": [
+   [
+    2462.7,
+    3674.9
+   ],
+   [
+    1914.0,
+    3674.9
+   ],
+   [
+    1276.0,
+    3671.7
+   ],
+   [
+    638.0,
+    3662.1
+   ],
+   [
+    382.8,
+    3636.6
+   ],
+   [
+    261.6,
+    3617.5
+   ]
+  ],
+  "left": [
+   [
+    261.6,
+    3617.5
+   ],
+   [
+    258.4,
+    3190.0
+   ],
+   [
+    258.4,
+    2552.0
+   ],
+   [
+    255.2,
+    1914.0
+   ],
+   [
+    252.0,
+    1276.0
+   ],
+   [
+    258.4,
+    638.0
+   ],
+   [
+    264.8,
+    153.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Left = gutter line x~40 (stacked leaves x<40 excluded); top/bottom exclude stacked-leaf strips (top x240-440 y12-20, bottom y576-584). Fold 1 = faint light ridge x~386 (old split said 418).",
+  "human_note": null,
+  "saved_at": null
+ }
+}

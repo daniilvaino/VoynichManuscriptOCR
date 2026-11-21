@@ -1,0 +1,125 @@
+{
+ "image": "164_P2_f90r2",
+ "folio": "f90r2",
+ "scan": "164.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 90,
+  "side": "front (recto)",
+  "panel": "2",
+  "position": "left on scan 164",
+  "kind": "foldout panel",
+  "section": "herbal",
+  "quire": "O",
+  "title": "leaf 90, front (recto), panel 2 — herbal"
+ },
+ "boundary": {
+  "top": [
+   [
+    5365.7,
+    137.9
+   ],
+   [
+    5641.5,
+    144.2
+   ],
+   [
+    6268.3,
+    169.2
+   ],
+   [
+    6581.8,
+    188.0
+   ],
+   [
+    6895.2,
+    213.1
+   ],
+   [
+    7271.3,
+    244.5
+   ],
+   [
+    7634.8,
+    300.9
+   ]
+  ],
+  "right": [
+   [
+    7634.8,
+    300.9
+   ],
+   [
+    7659.9,
+    1880.5
+   ],
+   [
+    7678.7,
+    3134.2
+   ],
+   [
+    7672.4,
+    3554.1
+   ]
+  ],
+  "bottom": [
+   [
+    7672.4,
+    3554.1
+   ],
+   [
+    7428.0,
+    3598.0
+   ],
+   [
+    7114.6,
+    3616.8
+   ],
+   [
+    6268.3,
+    3629.4
+   ],
+   [
+    5641.5,
+    3620.0
+   ],
+   [
+    5359.4,
+    3623.1
+   ]
+  ],
+  "left": [
+   [
+    5359.4,
+    3623.1
+   ],
+   [
+    5372.0,
+    2820.8
+   ],
+   [
+    5372.0,
+    1880.5
+   ],
+   [
+    5368.8,
+    940.2
+   ],
+   [
+    5365.7,
+    137.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Third panel not in the list: plant with many green round leaves + text block, x 856-1225. Most likely f90r2 (the name our data attached to the left panel). Outer right edge has a narrow crease strip x~1205-1218, kept inside.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

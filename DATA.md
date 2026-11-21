@@ -45,3 +45,19 @@ Same coordinates, one object per edited page:
  "pages": [{"image": "...", "folio": "...", "scan": "...", "top": [...], "right": [...], "bottom": [...], "left": [...],
             "holes": [...], "note": "...", "edited_at": "..."}]}
 ```
+
+## `data/lines/<image>.json` (layer 2)
+
+```json
+{"image": "...", "folio": "...", "scan": "...", "coords": "pixels of the scan file", "xheight": 18.5,
+ "lines": [{"pts": [[x,y], ...], "status": "two_runs_agree|human_confirmed|human_corrected|human_drawn|unclear", "source": "..."}]}
+```
+
+Each line is a polyline along the middle of a row, simplified to within 1 scan pixel.
+
+## Labels
+
+`data/pages/<image>.json` has `labels`:
+- `leaf` and `side` (front = recto `r`, back = verso `v`);
+- for foldouts, `panel` and `position` (where the panel lies on the scan);
+- `section` and `quire`, from the page headers of the ZL transliteration.

@@ -1,0 +1,137 @@
+{
+ "image": "123_P1_f68r2",
+ "folio": "f68r2",
+ "scan": "123.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 68,
+  "side": "front (recto)",
+  "panel": "2",
+  "position": "middle on scan 123",
+  "kind": "foldout panel",
+  "section": "astronomical",
+  "quire": "I",
+  "title": "leaf 68, front (recto), panel 2 — astronomical"
+ },
+ "boundary": {
+  "top": [
+   [
+    2459.5,
+    146.7
+   ],
+   [
+    2807.2,
+    153.1
+   ],
+   [
+    3190.0,
+    159.5
+   ],
+   [
+    3572.8,
+    178.6
+   ],
+   [
+    4083.2,
+    185.0
+   ],
+   [
+    4523.4,
+    188.2
+   ]
+  ],
+  "right": [
+   [
+    4523.4,
+    188.2
+   ],
+   [
+    4520.2,
+    638.0
+   ],
+   [
+    4510.7,
+    1276.0
+   ],
+   [
+    4504.3,
+    1914.0
+   ],
+   [
+    4497.9,
+    2552.0
+   ],
+   [
+    4494.7,
+    3190.0
+   ],
+   [
+    4488.3,
+    3658.9
+   ]
+  ],
+  "bottom": [
+   [
+    4488.3,
+    3658.9
+   ],
+   [
+    4083.2,
+    3658.9
+   ],
+   [
+    3828.0,
+    3668.5
+   ],
+   [
+    3445.2,
+    3678.1
+   ],
+   [
+    3190.0,
+    3674.9
+   ],
+   [
+    2679.6,
+    3665.3
+   ],
+   [
+    2462.7,
+    3674.9
+   ]
+  ],
+  "left": [
+   [
+    2462.7,
+    3674.9
+   ],
+   [
+    2465.9,
+    2871.0
+   ],
+   [
+    2465.9,
+    1914.0
+   ],
+   [
+    2459.5,
+    957.0
+   ],
+   [
+    2459.5,
+    146.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Fold 1 x~386, fold 2 crease x~709 (top) to ~703.5 (bottom), notch in bottom edge at fold.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

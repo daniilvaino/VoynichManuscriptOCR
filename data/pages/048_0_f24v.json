@@ -3,6 +3,16 @@
  "folio": "f24v",
  "scan": "048.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 24,
+  "side": "back (verso)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "C",
+  "title": "leaf 24, back (verso) — herbal"
+ },
  "boundary": {
   "top": [
    [
@@ -56,60 +66,52 @@
     2832.5
    ],
    [
-    2757.0,
+    2758.9,
     3524.9
-   ],
-   [
-    2750.7,
-    3638.2
    ]
   ],
   "bottom": [
    [
-    2750.7,
-    3638.2
+    2758.9,
+    3524.9
    ],
    [
-    2675.2,
-    3660.3
+    2605.9,
+    3553.9
    ],
    [
-    2517.8,
-    3669.7
+    2349.1,
+    3573.4
    ],
    [
-    1888.4,
-    3682.3
+    1795.2,
+    3612.4
    ],
    [
-    1258.9,
-    3691.7
+    1228.1,
+    3615.6
    ],
    [
-    629.5,
-    3698.0
+    600.5,
+    3637.6
    ],
    [
-    390.3,
-    3698.0
+    354.4,
+    3656.5
    ]
   ],
   "left": [
    [
-    390.3,
-    3698.0
+    354.4,
+    3656.5
    ],
    [
-    314.7,
-    3657.1
+    355.6,
+    3509.2
    ],
    [
-    289.5,
-    3556.4
-   ],
-   [
-    286.4,
-    2832.5
+    345.6,
+    2829.4
    ],
    [
     286.4,
@@ -128,12 +130,12 @@
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "medium",
   "opus_note": "left: SAM/quad stop at transparent tape strip x~73-78, leaf continues under tape to x~46 (rounded corners); bottom: quad on crease band y570-576, real edge 578-587 (folio no. '39' and dots y555-572 were outside quad); right: gutter ~3 px further right (x438) top = lowest continuous layer edge y25->21 among stacked top layers; bottom thin outer strip y587-590 = stacked leaves, excluded",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-21 14:17:52"
  }
 }

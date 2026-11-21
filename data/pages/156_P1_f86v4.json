@@ -1,0 +1,121 @@
+{
+ "image": "156_P1_f86v4",
+ "folio": "f86v4",
+ "scan": "156.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 86,
+  "side": "back (verso)",
+  "panel": "4",
+  "position": "middle on scan 156",
+  "kind": "foldout panel",
+  "section": "cosmological",
+  "quire": "N",
+  "title": "leaf 86, back (verso), panel 4 — cosmological"
+ },
+ "boundary": {
+  "top": [
+   [
+    3034.2,
+    207.5
+   ],
+   [
+    3565.8,
+    204.2
+   ],
+   [
+    4538.3,
+    201.0
+   ],
+   [
+    5465.4,
+    233.4
+   ]
+  ],
+  "right": [
+   [
+    5465.4,
+    233.4
+   ],
+   [
+    5459.0,
+    972.5
+   ],
+   [
+    5452.5,
+    1945.0
+   ],
+   [
+    5446.0,
+    2917.5
+   ],
+   [
+    5439.5,
+    3682.5
+   ]
+  ],
+  "bottom": [
+   [
+    5439.5,
+    3682.5
+   ],
+   [
+    5186.7,
+    3676.0
+   ],
+   [
+    4538.3,
+    3676.0
+   ],
+   [
+    3890.0,
+    3656.6
+   ],
+   [
+    3436.2,
+    3637.2
+   ],
+   [
+    3008.3,
+    3572.3
+   ]
+  ],
+  "left": [
+   [
+    3008.3,
+    3572.3
+   ],
+   [
+    3008.3,
+    3112.0
+   ],
+   [
+    3021.2,
+    2463.7
+   ],
+   [
+    3031.0,
+    1296.7
+   ],
+   [
+    3034.2,
+    648.3
+   ],
+   [
+    3034.2,
+    207.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Name check vs ZL: 4 ring texts + 5 paragraph lines at bottom = f86v4 OK. Left fold x~466 (own ring ink from x 474). Right fold in worn fibrous band x 835-850 (own ink ends ~813, f86v6 text starts ~849).",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -3,6 +3,16 @@
  "folio": "f89v2",
  "scan": "163.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 89,
+  "side": "back (verso)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "pharmaceutical",
+  "quire": "O",
+  "title": "leaf 89, back (verso) — pharmaceutical"
+ },
  "boundary": {
   "top": [
    [

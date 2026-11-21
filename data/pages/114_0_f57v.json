@@ -3,6 +3,16 @@
  "folio": "f57v",
  "scan": "114.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 57,
+  "side": "back (verso)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "cosmological",
+  "quire": "H",
+  "title": "leaf 57, back (verso) — cosmological"
+ },
  "boundary": {
   "top": [
    [

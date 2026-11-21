@@ -3,6 +3,16 @@
  "folio": "f77r",
  "scan": "139.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 77,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "biological (bathing)",
+  "quire": "M",
+  "title": "leaf 77, front (recto) — biological (bathing)"
+ },
  "boundary": {
   "top": [
    [

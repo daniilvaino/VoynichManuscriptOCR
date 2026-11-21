@@ -1,0 +1,204 @@
+{
+ "image": "122_P0_f67v2",
+ "folio": "f67v2",
+ "scan": "122.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 67,
+  "side": "back (verso)",
+  "panel": "2",
+  "position": "right on scan 122",
+  "kind": "foldout panel",
+  "section": "cosmological",
+  "quire": "I",
+  "title": "leaf 67, back (verso), panel 2 — cosmological"
+ },
+ "boundary": {
+  "top": [
+   [
+    225.2,
+    156.4
+   ],
+   [
+    375.3,
+    125.1
+   ],
+   [
+    487.9,
+    131.4
+   ],
+   [
+    550.4,
+    112.6
+   ],
+   [
+    588.0,
+    68.8
+   ],
+   [
+    781.9,
+    62.6
+   ],
+   [
+    1251.0,
+    75.1
+   ],
+   [
+    1751.4,
+    93.8
+   ],
+   [
+    2539.5,
+    93.8
+   ]
+  ],
+  "right": [
+   [
+    2539.5,
+    93.8
+   ],
+   [
+    2536.4,
+    625.5
+   ],
+   [
+    2527.0,
+    1251.0
+   ],
+   [
+    2508.3,
+    1876.5
+   ],
+   [
+    2498.9,
+    2502.0
+   ],
+   [
+    2495.7,
+    3002.4
+   ],
+   [
+    2489.5,
+    3690.4
+   ]
+  ],
+  "bottom": [
+   [
+    2489.5,
+    3690.4
+   ],
+   [
+    2408.2,
+    3671.7
+   ],
+   [
+    2314.4,
+    3596.6
+   ],
+   [
+    1814.0,
+    3587.2
+   ],
+   [
+    1251.0,
+    3596.6
+   ],
+   [
+    938.2,
+    3602.9
+   ],
+   [
+    781.9,
+    3618.5
+   ],
+   [
+    625.5,
+    3609.1
+   ],
+   [
+    375.3,
+    3602.9
+   ],
+   [
+    187.6,
+    3596.6
+   ],
+   [
+    87.6,
+    3565.4
+   ]
+  ],
+  "left": [
+   [
+    87.6,
+    3565.4
+   ],
+   [
+    93.8,
+    3127.5
+   ],
+   [
+    100.1,
+    2502.0
+   ],
+   [
+    115.7,
+    1876.5
+   ],
+   [
+    156.4,
+    1251.0
+   ],
+   [
+    168.9,
+    813.2
+   ],
+   [
+    200.2,
+    500.4
+   ],
+   [
+    225.2,
+    156.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    2430.1,
+    3014.9
+   ],
+   [
+    2439.4,
+    3011.8
+   ],
+   [
+    2448.8,
+    3021.2
+   ],
+   [
+    2442.6,
+    3030.5
+   ],
+   [
+    2433.2,
+    3030.5
+   ],
+   [
+    2426.9,
+    3024.3
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus",
+  "opus_confidence": "high",
+  "opus_note": "Fold crease runs slightly slanted x~406 (top) to ~398 (bottom). Bottom near fold (x 370-398) follows the curled parchment down to y~590; tape/strip under x 290-370 below y~574 excluded. Small hole at (390,483).",
+  "human_note": null,
+  "saved_at": null
+ }
+}

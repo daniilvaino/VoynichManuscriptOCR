@@ -1,0 +1,212 @@
+{
+ "image": "180_P1_f102r1",
+ "folio": "f102r1",
+ "scan": "180.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 102,
+  "side": "front (recto)",
+  "panel": "1",
+  "position": "middle on scan 180",
+  "kind": "foldout panel",
+  "section": "pharmaceutical",
+  "quire": "S",
+  "title": "leaf 102, front (recto), panel 1 — pharmaceutical"
+ },
+ "boundary": {
+  "top": [
+   [
+    2814.3,
+    226.7
+   ],
+   [
+    2927.0,
+    186.1
+   ],
+   [
+    3111.8,
+    178.4
+   ],
+   [
+    3363.0,
+    180.3
+   ],
+   [
+    3563.9,
+    181.6
+   ],
+   [
+    4193.1,
+    195.8
+   ],
+   [
+    4819.7,
+    231.2
+   ],
+   [
+    5226.1,
+    254.4
+   ]
+  ],
+  "right": [
+   [
+    5226.1,
+    254.4
+   ],
+   [
+    5229.3,
+    966.0
+   ],
+   [
+    5229.3,
+    1932.0
+   ],
+   [
+    5188.1,
+    3160.8
+   ]
+  ],
+  "bottom": [
+   [
+    5188.1,
+    3160.8
+   ],
+   [
+    4830.0,
+    3130.5
+   ],
+   [
+    4654.2,
+    3154.3
+   ],
+   [
+    4453.3,
+    3303.1
+   ],
+   [
+    4330.3,
+    3284.4
+   ],
+   [
+    4193.1,
+    3285.0
+   ],
+   [
+    3987.6,
+    3274.1
+   ],
+   [
+    3732.0,
+    3344.9
+   ],
+   [
+    3515.0,
+    3435.1
+   ],
+   [
+    3366.8,
+    3527.2
+   ],
+   [
+    3240.0,
+    3620.6
+   ],
+   [
+    3159.5,
+    3651.5
+   ],
+   [
+    2908.9,
+    3621.9
+   ]
+  ],
+  "left": [
+   [
+    2908.9,
+    3621.9
+   ],
+   [
+    2911.5,
+    3533.6
+   ],
+   [
+    2905.1,
+    3411.3
+   ],
+   [
+    2905.1,
+    3216.8
+   ],
+   [
+    2881.9,
+    2576.0
+   ],
+   [
+    2875.5,
+    1932.0
+   ],
+   [
+    2865.8,
+    1288.0
+   ],
+   [
+    2855.5,
+    645.9
+   ],
+   [
+    2814.3,
+    226.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    3106.7,
+    950.5
+   ],
+   [
+    3105.4,
+    944.1
+   ],
+   [
+    3114.4,
+    935.1
+   ],
+   [
+    3124.7,
+    935.1
+   ],
+   [
+    3127.9,
+    940.9
+   ],
+   [
+    3127.9,
+    950.5
+   ],
+   [
+    3122.1,
+    953.8
+   ],
+   [
+    3117.0,
+    957.0
+   ],
+   [
+    3114.4,
+    957.0
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "human",
+  "opus_confidence": "medium",
+  "opus_note": "Middle panel (jars on left margin, plant + text), folio number '102' at top right (x~765-790, y~28-36) kept inside; top includes the crumpled/curled top margin up to y~14. Right side = fold x~812 (light crease band 808-815). Lower right (x~530-826, y~485-565) is covered by a translucent patch, parchment continues under it; bottom-right corner area x 812-858 y 490-580 has tape/brown repair strips.",
+  "human_note": null,
+  "saved_at": "2026-11-21 14:00:48"
+ }
+}

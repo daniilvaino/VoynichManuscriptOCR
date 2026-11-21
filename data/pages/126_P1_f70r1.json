@@ -1,0 +1,169 @@
+{
+ "image": "126_P1_f70r1",
+ "folio": "f70r1",
+ "scan": "126.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 70,
+  "side": "front (recto)",
+  "panel": "1",
+  "position": "middle on scan 126",
+  "kind": "foldout panel",
+  "section": "cosmological",
+  "quire": "J",
+  "title": "leaf 70, front (recto), panel 1 — cosmological"
+ },
+ "boundary": {
+  "top": [
+   [
+    3049.1,
+    174.4
+   ],
+   [
+    3133.1,
+    148.6
+   ],
+   [
+    3230.0,
+    135.7
+   ],
+   [
+    3423.8,
+    119.5
+   ],
+   [
+    3876.0,
+    109.8
+   ],
+   [
+    4199.0,
+    106.6
+   ],
+   [
+    4392.8,
+    113.0
+   ],
+   [
+    4651.2,
+    116.3
+   ],
+   [
+    5038.8,
+    126.0
+   ],
+   [
+    5310.1,
+    126.0
+   ]
+  ],
+  "right": [
+   [
+    5310.1,
+    126.0
+   ],
+   [
+    5303.7,
+    646.0
+   ],
+   [
+    5294.0,
+    1292.0
+   ],
+   [
+    5287.5,
+    1873.4
+   ],
+   [
+    5294.0,
+    2261.0
+   ],
+   [
+    5303.7,
+    2907.0
+   ],
+   [
+    5310.1,
+    3721.0
+   ]
+  ],
+  "bottom": [
+   [
+    5310.1,
+    3721.0
+   ],
+   [
+    5168.0,
+    3721.0
+   ],
+   [
+    4909.6,
+    3701.6
+   ],
+   [
+    4522.0,
+    3688.7
+   ],
+   [
+    4263.6,
+    3701.6
+   ],
+   [
+    3876.0,
+    3714.5
+   ],
+   [
+    3359.2,
+    3708.0
+   ],
+   [
+    3165.4,
+    3695.1
+   ],
+   [
+    3016.8,
+    3675.7
+   ]
+  ],
+  "left": [
+   [
+    3016.8,
+    3675.7
+   ],
+   [
+    3023.3,
+    3230.0
+   ],
+   [
+    3029.7,
+    2584.0
+   ],
+   [
+    3036.2,
+    1938.0
+   ],
+   [
+    3042.7,
+    1292.0
+   ],
+   [
+    3049.1,
+    969.0
+   ],
+   [
+    3049.1,
+    174.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "Left = gutter (shared with f69v). Fold to f70r2 is a soft valley x~815-830 without a sharp crease; boundary put at x~819-822 just left of f70r2's outer ring text (starts x~820.5 at y 230-340). Bottom near x 660-840 has stacked strips; took the upper page edge.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

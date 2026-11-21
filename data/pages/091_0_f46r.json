@@ -3,101 +3,206 @@
  "folio": "f46r",
  "scan": "091.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 46,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "F",
+  "title": "leaf 46, front (recto) — herbal"
+ },
  "boundary": {
   "top": [
    [
-    142.6,
-    105.4
+    132.7,
+    140.8
    ],
    [
-    620.1,
-    114.7
+    273.5,
+    107.3
+   ],
+   [
+    631.9,
+    92.4
    ],
    [
     1240.3,
     124.0
    ],
    [
-    2325.5,
-    133.3
+    1489.6,
+    138.3
    ],
    [
-    2381.3,
-    139.5
+    1748.1,
+    146.4
+   ],
+   [
+    2400.5,
+    146.4
    ]
   ],
   "right": [
    [
-    2381.3,
-    139.5
+    2400.5,
+    146.4
    ],
    [
-    2418.5,
-    179.8
+    2427.2,
+    402.5
    ],
    [
-    2437.1,
-    248.1
+    2440.8,
+    1105.7
    ],
    [
     2443.3,
     1860.4
    ],
    [
-    2455.7,
-    3100.6
+    2460.1,
+    2527.0
    ],
    [
-    2465.0,
-    3596.8
+    2480.5,
+    3070.9
+   ],
+   [
+    2473.7,
+    3405.1
+   ],
+   [
+    2457.6,
+    3558.9
    ]
   ],
   "bottom": [
    [
-    2465.0,
-    3596.8
+    2457.6,
+    3558.9
    ],
    [
-    2356.5,
-    3603.0
+    2419.1,
+    3575.0
    ],
    [
-    1240.3,
-    3612.3
+    2212.0,
+    3585.0
    ],
    [
-    558.1,
-    3618.5
+    1584.4,
+    3586.2
    ],
    [
-    99.2,
-    3615.4
+    1253.9,
+    3599.2
+   ],
+   [
+    920.9,
+    3619.7
+   ],
+   [
+    550.7,
+    3614.7
+   ],
+   [
+    241.2,
+    3606.1
+   ],
+   [
+    81.9,
+    3594.3
    ]
   ],
   "left": [
    [
-    99.2,
-    3615.4
+    81.9,
+    3594.3
    ],
    [
     120.9,
     1860.4
    ],
    [
-    142.6,
-    105.4
+    135.8,
+    457.7
+   ],
+   [
+    132.7,
+    140.8
    ]
   ]
  },
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
- "holes": [],
+ "holes": [
+  [
+   [
+    1601.8,
+    2825.9
+   ],
+   [
+    1605.5,
+    2811.0
+   ],
+   [
+    1621.6,
+    2800.5
+   ],
+   [
+    1635.3,
+    2806.7
+   ],
+   [
+    1646.4,
+    2814.1
+   ],
+   [
+    1652.6,
+    2826.6
+   ],
+   [
+    1653.9,
+    2837.7
+   ],
+   [
+    1655.7,
+    2850.7
+   ],
+   [
+    1650.8,
+    2865.0
+   ],
+   [
+    1645.2,
+    2871.2
+   ],
+   [
+    1632.2,
+    2874.3
+   ],
+   [
+    1619.2,
+    2868.1
+   ],
+   [
+    1609.2,
+    2856.9
+   ],
+   [
+    1601.8,
+    2844.5
+   ]
+  ]
+ ],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
-  "holes_source": "opus-none-marked",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "human",
   "opus_confidence": "medium",
   "opus_note": "right: holder strip x~383-404 excluded by SAM, leaf continues under it left = gutter fold x~23->16; right fore-edge under the transparent holder strip: rounded TR corner faintly visible through the strip (x~384,y22 -> x~393,y40), edge ~x394-397.5; red drawings at x>=399 are on stacked leaves, outside; plant ink max x~376; bottom y~583, root ink ends y~580 inside",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-21 14:28:43"
  }
 }

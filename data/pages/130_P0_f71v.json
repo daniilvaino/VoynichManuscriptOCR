@@ -1,0 +1,117 @@
+{
+ "image": "130_P0_f71v",
+ "folio": "f71v",
+ "scan": "130.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 71,
+  "side": "back (verso)",
+  "panel": null,
+  "position": "4 of 4 on scan 130",
+  "kind": "foldout panel",
+  "section": "zodiac",
+  "quire": "K",
+  "title": "leaf 71, back (verso) — zodiac"
+ },
+ "boundary": {
+  "top": [
+   [
+    462.8,
+    150.9
+   ],
+   [
+    1006.0,
+    145.9
+   ],
+   [
+    1760.5,
+    145.9
+   ],
+   [
+    2328.9,
+    145.9
+   ]
+  ],
+  "right": [
+   [
+    2328.9,
+    145.9
+   ],
+   [
+    2323.9,
+    503.0
+   ],
+   [
+    2323.9,
+    1509.0
+   ],
+   [
+    2328.9,
+    2012.0
+   ],
+   [
+    2339.0,
+    2515.0
+   ],
+   [
+    2339.0,
+    2867.1
+   ]
+  ],
+  "bottom": [
+   [
+    2339.0,
+    2867.1
+   ],
+   [
+    2012.0,
+    2892.2
+   ],
+   [
+    1509.0,
+    2902.3
+   ],
+   [
+    1006.0,
+    2912.4
+   ],
+   [
+    452.7,
+    2907.3
+   ]
+  ],
+  "left": [
+   [
+    452.7,
+    2907.3
+   ],
+   [
+    447.7,
+    2263.5
+   ],
+   [
+    447.7,
+    1509.0
+   ],
+   [
+    452.7,
+    754.5
+   ],
+   [
+    462.8,
+    150.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "Left outer edge = edge of top leaf at x~90 (stacked edges of earlier leaves and cover at x 20-90 excluded; a separate narrower leaf edge at x~73-92 may confuse). Right side = gutter/sewing line x~463.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

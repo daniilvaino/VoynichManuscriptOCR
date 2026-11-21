@@ -1,0 +1,117 @@
+{
+ "image": "156_P2_f86v6",
+ "folio": "f86v6",
+ "scan": "156.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 86,
+  "side": "back (verso)",
+  "panel": "6",
+  "position": "left on scan 156",
+  "kind": "foldout panel",
+  "section": "text only",
+  "quire": "N",
+  "title": "leaf 86, back (verso), panel 6 — text only"
+ },
+ "boundary": {
+  "top": [
+   [
+    5465.4,
+    233.4
+   ],
+   [
+    6159.2,
+    252.8
+   ],
+   [
+    6807.5,
+    265.8
+   ],
+   [
+    7553.1,
+    291.8
+   ]
+  ],
+  "right": [
+   [
+    7553.1,
+    291.8
+   ],
+   [
+    7546.6,
+    972.5
+   ],
+   [
+    7540.1,
+    1945.0
+   ],
+   [
+    7520.7,
+    2593.3
+   ],
+   [
+    7501.2,
+    3241.7
+   ],
+   [
+    7494.7,
+    3740.9
+   ]
+  ],
+  "bottom": [
+   [
+    7494.7,
+    3740.9
+   ],
+   [
+    7131.7,
+    3747.4
+   ],
+   [
+    6483.3,
+    3734.4
+   ],
+   [
+    5835.0,
+    3702.0
+   ],
+   [
+    5439.5,
+    3682.5
+   ]
+  ],
+  "left": [
+   [
+    5439.5,
+    3682.5
+   ],
+   [
+    5446.0,
+    2917.5
+   ],
+   [
+    5452.5,
+    1945.0
+   ],
+   [
+    5459.0,
+    972.5
+   ],
+   [
+    5465.4,
+    233.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Name check vs ZL: full text page (45 paragraph lines) = f86v6 OK. Text starts x~849, close to fold at 839-843.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

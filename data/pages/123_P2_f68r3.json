@@ -1,0 +1,185 @@
+{
+ "image": "123_P2_f68r3",
+ "folio": "f68r3",
+ "scan": "123.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 68,
+  "side": "front (recto)",
+  "panel": "3",
+  "position": "left on scan 123",
+  "kind": "foldout panel",
+  "section": "astronomical",
+  "quire": "I",
+  "title": "leaf 68, front (recto), panel 3 — astronomical"
+ },
+ "boundary": {
+  "top": [
+   [
+    4523.4,
+    188.2
+   ],
+   [
+    5359.2,
+    188.2
+   ],
+   [
+    5742.0,
+    197.8
+   ],
+   [
+    6061.0,
+    216.9
+   ],
+   [
+    6635.2,
+    210.5
+   ],
+   [
+    7018.0,
+    204.2
+   ],
+   [
+    7464.6,
+    185.0
+   ],
+   [
+    7719.8,
+    204.2
+   ],
+   [
+    7885.7,
+    197.8
+   ]
+  ],
+  "right": [
+   [
+    7885.7,
+    197.8
+   ],
+   [
+    7879.3,
+    510.4
+   ],
+   [
+    7847.4,
+    1276.0
+   ],
+   [
+    7796.4,
+    1914.0
+   ],
+   [
+    7726.2,
+    2552.0
+   ],
+   [
+    7662.4,
+    3190.0
+   ],
+   [
+    7592.2,
+    3496.2
+   ],
+   [
+    7553.9,
+    3572.8
+   ],
+   [
+    7502.9,
+    3668.5
+   ]
+  ],
+  "bottom": [
+   [
+    7502.9,
+    3668.5
+   ],
+   [
+    7400.8,
+    3678.1
+   ],
+   [
+    7018.0,
+    3662.1
+   ],
+   [
+    6762.8,
+    3668.5
+   ],
+   [
+    6488.5,
+    3681.3
+   ],
+   [
+    6124.8,
+    3668.5
+   ],
+   [
+    5805.8,
+    3681.3
+   ],
+   [
+    5614.4,
+    3668.5
+   ],
+   [
+    5104.0,
+    3658.9
+   ],
+   [
+    4848.8,
+    3652.6
+   ],
+   [
+    4721.2,
+    3665.3
+   ],
+   [
+    4488.3,
+    3658.9
+   ]
+  ],
+  "left": [
+   [
+    4488.3,
+    3658.9
+   ],
+   [
+    4494.7,
+    3190.0
+   ],
+   [
+    4497.9,
+    2552.0
+   ],
+   [
+    4504.3,
+    1914.0
+   ],
+   [
+    4510.7,
+    1276.0
+   ],
+   [
+    4520.2,
+    638.0
+   ],
+   [
+    4523.4,
+    188.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "Wide panel (~525 px). Has an internal crease at x~1015-1020 that the big circle drawing crosses continuously; treated as internal fold, not a panel boundary - human check. Right edge slanted, bottom-right corner cut; translucent repair/tissue near bottom-right kept inside.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -3,37 +3,63 @@
  "folio": "f24r",
  "scan": "047.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 24,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "C",
+  "title": "leaf 24, front (recto) — herbal"
+ },
  "boundary": {
   "top": [
    [
-    90.0,
+    83.8,
+    191.8
+   ],
+   [
+    327.8,
     127.3
    ],
    [
-    620.8,
-    114.8
+    638.2,
+    102.4
    ],
    [
-    1241.6,
-    105.5
+    1009.4,
+    93.7
+   ],
+   [
+    1210.5,
+    92.5
+   ],
+   [
+    1331.0,
+    106.2
+   ],
+   [
+    1474.4,
+    118.6
    ],
    [
     1862.4,
-    114.8
+    124.2
    ],
    [
     2359.0,
     121.1
    ],
    [
-    2498.7,
-    99.3
+    2493.7,
+    129.1
    ]
   ],
   "right": [
    [
-    2498.7,
-    99.3
+    2493.7,
+    129.1
    ],
    [
     2498.7,
@@ -44,52 +70,52 @@
     1862.4
    ],
    [
-    2508.0,
-    2793.5
+    2455.8,
+    2774.9
    ],
    [
-    2514.2,
-    3476.4
+    2446.5,
+    3359.7
    ],
    [
-    2511.1,
-    3637.8
+    2446.5,
+    3601.2
    ]
   ],
   "bottom": [
    [
-    2511.1,
-    3637.8
+    2446.5,
+    3601.2
    ],
    [
-    2296.9,
-    3653.3
+    2235.4,
+    3592.5
    ],
    [
-    1862.4,
-    3650.2
+    1787.2,
+    3575.7
    ],
    [
-    1241.6,
-    3650.2
+    1154.7,
+    3580.1
    ],
    [
-    620.8,
-    3656.4
+    576.7,
+    3572.0
    ],
    [
-    310.4,
-    3656.4
+    296.1,
+    3547.8
    ],
    [
-    86.9,
-    3650.2
+    76.4,
+    3511.2
    ]
   ],
   "left": [
    [
-    86.9,
-    3650.2
+    76.4,
+    3511.2
    ],
    [
     90.0,
@@ -104,20 +130,20 @@
     931.2
    ],
    [
-    90.0,
-    127.3
+    83.8,
+    191.8
    ]
   ]
  },
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "medium",
   "opus_note": "top: quad on outermost stacked/curled layer (y~10 at right), own top ~16-20; right: quad ~2-4 px out on stacked fore-edge leaves (own edge x402.5-405) left = gutter fold x~14-15; top edge ambiguous among 2-3 thin layers (blank margin); bottom red root paint y575-582 inside",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-21 14:17:12"
  }
 }

@@ -1,0 +1,133 @@
+{
+ "image": "156_P0_f85r2",
+ "folio": "f85r2",
+ "scan": "156.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 85,
+  "side": "front (recto)",
+  "panel": "2",
+  "position": "right on scan 156",
+  "kind": "foldout panel",
+  "section": "cosmological",
+  "quire": "N",
+  "title": "leaf 85, front (recto), panel 2 — cosmological"
+ },
+ "boundary": {
+  "top": [
+   [
+    654.8,
+    239.9
+   ],
+   [
+    1296.7,
+    233.4
+   ],
+   [
+    1945.0,
+    223.7
+   ],
+   [
+    2593.3,
+    214.0
+   ],
+   [
+    3034.2,
+    207.5
+   ]
+  ],
+  "right": [
+   [
+    3034.2,
+    207.5
+   ],
+   [
+    3034.2,
+    648.3
+   ],
+   [
+    3031.0,
+    1296.7
+   ],
+   [
+    3021.2,
+    2463.7
+   ],
+   [
+    3008.3,
+    3112.0
+   ],
+   [
+    3008.3,
+    3572.3
+   ]
+  ],
+  "bottom": [
+   [
+    3008.3,
+    3572.3
+   ],
+   [
+    2269.2,
+    3572.3
+   ],
+   [
+    1620.8,
+    3572.3
+   ],
+   [
+    972.5,
+    3572.3
+   ],
+   [
+    687.2,
+    3578.8
+   ]
+  ],
+  "left": [
+   [
+    687.2,
+    3578.8
+   ],
+   [
+    680.8,
+    3241.7
+   ],
+   [
+    674.3,
+    2917.5
+   ],
+   [
+    654.8,
+    2269.2
+   ],
+   [
+    635.4,
+    1620.8
+   ],
+   [
+    632.1,
+    972.5
+   ],
+   [
+    648.3,
+    324.2
+   ],
+   [
+    654.8,
+    239.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "Name check vs ZL: left panel = 2 rings + 4 text blocks = f85r2 OK. Left edge = top leaf edge x~98-106; strips at x 35-98 are stacked leaves (one carries foreign ink at x~90-97, excluded). Top excludes a band of other leaves' top edges (y 24-36). Right side = gutter-like fold x~466 (ridge+valley; could be the binding).",
+  "human_note": null,
+  "saved_at": null
+ }
+}

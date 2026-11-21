@@ -1,0 +1,153 @@
+{
+ "image": "124_P1_f68v2",
+ "folio": "f68v2",
+ "scan": "124.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 68,
+  "side": "back (verso)",
+  "panel": "2",
+  "position": "middle on scan 124",
+  "kind": "foldout panel",
+  "section": "astronomical",
+  "quire": "I",
+  "title": "leaf 68, back (verso), panel 2 — astronomical"
+ },
+ "boundary": {
+  "top": [
+   [
+    3529.2,
+    172.9
+   ],
+   [
+    4099.2,
+    179.3
+   ],
+   [
+    4483.5,
+    179.3
+   ],
+   [
+    4803.8,
+    166.5
+   ],
+   [
+    5124.0,
+    156.9
+   ],
+   [
+    5380.2,
+    140.9
+   ],
+   [
+    5630.0,
+    134.5
+   ]
+  ],
+  "right": [
+   [
+    5630.0,
+    134.5
+   ],
+   [
+    5623.6,
+    640.5
+   ],
+   [
+    5607.6,
+    1281.0
+   ],
+   [
+    5591.6,
+    1793.4
+   ],
+   [
+    5594.8,
+    2562.0
+   ],
+   [
+    5601.2,
+    3202.5
+   ],
+   [
+    5604.4,
+    3698.9
+   ]
+  ],
+  "bottom": [
+   [
+    5604.4,
+    3698.9
+   ],
+   [
+    5380.2,
+    3692.5
+   ],
+   [
+    5124.0,
+    3689.3
+   ],
+   [
+    4771.7,
+    3689.3
+   ],
+   [
+    4483.5,
+    3682.9
+   ],
+   [
+    4099.2,
+    3670.1
+   ],
+   [
+    3843.0,
+    3670.1
+   ],
+   [
+    3580.4,
+    3670.1
+   ]
+  ],
+  "left": [
+   [
+    3580.4,
+    3670.1
+   ],
+   [
+    3574.0,
+    3202.5
+   ],
+   [
+    3567.6,
+    2562.0
+   ],
+   [
+    3554.8,
+    1921.5
+   ],
+   [
+    3542.0,
+    1281.0
+   ],
+   [
+    3532.4,
+    640.5
+   ],
+   [
+    3529.2,
+    172.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Fold 2 = crease x~879 (top) to ~873-875; faint circle line of f68v1 at x~878-882 (y 250-310) left outside. Folio number '68' at (~840,40) lies inside this panel. Top/bottom exclude stacked-leaf strips x>750.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

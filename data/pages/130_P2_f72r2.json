@@ -1,0 +1,125 @@
+{
+ "image": "130_P2_f72r2",
+ "folio": "f72r2",
+ "scan": "130.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 72,
+  "side": "front (recto)",
+  "panel": "2",
+  "position": "2 of 4 on scan 130",
+  "kind": "foldout panel",
+  "section": "zodiac",
+  "quire": "K",
+  "title": "leaf 72, front (recto), panel 2 — zodiac"
+ },
+ "boundary": {
+  "top": [
+   [
+    4235.3,
+    150.9
+   ],
+   [
+    4778.5,
+    150.9
+   ],
+   [
+    5533.0,
+    150.9
+   ],
+   [
+    6015.9,
+    166.0
+   ]
+  ],
+  "right": [
+   [
+    6015.9,
+    166.0
+   ],
+   [
+    6010.8,
+    603.6
+   ],
+   [
+    6005.8,
+    895.3
+   ],
+   [
+    5988.2,
+    1031.2
+   ],
+   [
+    5983.2,
+    1136.8
+   ],
+   [
+    5980.7,
+    1509.0
+   ],
+   [
+    5975.6,
+    1836.0
+   ],
+   [
+    5965.6,
+    2263.5
+   ],
+   [
+    5965.6,
+    2816.8
+   ]
+  ],
+  "bottom": [
+   [
+    5965.6,
+    2816.8
+   ],
+   [
+    5533.0,
+    2836.9
+   ],
+   [
+    5030.0,
+    2836.9
+   ],
+   [
+    4426.4,
+    2816.8
+   ],
+   [
+    4210.1,
+    2796.7
+   ]
+  ],
+  "left": [
+   [
+    4210.1,
+    2796.7
+   ],
+   [
+    4215.1,
+    2012.0
+   ],
+   [
+    4225.2,
+    1006.0
+   ],
+   [
+    4235.3,
+    150.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Right fold follows visible crease x 1196 (top) -> 1186 (bottom); bends to x~1189.5 at y 205-230 where f72r2 and f72r3 ring texts nearly touch at the crease (f72r3 'otteo' starts at x 1190).",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "image": "170_P2_f95r2",
+ "folio": "f95r2",
+ "scan": "170.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 95,
+  "side": "front (recto)",
+  "panel": "2",
+  "position": "left on scan 170",
+  "kind": "foldout panel",
+  "section": "herbal",
+  "quire": "Q",
+  "title": "leaf 95, front (recto), panel 2 — herbal"
+ },
+ "boundary": {
+  "top": [
+   [
+    5365.7,
+    171.0
+   ],
+   [
+    5701.5,
+    167.9
+   ],
+   [
+    6335.0,
+    158.4
+   ],
+   [
+    6461.7,
+    155.2
+   ],
+   [
+    6715.1,
+    164.7
+   ],
+   [
+    6968.5,
+    177.4
+   ],
+   [
+    7221.9,
+    190.0
+   ],
+   [
+    7469.0,
+    202.7
+   ]
+  ],
+  "right": [
+   [
+    7469.0,
+    202.7
+   ],
+   [
+    7481.6,
+    950.2
+   ],
+   [
+    7494.3,
+    1900.5
+   ],
+   [
+    7507.0,
+    2850.8
+   ],
+   [
+    7513.3,
+    3661.6
+   ]
+  ],
+  "bottom": [
+   [
+    7513.3,
+    3661.6
+   ],
+   [
+    7285.2,
+    3642.6
+   ],
+   [
+    6968.5,
+    3642.6
+   ],
+   [
+    6335.0,
+    3630.0
+   ],
+   [
+    5701.5,
+    3617.3
+   ],
+   [
+    5378.4,
+    3604.6
+   ]
+  ],
+  "left": [
+   [
+    5378.4,
+    3604.6
+   ],
+   [
+    5378.4,
+    2850.8
+   ],
+   [
+    5365.7,
+    1900.5
+   ],
+   [
+    5362.6,
+    950.2
+   ],
+   [
+    5365.7,
+    171.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Right panel (dense leafy plant on a green/red base), x 847-1186. Leftmost green leaf (y~400-430) ends exactly at the fold, x~849.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

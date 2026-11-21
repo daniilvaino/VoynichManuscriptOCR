@@ -3,6 +3,16 @@
  "folio": "f107r",
  "scan": "191.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 107,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "stars (recipes)",
+  "quire": "T",
+  "title": "leaf 107, front (recto) — stars (recipes)"
+ },
  "boundary": {
   "top": [
    [
@@ -73,7 +83,7 @@
     2047.7
    ],
    [
-    2133.7,
+    2133.6,
     2043.9
    ],
    [

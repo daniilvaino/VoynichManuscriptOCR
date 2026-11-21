@@ -1,0 +1,141 @@
+{
+ "image": "131_P1_f72v2",
+ "folio": "f72v2",
+ "scan": "131.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 72,
+  "side": "back (verso)",
+  "panel": "2",
+  "position": "left on scan 131",
+  "kind": "foldout panel",
+  "section": "zodiac",
+  "quire": "K",
+  "title": "leaf 72, back (verso), panel 2 — zodiac"
+ },
+ "boundary": {
+  "top": [
+   [
+    3579.0,
+    164.4
+   ],
+   [
+    4426.3,
+    158.1
+   ],
+   [
+    5058.7,
+    151.8
+   ],
+   [
+    5735.3,
+    139.1
+   ]
+  ],
+  "right": [
+   [
+    5735.3,
+    139.1
+   ],
+   [
+    5728.9,
+    632.3
+   ],
+   [
+    5716.3,
+    1264.7
+   ],
+   [
+    5703.6,
+    1897.0
+   ],
+   [
+    5700.5,
+    2529.3
+   ],
+   [
+    5697.3,
+    3161.7
+   ],
+   [
+    5691.0,
+    3598.0
+   ]
+  ],
+  "bottom": [
+   [
+    5691.0,
+    3598.0
+   ],
+   [
+    5058.7,
+    3598.0
+   ],
+   [
+    4426.3,
+    3585.3
+   ],
+   [
+    3794.0,
+    3579.0
+   ],
+   [
+    3509.4,
+    3579.0
+   ]
+  ],
+  "left": [
+   [
+    3509.4,
+    3579.0
+   ],
+   [
+    3515.8,
+    3098.4
+   ],
+   [
+    3522.1,
+    2655.8
+   ],
+   [
+    3522.1,
+    2213.2
+   ],
+   [
+    3525.3,
+    1897.0
+   ],
+   [
+    3528.4,
+    1580.8
+   ],
+   [
+    3534.7,
+    1296.3
+   ],
+   [
+    3560.0,
+    1106.6
+   ],
+   [
+    3572.7,
+    758.8
+   ],
+   [
+    3579.0,
+    164.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "Right side = rolled edge where f72v1 is folded underneath (x~902-907); strips at x 907-931 are f72v1/stacked leaves, excluded. f72v1 not visible in this scan.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

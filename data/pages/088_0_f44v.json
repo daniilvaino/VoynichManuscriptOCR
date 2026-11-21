@@ -3,28 +3,50 @@
  "folio": "f44v",
  "scan": "088.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 44,
+  "side": "back (verso)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "F",
+  "title": "leaf 44, back (verso) — herbal"
+ },
  "boundary": {
   "top": [
    [
-    519.1,
-    113.3
+    477.0,
+    117.7
    ],
    [
-    1636.1,
-    119.6
+    879.7,
+    104.5
    ],
    [
-    2756.1,
-    132.1
+    1279.9,
+    122.1
+   ],
+   [
+    1646.8,
+    106.3
+   ],
+   [
+    2474.9,
+    122.1
+   ],
+   [
+    2770.0,
+    154.8
    ]
   ],
   "right": [
    [
-    2756.1,
-    132.1
+    2770.0,
+    154.8
    ],
    [
-    2762.4,
+    2778.8,
     943.9
    ],
    [
@@ -32,48 +54,80 @@
     1887.8
    ],
    [
-    2771.9,
-    3674.9
+    2800.2,
+    3629.6
    ]
   ],
   "bottom": [
    [
-    2771.9,
-    3674.9
+    2800.2,
+    3629.6
    ],
    [
-    1636.1,
-    3536.4
+    2761.8,
+    3644.7
    ],
    [
-    506.6,
-    3404.3
+    2646.0,
+    3654.7
+   ],
+   [
+    2371.0,
+    3665.4
+   ],
+   [
+    2206.2,
+    3664.2
+   ],
+   [
+    2031.2,
+    3610.7
+   ],
+   [
+    1611.5,
+    3544.0
+   ],
+   [
+    1264.2,
+    3497.4
+   ],
+   [
+    877.2,
+    3454.0
+   ],
+   [
+    355.5,
+    3409.3
    ]
   ],
   "left": [
    [
-    506.6,
-    3404.3
+    355.5,
+    3409.3
    ],
    [
-    512.8,
-    1887.8
+    409.0,
+    1889.0
    ],
    [
-    519.1,
-    113.3
+    446.8,
+    791.6
+   ],
+   [
+    477.0,
+    117.7
    ]
   ]
  },
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "high",
   "opus_note": "none significant right = gutter fold x~438-440.5, neighbour f45r text from x~445 outside; bottom = slanted edge y541 (fore-edge) -> 584 (gutter), mirrors f44r; faint grass strokes below it at x~85-170 y~548-571 lie on the leaf behind (f43v roots), outside",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-21 14:26:38"
  }
 }

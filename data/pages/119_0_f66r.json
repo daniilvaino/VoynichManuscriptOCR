@@ -3,6 +3,16 @@
  "folio": "f66r",
  "scan": "119.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 66,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "text only",
+  "quire": "H",
+  "title": "leaf 66, front (recto) — text only"
+ },
  "boundary": {
   "top": [
    [

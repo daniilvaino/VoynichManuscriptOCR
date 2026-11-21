@@ -1,0 +1,129 @@
+{
+ "image": "157_P1_f86v3",
+ "folio": "f86v3",
+ "scan": "157.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 86,
+  "side": "back (verso)",
+  "panel": "3",
+  "position": "left on scan 157",
+  "kind": "foldout panel",
+  "section": "cosmological",
+  "quire": "N",
+  "title": "leaf 86, back (verso), panel 3 — cosmological"
+ },
+ "boundary": {
+  "top": [
+   [
+    2272.8,
+    202.0
+   ],
+   [
+    2841.0,
+    202.0
+   ],
+   [
+    3472.3,
+    205.2
+   ],
+   [
+    4103.7,
+    211.5
+   ],
+   [
+    4772.9,
+    221.0
+   ]
+  ],
+  "right": [
+   [
+    4772.9,
+    221.0
+   ],
+   [
+    4772.9,
+    631.3
+   ],
+   [
+    4769.7,
+    1262.7
+   ],
+   [
+    4766.6,
+    1894.0
+   ],
+   [
+    4766.6,
+    2525.3
+   ],
+   [
+    4766.6,
+    3156.7
+   ],
+   [
+    4766.6,
+    3712.2
+   ]
+  ],
+  "bottom": [
+   [
+    4766.6,
+    3712.2
+   ],
+   [
+    4419.3,
+    3721.7
+   ],
+   [
+    3788.0,
+    3712.2
+   ],
+   [
+    3156.7,
+    3712.2
+   ],
+   [
+    2525.3,
+    3702.8
+   ],
+   [
+    2288.6,
+    3696.5
+   ]
+  ],
+  "left": [
+   [
+    2288.6,
+    3696.5
+   ],
+   [
+    2282.3,
+    2841.0
+   ],
+   [
+    2279.1,
+    1894.0
+   ],
+   [
+    2276.0,
+    947.0
+   ],
+   [
+    2272.8,
+    202.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Name check: 4 corner figures + text = f86v3 OK. Right edge at slit x~755 (includes a curled margin strip x 740-755); leaf beyond x 757 excluded. Top excludes stacked leaf edges above y~31. Own ink starts x~383 at fold.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

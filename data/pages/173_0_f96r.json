@@ -3,6 +3,16 @@
  "folio": "f96r",
  "scan": "173.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 96,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "Q",
+  "title": "leaf 96, front (recto) — herbal"
+ },
  "boundary": {
   "top": [
    [

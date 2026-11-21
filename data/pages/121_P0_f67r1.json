@@ -1,0 +1,144 @@
+{
+ "image": "121_P0_f67r1",
+ "folio": "f67r1",
+ "scan": "121.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 67,
+  "side": "front (recto)",
+  "panel": "1",
+  "position": "right on scan 121",
+  "kind": "foldout panel",
+  "section": "astronomical",
+  "quire": "I",
+  "title": "leaf 67, front (recto), panel 1 — astronomical"
+ },
+ "boundary": {
+  "top": [
+   [
+    177.6,
+    124.6
+   ],
+   [
+    623.0,
+    118.4
+   ],
+   [
+    1246.0,
+    124.6
+   ],
+   [
+    1869.0,
+    124.6
+   ],
+   [
+    2510.7,
+    124.6
+   ]
+  ],
+  "right": [
+   [
+    2510.7,
+    124.6
+   ],
+   [
+    2513.8,
+    934.5
+   ],
+   [
+    2510.7,
+    1869.0
+   ],
+   [
+    2504.5,
+    2803.5
+   ],
+   [
+    2501.3,
+    3625.9
+   ]
+  ],
+  "bottom": [
+   [
+    2501.3,
+    3625.9
+   ],
+   [
+    1869.0,
+    3616.5
+   ],
+   [
+    1246.0,
+    3619.6
+   ],
+   [
+    623.0,
+    3619.6
+   ],
+   [
+    186.9,
+    3600.9
+   ]
+  ],
+  "left": [
+   [
+    186.9,
+    3600.9
+   ],
+   [
+    177.6,
+    2803.5
+   ],
+   [
+    174.4,
+    1869.0
+   ],
+   [
+    177.6,
+    934.5
+   ],
+   [
+    177.6,
+    124.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    2457.7,
+    2974.8
+   ],
+   [
+    2470.2,
+    2974.8
+   ],
+   [
+    2473.3,
+    2996.6
+   ],
+   [
+    2467.1,
+    3018.4
+   ],
+   [
+    2457.7,
+    3015.3
+   ],
+   [
+    2454.6,
+    2993.5
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus",
+  "opus_confidence": "high",
+  "opus_note": "Left side = binding gutter edge at x~28 (stacked leaf edges and sewing gap x<27 excluded); top/bottom exclude thin stacked-leaf strips; fold = crease x~402-403. Small hole at (395.5,481) near fold.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -3,81 +3,222 @@
  "folio": "f38v",
  "scan": "076.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 38,
+  "side": "back (verso)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "E",
+  "title": "leaf 38, back (verso) — herbal"
+ },
  "boundary": {
   "top": [
    [
-    453.1,
-    141.6
+    704.8,
+    147.9
    ],
    [
-    943.9,
-    138.4
+    945.1,
+    147.2
    ],
    [
     1887.8,
     138.4
    ],
    [
-    2756.1,
-    138.4
+    2260.9,
+    149.1
+   ],
+   [
+    2490.6,
+    146.0
+   ],
+   [
+    2653.0,
+    158.6
+   ],
+   [
+    2758.0,
+    176.2
    ]
   ],
   "right": [
    [
-    2756.1,
-    138.4
+    2758.0,
+    176.2
+   ],
+   [
+    2768.1,
+    660.7
    ],
    [
     2768.7,
     1887.8
    ],
    [
-    2781.3,
-    3665.4
+    2792.0,
+    3624.5
    ]
   ],
   "bottom": [
    [
-    2781.3,
-    3665.4
+    2792.0,
+    3624.5
    ],
    [
-    1887.8,
-    3671.7
+    2506.3,
+    3645.9
    ],
    [
-    943.9,
-    3674.9
+    1872.7,
+    3655.4
    ],
    [
-    453.1,
-    3678.0
+    1441.6,
+    3661.0
+   ],
+   [
+    927.5,
+    3667.9
+   ],
+   [
+    504.0,
+    3663.5
    ]
   ],
   "left": [
    [
-    453.1,
-    3678.0
+    504.0,
+    3663.5
    ],
    [
-    453.1,
-    1887.8
+    509.1,
+    2778.2
    ],
    [
-    453.1,
-    141.6
+    494.0,
+    1901.6
+   ],
+   [
+    570.7,
+    1193.1
+   ],
+   [
+    704.8,
+    147.9
    ]
   ]
  },
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
- "holes": [],
+ "holes": [
+  [
+   [
+    1953.2,
+    1777.0
+   ],
+   [
+    1943.1,
+    1747.4
+   ],
+   [
+    1941.3,
+    1731.1
+   ],
+   [
+    1940.0,
+    1719.1
+   ],
+   [
+    1940.0,
+    1711.0
+   ],
+   [
+    1956.4,
+    1714.7
+   ],
+   [
+    1963.3,
+    1717.9
+   ],
+   [
+    1965.2,
+    1731.1
+   ],
+   [
+    1973.4,
+    1750.0
+   ],
+   [
+    1977.1,
+    1768.2
+   ],
+   [
+    1989.7,
+    1794.0
+   ],
+   [
+    2001.0,
+    1804.7
+   ],
+   [
+    2002.3,
+    1823.0
+   ],
+   [
+    2019.9,
+    1844.4
+   ],
+   [
+    2030.6,
+    1856.9
+   ],
+   [
+    2040.7,
+    1868.9
+   ],
+   [
+    2040.7,
+    1873.3
+   ],
+   [
+    2023.1,
+    1870.8
+   ],
+   [
+    2009.8,
+    1854.4
+   ],
+   [
+    2002.9,
+    1843.1
+   ],
+   [
+    1989.7,
+    1824.2
+   ],
+   [
+    1977.8,
+    1812.9
+   ],
+   [
+    1967.7,
+    1792.8
+   ],
+   [
+    1960.1,
+    1780.8
+   ]
+  ]
+ ],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
-  "holes_source": "opus-none-marked",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "human",
   "opus_confidence": "medium",
   "opus_note": "left: SAM/quad follow right edge of holder tape (x~82); leaf continues under tape (tape x~65-82), no visible edge line under it left placed at x=72 under the tape (ink-free margin, +-8 uncertain; line at x~60-64 left of tape taken as stacked fore-edges). top edge y~22 just above plant leaves/flower; bottom y~583 just below roots; right = gutter fold 438->442",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-21 14:22:16"
  }
 }

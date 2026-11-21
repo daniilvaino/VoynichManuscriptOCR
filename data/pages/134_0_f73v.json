@@ -3,6 +3,16 @@
  "folio": "f73v",
  "scan": "134.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 73,
+  "side": "back (verso)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "zodiac",
+  "quire": "L",
+  "title": "leaf 73, back (verso) — zodiac"
+ },
  "boundary": {
   "top": [
    [

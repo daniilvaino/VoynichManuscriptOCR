@@ -1,0 +1,109 @@
+{
+ "image": "162_P0_f88v",
+ "folio": "f88v",
+ "scan": "162.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 88,
+  "side": "back (verso)",
+  "panel": null,
+  "position": "right on scan 162",
+  "kind": "foldout panel",
+  "section": "pharmaceutical",
+  "quire": "O",
+  "title": "leaf 88, back (verso) — pharmaceutical"
+ },
+ "boundary": {
+  "top": [
+   [
+    487.9,
+    125.9
+   ],
+   [
+    1259.0,
+    132.2
+   ],
+   [
+    2203.2,
+    138.5
+   ],
+   [
+    2839.0,
+    141.6
+   ]
+  ],
+  "right": [
+   [
+    2839.0,
+    141.6
+   ],
+   [
+    2835.9,
+    1259.0
+   ],
+   [
+    2832.8,
+    2203.2
+   ],
+   [
+    2826.5,
+    3147.5
+   ],
+   [
+    2823.3,
+    3635.4
+   ]
+  ],
+  "bottom": [
+   [
+    2823.3,
+    3635.4
+   ],
+   [
+    2203.2,
+    3644.8
+   ],
+   [
+    1259.0,
+    3635.4
+   ],
+   [
+    465.8,
+    3619.6
+   ]
+  ],
+  "left": [
+   [
+    465.8,
+    3619.6
+   ],
+   [
+    472.1,
+    2832.8
+   ],
+   [
+    475.3,
+    1888.5
+   ],
+   [
+    478.4,
+    944.2
+   ],
+   [
+    487.9,
+    125.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Left edge = f88v leaf edge x~74-78; strip x 40-75 is another leaf showing f86v3's vertical text and fish-scale drawing (Rosettes foldout beneath), excluded. Right = gutter double line x~449-452.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

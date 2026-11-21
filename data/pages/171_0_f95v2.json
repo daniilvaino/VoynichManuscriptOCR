@@ -3,6 +3,16 @@
  "folio": "f95v2",
  "scan": "171.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 95,
+  "side": "back (verso)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "Q",
+  "title": "leaf 95, back (verso) — herbal"
+ },
  "boundary": {
   "top": [
    [

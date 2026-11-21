@@ -1,0 +1,176 @@
+{
+ "image": "130_P1_f72r1",
+ "folio": "f72r1",
+ "scan": "130.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 72,
+  "side": "front (recto)",
+  "panel": "1",
+  "position": "3 of 4 on scan 130",
+  "kind": "foldout panel",
+  "section": "zodiac",
+  "quire": "K",
+  "title": "leaf 72, front (recto), panel 1 — zodiac"
+ },
+ "boundary": {
+  "top": [
+   [
+    2328.9,
+    145.9
+   ],
+   [
+    2766.5,
+    143.4
+   ],
+   [
+    3521.0,
+    145.9
+   ],
+   [
+    4235.3,
+    150.9
+   ]
+  ],
+  "right": [
+   [
+    4235.3,
+    150.9
+   ],
+   [
+    4225.2,
+    1006.0
+   ],
+   [
+    4215.1,
+    2012.0
+   ],
+   [
+    4210.1,
+    2796.7
+   ]
+  ],
+  "bottom": [
+   [
+    4210.1,
+    2796.7
+   ],
+   [
+    3772.5,
+    2826.9
+   ],
+   [
+    3269.5,
+    2877.2
+   ],
+   [
+    2766.5,
+    2882.2
+   ],
+   [
+    2339.0,
+    2867.1
+   ]
+  ],
+  "left": [
+   [
+    2339.0,
+    2867.1
+   ],
+   [
+    2339.0,
+    2515.0
+   ],
+   [
+    2328.9,
+    2012.0
+   ],
+   [
+    2323.9,
+    1509.0
+   ],
+   [
+    2323.9,
+    503.0
+   ],
+   [
+    2328.9,
+    145.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    2766.5,
+    1244.9
+   ],
+   [
+    2796.7,
+    1252.5
+   ],
+   [
+    2816.8,
+    1277.6
+   ],
+   [
+    2836.9,
+    1297.7
+   ],
+   [
+    2847.0,
+    1333.0
+   ],
+   [
+    2842.0,
+    1368.2
+   ],
+   [
+    2831.9,
+    1398.3
+   ],
+   [
+    2816.8,
+    1423.5
+   ],
+   [
+    2791.6,
+    1436.1
+   ],
+   [
+    2766.5,
+    1433.6
+   ],
+   [
+    2746.4,
+    1413.4
+   ],
+   [
+    2721.2,
+    1388.3
+   ],
+   [
+    2713.7,
+    1348.0
+   ],
+   [
+    2718.7,
+    1297.7
+   ],
+   [
+    2736.3,
+    1267.6
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus",
+  "opus_confidence": "high",
+  "opus_note": "Left = gutter x~463. Top excludes stacked top edges of leaves below (y 13-28). Fold to f72r2 placed in blank gap x 837-842 (f72r1 ink ends ~825, f72r2 ring text starts ~846); crease line at ~830, shading valley at ~858. Bottom edge uncertain +-5 (lower leaves show below).",
+  "human_note": null,
+  "saved_at": null
+ }
+}

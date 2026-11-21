@@ -3,44 +3,62 @@
 "image": "003_0_f1r",
 "folio": "f1r",
 "scan": "003.jpg",
+"title": "leaf 1, front (recto) — text only",
+"kind": "page",
+"section": "text only",
 "display": {
 "file": "img/003_0_f1r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47745358090185674,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47758026001591936,
 "w": 1419,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
-"holes": 7,
-"holes_source": "human-checked"
+"holes": 27,
+"holes_source": "human-checked",
+"lines": 32,
+"lines_by_status": {
+"two_runs_agree": 31,
+"human_confirmed": 1
+}
 },
 {
 "image": "004_0_f1v",
 "folio": "f1v",
 "scan": "004.jpg",
+"title": "leaf 1, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/004_0_f1v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47393364928909953,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.474058467210956,
 "w": 1329,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
-"holes": 4,
-"holes_source": "human-checked"
+"holes": 16,
+"holes_source": "human-checked",
+"lines": 21,
+"lines_by_status": {
+"two_runs_agree": 21
+}
 },
 {
 "image": "005_0_f2r",
 "folio": "f2r",
 "scan": "005.jpg",
+"title": "leaf 2, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/005_0_f2r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47720042417815484,
 "w": 1284,
 "h": 1800
@@ -48,33 +66,47 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 44,
+"lines_by_status": {
+"two_runs_agree": 44
+}
 },
 {
 "image": "006_0_f2v",
 "folio": "f2v",
 "scan": "006.jpg",
+"title": "leaf 2, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/006_0_f2v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47418335089567965,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4743083003952569,
 "w": 1314,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 14,
+"lines_by_status": {
+"two_runs_agree": 14
+}
 },
 {
 "image": "007_0_f3r",
 "folio": "f3r",
 "scan": "007.jpg",
+"title": "leaf 3, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/007_0_f3r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47720042417815484,
 "w": 1284,
 "h": 1800
@@ -82,33 +114,47 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 25,
+"lines_by_status": {
+"two_runs_agree": 25
+}
 },
 {
 "image": "008_0_f3v",
 "folio": "f3v",
 "scan": "008.jpg",
+"title": "leaf 3, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/008_0_f3v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47355958958168903,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47368421052631576,
 "w": 1308,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 15,
+"lines_by_status": {
+"two_runs_agree": 15
+}
 },
 {
 "image": "009_0_f4r",
 "folio": "f4r",
 "scan": "009.jpg",
+"title": "leaf 4, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/009_0_f4r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48102618920363444,
 "w": 1290,
 "h": 1800
@@ -116,16 +162,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 15,
+"lines_by_status": {
+"two_runs_agree": 15
+}
 },
 {
 "image": "010_0_f4v",
 "folio": "f4v",
 "scan": "010.jpg",
+"title": "leaf 4, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/010_0_f4v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47368421052631576,
 "w": 1311,
 "h": 1800
@@ -133,16 +186,23 @@
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 2,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 20,
+"lines_by_status": {
+"two_runs_agree": 20
+}
 },
 {
 "image": "011_0_f5r",
 "folio": "f5r",
 "scan": "011.jpg",
+"title": "leaf 5, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/011_0_f5r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48257372654155495,
 "w": 1272,
 "h": 1800
@@ -150,67 +210,96 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 7,
+"lines_by_status": {
+"two_runs_agree": 7
+}
 },
 {
 "image": "012_0_f5v",
 "folio": "f5v",
 "scan": "012.jpg",
+"title": "leaf 5, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/012_0_f5v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4729374671571203,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4730617608409987,
 "w": 1305,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 6,
+"lines_by_status": {
+"two_runs_agree": 6
+}
 },
 {
 "image": "013_0_f6r",
 "folio": "f6r",
 "scan": "013.jpg",
+"title": "leaf 6, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/013_0_f6r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48231511254019294,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4824443848834093,
 "w": 1284,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 21,
+"lines_by_status": {
+"two_runs_agree": 20,
+"human_corrected": 1
+}
 },
 {
 "image": "014_0_f6v",
 "folio": "f6v",
 "scan": "014.jpg",
+"title": "leaf 6, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/014_0_f6v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.474058467210956,
 "w": 1305,
 "h": 1800
 },
-"boundary_source": "opus",
-"status": "unreviewed",
+"boundary_source": "opus+human-corrected",
+"status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 29,
+"lines_by_status": {
+"two_runs_agree": 29
+}
 },
 {
 "image": "015_0_f7r",
 "folio": "f7r",
 "scan": "015.jpg",
+"title": "leaf 7, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/015_0_f7r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48348106365834004,
 "w": 1284,
 "h": 1800
@@ -218,16 +307,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 19,
+"lines_by_status": {
+"two_runs_agree": 19
+}
 },
 {
 "image": "016_0_f7v",
 "folio": "f7v",
 "scan": "016.jpg",
+"title": "leaf 7, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/016_0_f7v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47368421052631576,
 "w": 1329,
 "h": 1800
@@ -235,16 +331,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 12,
+"lines_by_status": {
+"two_runs_agree": 12
+}
 },
 {
 "image": "017_0_f8r",
 "folio": "f8r",
 "scan": "017.jpg",
+"title": "leaf 8, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/017_0_f8r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4838709677419355,
 "w": 1287,
 "h": 1800
@@ -252,16 +355,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 42,
+"lines_by_status": {
+"two_runs_agree": 42
+}
 },
 {
 "image": "018_0_f8v",
 "folio": "f8v",
 "scan": "018.jpg",
+"title": "leaf 8, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/018_0_f8v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.474058467210956,
 "w": 1323,
 "h": 1800
@@ -269,33 +379,49 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 39,
+"lines_by_status": {
+"two_runs_agree": 39
+}
 },
 {
 "image": "019_0_f9r",
 "folio": "f9r",
 "scan": "019.jpg",
+"title": "leaf 9, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/019_0_f9r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48154093097913325,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48166978860048165,
 "w": 1296,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 23,
+"lines_by_status": {
+"two_runs_agree": 20,
+"human_corrected": 2,
+"human_confirmed": 1
+}
 },
 {
 "image": "020_0_f9v",
 "folio": "f9v",
 "scan": "020.jpg",
+"title": "leaf 9, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/020_0_f9v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47368421052631576,
 "w": 1332,
 "h": 1800
@@ -303,16 +429,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 27,
+"lines_by_status": {
+"two_runs_agree": 27
+}
 },
 {
 "image": "021_0_f10r",
 "folio": "f10r",
 "scan": "021.jpg",
+"title": "leaf 10, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/021_0_f10r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4805125467164976,
 "w": 1293,
 "h": 1800
@@ -320,16 +453,24 @@
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 20,
+"lines_by_status": {
+"two_runs_agree": 19,
+"human_confirmed": 1
+}
 },
 {
 "image": "022_0_f10v",
 "folio": "f10v",
 "scan": "022.jpg",
+"title": "leaf 10, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/022_0_f10v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47343503419253025,
 "w": 1344,
 "h": 1800
@@ -337,33 +478,47 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 7,
+"lines_by_status": {
+"two_runs_agree": 7
+}
 },
 {
 "image": "023_0_f11r",
 "folio": "f11r",
 "scan": "023.jpg",
+"title": "leaf 11, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/023_0_f11r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4805125467164976,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48064085447263016,
 "w": 1284,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 7,
+"lines_by_status": {
+"two_runs_agree": 7
+}
 },
 {
 "image": "024_0_f11v",
 "folio": "f11v",
 "scan": "024.jpg",
+"title": "leaf 11, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/024_0_f11v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4768211920529801,
 "w": 1347,
 "h": 1800
@@ -371,33 +526,48 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 11,
+"lines_by_status": {
+"two_runs_agree": 11
+}
 },
 {
 "image": "025_0_f13r",
 "folio": "f13r",
 "scan": "025.jpg",
+"title": "leaf 13, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/025_0_f13r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48322147651006714,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4833512352309345,
 "w": 1257,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 14,
+"lines_by_status": {
+"two_runs_agree": 13,
+"human_confirmed": 1
+}
 },
 {
 "image": "026_0_f13v",
 "folio": "f13v",
 "scan": "026.jpg",
+"title": "leaf 13, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/026_0_f13v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4769475357710652,
 "w": 1341,
 "h": 1800
@@ -405,33 +575,48 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 18
+}
 },
 {
 "image": "027_0_f14r",
 "folio": "f14r",
 "scan": "027.jpg",
+"title": "leaf 14, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/027_0_f14r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48115477145148355,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48128342245989303,
 "w": 1281,
 "h": 1800
 },
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 17,
+"human_confirmed": 1
+}
 },
 {
 "image": "028_0_f14v",
 "folio": "f14v",
 "scan": "028.jpg",
+"title": "leaf 14, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/028_0_f14v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4769475357710652,
 "w": 1341,
 "h": 1800
@@ -439,50 +624,72 @@
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 11,
+"lines_by_status": {
+"two_runs_agree": 11
+}
 },
 {
 "image": "029_0_f15r",
 "folio": "f15r",
 "scan": "029.jpg",
+"title": "leaf 15, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/029_0_f15r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48257372654155495,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4827031375703942,
 "w": 1278,
 "h": 1800
 },
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 33,
+"lines_by_status": {
+"two_runs_agree": 32,
+"human_confirmed": 1
+}
 },
 {
 "image": "030_0_f15v",
 "folio": "f15v",
 "scan": "030.jpg",
+"title": "leaf 15, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/030_0_f15v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47619047619047616,
 "w": 1350,
 "h": 1800
 },
-"boundary_source": "opus+human-checked",
+"boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human",
+"lines": 12,
+"lines_by_status": {
+"two_runs_agree": 12
+}
 },
 {
 "image": "031_0_f16r",
 "folio": "f16r",
 "scan": "031.jpg",
+"title": "leaf 16, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/031_0_f16r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4785961180537091,
 "w": 1272,
 "h": 1800
@@ -490,16 +697,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 13,
+"lines_by_status": {
+"two_runs_agree": 13
+}
 },
 {
 "image": "032_0_f16v",
 "folio": "f16v",
 "scan": "032.jpg",
+"title": "leaf 16, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/032_0_f16v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4743083003952569,
 "w": 1347,
 "h": 1800
@@ -507,33 +721,47 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 13,
+"lines_by_status": {
+"two_runs_agree": 13
+}
 },
 {
 "image": "033_0_f17r",
 "folio": "f17r",
 "scan": "033.jpg",
+"title": "leaf 17, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/033_0_f17r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1272,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 18
+}
 },
 {
 "image": "034_0_f17v",
 "folio": "f17v",
 "scan": "034.jpg",
+"title": "leaf 17, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/034_0_f17v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47593865679534636,
 "w": 1353,
 "h": 1800
@@ -541,33 +769,47 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 23,
+"lines_by_status": {
+"two_runs_agree": 23
+}
 },
 {
 "image": "035_0_f18r",
 "folio": "f18r",
 "scan": "035.jpg",
+"title": "leaf 18, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/035_0_f18r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1272,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 19,
+"lines_by_status": {
+"two_runs_agree": 19
+}
 },
 {
 "image": "036_0_f18v",
 "folio": "f18v",
 "scan": "036.jpg",
+"title": "leaf 18, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/036_0_f18v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4754358161648177,
 "w": 1353,
 "h": 1800
@@ -575,152 +817,218 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 10,
+"lines_by_status": {
+"two_runs_agree": 10
+}
 },
 {
 "image": "037_0_f19r",
 "folio": "f19r",
 "scan": "037.jpg",
+"title": "leaf 19, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/037_0_f19r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1272,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 14,
+"lines_by_status": {
+"two_runs_agree": 13,
+"human_confirmed": 1
+}
 },
 {
 "image": "038_0_f19v",
 "folio": "f19v",
 "scan": "038.jpg",
+"title": "leaf 19, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/038_0_f19v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 14,
+"lines_by_status": {
+"two_runs_agree": 14
+}
 },
 {
 "image": "039_0_f20r",
 "folio": "f20r",
 "scan": "039.jpg",
+"title": "leaf 20, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/039_0_f20r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1272,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 14,
+"lines_by_status": {
+"two_runs_agree": 13,
+"human_confirmed": 1
+}
 },
 {
 "image": "040_0_f20v",
 "folio": "f20v",
 "scan": "040.jpg",
+"title": "leaf 20, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/040_0_f20v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 12,
+"lines_by_status": {
+"two_runs_agree": 12
+}
 },
 {
 "image": "041_0_f21r",
 "folio": "f21r",
 "scan": "041.jpg",
+"title": "leaf 21, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/041_0_f21r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1272,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 12,
+"lines_by_status": {
+"two_runs_agree": 12
+}
 },
 {
 "image": "042_0_f21v",
 "folio": "f21v",
 "scan": "042.jpg",
+"title": "leaf 21, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/042_0_f21v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 8,
+"lines_by_status": {
+"two_runs_agree": 8
+}
 },
 {
 "image": "043_0_f22r",
 "folio": "f22r",
 "scan": "043.jpg",
+"title": "leaf 22, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/043_0_f22r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1272,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 23,
+"lines_by_status": {
+"two_runs_agree": 20,
+"human_confirmed": 3
+}
 },
 {
 "image": "044_0_f22v",
 "folio": "f22v",
 "scan": "044.jpg",
+"title": "leaf 22, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/044_0_f22v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47380889707817847,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47393364928909953,
 "w": 1350,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 24,
+"lines_by_status": {
+"two_runs_agree": 24
+}
 },
 {
 "image": "045_0_f23r",
 "folio": "f23r",
 "scan": "045.jpg",
+"title": "leaf 23, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/045_0_f23r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48569886670264434,
 "w": 1287,
 "h": 1800
@@ -728,67 +1036,95 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 16,
+"lines_by_status": {
+"two_runs_agree": 16
+}
 },
 {
 "image": "046_0_f23v",
 "folio": "f23v",
 "scan": "046.jpg",
+"title": "leaf 23, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/046_0_f23v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47593865679534636,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47606453319227715,
 "w": 1356,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 21,
+"lines_by_status": {
+"two_runs_agree": 21
+}
 },
 {
 "image": "047_0_f24r",
 "folio": "f24r",
 "scan": "047.jpg",
+"title": "leaf 24, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/047_0_f24r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48322147651006714,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4833512352309345,
 "w": 1299,
 "h": 1800
 },
-"boundary_source": "opus",
-"status": "unreviewed",
+"boundary_source": "opus+human-corrected",
+"status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 20,
+"lines_by_status": {
+"two_runs_agree": 20
+}
 },
 {
 "image": "048_0_f24v",
 "folio": "f24v",
 "scan": "048.jpg",
+"title": "leaf 24, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/048_0_f24v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4765687053216839,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4766949152542373,
 "w": 1365,
 "h": 1800
 },
-"boundary_source": "opus",
-"status": "unreviewed",
+"boundary_source": "opus+human-corrected",
+"status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 18
+}
 },
 {
 "image": "049_0_f25r",
 "folio": "f25r",
 "scan": "049.jpg",
+"title": "leaf 25, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/049_0_f25r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48064085447263016,
 "w": 1302,
 "h": 1800
@@ -796,16 +1132,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 7,
+"lines_by_status": {
+"two_runs_agree": 7
+}
 },
 {
 "image": "050_0_f25v",
 "folio": "f25v",
 "scan": "050.jpg",
+"title": "leaf 25, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/050_0_f25v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4768211920529801,
 "w": 1365,
 "h": 1800
@@ -813,16 +1156,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 9,
+"lines_by_status": {
+"two_runs_agree": 9
+}
 },
 {
 "image": "051_0_f26r",
 "folio": "f26r",
 "scan": "051.jpg",
+"title": "leaf 26, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/051_0_f26r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4807692307692308,
 "w": 1311,
 "h": 1800
@@ -830,67 +1180,97 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 35,
+"lines_by_status": {
+"two_runs_agree": 34,
+"human_confirmed": 1
+}
 },
 {
 "image": "052_0_f26v",
 "folio": "f26v",
 "scan": "052.jpg",
+"title": "leaf 26, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/052_0_f26v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 10,
+"lines_by_status": {
+"two_runs_agree": 10
+}
 },
 {
 "image": "053_0_f27r",
 "folio": "f27r",
 "scan": "053.jpg",
+"title": "leaf 27, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/053_0_f27r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4807692307692308,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4808976756612343,
 "w": 1302,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 22,
+"lines_by_status": {
+"two_runs_agree": 22
+}
 },
 {
 "image": "054_0_f27v",
 "folio": "f27v",
 "scan": "054.jpg",
+"title": "leaf 27, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/054_0_f27v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 16,
+"lines_by_status": {
+"two_runs_agree": 14,
+"human_confirmed": 2
+}
 },
 {
 "image": "055_0_f28r",
 "folio": "f28r",
 "scan": "055.jpg",
+"title": "leaf 28, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/055_0_f28r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4807692307692308,
 "w": 1311,
 "h": 1800
@@ -898,50 +1278,73 @@
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 4,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 17,
+"human_confirmed": 1
+}
 },
 {
 "image": "056_0_f28v",
 "folio": "f28v",
 "scan": "056.jpg",
+"title": "leaf 28, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/056_0_f28v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4751847940865892,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47531027198310005,
 "w": 1371,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 2,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 12,
+"lines_by_status": {
+"two_runs_agree": 11,
+"human_confirmed": 1
+}
 },
 {
 "image": "057_0_f29r",
 "folio": "f29r",
 "scan": "057.jpg",
+"title": "leaf 29, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/057_0_f29r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1305,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 15,
+"lines_by_status": {
+"two_runs_agree": 15
+}
 },
 {
 "image": "058_0_f29v",
 "folio": "f29v",
 "scan": "058.jpg",
+"title": "leaf 29, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/058_0_f29v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47568710359408034,
 "w": 1368,
 "h": 1800
@@ -949,118 +1352,171 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 33,
+"lines_by_status": {
+"two_runs_agree": 33
+}
 },
 {
 "image": "059_0_f30r",
 "folio": "f30r",
 "scan": "059.jpg",
+"title": "leaf 30, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/059_0_f30r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48025613660619,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4803843074459568,
 "w": 1317,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 20,
+"lines_by_status": {
+"two_runs_agree": 20
+}
 },
 {
 "image": "060_0_f30v",
 "folio": "f30v",
 "scan": "060.jpg",
+"title": "leaf 30, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/060_0_f30v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 17,
+"lines_by_status": {
+"two_runs_agree": 15,
+"human_confirmed": 1,
+"unclear": 1
+}
 },
 {
 "image": "061_0_f31r",
 "folio": "f31r",
 "scan": "061.jpg",
+"title": "leaf 31, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/061_0_f31r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48025613660619,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4803843074459568,
 "w": 1305,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 21,
+"lines_by_status": {
+"two_runs_agree": 20,
+"human_confirmed": 1
+}
 },
 {
 "image": "062_0_f31v",
 "folio": "f31v",
 "scan": "062.jpg",
+"title": "leaf 31, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/062_0_f31v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 13,
+"lines_by_status": {
+"two_runs_agree": 13
+}
 },
 {
 "image": "063_0_f32r",
 "folio": "f32r",
 "scan": "063.jpg",
+"title": "leaf 32, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/063_0_f32r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48166978860048165,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4817987152034261,
 "w": 1317,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 25,
+"lines_by_status": {
+"two_runs_agree": 25
+}
 },
 {
 "image": "064_0_f32v",
 "folio": "f32v",
 "scan": "064.jpg",
+"title": "leaf 32, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/064_0_f32v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 20,
+"lines_by_status": {
+"two_runs_agree": 19,
+"human_corrected": 1
+}
 },
 {
 "image": "065_0_f33r",
 "folio": "f33r",
 "scan": "065.jpg",
+"title": "leaf 33, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/065_0_f33r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4805125467164976,
 "w": 1329,
 "h": 1800
@@ -1068,33 +1524,47 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 7,
+"lines_by_status": {
+"two_runs_agree": 7
+}
 },
 {
 "image": "066_0_f33v",
 "folio": "f33v",
 "scan": "066.jpg",
+"title": "leaf 33, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/066_0_f33v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4764425622022234,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4765687053216839,
 "w": 1368,
 "h": 1800
 },
-"boundary_source": "opus",
-"status": "unreviewed",
+"boundary_source": "opus+human-corrected",
+"status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 43,
+"lines_by_status": {
+"two_runs_agree": 43
+}
 },
 {
 "image": "067_0_f34r",
 "folio": "f34r",
 "scan": "067.jpg",
+"title": "leaf 34, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/067_0_f34r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4807692307692308,
 "w": 1335,
 "h": 1800
@@ -1102,50 +1572,74 @@
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 46,
+"lines_by_status": {
+"two_runs_agree": 41,
+"human_confirmed": 3,
+"human_corrected": 2
+}
 },
 {
 "image": "068_0_f34v",
 "folio": "f34v",
 "scan": "068.jpg",
+"title": "leaf 34, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/068_0_f34v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47480875758375096,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47493403693931396,
 "w": 1368,
 "h": 1800
 },
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 11,
+"lines_by_status": {
+"two_runs_agree": 11
+}
 },
 {
 "image": "069_0_f35r",
 "folio": "f35r",
 "scan": "069.jpg",
+"title": "leaf 35, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/069_0_f35r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1341,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 20,
+"lines_by_status": {
+"two_runs_agree": 19,
+"human_confirmed": 1
+}
 },
 {
 "image": "070_0_f35v",
 "folio": "f35v",
 "scan": "070.jpg",
+"title": "leaf 35, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/070_0_f35v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47745358090185674,
 "w": 1362,
 "h": 1800
@@ -1153,186 +1647,264 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 22,
+"lines_by_status": {
+"two_runs_agree": 22
+}
 },
 {
 "image": "071_0_f36r",
 "folio": "f36r",
 "scan": "071.jpg",
+"title": "leaf 36, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/071_0_f36r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1341,
 "h": 1800
 },
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 17,
+"lines_by_status": {
+"two_runs_agree": 17
+}
 },
 {
 "image": "072_0_f36v",
 "folio": "f36v",
 "scan": "072.jpg",
+"title": "leaf 36, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/072_0_f36v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 2,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 17,
+"lines_by_status": {
+"two_runs_agree": 17
+}
 },
 {
 "image": "073_0_f37r",
 "folio": "f37r",
 "scan": "073.jpg",
+"title": "leaf 37, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/073_0_f37r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1341,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 16,
+"lines_by_status": {
+"two_runs_agree": 15,
+"human_confirmed": 1
+}
 },
 {
 "image": "074_0_f37v",
 "folio": "f37v",
 "scan": "074.jpg",
+"title": "leaf 37, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/074_0_f37v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4766949152542373,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4768211920529801,
 "w": 1374,
 "h": 1800
 },
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 23,
+"lines_by_status": {
+"two_runs_agree": 23
+}
 },
 {
 "image": "075_0_f38r",
 "folio": "f38r",
 "scan": "075.jpg",
+"title": "leaf 38, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/075_0_f38r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1341,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 13,
+"lines_by_status": {
+"two_runs_agree": 13
+}
 },
 {
 "image": "076_0_f38v",
 "folio": "f38v",
 "scan": "076.jpg",
+"title": "leaf 38, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/076_0_f38v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4766949152542373,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4768211920529801,
 "w": 1374,
 "h": 1800
 },
-"boundary_source": "opus",
-"status": "unreviewed",
-"holes": 0,
-"holes_source": "opus-none-marked"
+"boundary_source": "opus+human-corrected",
+"status": "final",
+"holes": 1,
+"holes_source": "human",
+"lines": 15,
+"lines_by_status": {
+"two_runs_agree": 15
+}
 },
 {
 "image": "077_0_f39r",
 "folio": "f39r",
 "scan": "077.jpg",
+"title": "leaf 39, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/077_0_f39r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1341,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 16,
+"lines_by_status": {
+"two_runs_agree": 16
+}
 },
 {
 "image": "078_0_f39v",
 "folio": "f39v",
 "scan": "078.jpg",
+"title": "leaf 39, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/078_0_f39v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4766949152542373,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4768211920529801,
 "w": 1374,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 21,
+"lines_by_status": {
+"two_runs_agree": 21
+}
 },
 {
 "image": "079_0_f40r",
 "folio": "f40r",
 "scan": "079.jpg",
+"title": "leaf 40, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/079_0_f40r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48115477145148355,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48128342245989303,
 "w": 1344,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 22,
+"lines_by_status": {
+"two_runs_agree": 22
+}
 },
 {
 "image": "080_0_f40v",
 "folio": "f40v",
 "scan": "080.jpg",
+"title": "leaf 40, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/080_0_f40v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4766949152542373,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4768211920529801,
 "w": 1374,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 27,
+"lines_by_status": {
+"two_runs_agree": 27
+}
 },
 {
 "image": "081_0_f41r",
 "folio": "f41r",
 "scan": "081.jpg",
+"title": "leaf 41, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/081_0_f41r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48064085447263016,
 "w": 1365,
 "h": 1800
@@ -1340,33 +1912,49 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 29,
+"lines_by_status": {
+"two_runs_agree": 27,
+"human_confirmed": 2
+}
 },
 {
 "image": "082_0_f41v",
 "folio": "f41v",
 "scan": "082.jpg",
+"title": "leaf 41, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/082_0_f41v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4766949152542373,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4768211920529801,
 "w": 1374,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 34,
+"lines_by_status": {
+"two_runs_agree": 30,
+"human_confirmed": 4
+}
 },
 {
 "image": "083_0_f42r",
 "folio": "f42r",
 "scan": "083.jpg",
+"title": "leaf 42, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/083_0_f42r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.480128034142438,
 "w": 1365,
 "h": 1800
@@ -1374,67 +1962,95 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 31,
+"lines_by_status": {
+"two_runs_agree": 31
+}
 },
 {
 "image": "084_0_f42v",
 "folio": "f42v",
 "scan": "084.jpg",
+"title": "leaf 42, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/084_0_f42v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4766949152542373,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4768211920529801,
 "w": 1374,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 33,
+"lines_by_status": {
+"two_runs_agree": 33
+}
 },
 {
 "image": "085_0_f43r",
 "folio": "f43r",
 "scan": "085.jpg",
+"title": "leaf 43, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/085_0_f43r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47897817988291647,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4791056694170881,
 "w": 1359,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 16,
+"lines_by_status": {
+"two_runs_agree": 16
+}
 },
 {
 "image": "086_0_f43v",
 "folio": "f43v",
 "scan": "086.jpg",
+"title": "leaf 43, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/086_0_f43v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4766949152542373,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4768211920529801,
 "w": 1374,
 "h": 1800
 },
-"boundary_source": "opus",
-"status": "unreviewed",
+"boundary_source": "opus+human-corrected",
+"status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 16,
+"lines_by_status": {
+"two_runs_agree": 16
+}
 },
 {
 "image": "087_0_f44r",
 "folio": "f44r",
 "scan": "087.jpg",
+"title": "leaf 44, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/087_0_f44r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48231511254019294,
 "w": 1350,
 "h": 1800
@@ -1442,33 +2058,48 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 12,
+"lines_by_status": {
+"two_runs_agree": 11,
+"human_confirmed": 1
+}
 },
 {
 "image": "088_0_f44v",
 "folio": "f44v",
 "scan": "088.jpg",
+"title": "leaf 44, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/088_0_f44v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4766949152542373,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4768211920529801,
 "w": 1374,
 "h": 1800
 },
-"boundary_source": "opus",
-"status": "unreviewed",
+"boundary_source": "opus+human-corrected",
+"status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 13,
+"lines_by_status": {
+"two_runs_agree": 13
+}
 },
 {
 "image": "089_0_f45r",
 "folio": "f45r",
 "scan": "089.jpg",
+"title": "leaf 45, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/089_0_f45r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48465266558966075,
 "w": 1368,
 "h": 1800
@@ -1476,16 +2107,23 @@
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 12,
+"lines_by_status": {
+"two_runs_agree": 12
+}
 },
 {
 "image": "090_0_f45v",
 "folio": "f45v",
 "scan": "090.jpg",
+"title": "leaf 45, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/090_0_f45v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4769475357710652,
 "w": 1383,
 "h": 1800
@@ -1493,50 +2131,71 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 21,
+"lines_by_status": {
+"two_runs_agree": 21
+}
 },
 {
 "image": "091_0_f46r",
 "folio": "f46r",
 "scan": "091.jpg",
+"title": "leaf 46, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/091_0_f46r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48374092985756517,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4838709677419355,
 "w": 1386,
 "h": 1800
 },
-"boundary_source": "opus",
-"status": "unreviewed",
-"holes": 0,
-"holes_source": "opus-none-marked"
+"boundary_source": "opus+human-corrected",
+"status": "final",
+"holes": 1,
+"holes_source": "human",
+"lines": 17,
+"lines_by_status": {
+"two_runs_agree": 17
+}
 },
 {
 "image": "092_0_f46v",
 "folio": "f46v",
 "scan": "092.jpg",
+"title": "leaf 46, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/092_0_f46v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4768211920529801,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4769475357710652,
 "w": 1401,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 17,
+"lines_by_status": {
+"two_runs_agree": 17
+}
 },
 {
 "image": "093_0_f47r",
 "folio": "f47r",
 "scan": "093.jpg",
+"title": "leaf 47, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/093_0_f47r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4841312533620226,
 "w": 1368,
 "h": 1800
@@ -1544,16 +2203,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 13,
+"lines_by_status": {
+"two_runs_agree": 13
+}
 },
 {
 "image": "094_0_f47v",
 "folio": "f47v",
 "scan": "094.jpg",
+"title": "leaf 47, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/094_0_f47v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4768211920529801,
 "w": 1398,
 "h": 1800
@@ -1561,16 +2227,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 25,
+"lines_by_status": {
+"two_runs_agree": 25
+}
 },
 {
 "image": "095_0_f48r",
 "folio": "f48r",
 "scan": "095.jpg",
+"title": "leaf 48, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/095_0_f48r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48374092985756517,
 "w": 1383,
 "h": 1800
@@ -1578,67 +2251,99 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 10,
+"lines_by_status": {
+"two_runs_agree": 9,
+"human_confirmed": 1
+}
 },
 {
 "image": "096_0_f48v",
 "folio": "f48v",
 "scan": "096.jpg",
+"title": "leaf 48, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/096_0_f48v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4769475357710652,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47707394646170154,
 "w": 1407,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 30,
+"lines_by_status": {
+"two_runs_agree": 27,
+"human_drawn": 2,
+"human_confirmed": 1
+}
 },
 {
 "image": "097_0_f49r",
 "folio": "f49r",
 "scan": "097.jpg",
+"title": "leaf 49, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/097_0_f49r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47796070100902815,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47808764940239046,
 "w": 1356,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 22,
+"lines_by_status": {
+"two_runs_agree": 22
+}
 },
 {
 "image": "098_0_f49v",
 "folio": "f49v",
 "scan": "098.jpg",
+"title": "leaf 49, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/098_0_f49v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.477326968973747,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47745358090185674,
 "w": 1401,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 44,
+"lines_by_status": {
+"two_runs_agree": 42,
+"human_corrected": 2
+}
 },
 {
 "image": "099_0_f50r",
 "folio": "f50r",
 "scan": "099.jpg",
+"title": "leaf 50, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/099_0_f50r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47961630695443647,
 "w": 1362,
 "h": 1800
@@ -1646,118 +2351,170 @@
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 17,
+"lines_by_status": {
+"two_runs_agree": 17
+}
 },
 {
 "image": "100_0_f50v",
 "folio": "f50v",
 "scan": "100.jpg",
+"title": "leaf 50, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/100_0_f50v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47720042417815484,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.477326968973747,
 "w": 1404,
 "h": 1800
 },
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 15,
+"lines_by_status": {
+"two_runs_agree": 15
+}
 },
 {
 "image": "101_0_f51r",
 "folio": "f51r",
 "scan": "101.jpg",
+"title": "leaf 51, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/101_0_f51r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47720042417815484,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.477326968973747,
 "w": 1353,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 20,
+"lines_by_status": {
+"two_runs_agree": 19,
+"human_confirmed": 1
+}
 },
 {
 "image": "102_0_f51v",
 "folio": "f51v",
 "scan": "102.jpg",
+"title": "leaf 51, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/102_0_f51v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4765687053216839,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4766949152542373,
 "w": 1395,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 21,
+"lines_by_status": {
+"two_runs_agree": 21
+}
 },
 {
 "image": "103_0_f52r",
 "folio": "f52r",
 "scan": "103.jpg",
+"title": "leaf 52, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/103_0_f52r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4787234042553192,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4788507581803671,
 "w": 1353,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 16,
+"lines_by_status": {
+"two_runs_agree": 13,
+"human_confirmed": 3
+}
 },
 {
 "image": "104_0_f52v",
 "folio": "f52v",
 "scan": "104.jpg",
+"title": "leaf 52, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/104_0_f52v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.477326968973747,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47745358090185674,
 "w": 1401,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 15,
+"lines_by_status": {
+"two_runs_agree": 14,
+"human_confirmed": 1
+}
 },
 {
 "image": "105_0_f53r",
 "folio": "f53r",
 "scan": "105.jpg",
+"title": "leaf 53, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/105_0_f53r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4854368932038835,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4855678446182897,
 "w": 1356,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 14,
+"lines_by_status": {
+"two_runs_agree": 14
+}
 },
 {
 "image": "106_0_f53v",
 "folio": "f53v",
 "scan": "106.jpg",
+"title": "leaf 53, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/106_0_f53v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47758026001591936,
 "w": 1404,
 "h": 1800
@@ -1765,16 +2522,23 @@
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 13,
+"lines_by_status": {
+"two_runs_agree": 13
+}
 },
 {
 "image": "107_0_f54r",
 "folio": "f54r",
 "scan": "107.jpg",
+"title": "leaf 54, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/107_0_f54r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4833512352309345,
 "w": 1350,
 "h": 1800
@@ -1782,16 +2546,23 @@
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 27,
+"lines_by_status": {
+"two_runs_agree": 27
+}
 },
 {
 "image": "108_0_f54v",
 "folio": "f54v",
 "scan": "108.jpg",
+"title": "leaf 54, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/108_0_f54v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47720042417815484,
 "w": 1431,
 "h": 1800
@@ -1799,84 +2570,124 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 26,
+"lines_by_status": {
+"two_runs_agree": 22,
+"human_confirmed": 4
+}
 },
 {
 "image": "109_0_f55r",
 "folio": "f55r",
 "scan": "109.jpg",
+"title": "leaf 55, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/109_0_f55r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48115477145148355,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48128342245989303,
 "w": 1344,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 15,
+"lines_by_status": {
+"two_runs_agree": 14,
+"human_confirmed": 1
+}
 },
 {
 "image": "110_0_f55v",
 "folio": "f55v",
 "scan": "110.jpg",
+"title": "leaf 55, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/110_0_f55v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.477326968973747,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47745358090185674,
 "w": 1422,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 26,
+"lines_by_status": {
+"two_runs_agree": 25,
+"human_confirmed": 1
+}
 },
 {
 "image": "111_0_f56r",
 "folio": "f56r",
 "scan": "111.jpg",
+"title": "leaf 56, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/111_0_f56r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4854368932038835,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4855678446182897,
 "w": 1356,
 "h": 1800
 },
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 22,
+"lines_by_status": {
+"two_runs_agree": 21,
+"human_confirmed": 1
+}
 },
 {
 "image": "112_0_f56v",
 "folio": "f56v",
 "scan": "112.jpg",
+"title": "leaf 56, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/112_0_f56v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.477326968973747,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47745358090185674,
 "w": 1422,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 17,
+"human_confirmed": 1
+}
 },
 {
 "image": "113_0_f57r",
 "folio": "f57r",
 "scan": "113.jpg",
+"title": "leaf 57, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/113_0_f57r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4814121422840332,
 "w": 1359,
 "h": 1800
@@ -1884,16 +2695,24 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 31,
+"lines_by_status": {
+"two_runs_agree": 23,
+"human_confirmed": 8
+}
 },
 {
 "image": "114_0_f57v",
 "folio": "f57v",
 "scan": "114.jpg",
+"title": "leaf 57, back (verso) — cosmological",
+"kind": "page",
+"section": "cosmological",
 "display": {
 "file": "img/114_0_f57v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47758026001591936,
 "w": 1446,
 "h": 1800
@@ -1901,67 +2720,96 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 15,
+"lines_by_status": {
+"two_runs_agree": 15
+}
 },
 {
 "image": "115_0_f58r",
 "folio": "f58r",
 "scan": "115.jpg",
+"title": "leaf 58, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/115_0_f58r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1341,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 49,
+"lines_by_status": {
+"two_runs_agree": 49
+}
 },
 {
 "image": "116_0_f58v",
 "folio": "f58v",
 "scan": "116.jpg",
+"title": "leaf 58, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/116_0_f58v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47720042417815484,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.477326968973747,
 "w": 1425,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 116,
+"lines_by_status": {
+"two_runs_agree": 114,
+"human_confirmed": 2
+}
 },
 {
 "image": "117_0_f65r",
 "folio": "f65r",
 "scan": "117.jpg",
+"title": "leaf 65, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/117_0_f65r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4854368932038835,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4855678446182897,
 "w": 1356,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 1,
+"lines_by_status": {
+"two_runs_agree": 1
+}
 },
 {
 "image": "118_0_f65v",
 "folio": "f65v",
 "scan": "118.jpg",
+"title": "leaf 65, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/118_0_f65v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47745358090185674,
 "w": 1437,
 "h": 1800
@@ -1969,67 +2817,450 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 17,
+"human_confirmed": 1
+}
 },
 {
 "image": "119_0_f66r",
 "folio": "f66r",
 "scan": "119.jpg",
+"title": "leaf 66, front (recto) — text only",
+"kind": "page",
+"section": "text only",
 "display": {
 "file": "img/119_0_f66r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4854368932038835,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4855678446182897,
 "w": 1356,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 56,
+"lines_by_status": {
+"two_runs_agree": 51,
+"human_confirmed": 4,
+"human_corrected": 1
+}
 },
 {
 "image": "120_0_f66v",
 "folio": "f66v",
 "scan": "120.jpg",
+"title": "leaf 66, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/120_0_f66v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47745358090185674,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47758026001591936,
 "w": 1431,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 21,
+"lines_by_status": {
+"two_runs_agree": 19,
+"human_confirmed": 2
+}
+},
+{
+"image": "121_P0_f67r1",
+"folio": "f67r1",
+"scan": "121.jpg",
+"title": "leaf 67, front (recto), panel 1 — astronomical",
+"kind": "foldout panel",
+"section": "astronomical",
+"display": {
+"file": "img/121_P0_f67r1.jpg",
+"scan_x0": 114,
+"scan_y0": 58,
+"scale": 0.49627791563275436,
+"w": 1220,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 1,
+"holes_source": "opus",
+"lines": 33,
+"lines_by_status": {
+"two_runs_agree": 30,
+"human_confirmed": 1,
+"human_corrected": 1,
+"human_drawn": 1
+}
+},
+{
+"image": "121_P1_f67r2",
+"folio": "f67r2",
+"scan": "121.jpg",
+"title": "leaf 67, front (recto), panel 2 — astronomical",
+"kind": "foldout panel",
+"section": "astronomical",
+"display": {
+"file": "img/121_P1_f67r2.jpg",
+"scan_x0": 2441,
+"scan_y0": 60,
+"scale": 0.49019607843137253,
+"w": 1230,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 1,
+"holes_source": "opus",
+"lines": 96,
+"lines_by_status": {
+"two_runs_agree": 92,
+"human_confirmed": 3,
+"human_corrected": 1
+}
+},
+{
+"image": "122_P1_f67v1",
+"folio": "f67v1",
+"scan": "122.jpg",
+"title": "leaf 67, back (verso), panel 1 — astronomical",
+"kind": "foldout panel",
+"section": "astronomical",
+"display": {
+"file": "img/122_P1_f67v1.jpg",
+"scan_x0": 2429,
+"scan_y0": 33,
+"scale": 0.48426150121065376,
+"w": 1214,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 1,
+"holes_source": "opus",
+"lines": 34,
+"lines_by_status": {
+"two_runs_agree": 33,
+"human_confirmed": 1
+}
+},
+{
+"image": "122_P0_f67v2",
+"folio": "f67v2",
+"scan": "122.jpg",
+"title": "leaf 67, back (verso), panel 2 — cosmological",
+"kind": "foldout panel",
+"section": "cosmological",
+"display": {
+"file": "img/122_P0_f67v2.jpg",
+"scan_x0": 27,
+"scan_y0": 1,
+"scale": 0.480128034142438,
+"w": 1235,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 1,
+"holes_source": "opus",
+"lines": 21,
+"lines_by_status": {
+"two_runs_agree": 20,
+"human_confirmed": 1
+}
+},
+{
+"image": "123_P0_f68r1",
+"folio": "f68r1",
+"scan": "123.jpg",
+"title": "leaf 68, front (recto), panel 1 — astronomical",
+"kind": "foldout panel",
+"section": "astronomical",
+"display": {
+"file": "img/123_P0_f68r1.jpg",
+"scan_x0": 191,
+"scan_y0": 53,
+"scale": 0.4888647474198805,
+"w": 1141,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 43,
+"lines_by_status": {
+"two_runs_agree": 40,
+"human_confirmed": 2,
+"human_drawn": 1
+}
+},
+{
+"image": "123_P1_f68r2",
+"folio": "f68r2",
+"scan": "123.jpg",
+"title": "leaf 68, front (recto), panel 2 — astronomical",
+"kind": "foldout panel",
+"section": "astronomical",
+"display": {
+"file": "img/123_P1_f68r2.jpg",
+"scan_x0": 2399,
+"scan_y0": 86,
+"scale": 0.4928806133625411,
+"w": 1076,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 38,
+"lines_by_status": {
+"two_runs_agree": 38
+}
+},
+{
+"image": "123_P2_f68r3",
+"folio": "f68r3",
+"scan": "123.jpg",
+"title": "leaf 68, front (recto), panel 3 — astronomical",
+"kind": "foldout panel",
+"section": "astronomical",
+"display": {
+"file": "img/123_P2_f68r3.jpg",
+"scan_x0": 4428,
+"scan_y0": 125,
+"scale": 0.497787610619469,
+"w": 1751,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 28,
+"lines_by_status": {
+"two_runs_agree": 28
+}
+},
+{
+"image": "124_P2_f68v1",
+"folio": "f68v1",
+"scan": "124.jpg",
+"title": "leaf 68, back (verso), panel 1 — astronomical",
+"kind": "foldout panel",
+"section": "astronomical",
+"display": {
+"file": "img/124_P2_f68v1.jpg",
+"scan_x0": 5530,
+"scan_y0": 61,
+"scale": 0.48688125507167973,
+"w": 1216,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 17,
+"human_confirmed": 1
+}
+},
+{
+"image": "124_P1_f68v2",
+"folio": "f68v2",
+"scan": "124.jpg",
+"title": "leaf 68, back (verso), panel 2 — astronomical",
+"kind": "foldout panel",
+"section": "astronomical",
+"display": {
+"file": "img/124_P1_f68v2.jpg",
+"scan_x0": 3469,
+"scan_y0": 74,
+"scale": 0.48859934853420195,
+"w": 1085,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 34,
+"lines_by_status": {
+"two_runs_agree": 34
+}
+},
+{
+"image": "124_P0_f68v3",
+"folio": "f68v3",
+"scan": "124.jpg",
+"title": "leaf 68, back (verso), panel 3 — cosmological",
+"kind": "foldout panel",
+"section": "cosmological",
+"display": {
+"file": "img/124_P0_f68v3.jpg",
+"scan_x0": 60,
+"scan_y0": 99,
+"scale": 0.4909983633387889,
+"w": 1758,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 26,
+"lines_by_status": {
+"two_runs_agree": 26
+}
 },
 {
 "image": "125_0_f69r",
 "folio": "f69r",
 "scan": "125.jpg",
+"title": "leaf 69, front (recto) — cosmological",
+"kind": "page",
+"section": "cosmological",
 "display": {
 "file": "img/125_0_f69r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47796070100902815,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47808764940239046,
 "w": 1335,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 39,
+"lines_by_status": {
+"two_runs_agree": 37,
+"human_confirmed": 2
+}
+},
+{
+"image": "126_P0_f69v",
+"folio": "f69v",
+"scan": "126.jpg",
+"title": "leaf 69, back (verso) — cosmological",
+"kind": "foldout panel",
+"section": "cosmological",
+"display": {
+"file": "img/126_P0_f69v.jpg",
+"scan_x0": 563,
+"scan_y0": 68,
+"scale": 0.4880694143167028,
+"w": 1243,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 50,
+"lines_by_status": {
+"two_runs_agree": 50
+}
+},
+{
+"image": "126_P1_f70r1",
+"folio": "f70r1",
+"scan": "126.jpg",
+"title": "leaf 70, front (recto), panel 1 — cosmological",
+"kind": "foldout panel",
+"section": "cosmological",
+"display": {
+"file": "img/126_P1_f70r1.jpg",
+"scan_x0": 2956,
+"scan_y0": 46,
+"scale": 0.4817987152034261,
+"w": 1163,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 50,
+"lines_by_status": {
+"two_runs_agree": 30,
+"human_confirmed": 18,
+"human_corrected": 1,
+"unclear": 1
+}
+},
+{
+"image": "126_P2_f70r2",
+"folio": "f70r2",
+"scan": "126.jpg",
+"title": "leaf 70, front (recto), panel 2 — cosmological",
+"kind": "foldout panel",
+"section": "cosmological",
+"display": {
+"file": "img/126_P2_f70r2.jpg",
+"scan_x0": 5227,
+"scan_y0": 66,
+"scale": 0.4784688995215311,
+"w": 1726,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 32,
+"lines_by_status": {
+"two_runs_agree": 32
+}
+},
+{
+"image": "128_0_f70v1",
+"folio": "f70v1",
+"scan": "128.jpg",
+"title": "leaf 70, back (verso) — zodiac",
+"kind": "page",
+"section": "zodiac",
+"display": {
+"file": "img/128_0_f70v1.jpg",
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4864864864864865,
+"w": 1449,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 33,
+"lines_by_status": {
+"two_runs_agree": 32,
+"human_confirmed": 1
+}
 },
 {
 "image": "127_0_f70v2",
 "folio": "f70v2",
 "scan": "127.jpg",
+"title": "leaf 70, back (verso) — zodiac",
+"kind": "page",
+"section": "zodiac",
 "display": {
 "file": "img/127_0_f70v2.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4768211920529801,
 "w": 1881,
 "h": 1800
@@ -2037,50 +3268,146 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
-},
-{
-"image": "128_0_f70v1",
-"folio": "f70v1",
-"scan": "128.jpg",
-"display": {
-"file": "img/128_0_f70v1.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4863550391786004,
-"w": 1449,
-"h": 1800
-},
-"boundary_source": "opus",
-"status": "unreviewed",
-"holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 37,
+"lines_by_status": {
+"two_runs_agree": 37
+}
 },
 {
 "image": "129_0_f71r",
 "folio": "f71r",
 "scan": "129.jpg",
+"title": "leaf 71, front (recto) — zodiac",
+"kind": "page",
+"section": "zodiac",
 "display": {
 "file": "img/129_0_f71r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47796070100902815,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47808764940239046,
 "w": 1335,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 45,
+"lines_by_status": {
+"two_runs_agree": 45
+}
+},
+{
+"image": "130_P0_f71v",
+"folio": "f71v",
+"scan": "130.jpg",
+"title": "leaf 71, back (verso) — zodiac",
+"kind": "foldout panel",
+"section": "zodiac",
+"display": {
+"file": "img/130_P0_f71v.jpg",
+"scan_x0": 387,
+"scan_y0": 85,
+"scale": 0.6234845860755109,
+"w": 1254,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 37,
+"lines_by_status": {
+"two_runs_agree": 37
+}
+},
+{
+"image": "130_P1_f72r1",
+"folio": "f72r1",
+"scan": "130.jpg",
+"title": "leaf 72, front (recto), panel 1 — zodiac",
+"kind": "foldout panel",
+"section": "zodiac",
+"display": {
+"file": "img/130_P1_f72r1.jpg",
+"scan_x0": 2263,
+"scan_y0": 83,
+"scale": 0.6293706293706294,
+"w": 1279,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 1,
+"holes_source": "opus",
+"lines": 29,
+"lines_by_status": {
+"two_runs_agree": 29
+}
+},
+{
+"image": "130_P2_f72r2",
+"folio": "f72r2",
+"scan": "130.jpg",
+"title": "leaf 72, front (recto), panel 2 — zodiac",
+"kind": "foldout panel",
+"section": "zodiac",
+"display": {
+"file": "img/130_P2_f72r2.jpg",
+"scan_x0": 4150,
+"scan_y0": 89,
+"scale": 0.6405693950177936,
+"w": 1233,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 44,
+"lines_by_status": {
+"two_runs_agree": 41,
+"human_confirmed": 3
+}
+},
+{
+"image": "130_P3_f72r3",
+"folio": "f72r3",
+"scan": "130.jpg",
+"title": "leaf 72, front (recto), panel 3 — zodiac",
+"kind": "foldout panel",
+"section": "zodiac",
+"display": {
+"file": "img/130_P3_f72r3.jpg",
+"scan_x0": 5904,
+"scan_y0": 106,
+"scale": 0.6335797254487856,
+"w": 1859,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 80,
+"lines_by_status": {
+"two_runs_agree": 70,
+"human_confirmed": 9,
+"human_corrected": 1
+}
 },
 {
 "image": "132_0_f72v1",
 "folio": "f72v1",
 "scan": "132.jpg",
+"title": "leaf 72, back (verso) — zodiac",
+"kind": "page",
+"section": "zodiac",
 "display": {
 "file": "img/132_0_f72v1.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48439181916038754,
 "w": 1443,
 "h": 1800
@@ -2088,84 +3415,179 @@
 "boundary_source": "opus+human-corrected",
 "status": "final",
 "holes": 1,
-"holes_source": "human"
+"holes_source": "human",
+"lines": 72,
+"lines_by_status": {
+"two_runs_agree": 58,
+"human_confirmed": 13,
+"human_corrected": 1
+}
+},
+{
+"image": "131_P1_f72v2",
+"folio": "f72v2",
+"scan": "131.jpg",
+"title": "leaf 72, back (verso), panel 2 — zodiac",
+"kind": "foldout panel",
+"section": "zodiac",
+"display": {
+"file": "img/131_P1_f72v2.jpg",
+"scan_x0": 3449,
+"scan_y0": 79,
+"scale": 0.5029337803855826,
+"w": 1180,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 60,
+"lines_by_status": {
+"two_runs_agree": 56,
+"human_confirmed": 4
+}
+},
+{
+"image": "131_P0_f72v3",
+"folio": "f72v3",
+"scan": "131.jpg",
+"title": "leaf 72, back (verso), panel 3 — zodiac",
+"kind": "foldout panel",
+"section": "zodiac",
+"display": {
+"file": "img/131_P0_f72v3.jpg",
+"scan_x0": 34,
+"scan_y0": 104,
+"scale": 0.5091937765205092,
+"w": 1836,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 53,
+"lines_by_status": {
+"two_runs_agree": 47,
+"human_confirmed": 3,
+"human_corrected": 3
+}
 },
 {
 "image": "133_0_f73r",
 "folio": "f73r",
 "scan": "133.jpg",
+"title": "leaf 73, front (recto) — zodiac",
+"kind": "page",
+"section": "zodiac",
 "display": {
 "file": "img/133_0_f73r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4784688995215311,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4785961180537091,
 "w": 1356,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 38,
+"lines_by_status": {
+"two_runs_agree": 35,
+"human_confirmed": 2,
+"human_corrected": 1
+}
 },
 {
 "image": "134_0_f73v",
 "folio": "f73v",
 "scan": "134.jpg",
+"title": "leaf 73, back (verso) — zodiac",
+"kind": "page",
+"section": "zodiac",
 "display": {
 "file": "img/134_0_f73v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4833512352309345,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48348106365834004,
 "w": 1440,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 59,
+"lines_by_status": {
+"two_runs_agree": 57,
+"human_confirmed": 1,
+"human_corrected": 1
+}
 },
 {
 "image": "135_0_f75r",
 "folio": "f75r",
 "scan": "135.jpg",
+"title": "leaf 75, front (recto) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/135_0_f75r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4785961180537091,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4787234042553192,
 "w": 1365,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 88,
+"lines_by_status": {
+"two_runs_agree": 87,
+"human_confirmed": 1
+}
 },
 {
 "image": "136_0_f75v",
 "folio": "f75v",
 "scan": "136.jpg",
+"title": "leaf 75, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/136_0_f75v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48115477145148355,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48128342245989303,
 "w": 1380,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 105,
+"lines_by_status": {
+"two_runs_agree": 103,
+"human_confirmed": 1,
+"human_corrected": 1
+}
 },
 {
 "image": "137_0_f76r",
 "folio": "f76r",
 "scan": "137.jpg",
+"title": "leaf 76, front (recto) — text only",
+"kind": "page",
+"section": "text only",
 "display": {
 "file": "img/137_0_f76r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4769475357710652,
 "w": 1332,
 "h": 1800
@@ -2173,16 +3595,24 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 53,
+"lines_by_status": {
+"two_runs_agree": 52,
+"human_confirmed": 1
+}
 },
 {
 "image": "138_0_f76v",
 "folio": "f76v",
 "scan": "138.jpg",
+"title": "leaf 76, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/138_0_f76v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48465266558966075,
 "w": 1368,
 "h": 1800
@@ -2190,16 +3620,24 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 56,
+"lines_by_status": {
+"two_runs_agree": 55,
+"human_confirmed": 1
+}
 },
 {
 "image": "139_0_f77r",
 "folio": "f77r",
 "scan": "139.jpg",
+"title": "leaf 77, front (recto) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/139_0_f77r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4791056694170881,
 "w": 1338,
 "h": 1800
@@ -2207,67 +3645,98 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 146,
+"lines_by_status": {
+"two_runs_agree": 136,
+"human_confirmed": 10
+}
 },
 {
 "image": "140_0_f77v",
 "folio": "f77v",
 "scan": "140.jpg",
+"title": "leaf 77, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/140_0_f77v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4864864864864865,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48661800486618007,
 "w": 1392,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 48,
+"lines_by_status": {
+"two_runs_agree": 47,
+"human_confirmed": 1
+}
 },
 {
 "image": "141_0_f78r",
 "folio": "f78r",
 "scan": "141.jpg",
+"title": "leaf 78, front (recto) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/141_0_f78r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47796070100902815,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47808764940239046,
 "w": 1335,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 54,
+"lines_by_status": {
+"two_runs_agree": 53,
+"human_confirmed": 1
+}
 },
 {
 "image": "142_0_f78v",
 "folio": "f78v",
 "scan": "142.jpg",
+"title": "leaf 78, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/142_0_f78v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48465266558966075,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4847831941826017,
 "w": 1377,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 33,
+"lines_by_status": {
+"two_runs_agree": 33
+}
 },
 {
 "image": "143_0_f79r",
 "folio": "f79r",
 "scan": "143.jpg",
+"title": "leaf 79, front (recto) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/143_0_f79r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4784688995215311,
 "w": 1332,
 "h": 1800
@@ -2275,203 +3744,292 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 66,
+"lines_by_status": {
+"two_runs_agree": 64,
+"human_confirmed": 2
+}
 },
 {
 "image": "144_0_f79v",
 "folio": "f79v",
 "scan": "144.jpg",
+"title": "leaf 79, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/144_0_f79v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4845222072678331,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48465266558966075,
 "w": 1362,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 51,
+"lines_by_status": {
+"two_runs_agree": 49,
+"human_confirmed": 1,
+"human_corrected": 1
+}
 },
 {
 "image": "145_0_f80r",
 "folio": "f80r",
 "scan": "145.jpg",
+"title": "leaf 80, front (recto) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/145_0_f80r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48115477145148355,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48128342245989303,
 "w": 1344,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 59,
+"lines_by_status": {
+"two_runs_agree": 59
+}
 },
 {
 "image": "146_0_f80v",
 "folio": "f80v",
 "scan": "146.jpg",
+"title": "leaf 80, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/146_0_f80v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48426150121065376,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48439181916038754,
 "w": 1374,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 49,
+"lines_by_status": {
+"two_runs_agree": 47,
+"human_confirmed": 2
+}
 },
 {
 "image": "147_0_f81r",
 "folio": "f81r",
 "scan": "147.jpg",
+"title": "leaf 81, front (recto) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/147_0_f81r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4808976756612343,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48102618920363444,
 "w": 1335,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 33,
+"lines_by_status": {
+"two_runs_agree": 33
+}
 },
 {
 "image": "148_0_f81v",
 "folio": "f81v",
 "scan": "148.jpg",
+"title": "leaf 81, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/148_0_f81v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48569886670264434,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48582995951417,
 "w": 1377,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 28,
+"lines_by_status": {
+"two_runs_agree": 28
+}
 },
 {
 "image": "149_0_f82r",
 "folio": "f82r",
 "scan": "149.jpg",
+"title": "leaf 82, front (recto) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/149_0_f82r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4805125467164976,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48064085447263016,
 "w": 1323,
 "h": 1800
 },
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 59,
+"lines_by_status": {
+"two_runs_agree": 59
+}
 },
 {
 "image": "150_0_f82v",
 "folio": "f82v",
 "scan": "150.jpg",
+"title": "leaf 82, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/150_0_f82v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4849137931034483,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4850444624090542,
 "w": 1368,
 "h": 1800
 },
 "boundary_source": "opus+human-checked",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 51,
+"lines_by_status": {
+"two_runs_agree": 51
+}
 },
 {
 "image": "151_0_f83r",
 "folio": "f83r",
 "scan": "151.jpg",
+"title": "leaf 83, front (recto) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/151_0_f83r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4805125467164976,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48064085447263016,
 "w": 1323,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 55,
+"lines_by_status": {
+"two_runs_agree": 55
+}
 },
 {
 "image": "152_0_f83v",
 "folio": "f83v",
 "scan": "152.jpg",
+"title": "leaf 83, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/152_0_f83v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.487012987012987,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4871447902571042,
 "w": 1392,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 37,
+"lines_by_status": {
+"two_runs_agree": 37
+}
 },
 {
 "image": "153_0_f84r",
 "folio": "f84r",
 "scan": "153.jpg",
+"title": "leaf 84, front (recto) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/153_0_f84r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4805125467164976,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48064085447263016,
 "w": 1323,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 64,
+"lines_by_status": {
+"two_runs_agree": 63,
+"human_confirmed": 1
+}
 },
 {
 "image": "154_0_f84v",
 "folio": "f84v",
 "scan": "154.jpg",
+"title": "leaf 84, back (verso) — biological (bathing)",
+"kind": "page",
+"section": "biological (bathing)",
 "display": {
 "file": "img/154_0_f84v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4862236628849271,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4863550391786004,
 "w": 1380,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 56,
+"lines_by_status": {
+"two_runs_agree": 56
+}
 },
 {
 "image": "155_0_f85r1",
 "folio": "f85r1",
 "scan": "155.jpg",
+"title": "leaf 85, front (recto) — text only",
+"kind": "page",
+"section": "text only",
 "display": {
 "file": "img/155_0_f85r1.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48,
 "w": 1332,
 "h": 1800
@@ -2479,33 +4037,170 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 35,
+"lines_by_status": {
+"two_runs_agree": 35
+}
+},
+{
+"image": "156_P0_f85r2",
+"folio": "f85r2",
+"scan": "156.jpg",
+"title": "leaf 85, front (recto), panel 2 — cosmological",
+"kind": "foldout panel",
+"section": "cosmological",
+"display": {
+"file": "img/156_P0_f85r2.jpg",
+"scan_x0": 571,
+"scan_y0": 147,
+"scale": 0.5156115726152964,
+"w": 1301,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 57,
+"lines_by_status": {
+"two_runs_agree": 57
+}
+},
+{
+"image": "157_P1_f86v3",
+"folio": "f86v3",
+"scan": "157.jpg",
+"title": "leaf 86, back (verso), panel 3 — cosmological",
+"kind": "foldout panel",
+"section": "cosmological",
+"display": {
+"file": "img/157_P1_f86v3.jpg",
+"scan_x0": 2212,
+"scan_y0": 141,
+"scale": 0.4945054945054945,
+"w": 1296,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 57,
+"lines_by_status": {
+"two_runs_agree": 56,
+"human_confirmed": 1
+}
+},
+{
+"image": "156_P1_f86v4",
+"folio": "f86v4",
+"scan": "156.jpg",
+"title": "leaf 86, back (verso), panel 4 — cosmological",
+"kind": "foldout panel",
+"section": "cosmological",
+"display": {
+"file": "img/156_P1_f86v4.jpg",
+"scan_x0": 2947,
+"scan_y0": 139,
+"scale": 0.4995836802664446,
+"w": 1288,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 69,
+"lines_by_status": {
+"two_runs_agree": 69
+}
+},
+{
+"image": "157_P0_f86v5",
+"folio": "f86v5",
+"scan": "157.jpg",
+"title": "leaf 86, back (verso), panel 5 — text only",
+"kind": "foldout panel",
+"section": "text only",
+"display": {
+"file": "img/157_P0_f86v5.jpg",
+"scan_x0": 104,
+"scan_y0": 141,
+"scale": 0.4979253112033195,
+"w": 1117,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 39,
+"lines_by_status": {
+"two_runs_agree": 39
+}
+},
+{
+"image": "156_P2_f86v6",
+"folio": "f86v6",
+"scan": "156.jpg",
+"title": "leaf 86, back (verso), panel 6 — text only",
+"kind": "foldout panel",
+"section": "text only",
+"display": {
+"file": "img/156_P2_f86v6.jpg",
+"scan_x0": 5379,
+"scan_y0": 173,
+"scale": 0.4953219592735278,
+"w": 1107,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 64,
+"lines_by_status": {
+"two_runs_agree": 61,
+"human_confirmed": 3
+}
 },
 {
 "image": "159_0_f87r",
 "folio": "f87r",
 "scan": "159.jpg",
+"title": "leaf 87, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/159_0_f87r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4805125467164976,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48064085447263016,
 "w": 1323,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 19,
+"lines_by_status": {
+"two_runs_agree": 18,
+"human_confirmed": 1
+}
 },
 {
 "image": "160_0_f87v",
 "folio": "f87v",
 "scan": "160.jpg",
+"title": "leaf 87, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/160_0_f87v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4863550391786004,
 "w": 1407,
 "h": 1800
@@ -2513,16 +4208,23 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 37,
+"lines_by_status": {
+"two_runs_agree": 37
+}
 },
 {
 "image": "161_0_f88r",
 "folio": "f88r",
 "scan": "161.jpg",
+"title": "leaf 88, front (recto) — pharmaceutical",
+"kind": "page",
+"section": "pharmaceutical",
 "display": {
 "file": "img/161_0_f88r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4808976756612343,
 "w": 1305,
 "h": 1800
@@ -2530,16 +4232,120 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 38,
+"lines_by_status": {
+"two_runs_agree": 37,
+"human_confirmed": 1
+}
+},
+{
+"image": "162_P0_f88v",
+"folio": "f88v",
+"scan": "162.jpg",
+"title": "leaf 88, back (verso) — pharmaceutical",
+"kind": "foldout panel",
+"section": "pharmaceutical",
+"display": {
+"file": "img/162_P0_f88v.jpg",
+"scan_x0": 405,
+"scan_y0": 65,
+"scale": 0.494641384995878,
+"w": 1234,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 31,
+"lines_by_status": {
+"two_runs_agree": 31
+}
+},
+{
+"image": "162_P1_f89r1",
+"folio": "f89r1",
+"scan": "162.jpg",
+"title": "leaf 89, front (recto), panel 1 — pharmaceutical",
+"kind": "foldout panel",
+"section": "pharmaceutical",
+"display": {
+"file": "img/162_P1_f89r1.jpg",
+"scan_x0": 2763,
+"scan_y0": 72,
+"scale": 0.4945054945054945,
+"w": 1250,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 30,
+"lines_by_status": {
+"two_runs_agree": 30
+}
+},
+{
+"image": "162_P2_f89r2",
+"folio": "f89r2",
+"scan": "162.jpg",
+"title": "leaf 89, front (recto), panel 2 — pharmaceutical",
+"kind": "foldout panel",
+"section": "pharmaceutical",
+"display": {
+"file": "img/162_P2_f89r2.jpg",
+"scan_x0": 5155,
+"scan_y0": 90,
+"scale": 0.49504950495049505,
+"w": 1921,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 13,
+"holes_source": "opus",
+"lines": 63,
+"lines_by_status": {
+"two_runs_agree": 63
+}
+},
+{
+"image": "164_P0_f89v1",
+"folio": "f89v1",
+"scan": "164.jpg",
+"title": "leaf 89, back (verso), panel 1 — pharmaceutical",
+"kind": "foldout panel",
+"section": "pharmaceutical",
+"display": {
+"file": "img/164_P0_f89v1.jpg",
+"scan_x0": 584,
+"scan_y0": 109,
+"scale": 0.4966887417218543,
+"w": 1237,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 6,
+"holes_source": "opus",
+"lines": 25,
+"lines_by_status": {
+"two_runs_agree": 25
+}
 },
 {
 "image": "163_0_f89v2",
 "folio": "f89v2",
 "scan": "163.jpg",
+"title": "leaf 89, back (verso) — pharmaceutical",
+"kind": "page",
+"section": "pharmaceutical",
 "display": {
 "file": "img/163_0_f89v2.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47244094488188976,
 "w": 1986,
 "h": 1800
@@ -2547,169 +4353,366 @@
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 54,
+"lines_by_status": {
+"two_runs_agree": 53,
+"human_confirmed": 1
+}
+},
+{
+"image": "164_P1_f90r1",
+"folio": "f90r1",
+"scan": "164.jpg",
+"title": "leaf 90, front (recto), panel 1 — herbal",
+"kind": "foldout panel",
+"section": "herbal",
+"display": {
+"file": "img/164_P1_f90r1.jpg",
+"scan_x0": 2936,
+"scan_y0": 61,
+"scale": 0.49504950495049505,
+"w": 1236,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 18
+}
+},
+{
+"image": "164_P2_f90r2",
+"folio": "f90r2",
+"scan": "164.jpg",
+"title": "leaf 90, front (recto), panel 2 — herbal",
+"kind": "foldout panel",
+"section": "herbal",
+"display": {
+"file": "img/164_P2_f90r2.jpg",
+"scan_x0": 5299,
+"scan_y0": 77,
+"scale": 0.4983388704318937,
+"w": 1216,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 11,
+"lines_by_status": {
+"two_runs_agree": 11
+}
+},
+{
+"image": "166_0_f90v1",
+"folio": "f90v1",
+"scan": "166.jpg",
+"title": "leaf 90, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
+"display": {
+"file": "img/166_0_f90v1.jpg",
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4863550391786004,
+"w": 1380,
+"h": 1800
+},
+"boundary_source": "human",
+"status": "final",
+"holes": 0,
+"holes_source": "human-not-checked",
+"lines": 30,
+"lines_by_status": {
+"two_runs_agree": 28,
+"human_confirmed": 1,
+"human_corrected": 1
+}
 },
 {
 "image": "165_0_f90v2",
 "folio": "f90v2",
 "scan": "165.jpg",
+"title": "leaf 90, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/165_0_f90v2.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47897817988291647,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4791056694170881,
 "w": 1311,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
-},
-{
-"image": "166_0_f90v1",
-"folio": "f90v1",
-"scan": "166.jpg",
-"display": {
-"file": "img/166_0_f90v1.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4862236628849271,
-"w": 1380,
-"h": 1800
-},
-"boundary_source": "human",
-"status": "final",
-"holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "opus-none-marked",
+"lines": 20,
+"lines_by_status": {
+"two_runs_agree": 17,
+"human_confirmed": 3
+}
 },
 {
 "image": "167_0_f93r",
 "folio": "f93r",
 "scan": "167.jpg",
+"title": "leaf 93, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/167_0_f93r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47897817988291647,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4791056694170881,
 "w": 1302,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 58,
+"lines_by_status": {
+"two_runs_agree": 58
+}
 },
 {
 "image": "168_0_f93v",
 "folio": "f93v",
 "scan": "168.jpg",
+"title": "leaf 93, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/168_0_f93v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4862236628849271,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4863550391786004,
 "w": 1380,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 33,
+"lines_by_status": {
+"two_runs_agree": 31,
+"human_confirmed": 2
+}
 },
 {
 "image": "169_0_f94r",
 "folio": "f94r",
 "scan": "169.jpg",
+"title": "leaf 94, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/169_0_f94r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4783417486048366,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4784688995215311,
 "w": 1305,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 14,
+"lines_by_status": {
+"two_runs_agree": 14
+}
 },
 {
-"image": "171_0_f95v2",
-"folio": "f95v2",
-"scan": "171.jpg",
+"image": "170_P0_f94v",
+"folio": "f94v",
+"scan": "170.jpg",
+"title": "leaf 94, back (verso) — herbal",
+"kind": "foldout panel",
+"section": "herbal",
 "display": {
-"file": "img/171_0_f95v2.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48,
-"w": 1311,
+"file": "img/170_P0_f94v.jpg",
+"scan_x0": 585,
+"scan_y0": 109,
+"scale": 0.49573120352519967,
+"w": 1238,
 "h": 1800
 },
-"boundary_source": "human",
-"status": "final",
+"boundary_source": "opus",
+"status": "unreviewed",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "opus-none-marked",
+"lines": 22,
+"lines_by_status": {
+"two_runs_agree": 22
+}
+},
+{
+"image": "170_P1_f95r1",
+"folio": "f95r1",
+"scan": "170.jpg",
+"title": "leaf 95, front (recto), panel 1 — herbal",
+"kind": "foldout panel",
+"section": "herbal",
+"display": {
+"file": "img/170_P1_f95r1.jpg",
+"scan_x0": 2917,
+"scan_y0": 98,
+"scale": 0.4976499861763893,
+"w": 1255,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 11,
+"lines_by_status": {
+"two_runs_agree": 11
+}
+},
+{
+"image": "170_P2_f95r2",
+"folio": "f95r2",
+"scan": "170.jpg",
+"title": "leaf 95, front (recto), panel 2 — herbal",
+"kind": "foldout panel",
+"section": "herbal",
+"display": {
+"file": "img/170_P2_f95r2.jpg",
+"scan_x0": 5302,
+"scan_y0": 94,
+"scale": 0.49627791563275436,
+"w": 1127,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 9,
+"lines_by_status": {
+"two_runs_agree": 9
+}
 },
 {
 "image": "172_0_f95v1",
 "folio": "f95v1",
 "scan": "172.jpg",
+"title": "leaf 95, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/172_0_f95v1.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4862236628849271,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4863550391786004,
 "w": 1380,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 18,
+"lines_by_status": {
+"two_runs_agree": 18
+}
+},
+{
+"image": "171_0_f95v2",
+"folio": "f95v2",
+"scan": "171.jpg",
+"title": "leaf 95, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
+"display": {
+"file": "img/171_0_f95v2.jpg",
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.480128034142438,
+"w": 1311,
+"h": 1800
+},
+"boundary_source": "human",
+"status": "final",
+"holes": 0,
+"holes_source": "human-not-checked",
+"lines": 12,
+"lines_by_status": {
+"two_runs_agree": 11,
+"human_confirmed": 1
+}
 },
 {
 "image": "173_0_f96r",
 "folio": "f96r",
 "scan": "173.jpg",
+"title": "leaf 96, front (recto) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/173_0_f96r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.480128034142438,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48025613660619,
 "w": 1296,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 17,
+"lines_by_status": {
+"two_runs_agree": 17
+}
 },
 {
 "image": "174_0_f96v",
 "folio": "f96v",
 "scan": "174.jpg",
+"title": "leaf 96, back (verso) — herbal",
+"kind": "page",
+"section": "herbal",
 "display": {
 "file": "img/174_0_f96v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48596112311015116,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4860923575479341,
 "w": 1389,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 27,
+"lines_by_status": {
+"two_runs_agree": 25,
+"human_confirmed": 2
+}
 },
 {
 "image": "175_0_f99r",
 "folio": "f99r",
 "scan": "175.jpg",
+"title": "leaf 99, front (recto) — pharmaceutical",
+"kind": "page",
+"section": "pharmaceutical",
 "display": {
 "file": "img/175_0_f99r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47745358090185674,
 "w": 1290,
 "h": 1800
@@ -2717,16 +4720,25 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 52,
+"lines_by_status": {
+"two_runs_agree": 50,
+"human_corrected": 1,
+"human_drawn": 1
+}
 },
 {
 "image": "176_0_f99v",
 "folio": "f99v",
 "scan": "176.jpg",
+"title": "leaf 99, back (verso) — pharmaceutical",
+"kind": "page",
+"section": "pharmaceutical",
 "display": {
 "file": "img/176_0_f99v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4860923575479341,
 "w": 1362,
 "h": 1800
@@ -2734,16 +4746,24 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 59,
+"lines_by_status": {
+"two_runs_agree": 58,
+"human_confirmed": 1
+}
 },
 {
 "image": "177_0_f100r",
 "folio": "f100r",
 "scan": "177.jpg",
+"title": "leaf 100, front (recto) — pharmaceutical",
+"kind": "page",
+"section": "pharmaceutical",
 "display": {
 "file": "img/177_0_f100r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4787234042553192,
 "w": 1281,
 "h": 1800
@@ -2751,16 +4771,71 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 29,
+"lines_by_status": {
+"two_runs_agree": 29
+}
+},
+{
+"image": "178_P0_f100v",
+"folio": "f100v",
+"scan": "178.jpg",
+"title": "leaf 100, back (verso) — pharmaceutical",
+"kind": "foldout panel",
+"section": "pharmaceutical",
+"display": {
+"file": "img/178_P0_f100v.jpg",
+"scan_x0": 570,
+"scan_y0": 44,
+"scale": 0.49641478212906787,
+"w": 1197,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 22,
+"lines_by_status": {
+"two_runs_agree": 22
+}
+},
+{
+"image": "178_P1_f101r",
+"folio": "f101r",
+"scan": "178.jpg",
+"title": "leaf 101, front (recto) — pharmaceutical",
+"kind": "foldout panel",
+"section": "pharmaceutical",
+"display": {
+"file": "img/178_P1_f101r.jpg",
+"scan_x0": 2843,
+"scan_y0": 39,
+"scale": 0.4983388704318937,
+"w": 2278,
+"h": 1800
+},
+"boundary_source": "opus",
+"status": "unreviewed",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 32,
+"lines_by_status": {
+"two_runs_agree": 32
+}
 },
 {
 "image": "179_0_f101v",
 "folio": "f101v",
 "scan": "179.jpg",
+"title": "leaf 101, back (verso) — pharmaceutical",
+"kind": "page",
+"section": "pharmaceutical",
 "display": {
 "file": "img/179_0_f101v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47593865679534636,
 "w": 1284,
 "h": 1800
@@ -2768,16 +4843,122 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 19,
+"lines_by_status": {
+"two_runs_agree": 18,
+"human_corrected": 1
+}
+},
+{
+"image": "180_P0_f101v",
+"folio": "f101v",
+"scan": "180.jpg",
+"title": "leaf 101, back (verso) — pharmaceutical",
+"kind": "foldout panel",
+"section": "pharmaceutical",
+"display": {
+"file": "img/180_P0_f101v.jpg",
+"scan_x0": 393,
+"scan_y0": 113,
+"scale": 0.48846675712347354,
+"w": 1250,
+"h": 1800
+},
+"boundary_source": "opus+human-corrected",
+"status": "final",
+"holes": 0,
+"holes_source": "opus-none-marked",
+"lines": 25,
+"lines_by_status": {
+"two_runs_agree": 25
+}
+},
+{
+"image": "180_P1_f102r1",
+"folio": "f102r1",
+"scan": "180.jpg",
+"title": "leaf 102, front (recto), panel 1 — pharmaceutical",
+"kind": "foldout panel",
+"section": "pharmaceutical",
+"display": {
+"file": "img/180_P1_f102r1.jpg",
+"scan_x0": 2754,
+"scan_y0": 118,
+"scale": 0.5009741163373226,
+"w": 1271,
+"h": 1800
+},
+"boundary_source": "opus+human-corrected",
+"status": "final",
+"holes": 1,
+"holes_source": "human",
+"lines": 22,
+"lines_by_status": {
+"two_runs_agree": 21,
+"human_confirmed": 1
+}
+},
+{
+"image": "180_P2_f102r2",
+"folio": "f102r2",
+"scan": "180.jpg",
+"title": "leaf 102, front (recto), panel 2 — pharmaceutical",
+"kind": "foldout panel",
+"section": "pharmaceutical",
+"display": {
+"file": "img/180_P2_f102r2.jpg",
+"scan_x0": 5169,
+"scan_y0": 197,
+"scale": 0.4953219592735278,
+"w": 1477,
+"h": 1800
+},
+"boundary_source": "opus+human-corrected",
+"status": "final",
+"holes": 2,
+"holes_source": "human",
+"lines": 17,
+"lines_by_status": {
+"two_runs_agree": 17
+}
+},
+{
+"image": "182_0_f102v1",
+"folio": "f102v1",
+"scan": "182.jpg",
+"title": "leaf 102, back (verso) — pharmaceutical",
+"kind": "page",
+"section": "pharmaceutical",
+"display": {
+"file": "img/182_0_f102v1.jpg",
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4863550391786004,
+"w": 1380,
+"h": 1800
+},
+"boundary_source": "human",
+"status": "final",
+"holes": 0,
+"holes_source": "human-not-checked",
+"lines": 24,
+"lines_by_status": {
+"two_runs_agree": 23,
+"human_confirmed": 1
+}
 },
 {
 "image": "181_0_f102v2",
 "folio": "f102v2",
 "scan": "181.jpg",
+"title": "leaf 102, back (verso) — pharmaceutical",
+"kind": "page",
+"section": "pharmaceutical",
 "display": {
 "file": "img/181_0_f102v2.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.474058467210956,
 "w": 1413,
 "h": 1800
@@ -2785,50 +4966,48 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
-},
-{
-"image": "182_0_f102v1",
-"folio": "f102v1",
-"scan": "182.jpg",
-"display": {
-"file": "img/182_0_f102v1.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4862236628849271,
-"w": 1380,
-"h": 1800
-},
-"boundary_source": "human",
-"status": "final",
-"holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 41,
+"lines_by_status": {
+"two_runs_agree": 41
+}
 },
 {
 "image": "183_0_f103r",
 "folio": "f103r",
 "scan": "183.jpg",
+"title": "leaf 103, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/183_0_f103r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47206923682140045,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.472193074501574,
 "w": 1269,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 72,
+"lines_by_status": {
+"two_runs_agree": 71,
+"human_confirmed": 1
+}
 },
 {
 "image": "184_0_f103v",
 "folio": "f103v",
 "scan": "184.jpg",
+"title": "leaf 103, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/184_0_f103v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.48661800486618007,
 "w": 1344,
 "h": 1800
@@ -2836,16 +5015,23 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 48,
+"lines_by_status": {
+"two_runs_agree": 48
+}
 },
 {
 "image": "185_0_f104r",
 "folio": "f104r",
 "scan": "185.jpg",
+"title": "leaf 104, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/185_0_f104r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47182175622542594,
 "w": 1263,
 "h": 1800
@@ -2853,16 +5039,23 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 49,
+"lines_by_status": {
+"two_runs_agree": 49
+}
 },
 {
 "image": "186_0_f104v",
 "folio": "f104v",
 "scan": "186.jpg",
+"title": "leaf 104, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/186_0_f104v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4854368932038835,
 "w": 1332,
 "h": 1800
@@ -2870,33 +5063,47 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 50,
+"lines_by_status": {
+"two_runs_agree": 50
+}
 },
 {
 "image": "187_0_f105r",
 "folio": "f105r",
 "scan": "187.jpg",
+"title": "leaf 105, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/187_0_f105r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4766949152542373,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4768211920529801,
 "w": 1269,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 40,
+"lines_by_status": {
+"two_runs_agree": 40
+}
 },
 {
 "image": "188_0_f105v",
 "folio": "f105v",
 "scan": "188.jpg",
+"title": "leaf 105, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/188_0_f105v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4855678446182897,
 "w": 1293,
 "h": 1800
@@ -2904,16 +5111,24 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 42,
+"lines_by_status": {
+"two_runs_agree": 40,
+"human_confirmed": 2
+}
 },
 {
 "image": "189_0_f106r",
 "folio": "f106r",
 "scan": "189.jpg",
+"title": "leaf 106, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/189_0_f106r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47480875758375096,
 "w": 1251,
 "h": 1800
@@ -2921,50 +5136,71 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 47,
+"lines_by_status": {
+"two_runs_agree": 47
+}
 },
 {
 "image": "190_0_f106v",
 "folio": "f106v",
 "scan": "190.jpg",
+"title": "leaf 106, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/190_0_f106v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4864864864864865,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48661800486618007,
 "w": 1299,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 47,
+"lines_by_status": {
+"two_runs_agree": 47
+}
 },
 {
 "image": "191_0_f107r",
 "folio": "f107r",
 "scan": "191.jpg",
+"title": "leaf 107, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/191_0_f107r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47480875758375096,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47493403693931396,
 "w": 1254,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 54,
+"lines_by_status": {
+"two_runs_agree": 54
+}
 },
 {
 "image": "192_0_f107v",
 "folio": "f107v",
 "scan": "192.jpg",
+"title": "leaf 107, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/192_0_f107v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4864864864864865,
 "w": 1308,
 "h": 1800
@@ -2972,84 +5208,121 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 53,
+"lines_by_status": {
+"two_runs_agree": 53
+}
 },
 {
 "image": "193_0_f108r",
 "folio": "f108r",
 "scan": "193.jpg",
+"title": "leaf 108, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/193_0_f108r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47480875758375096,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47493403693931396,
 "w": 1254,
 "h": 1800
 },
 "boundary_source": "opus",
 "status": "unreviewed",
 "holes": 0,
-"holes_source": "opus-none-marked"
+"holes_source": "opus-none-marked",
+"lines": 52,
+"lines_by_status": {
+"two_runs_agree": 52
+}
 },
 {
 "image": "194_0_f108v",
 "folio": "f108v",
 "scan": "194.jpg",
+"title": "leaf 108, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/194_0_f108v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.48582995951417,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48596112311015116,
 "w": 1287,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 64,
+"lines_by_status": {
+"two_runs_agree": 64
+}
 },
 {
 "image": "195_0_f111r",
 "folio": "f111r",
 "scan": "195.jpg",
+"title": "leaf 111, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/195_0_f111r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47480875758375096,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47493403693931396,
 "w": 1245,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 58,
+"lines_by_status": {
+"two_runs_agree": 56,
+"human_confirmed": 2
+}
 },
 {
 "image": "196_0_f111v",
 "folio": "f111v",
 "scan": "196.jpg",
+"title": "leaf 111, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/196_0_f111v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4860923575479341,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4862236628849271,
 "w": 1296,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 57,
+"lines_by_status": {
+"two_runs_agree": 52,
+"human_confirmed": 5
+}
 },
 {
 "image": "197_0_f112r",
 "folio": "f112r",
 "scan": "197.jpg",
+"title": "leaf 112, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/197_0_f112r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4750593824228028,
 "w": 1236,
 "h": 1800
@@ -3057,16 +5330,24 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 46,
+"lines_by_status": {
+"two_runs_agree": 45,
+"human_confirmed": 1
+}
 },
 {
 "image": "198_0_f112v",
 "folio": "f112v",
 "scan": "198.jpg",
+"title": "leaf 112, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/198_0_f112v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4864864864864865,
 "w": 1296,
 "h": 1800
@@ -3074,50 +5355,71 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 0,
-"holes_source": "human-not-checked"
+"holes_source": "human-not-checked",
+"lines": 47,
+"lines_by_status": {
+"two_runs_agree": 47
+}
 },
 {
 "image": "199_0_f113r",
 "folio": "f113r",
 "scan": "199.jpg",
+"title": "leaf 113, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/199_0_f113r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4751847940865892,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47531027198310005,
 "w": 1227,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 52,
+"lines_by_status": {
+"two_runs_agree": 52
+}
 },
 {
 "image": "200_0_f113v",
 "folio": "f113v",
 "scan": "200.jpg",
+"title": "leaf 113, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/200_0_f113v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4860923575479341,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.4862236628849271,
 "w": 1296,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 51,
+"lines_by_status": {
+"two_runs_agree": 51
+}
 },
 {
 "image": "201_0_f114r",
 "folio": "f114r",
 "scan": "201.jpg",
+"title": "leaf 114, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/201_0_f114r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47443331576172904,
 "w": 1233,
 "h": 1800
@@ -3125,16 +5427,24 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 1,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 55,
+"lines_by_status": {
+"two_runs_agree": 51,
+"human_confirmed": 4
+}
 },
 {
 "image": "202_0_f114v",
 "folio": "f114v",
 "scan": "202.jpg",
+"title": "leaf 114, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/202_0_f114v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.4863550391786004,
 "w": 1299,
 "h": 1800
@@ -3142,50 +5452,71 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 2,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 42,
+"lines_by_status": {
+"two_runs_agree": 42
+}
 },
 {
 "image": "203_0_f115r",
 "folio": "f115r",
 "scan": "203.jpg",
+"title": "leaf 115, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/203_0_f115r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.47480875758375096,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.47493403693931396,
 "w": 1227,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 7,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 47,
+"lines_by_status": {
+"two_runs_agree": 47
+}
 },
 {
 "image": "204_0_f115v",
 "folio": "f115v",
 "scan": "204.jpg",
+"title": "leaf 115, back (verso) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/204_0_f115v.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
-"scale": 0.4864864864864865,
+"scan_x0": 0,
+"scan_y0": 0,
+"scale": 0.48661800486618007,
 "w": 1302,
 "h": 1800
 },
 "boundary_source": "human",
 "status": "final",
 "holes": 11,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 49,
+"lines_by_status": {
+"two_runs_agree": 49
+}
 },
 {
 "image": "205_0_f116r",
 "folio": "f116r",
 "scan": "205.jpg",
+"title": "leaf 116, front (recto) — stars (recipes)",
+"kind": "page",
+"section": "stars (recipes)",
 "display": {
 "file": "img/205_0_f116r.jpg",
-"scan_x0": 0.0,
-"scan_y0": 0.0,
+"scan_x0": 0,
+"scan_y0": 0,
 "scale": 0.47480875758375096,
 "w": 1215,
 "h": 1800
@@ -3193,6 +5524,10 @@
 "boundary_source": "human",
 "status": "final",
 "holes": 10,
-"holes_source": "human-checked"
+"holes_source": "human-checked",
+"lines": 66,
+"lines_by_status": {
+"two_runs_agree": 66
+}
 }
 ]

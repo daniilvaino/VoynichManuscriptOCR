@@ -1,0 +1,176 @@
+{
+ "image": "122_P1_f67v1",
+ "folio": "f67v1",
+ "scan": "122.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 67,
+  "side": "back (verso)",
+  "panel": "1",
+  "position": "left on scan 122",
+  "kind": "foldout panel",
+  "section": "astronomical",
+  "quire": "I",
+  "title": "leaf 67, back (verso), panel 1 — astronomical"
+ },
+ "boundary": {
+  "top": [
+   [
+    2539.5,
+    93.8
+   ],
+   [
+    2814.8,
+    100.1
+   ],
+   [
+    3753.0,
+    100.1
+   ],
+   [
+    4065.8,
+    106.3
+   ],
+   [
+    4378.5,
+    131.4
+   ],
+   [
+    4691.2,
+    143.9
+   ],
+   [
+    4853.9,
+    156.4
+   ]
+  ],
+  "right": [
+   [
+    4853.9,
+    156.4
+   ],
+   [
+    4857.0,
+    625.5
+   ],
+   [
+    4863.3,
+    1251.0
+   ],
+   [
+    4869.5,
+    1876.5
+   ],
+   [
+    4872.6,
+    2502.0
+   ],
+   [
+    4875.8,
+    3127.5
+   ],
+   [
+    4875.8,
+    3596.6
+   ]
+  ],
+  "bottom": [
+   [
+    4875.8,
+    3596.6
+   ],
+   [
+    4628.7,
+    3609.1
+   ],
+   [
+    4253.4,
+    3612.3
+   ],
+   [
+    3753.0,
+    3621.6
+   ],
+   [
+    3127.5,
+    3627.9
+   ],
+   [
+    2627.1,
+    3659.2
+   ],
+   [
+    2489.5,
+    3690.4
+   ]
+  ],
+  "left": [
+   [
+    2489.5,
+    3690.4
+   ],
+   [
+    2495.7,
+    3002.4
+   ],
+   [
+    2498.9,
+    2502.0
+   ],
+   [
+    2508.3,
+    1876.5
+   ],
+   [
+    2527.0,
+    1251.0
+   ],
+   [
+    2536.4,
+    625.5
+   ],
+   [
+    2539.5,
+    93.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    2523.9,
+    2939.8
+   ],
+   [
+    2533.3,
+    2936.7
+   ],
+   [
+    2542.7,
+    2958.6
+   ],
+   [
+    2542.7,
+    2980.5
+   ],
+   [
+    2533.3,
+    2983.6
+   ],
+   [
+    2523.9,
+    2964.9
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus",
+  "opus_confidence": "medium",
+  "opus_note": "Right side = gutter gap x~776-780 (stacked leaves/next-leaf strips beyond excluded). Bottom ambiguous: several stacked edges at y 577-592; took topmost edge (~577-580), human check. Elongated hole at (405,473) next to fold.",
+  "human_note": null,
+  "saved_at": null
+ }
+}

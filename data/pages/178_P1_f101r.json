@@ -1,0 +1,193 @@
+{
+ "image": "178_P1_f101r",
+ "folio": "f101r",
+ "scan": "178.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 101,
+  "side": "front (recto)",
+  "panel": null,
+  "position": "left on scan 178",
+  "kind": "foldout panel",
+  "section": "pharmaceutical",
+  "quire": "S",
+  "title": "leaf 101, front (recto) — pharmaceutical"
+ },
+ "boundary": {
+  "top": [
+   [
+    2922.5,
+    148.6
+   ],
+   [
+    3095.8,
+    130.0
+   ],
+   [
+    3715.0,
+    142.4
+   ],
+   [
+    4334.2,
+    154.8
+   ],
+   [
+    4829.5,
+    154.8
+   ],
+   [
+    5126.7,
+    167.2
+   ],
+   [
+    5324.8,
+    148.6
+   ],
+   [
+    5572.5,
+    130.0
+   ],
+   [
+    6191.7,
+    111.4
+   ],
+   [
+    6810.8,
+    105.3
+   ],
+   [
+    7281.4,
+    99.1
+   ]
+  ],
+  "right": [
+   [
+    7281.4,
+    99.1
+   ],
+   [
+    7306.2,
+    371.5
+   ],
+   [
+    7306.2,
+    1238.3
+   ],
+   [
+    7318.6,
+    1733.7
+   ],
+   [
+    7324.7,
+    2476.7
+   ],
+   [
+    7343.3,
+    3095.8
+   ],
+   [
+    7355.7,
+    3374.5
+   ]
+  ],
+  "bottom": [
+   [
+    7355.7,
+    3374.5
+   ],
+   [
+    7120.4,
+    3417.8
+   ],
+   [
+    6810.8,
+    3448.8
+   ],
+   [
+    6563.2,
+    3473.5
+   ],
+   [
+    6191.7,
+    3510.7
+   ],
+   [
+    5820.2,
+    3541.6
+   ],
+   [
+    5448.7,
+    3560.2
+   ],
+   [
+    5139.1,
+    3572.6
+   ],
+   [
+    4953.3,
+    3572.6
+   ],
+   [
+    4334.2,
+    3578.8
+   ],
+   [
+    3962.7,
+    3578.8
+   ],
+   [
+    3715.0,
+    3572.6
+   ],
+   [
+    3095.8,
+    3566.4
+   ],
+   [
+    2903.9,
+    3591.2
+   ]
+  ],
+  "left": [
+   [
+    2903.9,
+    3591.2
+   ],
+   [
+    2910.1,
+    3095.8
+   ],
+   [
+    2910.1,
+    2476.7
+   ],
+   [
+    2916.3,
+    1857.5
+   ],
+   [
+    2922.5,
+    1238.3
+   ],
+   [
+    2922.5,
+    619.2
+   ],
+   [
+    2922.5,
+    148.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "two foldout panels merged: folio 101 is one page per side; inner fold at the old f101r1|f101r2 line",
+  "human_note": null,
+  "saved_at": null
+ }
+}

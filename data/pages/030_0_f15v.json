@@ -3,10 +3,20 @@
  "folio": "f15v",
  "scan": "030.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 15,
+  "side": "back (verso)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "B",
+  "title": "leaf 15, back (verso) — herbal"
+ },
  "boundary": {
   "top": [
    [
-    563.9,
+    563.8,
     195.3
    ],
    [
@@ -23,43 +33,43 @@
    ],
    [
     2520.0,
-    160.7
+    160.6
    ],
    [
     2658.6,
-    160.7
+    160.6
    ],
    [
-    2705.8,
-    176.4
+    2726.6,
+    163.8
    ]
   ],
   "right": [
    [
-    2705.8,
-    176.4
+    2726.6,
+    163.8
    ],
    [
-    2709.0,
+    2716.6,
     945.0
    ],
    [
-    2712.2,
-    1890.0
+    2723.5,
+    1881.2
    ],
    [
-    2715.3,
-    2835.0
+    2729.2,
+    2839.4
    ],
    [
-    2712.2,
-    3654.0
+    2732.9,
+    3646.4
    ]
   ],
   "bottom": [
    [
-    2712.2,
-    3654.0
+    2732.9,
+    3646.4
    ],
    [
     2394.0,
@@ -120,11 +130,11 @@
     1260.0
    ],
    [
-    557.5,
+    557.6,
     630.0
    ],
    [
-    563.9,
+    563.8,
     195.3
    ]
   ]
@@ -138,14 +148,14 @@
    ],
    [
     1499.4,
-    1817.5
+    1817.6
    ],
    [
     1515.1,
     1845.9
    ],
    [
-    1521.5,
+    1521.4,
     1890.0
    ],
    [
@@ -179,12 +189,12 @@
   ]
  ],
  "provenance": {
-  "boundary_source": "opus+human-checked",
+  "boundary_source": "opus+human-corrected",
   "status": "final",
-  "holes_source": "human-checked",
+  "holes_source": "human",
   "opus_confidence": "high",
   "opus_note": "quad close (within ~2-4px); quad top-right corner on outer lip (y~21) instead of edge y~26-28; bottom-left SAM/quad ~2px off; SAM mask excludes the root drawing at bottom left fore-edge x~82-89 with stacks of earlier leaves (f14 torn flap at y~170) to the left; real hole in green leaf at (226-242, 288-313)",
   "human_note": null,
-  "saved_at": "2026-11-21 11:54:03"
+  "saved_at": "2026-11-21 14:16:09"
  }
 }

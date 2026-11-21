@@ -1,0 +1,286 @@
+{
+ "image": "180_P2_f102r2",
+ "folio": "f102r2",
+ "scan": "180.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 102,
+  "side": "front (recto)",
+  "panel": "2",
+  "position": "left on scan 180",
+  "kind": "foldout panel",
+  "section": "pharmaceutical",
+  "quire": "S",
+  "title": "leaf 102, front (recto), panel 2 — pharmaceutical"
+ },
+ "boundary": {
+  "top": [
+   [
+    5229.3,
+    257.6
+   ],
+   [
+    5284.0,
+    258.2
+   ],
+   [
+    5332.3,
+    269.2
+   ],
+   [
+    5366.5,
+    257.6
+   ],
+   [
+    5419.3,
+    259.5
+   ],
+   [
+    5473.4,
+    259.5
+   ],
+   [
+    5565.4,
+    262.8
+   ],
+   [
+    5664.0,
+    257.6
+   ],
+   [
+    5731.6,
+    270.5
+   ],
+   [
+    5812.1,
+    280.1
+   ],
+   [
+    5940.3,
+    297.5
+   ],
+   [
+    6180.5,
+    310.4
+   ],
+   [
+    6440.0,
+    334.9
+   ],
+   [
+    6697.6,
+    334.9
+   ],
+   [
+    7084.0,
+    334.9
+   ],
+   [
+    7471.0,
+    374.2
+   ],
+   [
+    7647.5,
+    389.0
+   ],
+   [
+    7808.5,
+    407.0
+   ],
+   [
+    8075.1,
+    420.5
+   ]
+  ],
+  "right": [
+   [
+    8075.1,
+    420.5
+   ],
+   [
+    8071.9,
+    449.5
+   ],
+   [
+    8079.6,
+    479.1
+   ],
+   [
+    8069.3,
+    542.2
+   ],
+   [
+    8090.6,
+    619.5
+   ],
+   [
+    8086.7,
+    718.1
+   ],
+   [
+    8079.6,
+    810.2
+   ],
+   [
+    8079.0,
+    939.0
+   ],
+   [
+    8066.7,
+    991.8
+   ],
+   [
+    8058.4,
+    1085.1
+   ],
+   [
+    8061.6,
+    1279.6
+   ],
+   [
+    8057.1,
+    1390.4
+   ],
+   [
+    8029.4,
+    1584.2
+   ],
+   [
+    8004.9,
+    1937.2
+   ],
+   [
+    7979.2,
+    2427.9
+   ],
+   [
+    7977.2,
+    2577.3
+   ],
+   [
+    7946.3,
+    2964.3
+   ],
+   [
+    7847.1,
+    3351.4
+   ],
+   [
+    7720.9,
+    3636.0
+   ],
+   [
+    7657.8,
+    3771.3
+   ]
+  ],
+  "bottom": [
+   [
+    7657.8,
+    3771.3
+   ],
+   [
+    7148.4,
+    3735.2
+   ],
+   [
+    6826.4,
+    3703.0
+   ],
+   [
+    6440.0,
+    3651.5
+   ],
+   [
+    6053.6,
+    3561.3
+   ],
+   [
+    5796.0,
+    3464.7
+   ],
+   [
+    5525.5,
+    3355.2
+   ],
+   [
+    5441.8,
+    3284.4
+   ],
+   [
+    5319.4,
+    3200.7
+   ],
+   [
+    5229.3,
+    3155.6
+   ]
+  ],
+  "left": [
+   [
+    5229.3,
+    3155.6
+   ],
+   [
+    5229.3,
+    1932.0
+   ],
+   [
+    5229.3,
+    966.0
+   ],
+   [
+    5229.3,
+    257.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    5284.7,
+    2458.8
+   ],
+   [
+    5300.1,
+    2458.8
+   ],
+   [
+    5300.1,
+    2474.2
+   ],
+   [
+    5284.7,
+    2474.2
+   ]
+  ],
+  [
+   [
+    5276.3,
+    1116.1
+   ],
+   [
+    5291.7,
+    1116.1
+   ],
+   [
+    5291.7,
+    1131.5
+   ],
+   [
+    5276.3,
+    1131.5
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "human",
+  "opus_confidence": "medium",
+  "opus_note": "Right panel (column of jars x~820-850 on its left margin, text, plants), x 812-1253, irregular trapezoid; lower-left corner torn away: bottom runs diagonally from the fold at y~490 to (1000,567); below it at x 812-858 only tape/repair strips (excluded). Two small round holes near the jars.",
+  "human_note": null,
+  "saved_at": "2026-11-21 14:02:21"
+ }
+}

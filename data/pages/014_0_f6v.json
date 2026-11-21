@@ -3,6 +3,16 @@
  "folio": "f6v",
  "scan": "014.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 6,
+  "side": "back (verso)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "A",
+  "title": "leaf 6, back (verso) — herbal"
+ },
  "boundary": {
   "top": [
    [
@@ -64,38 +74,50 @@
     2847.9
    ],
    [
-    2642.2,
-    3651.7
+    2648.6,
+    3603.6
    ]
   ],
   "bottom": [
    [
-    2642.2,
-    3651.7
+    2648.6,
+    3603.6
    ],
    [
-    2215.1,
-    3648.5
+    2208.1,
+    3644.1
    ],
    [
-    1582.2,
-    3648.5
+    1961.3,
+    3646.6
+   ],
+   [
+    1777.7,
+    3652.3
+   ],
+   [
+    1470.8,
+    3659.9
+   ],
+   [
+    1253.7,
+    3664.3
    ],
    [
     949.3,
     3645.4
    ],
    [
-    506.3,
-    3644.1
+    465.2,
+    3612.4
    ],
    [
-    253.1,
-    3642.2
+    254.4,
+    3587.8
    ],
    [
     196.2,
-    3626.4
+    3582.1
    ],
    [
     167.7,
@@ -140,12 +162,12 @@
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "medium",
   "opus_note": "top: SAM ok but quad cuts slant (leaf top 28 at left -> 21.5 at x>=220); left-top corner damaged; bottom-left SAM cut rounded crease, leaf reaches y~576 over tape; right quad ~1.5px short of gutter crease verso; right = gutter crease x~417.5 (leaf beyond = conjugate/stub); left/top outer bands are stacked leaves and tape visible only outside leaf",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-21 14:15:13"
  }
 }

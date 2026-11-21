@@ -3,6 +3,16 @@
  "folio": "f40r",
  "scan": "079.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 40,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "E",
+  "title": "leaf 40, front (recto) — herbal"
+ },
  "boundary": {
   "top": [
    [

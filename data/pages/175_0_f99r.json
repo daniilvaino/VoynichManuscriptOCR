@@ -3,6 +3,16 @@
  "folio": "f99r",
  "scan": "175.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 99,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "pharmaceutical",
+  "quire": "S",
+  "title": "leaf 99, front (recto) — pharmaceutical"
+ },
  "boundary": {
   "top": [
    [

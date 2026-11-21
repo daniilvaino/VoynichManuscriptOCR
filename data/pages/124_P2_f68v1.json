@@ -1,0 +1,153 @@
+{
+ "image": "124_P2_f68v1",
+ "folio": "f68v1",
+ "scan": "124.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 68,
+  "side": "back (verso)",
+  "panel": "1",
+  "position": "left on scan 124",
+  "kind": "foldout panel",
+  "section": "astronomical",
+  "quire": "I",
+  "title": "leaf 68, back (verso), panel 1 — astronomical"
+ },
+ "boundary": {
+  "top": [
+   [
+    5630.0,
+    134.5
+   ],
+   [
+    6084.8,
+    124.9
+   ],
+   [
+    6661.2,
+    121.7
+   ],
+   [
+    7045.5,
+    121.7
+   ],
+   [
+    7301.7,
+    128.1
+   ],
+   [
+    7686.0,
+    131.3
+   ],
+   [
+    7961.4,
+    140.9
+   ]
+  ],
+  "right": [
+   [
+    7961.4,
+    140.9
+   ],
+   [
+    7967.8,
+    640.5
+   ],
+   [
+    7961.4,
+    1281.0
+   ],
+   [
+    7951.8,
+    1921.5
+   ],
+   [
+    7945.4,
+    2562.0
+   ],
+   [
+    7939.0,
+    3202.5
+   ],
+   [
+    7935.8,
+    3663.7
+   ]
+  ],
+  "bottom": [
+   [
+    7935.8,
+    3663.7
+   ],
+   [
+    7686.0,
+    3676.5
+   ],
+   [
+    7365.8,
+    3682.9
+   ],
+   [
+    7045.5,
+    3676.5
+   ],
+   [
+    6661.2,
+    3673.3
+   ],
+   [
+    6148.8,
+    3682.9
+   ],
+   [
+    5764.5,
+    3695.7
+   ],
+   [
+    5604.4,
+    3698.9
+   ]
+  ],
+  "left": [
+   [
+    5604.4,
+    3698.9
+   ],
+   [
+    5601.2,
+    3202.5
+   ],
+   [
+    5594.8,
+    2562.0
+   ],
+   [
+    5591.6,
+    1793.4
+   ],
+   [
+    5607.6,
+    1281.0
+   ],
+   [
+    5623.6,
+    640.5
+   ],
+   [
+    5630.0,
+    134.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "Right side = gutter gap x~1239-1244 (stacked leaves beyond excluded). Top and bottom exclude stacked-leaf strips (y 14-19 top, 575-581 bottom).",
+  "human_note": null,
+  "saved_at": null
+ }
+}

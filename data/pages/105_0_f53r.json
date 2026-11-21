@@ -3,6 +3,16 @@
  "folio": "f53r",
  "scan": "105.jpg",
  "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 53,
+  "side": "front (recto)",
+  "panel": null,
+  "position": null,
+  "kind": "page",
+  "section": "herbal",
+  "quire": "G",
+  "title": "leaf 53, front (recto) — herbal"
+ },
  "boundary": {
   "top": [
    [

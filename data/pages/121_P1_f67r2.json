@@ -1,0 +1,180 @@
+{
+ "image": "121_P1_f67r2",
+ "folio": "f67r2",
+ "scan": "121.jpg",
+ "coords": "pixels of the scan file",
+ "labels": {
+  "leaf": 67,
+  "side": "front (recto)",
+  "panel": "2",
+  "position": "left on scan 121",
+  "kind": "foldout panel",
+  "section": "astronomical",
+  "quire": "I",
+  "title": "leaf 67, front (recto), panel 2 — astronomical"
+ },
+ "boundary": {
+  "top": [
+   [
+    2510.7,
+    124.6
+   ],
+   [
+    2741.2,
+    130.8
+   ],
+   [
+    3115.0,
+    133.9
+   ],
+   [
+    3738.0,
+    143.3
+   ],
+   [
+    4361.0,
+    124.6
+   ],
+   [
+    4479.4,
+    124.6
+   ],
+   [
+    4529.2,
+    165.1
+   ],
+   [
+    4734.8,
+    174.4
+   ],
+   [
+    4806.4,
+    199.4
+   ]
+  ],
+  "right": [
+   [
+    4806.4,
+    199.4
+   ],
+   [
+    4878.1,
+    560.7
+   ],
+   [
+    4890.6,
+    872.2
+   ],
+   [
+    4875.0,
+    1557.5
+   ],
+   [
+    4865.6,
+    2180.5
+   ],
+   [
+    4853.2,
+    2803.5
+   ],
+   [
+    4834.5,
+    3239.6
+   ],
+   [
+    4818.9,
+    3666.4
+   ]
+  ],
+  "bottom": [
+   [
+    4818.9,
+    3666.4
+   ],
+   [
+    4610.2,
+    3672.6
+   ],
+   [
+    4361.0,
+    3657.0
+   ],
+   [
+    4111.8,
+    3650.8
+   ],
+   [
+    3738.0,
+    3635.2
+   ],
+   [
+    3115.0,
+    3622.7
+   ],
+   [
+    2741.2,
+    3635.2
+   ],
+   [
+    2501.3,
+    3625.9
+   ]
+  ],
+  "left": [
+   [
+    2501.3,
+    3625.9
+   ],
+   [
+    2504.5,
+    2803.5
+   ],
+   [
+    2510.7,
+    1869.0
+   ],
+   [
+    2513.8,
+    934.5
+   ],
+   [
+    2510.7,
+    124.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    2545.0,
+    3058.9
+   ],
+   [
+    2563.6,
+    3055.8
+   ],
+   [
+    2563.6,
+    3071.4
+   ],
+   [
+    2548.1,
+    3077.6
+   ],
+   [
+    2541.8,
+    3071.4
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus",
+  "opus_confidence": "high",
+  "opus_note": "Right edge includes curled light strip x~765-785 (own ink reaches x~773). Two small dark holes just right/left of fold near y~481-492 (one at x~396 lies in f67r1).",
+  "human_note": null,
+  "saved_at": null
+ }
+}
