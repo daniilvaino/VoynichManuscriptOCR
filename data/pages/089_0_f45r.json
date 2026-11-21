@@ -1,0 +1,91 @@
+{
+ "image": "089_0_f45r",
+ "folio": "f45r",
+ "scan": "089.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    111.4,
+    99.1
+   ],
+   [
+    1238.2,
+    89.8
+   ],
+   [
+    2363.0,
+    104.0
+   ]
+  ],
+  "right": [
+   [
+    2363.0,
+    104.0
+   ],
+   [
+    2451.6,
+    928.6
+   ],
+   [
+    2457.7,
+    1857.2
+   ],
+   [
+    2460.8,
+    2785.9
+   ],
+   [
+    2449.7,
+    3508.9
+   ]
+  ],
+  "bottom": [
+   [
+    2449.7,
+    3508.9
+   ],
+   [
+    1234.4,
+    3601.2
+   ],
+   [
+    619.1,
+    3615.4
+   ],
+   [
+    79.2,
+    3575.8
+   ]
+  ],
+  "left": [
+   [
+    79.2,
+    3575.8
+   ],
+   [
+    77.4,
+    2785.9
+   ],
+   [
+    86.7,
+    1857.2
+   ],
+   [
+    111.4,
+    99.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: transparent holder strip x~380-403 not included (leaf continues under it); a second SAM blob covers the stacked leaves right of the strip left = gutter fold x~18->11; right fore-edge hidden under the holder strip, placed at x~395-398 (just inside the strip's right side) from f45v leaf width ~381 px; plant ink reaches x~381 at the strip edge (inside); red drawings at x>=400 are on stacked leaves, outside",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:45:22"
+ }
+}

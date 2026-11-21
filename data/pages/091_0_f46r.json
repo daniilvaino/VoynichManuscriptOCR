@@ -1,0 +1,103 @@
+{
+ "image": "091_0_f46r",
+ "folio": "f46r",
+ "scan": "091.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    142.6,
+    105.4
+   ],
+   [
+    620.1,
+    114.7
+   ],
+   [
+    1240.3,
+    124.0
+   ],
+   [
+    2325.5,
+    133.3
+   ],
+   [
+    2381.3,
+    139.5
+   ]
+  ],
+  "right": [
+   [
+    2381.3,
+    139.5
+   ],
+   [
+    2418.5,
+    179.8
+   ],
+   [
+    2437.1,
+    248.1
+   ],
+   [
+    2443.3,
+    1860.4
+   ],
+   [
+    2455.7,
+    3100.6
+   ],
+   [
+    2465.0,
+    3596.8
+   ]
+  ],
+  "bottom": [
+   [
+    2465.0,
+    3596.8
+   ],
+   [
+    2356.5,
+    3603.0
+   ],
+   [
+    1240.3,
+    3612.3
+   ],
+   [
+    558.1,
+    3618.5
+   ],
+   [
+    99.2,
+    3615.4
+   ]
+  ],
+  "left": [
+   [
+    99.2,
+    3615.4
+   ],
+   [
+    120.9,
+    1860.4
+   ],
+   [
+    142.6,
+    105.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: holder strip x~383-404 excluded by SAM, leaf continues under it left = gutter fold x~23->16; right fore-edge under the transparent holder strip: rounded TR corner faintly visible through the strip (x~384,y22 -> x~393,y40), edge ~x394-397.5; red drawings at x>=399 are on stacked leaves, outside; plant ink max x~376; bottom y~583, root ink ends y~580 inside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "image": "027_0_f14r",
+ "folio": "f14r",
+ "scan": "027.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    159.0,
+    90.4
+   ],
+   [
+    342.9,
+    77.9
+   ],
+   [
+    935.1,
+    81.0
+   ],
+   [
+    1558.5,
+    90.4
+   ],
+   [
+    2057.3,
+    99.7
+   ],
+   [
+    2347.2,
+    102.9
+   ]
+  ],
+  "right": [
+   [
+    2347.2,
+    102.9
+   ],
+   [
+    2347.2,
+    623.4
+   ],
+   [
+    2350.3,
+    1016.2
+   ],
+   [
+    2369.0,
+    1246.8
+   ],
+   [
+    2381.5,
+    1496.2
+   ],
+   [
+    2406.4,
+    1870.3
+   ],
+   [
+    2428.2,
+    2244.3
+   ],
+   [
+    2468.7,
+    2493.7
+   ],
+   [
+    2496.8,
+    2680.7
+   ],
+   [
+    2509.3,
+    3054.8
+   ],
+   [
+    2515.5,
+    3460.0
+   ],
+   [
+    2509.3,
+    3553.5
+   ],
+   [
+    2490.6,
+    3606.5
+   ],
+   [
+    2462.5,
+    3631.4
+   ]
+  ],
+  "bottom": [
+   [
+    2462.5,
+    3631.4
+   ],
+   [
+    2119.6,
+    3634.5
+   ],
+   [
+    1745.6,
+    3631.4
+   ],
+   [
+    1246.8,
+    3625.2
+   ],
+   [
+    748.1,
+    3622.1
+   ],
+   [
+    374.1,
+    3615.8
+   ],
+   [
+    81.0,
+    3612.7
+   ]
+  ],
+  "left": [
+   [
+    81.0,
+    3612.7
+   ],
+   [
+    93.5,
+    3117.1
+   ],
+   [
+    109.1,
+    2493.7
+   ],
+   [
+    124.7,
+    1870.3
+   ],
+   [
+    137.2,
+    1246.8
+   ],
+   [
+    149.6,
+    311.7
+   ],
+   [
+    159.0,
+    90.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    2350.3,
+    1016.2
+   ],
+   [
+    2256.8,
+    1009.9
+   ],
+   [
+    2182.0,
+    1016.2
+   ],
+   [
+    2138.3,
+    1047.3
+   ],
+   [
+    2113.4,
+    1122.2
+   ],
+   [
+    2119.6,
+    1215.7
+   ],
+   [
+    2150.8,
+    1290.5
+   ],
+   [
+    2213.1,
+    1340.4
+   ],
+   [
+    2294.2,
+    1402.7
+   ],
+   [
+    2381.5,
+    1496.2
+   ],
+   [
+    2369.0,
+    1246.8
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus+human-checked",
+  "status": "final",
+  "holes_source": "human-checked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad (382,14)-(408,584) runs over strip of f16r (folio '16', green leaves) in upper half; own fore-edge is ~5-10px further left at y 20-400; bottom-right corner rounded, quad corner outside torn notch at right edge (x 339-382, y 162-240) through which f15/f16 show, given as hole; bottom has stacked bands, took inner line ~580-583",
+  "human_note": null,
+  "saved_at": "2026-11-21 12:16:59"
+ }
+}

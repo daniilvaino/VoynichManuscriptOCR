@@ -1,0 +1,99 @@
+{
+ "image": "171_0_f95v2",
+ "folio": "f95v2",
+ "scan": "171.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    466.8,
+    205.6
+   ],
+   [
+    2139.2,
+    160.6
+   ],
+   [
+    2569.8,
+    164.4
+   ]
+  ],
+  "right": [
+   [
+    2569.8,
+    164.4
+   ],
+   [
+    2583.5,
+    3602.2
+   ]
+  ],
+  "bottom": [
+   [
+    2583.5,
+    3602.2
+   ],
+   [
+    1637.4,
+    3642.2
+   ],
+   [
+    1011.2,
+    3660.9
+   ],
+   [
+    721.8,
+    3665.3
+   ],
+   [
+    469.3,
+    3695.3
+   ]
+  ],
+  "left": [
+   [
+    469.3,
+    3695.3
+   ],
+   [
+    440.6,
+    2945.4
+   ],
+   [
+    463.1,
+    2549.1
+   ],
+   [
+    469.3,
+    1993.6
+   ],
+   [
+    450.6,
+    1500.5
+   ],
+   [
+    437.5,
+    1118.0
+   ],
+   [
+    453.7,
+    609.9
+   ],
+   [
+    466.8,
+    205.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "human",
+  "status": "final",
+  "holes_source": "human-not-checked",
+  "opus_confidence": null,
+  "opus_note": null,
+  "human_note": null,
+  "saved_at": "2026-11-21 11:13:43"
+ }
+}

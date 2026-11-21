@@ -1,0 +1,123 @@
+{
+ "image": "129_0_f71r",
+ "folio": "f71r",
+ "scan": "129.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    138.1,
+    131.8
+   ],
+   [
+    627.6,
+    125.5
+   ],
+   [
+    1569.1,
+    122.4
+   ],
+   [
+    2447.8,
+    122.4
+   ],
+   [
+    2545.1,
+    150.6
+   ]
+  ],
+  "right": [
+   [
+    2545.1,
+    150.6
+   ],
+   [
+    2551.4,
+    627.6
+   ],
+   [
+    2560.8,
+    1820.2
+   ],
+   [
+    2557.6,
+    2824.4
+   ],
+   [
+    2551.4,
+    3514.8
+   ],
+   [
+    2535.7,
+    3684.2
+   ]
+  ],
+  "bottom": [
+   [
+    2535.7,
+    3684.2
+   ],
+   [
+    1882.9,
+    3678.0
+   ],
+   [
+    1255.3,
+    3671.7
+   ],
+   [
+    627.6,
+    3662.3
+   ],
+   [
+    103.6,
+    3649.7
+   ]
+  ],
+  "left": [
+   [
+    103.6,
+    3649.7
+   ],
+   [
+    97.3,
+    3389.3
+   ],
+   [
+    97.3,
+    2949.9
+   ],
+   [
+    106.7,
+    2196.7
+   ],
+   [
+    113.0,
+    1569.1
+   ],
+   [
+    125.5,
+    941.5
+   ],
+   [
+    138.1,
+    376.6
+   ],
+   [
+    138.1,
+    131.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "close; quad left a few px off the curved gutter fold; top-right corner of quad sits on a larger leaf behind recto: left = gutter fold 22 (top) -> 18 (y250) -> 15.5 (y470-540); f70v1 text/drawings at x<14 outside, own red spot at x~20,y275 inside; right fore-edge x~405.5-408, the ridge and stack to x~430 belong to leaves behind; rounded corners top-right and bottom-right",
+  "human_note": null,
+  "saved_at": null
+ }
+}

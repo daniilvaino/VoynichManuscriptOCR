@@ -1,0 +1,151 @@
+{
+ "image": "018_0_f8v",
+ "folio": "f8v",
+ "scan": "018.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    174.0,
+    189.9
+   ],
+   [
+    189.9,
+    164.5
+   ],
+   [
+    221.5,
+    155.1
+   ],
+   [
+    632.9,
+    142.4
+   ],
+   [
+    949.3,
+    126.6
+   ],
+   [
+    1265.8,
+    120.2
+   ],
+   [
+    1898.6,
+    120.2
+   ],
+   [
+    2341.7,
+    123.4
+   ],
+   [
+    2468.2,
+    132.9
+   ],
+   [
+    2563.2,
+    145.6
+   ],
+   [
+    2626.5,
+    148.7
+   ]
+  ],
+  "right": [
+   [
+    2626.5,
+    148.7
+   ],
+   [
+    2626.5,
+    949.3
+   ],
+   [
+    2626.5,
+    1898.6
+   ],
+   [
+    2626.5,
+    2848.0
+   ],
+   [
+    2626.5,
+    3639.1
+   ]
+  ],
+  "bottom": [
+   [
+    2626.5,
+    3639.1
+   ],
+   [
+    2531.5,
+    3641.0
+   ],
+   [
+    1898.6,
+    3639.1
+   ],
+   [
+    1265.8,
+    3635.9
+   ],
+   [
+    632.9,
+    3632.7
+   ],
+   [
+    284.8,
+    3629.6
+   ],
+   [
+    227.8,
+    3623.2
+   ],
+   [
+    196.2,
+    3607.4
+   ],
+   [
+    180.4,
+    3575.8
+   ]
+  ],
+  "left": [
+   [
+    180.4,
+    3575.8
+   ],
+   [
+    174.0,
+    2848.0
+   ],
+   [
+    167.7,
+    1898.6
+   ],
+   [
+    167.7,
+    949.3
+   ],
+   [
+    170.9,
+    316.4
+   ],
+   [
+    174.0,
+    189.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad top-right corner y11 on stack edge (leaf ~23.5); quad top slanted wrong way (leaf top 24.5 at left -> 19 mid -> 23.5 right); bottom-left rounded corner cut verso; right = gutter crease x~415 (paper guard strip beyond excluded); left stack edges x10-26 excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

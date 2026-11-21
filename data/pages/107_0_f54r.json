@@ -1,0 +1,123 @@
+{
+ "image": "107_0_f54r",
+ "folio": "f54r",
+ "scan": "107.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    132.8,
+    99.3
+   ],
+   [
+    620.7,
+    90.0
+   ],
+   [
+    993.1,
+    99.3
+   ],
+   [
+    1241.3,
+    108.6
+   ],
+   [
+    1613.7,
+    133.4
+   ],
+   [
+    1849.6,
+    162.6
+   ],
+   [
+    2230.7,
+    199.2
+   ],
+   [
+    2476.5,
+    214.1
+   ]
+  ],
+  "right": [
+   [
+    2476.5,
+    214.1
+   ],
+   [
+    2473.4,
+    620.7
+   ],
+   [
+    2451.0,
+    1235.1
+   ],
+   [
+    2428.7,
+    2104.7
+   ],
+   [
+    2406.9,
+    2886.7
+   ],
+   [
+    2403.2,
+    3599.2
+   ]
+  ],
+  "bottom": [
+   [
+    2403.2,
+    3599.2
+   ],
+   [
+    1878.1,
+    3592.4
+   ],
+   [
+    1395.9,
+    3598.0
+   ],
+   [
+    620.7,
+    3615.4
+   ],
+   [
+    90.6,
+    3585.6
+   ]
+  ],
+  "left": [
+   [
+    90.6,
+    3585.6
+   ],
+   [
+    102.4,
+    2793.0
+   ],
+   [
+    110.5,
+    2048.2
+   ],
+   [
+    121.0,
+    931.0
+   ],
+   [
+    132.8,
+    99.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "top-right: quad/mask include a stacked strip above the slanted top edge (own top drops y~17 at x200 -> 34.5 at x399); right: quad at x~407-410 includes a strip of another leaf (with a foreign green drawing at y~450-490) beyond the own fore-edge at x~396-399 left = gutter fold x~21->15, neighbour green ink left of it outside; right fore-edge = dark line x~399 (top) -> 395.5 (bottom); strip x~397-413 belongs to another leaf (own bottom corner at y~563, different from ours at ~582); bottom ~582.5",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:47:41"
+ }
+}

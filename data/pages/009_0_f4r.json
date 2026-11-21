@@ -1,0 +1,139 @@
+{
+ "image": "009_0_f4r",
+ "folio": "f4r",
+ "scan": "009.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    127.9,
+    121.6
+   ],
+   [
+    249.5,
+    102.9
+   ],
+   [
+    436.6,
+    81.1
+   ],
+   [
+    623.7,
+    74.8
+   ],
+   [
+    1247.4,
+    71.7
+   ],
+   [
+    1871.2,
+    74.8
+   ],
+   [
+    2401.3,
+    78.0
+   ],
+   [
+    2469.9,
+    87.3
+   ],
+   [
+    2491.8,
+    112.3
+   ]
+  ],
+  "right": [
+   [
+    2491.8,
+    112.3
+   ],
+   [
+    2494.9,
+    311.9
+   ],
+   [
+    2504.2,
+    935.6
+   ],
+   [
+    2516.7,
+    1871.2
+   ],
+   [
+    2510.5,
+    2806.7
+   ],
+   [
+    2504.2,
+    3368.1
+   ],
+   [
+    2501.1,
+    3549.0
+   ]
+  ],
+  "bottom": [
+   [
+    2501.1,
+    3549.0
+   ],
+   [
+    2370.1,
+    3558.3
+   ],
+   [
+    2120.7,
+    3580.2
+   ],
+   [
+    1871.2,
+    3589.5
+   ],
+   [
+    1247.4,
+    3605.1
+   ],
+   [
+    623.7,
+    3620.7
+   ],
+   [
+    127.9,
+    3623.8
+   ]
+  ],
+  "left": [
+   [
+    127.9,
+    3623.8
+   ],
+   [
+    127.9,
+    3118.6
+   ],
+   [
+    131.0,
+    1871.2
+   ],
+   [
+    131.0,
+    623.7
+   ],
+   [
+    127.9,
+    121.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad top-left too high (12 vs ~19.5 at gutter), quad bottom too low on right (579 vs ~569-575); SAM cuts bottom-right corner diagonally at the transparent holder strip (x380-395); SAM right partly on outer stack left = gutter fold x~20.5 (f3v strip beyond excluded); right = edge line x400->403.5->401, leaves behind stick out to x~413; bottom-right corner under holder strip with a crease, corner taken ~(401,569); damaged/repaired spot near (110,560) not marked as hole",
+  "human_note": null,
+  "saved_at": null
+ }
+}

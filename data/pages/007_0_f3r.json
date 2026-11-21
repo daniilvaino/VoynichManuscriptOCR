@@ -1,0 +1,123 @@
+{
+ "image": "007_0_f3r",
+ "folio": "f3r",
+ "scan": "007.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    122.6,
+    138.3
+   ],
+   [
+    628.7,
+    125.7
+   ],
+   [
+    1257.5,
+    116.3
+   ],
+   [
+    1886.2,
+    122.6
+   ],
+   [
+    2389.2,
+    125.7
+   ],
+   [
+    2483.5,
+    138.3
+   ],
+   [
+    2521.2,
+    163.5
+   ],
+   [
+    2533.8,
+    201.2
+   ]
+  ],
+  "right": [
+   [
+    2533.8,
+    201.2
+   ],
+   [
+    2527.5,
+    628.7
+   ],
+   [
+    2515.0,
+    1886.2
+   ],
+   [
+    2502.4,
+    2829.3
+   ],
+   [
+    2486.7,
+    3520.9
+   ],
+   [
+    2483.5,
+    3552.4
+   ]
+  ],
+  "bottom": [
+   [
+    2483.5,
+    3552.4
+   ],
+   [
+    1886.2,
+    3564.9
+   ],
+   [
+    1257.5,
+    3577.5
+   ],
+   [
+    628.7,
+    3587.0
+   ],
+   [
+    113.2,
+    3593.2
+   ]
+  ],
+  "left": [
+   [
+    113.2,
+    3593.2
+   ],
+   [
+    110.0,
+    3143.7
+   ],
+   [
+    116.3,
+    1886.2
+   ],
+   [
+    119.5,
+    628.7
+   ],
+   [
+    122.6,
+    138.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "SAM right edge includes outer strip of leaf behind (x~404-410, ends y~562); quad close (within ~2 px) left = gutter fold x~18-19.5 (f2v strip beyond excluded); right = edge line x403->395.5, slanting; stacks above top and below bottom excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

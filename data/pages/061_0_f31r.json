@@ -1,0 +1,103 @@
+{
+ "image": "061_0_f31r",
+ "folio": "f31r",
+ "scan": "061.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    109.3,
+    128.0
+   ],
+   [
+    749.5,
+    124.9
+   ],
+   [
+    1374.1,
+    149.9
+   ],
+   [
+    1998.7,
+    209.2
+   ],
+   [
+    2473.4,
+    262.3
+   ]
+  ],
+  "right": [
+   [
+    2473.4,
+    262.3
+   ],
+   [
+    2473.4,
+    1186.7
+   ],
+   [
+    2464.0,
+    1873.8
+   ],
+   [
+    2442.2,
+    3310.4
+   ],
+   [
+    2429.7,
+    3660.1
+   ]
+  ],
+  "bottom": [
+   [
+    2429.7,
+    3660.1
+   ],
+   [
+    1873.8,
+    3678.9
+   ],
+   [
+    936.9,
+    3675.8
+   ],
+   [
+    374.8,
+    3669.5
+   ],
+   [
+    62.5,
+    3653.9
+   ]
+  ],
+  "left": [
+   [
+    62.5,
+    3653.9
+   ],
+   [
+    78.1,
+    2435.9
+   ],
+   [
+    84.3,
+    1873.8
+   ],
+   [
+    109.3,
+    128.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad/SAM (x~406) on outer stacked edges; leaf fore-edge ~396->389. top: quad y~18 on the stack; top-right corner is cut, edge slopes to (396,42) above folio number '31'. bottom: SAM ~583-586 cut off leaf's lowest strip with root ink (edge ~588-589) right edge = innermost line of the stack (396 top, 391 near y530); choice between two close lines at y~300 (390.5/395) is +-3 px, no ink there. gutter left ~10-17, f30v brown ink at x<10 outside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

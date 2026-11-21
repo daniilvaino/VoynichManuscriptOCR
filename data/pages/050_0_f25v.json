@@ -1,0 +1,139 @@
+{
+ "image": "050_0_f25v",
+ "folio": "f25v",
+ "scan": "050.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    295.7,
+    201.4
+   ],
+   [
+    314.6,
+    163.6
+   ],
+   [
+    377.5,
+    147.9
+   ],
+   [
+    629.2,
+    132.1
+   ],
+   [
+    1573.1,
+    122.7
+   ],
+   [
+    2516.9,
+    122.7
+   ],
+   [
+    2752.9,
+    135.3
+   ]
+  ],
+  "right": [
+   [
+    2752.9,
+    135.3
+   ],
+   [
+    2756.0,
+    629.2
+   ],
+   [
+    2759.2,
+    1887.7
+   ],
+   [
+    2762.3,
+    2831.5
+   ],
+   [
+    2768.6,
+    3643.2
+   ]
+  ],
+  "bottom": [
+   [
+    2768.6,
+    3643.2
+   ],
+   [
+    2674.2,
+    3681.0
+   ],
+   [
+    2516.9,
+    3693.6
+   ],
+   [
+    1887.7,
+    3703.0
+   ],
+   [
+    1258.5,
+    3706.2
+   ],
+   [
+    629.2,
+    3706.2
+   ],
+   [
+    409.0,
+    3699.9
+   ],
+   [
+    352.4,
+    3687.3
+   ]
+  ],
+  "left": [
+   [
+    352.4,
+    3687.3
+   ],
+   [
+    295.7,
+    3637.0
+   ],
+   [
+    283.2,
+    3523.7
+   ],
+   [
+    273.7,
+    2831.5
+   ],
+   [
+    267.4,
+    1887.7
+   ],
+   [
+    270.6,
+    943.8
+   ],
+   [
+    283.2,
+    283.2
+   ],
+   [
+    295.7,
+    201.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad stop at transparent tape strip x~80, leaf continues under tape to x~43-47 (rounded corners); top: quad ~5 px high on outer stacked layer; right gutter ~3 px further right (x438-440) left edge = outer rounded-corner leaf line (inner parallel line at x53-60 taken as crease); small pen marks at y581-587 x170-235 kept inside; green paint reaches x436 near gutter fold 438.5",
+  "human_note": null,
+  "saved_at": null
+ }
+}

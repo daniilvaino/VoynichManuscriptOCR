@@ -1,0 +1,127 @@
+{
+ "image": "153_0_f84r",
+ "folio": "f84r",
+ "scan": "153.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    74.9,
+    137.3
+   ],
+   [
+    624.3,
+    131.1
+   ],
+   [
+    1248.5,
+    137.3
+   ],
+   [
+    1623.1,
+    149.8
+   ],
+   [
+    1872.8,
+    159.2
+   ],
+   [
+    2153.7,
+    168.6
+   ],
+   [
+    2359.7,
+    174.8
+   ],
+   [
+    2425.3,
+    218.5
+   ]
+  ],
+  "right": [
+   [
+    2425.3,
+    218.5
+   ],
+   [
+    2428.4,
+    624.3
+   ],
+   [
+    2425.3,
+    1248.5
+   ],
+   [
+    2419.0,
+    1872.8
+   ],
+   [
+    2397.2,
+    2497.1
+   ],
+   [
+    2378.4,
+    2934.0
+   ],
+   [
+    2362.8,
+    3617.6
+   ]
+  ],
+  "bottom": [
+   [
+    2362.8,
+    3617.6
+   ],
+   [
+    1872.8,
+    3620.7
+   ],
+   [
+    1248.5,
+    3623.8
+   ],
+   [
+    624.3,
+    3627.0
+   ],
+   [
+    68.7,
+    3633.2
+   ]
+  ],
+  "left": [
+   [
+    68.7,
+    3633.2
+   ],
+   [
+    68.7,
+    2809.2
+   ],
+   [
+    71.8,
+    1872.8
+   ],
+   [
+    74.9,
+    936.4
+   ],
+   [
+    74.9,
+    137.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad top (y~15-18) and top-right (400,15) include stack strips above/right; own top y~21-28, own fore-edge x~389 at top (quad ~11 px out); SAM contour broken on the right but on the right line top: own edge y~21 (left) sloping to ~28 at x~380, own scale drawing starts ~2 px below; rounded top-right corner (388.5,35); fore-edge 389 -> 378.5 at bottom, lighter strip beyond = leaves beneath; gutter x~11-12 at the thumbnail border",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "image": "057_0_f29r",
+ "folio": "f29r",
+ "scan": "057.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    128.1,
+    118.7
+   ],
+   [
+    749.8,
+    128.1
+   ],
+   [
+    1624.6,
+    150.0
+   ],
+   [
+    2061.9,
+    184.3
+   ],
+   [
+    2218.1,
+    206.2
+   ]
+  ],
+  "right": [
+   [
+    2218.1,
+    206.2
+   ],
+   [
+    2261.9,
+    593.6
+   ],
+   [
+    2299.4,
+    1093.4
+   ],
+   [
+    2349.4,
+    1562.1
+   ],
+   [
+    2377.5,
+    2061.9
+   ],
+   [
+    2427.5,
+    2811.7
+   ],
+   [
+    2443.1,
+    3580.3
+   ]
+  ],
+  "bottom": [
+   [
+    2443.1,
+    3580.3
+   ],
+   [
+    1249.7,
+    3592.8
+   ],
+   [
+    374.9,
+    3592.8
+   ],
+   [
+    87.5,
+    3595.9
+   ]
+  ],
+  "left": [
+   [
+    87.5,
+    3595.9
+   ],
+   [
+    90.6,
+    3124.1
+   ],
+   [
+    106.2,
+    1874.5
+   ],
+   [
+    112.5,
+    1499.6
+   ],
+   [
+    128.1,
+    118.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad/SAM run through the next leaf: its folio number '30' (x~372-382,y~58) and scalloped drawing (x~383-392,y~315-345) are outside; this leaf's fore-edge is cut slanted, corner ~(355,33). bottom: SAM ~578-583 includes stacked edges, leaf bottom ~575 right edge slanted line 355->391; top right part of top edge dips to y~30 at the cut corner; gutter left at fold x~14-20, f28v green ink at x<15 outside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

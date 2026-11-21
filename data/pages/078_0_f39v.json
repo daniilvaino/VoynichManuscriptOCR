@@ -1,0 +1,83 @@
+{
+ "image": "078_0_f39v",
+ "folio": "f39v",
+ "scan": "078.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    374.4,
+    142.8
+   ],
+   [
+    1573.1,
+    138.4
+   ],
+   [
+    2768.7,
+    135.3
+   ]
+  ],
+  "right": [
+   [
+    2768.7,
+    135.3
+   ],
+   [
+    2771.9,
+    629.3
+   ],
+   [
+    2778.2,
+    1887.8
+   ],
+   [
+    2790.8,
+    3664.2
+   ]
+  ],
+  "bottom": [
+   [
+    2790.8,
+    3664.2
+   ],
+   [
+    2202.4,
+    3671.7
+   ],
+   [
+    1573.1,
+    3678.0
+   ],
+   [
+    371.3,
+    3684.3
+   ]
+  ],
+  "left": [
+   [
+    371.3,
+    3684.3
+   ],
+   [
+    374.4,
+    1887.8
+   ],
+   [
+    374.4,
+    142.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "SAM mask misses top-left margin (stops at y~30 for x<130); quad essentially right left fore-edge clean line x~59.5; right = gutter fold x~440-443.5 (dark gutter debris at 442-446 outside); top y~22 below the stacked band; bottom y~582-585, roots end ~578 inside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

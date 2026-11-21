@@ -1,0 +1,127 @@
+{
+ "image": "069_0_f35r",
+ "folio": "f35r",
+ "scan": "069.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    125.0,
+    131.2
+   ],
+   [
+    624.8,
+    121.8
+   ],
+   [
+    1249.7,
+    121.8
+   ],
+   [
+    1874.5,
+    121.8
+   ],
+   [
+    2465.0,
+    128.1
+   ]
+  ],
+  "right": [
+   [
+    2465.0,
+    128.1
+   ],
+   [
+    2465.0,
+    624.8
+   ],
+   [
+    2474.3,
+    1187.2
+   ],
+   [
+    2499.3,
+    1562.1
+   ],
+   [
+    2524.3,
+    2186.9
+   ],
+   [
+    2514.9,
+    3124.2
+   ],
+   [
+    2505.6,
+    3374.1
+   ],
+   [
+    2499.3,
+    3652.1
+   ]
+  ],
+  "bottom": [
+   [
+    2499.3,
+    3652.1
+   ],
+   [
+    1874.5,
+    3652.1
+   ],
+   [
+    1249.7,
+    3652.1
+   ],
+   [
+    624.8,
+    3652.1
+   ],
+   [
+    87.5,
+    3652.1
+   ]
+  ],
+  "left": [
+   [
+    87.5,
+    3652.1
+   ],
+   [
+    92.5,
+    3124.2
+   ],
+   [
+    103.1,
+    2374.4
+   ],
+   [
+    106.2,
+    1874.5
+   ],
+   [
+    115.6,
+    1249.7
+   ],
+   [
+    123.7,
+    624.8
+   ],
+   [
+    125.0,
+    131.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad (417,20)->(400,583) includes a strip of an underlying leaf in the upper half (own edge x394.5, line visible; leaf beneath has lower top y25 and its own rounded corner at ~410); top-left quad y12 on stacked strip left = gutter crease x20->14, f34v fruit drawings reach x~16 at y300, kept outside; right own edge x394.5 (top) -> 404 (y350) -> 400 (bottom), brown drawing ends x~386; width now matches f35v",
+  "human_note": null,
+  "saved_at": null
+ }
+}

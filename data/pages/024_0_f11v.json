@@ -1,0 +1,143 @@
+{
+ "image": "024_0_f11v",
+ "folio": "f11v",
+ "scan": "024.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    503.3,
+    157.3
+   ],
+   [
+    817.9,
+    154.1
+   ],
+   [
+    1258.4,
+    154.1
+   ],
+   [
+    1698.8,
+    154.1
+   ],
+   [
+    2170.7,
+    141.6
+   ],
+   [
+    2516.7,
+    122.7
+   ],
+   [
+    2686.6,
+    129.0
+   ]
+  ],
+  "right": [
+   [
+    2686.6,
+    129.0
+   ],
+   [
+    2689.7,
+    1258.4
+   ],
+   [
+    2692.9,
+    2516.7
+   ],
+   [
+    2699.2,
+    3630.3
+   ]
+  ],
+  "bottom": [
+   [
+    2699.2,
+    3630.3
+   ],
+   [
+    2453.8,
+    3646.1
+   ],
+   [
+    2139.2,
+    3649.2
+   ],
+   [
+    1824.6,
+    3652.4
+   ],
+   [
+    1447.1,
+    3664.9
+   ],
+   [
+    1132.5,
+    3658.7
+   ],
+   [
+    880.8,
+    3642.9
+   ],
+   [
+    692.1,
+    3624.1
+   ],
+   [
+    566.3,
+    3608.3
+   ],
+   [
+    421.5,
+    3598.9
+   ]
+  ],
+  "left": [
+   [
+    421.5,
+    3598.9
+   ],
+   [
+    421.5,
+    3271.7
+   ],
+   [
+    434.1,
+    2768.4
+   ],
+   [
+    443.6,
+    1887.5
+   ],
+   [
+    453.0,
+    1258.4
+   ],
+   [
+    478.2,
+    629.2
+   ],
+   [
+    497.0,
+    283.1
+   ],
+   [
+    503.3,
+    157.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: quad at right edge of slanted transparent tape (x~87-94); leaf continues under tape to edge x~67-80. top: quad on outer lip y~10-20, own edge is innermost line y~20-25 below stacked edge bands left = first edge left of tape-covered surface (stacks of other leaves further left); top/bottom have stacked lip bands, took innermost line; bottom-left corner near x67 y572",
+  "human_note": null,
+  "saved_at": null
+ }
+}

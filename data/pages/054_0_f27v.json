@@ -1,0 +1,147 @@
+{
+ "image": "054_0_f27v",
+ "folio": "f27v",
+ "scan": "054.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    257.9,
+    195.0
+   ],
+   [
+    283.0,
+    185.5
+   ],
+   [
+    817.6,
+    166.7
+   ],
+   [
+    1257.8,
+    138.4
+   ],
+   [
+    1509.4,
+    128.9
+   ],
+   [
+    2515.7,
+    128.9
+   ],
+   [
+    2641.5,
+    144.7
+   ],
+   [
+    2748.4,
+    176.1
+   ]
+  ],
+  "right": [
+   [
+    2748.4,
+    176.1
+   ],
+   [
+    2748.4,
+    943.4
+   ],
+   [
+    2751.5,
+    1886.8
+   ],
+   [
+    2751.5,
+    2830.1
+   ],
+   [
+    2761.0,
+    3521.9
+   ],
+   [
+    2767.2,
+    3628.9
+   ]
+  ],
+  "bottom": [
+   [
+    2767.2,
+    3628.9
+   ],
+   [
+    2704.3,
+    3660.3
+   ],
+   [
+    2515.7,
+    3685.5
+   ],
+   [
+    1886.8,
+    3698.0
+   ],
+   [
+    1572.3,
+    3707.5
+   ],
+   [
+    566.0,
+    3710.6
+   ],
+   [
+    377.4,
+    3704.3
+   ],
+   [
+    314.5,
+    3691.8
+   ]
+  ],
+  "left": [
+   [
+    314.5,
+    3691.8
+   ],
+   [
+    270.4,
+    3660.3
+   ],
+   [
+    257.9,
+    3584.8
+   ],
+   [
+    254.7,
+    2830.1
+   ],
+   [
+    251.6,
+    1886.8
+   ],
+   [
+    248.4,
+    943.4
+   ],
+   [
+    251.6,
+    251.6
+   ],
+   [
+    257.9,
+    195.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM mask only to inner line x~61-66 (quad x38-46 slanted); top: quad tilted onto outer stacked layers (y6 at left), own top y29->20; right gutter ~2 px further right at bottom left = outer rounded-corner leaf line x~40 (inner parallel rounded line x61-66/bottom y582 taken as crease, as on f24v-f26v where own ink crosses the inner line); roots reach y585, bottom 588",
+  "human_note": null,
+  "saved_at": null
+ }
+}

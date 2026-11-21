@@ -1,0 +1,119 @@
+{
+ "image": "114_0_f57v",
+ "folio": "f57v",
+ "scan": "114.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    637.6,
+    103.7
+   ],
+   [
+    1696.2,
+    106.8
+   ],
+   [
+    2512.9,
+    113.1
+   ],
+   [
+    2896.1,
+    122.5
+   ]
+  ],
+  "right": [
+   [
+    2896.1,
+    122.5
+   ],
+   [
+    2899.2,
+    1193.6
+   ],
+   [
+    2899.2,
+    2387.2
+   ],
+   [
+    2892.9,
+    3606.0
+   ]
+  ],
+  "bottom": [
+   [
+    2892.9,
+    3606.0
+   ],
+   [
+    2701.3,
+    3602.8
+   ],
+   [
+    2387.2,
+    3596.5
+   ],
+   [
+    2073.1,
+    3593.4
+   ],
+   [
+    1759.0,
+    3584.0
+   ],
+   [
+    1256.4,
+    3574.5
+   ],
+   [
+    753.9,
+    3565.1
+   ],
+   [
+    414.6,
+    3555.7
+   ]
+  ],
+  "left": [
+   [
+    414.6,
+    3555.7
+   ],
+   [
+    452.3,
+    2827.0
+   ],
+   [
+    490.0,
+    1884.6
+   ],
+   [
+    534.0,
+    942.3
+   ],
+   [
+    559.1,
+    502.6
+   ],
+   [
+    590.5,
+    282.7
+   ],
+   [
+    637.6,
+    103.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "top-left: quad corner (89,13) includes a stacked leaf corner; own edge is a faint slanted line from (101.5,16.5) to (89,80); right: quad at x~457-460 slightly inside the gutter (own surface to x~461.5); mask notch at bottom-left (y~550) is false fore-edge strongly slanted x~101.5 (top) -> 66 (bottom), stack left of it excluded; right = gutter at left side of the dark seam x~461.5; bottom slants 566 -> 574, red-painted stacked leaf below (y>=572.5 at x280-450) outside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

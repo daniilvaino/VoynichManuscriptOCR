@@ -1,0 +1,119 @@
+{
+ "image": "166_0_f90v1",
+ "folio": "f90v1",
+ "scan": "166.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    333.8,
+    131.4
+   ],
+   [
+    501.0,
+    96.2
+   ],
+   [
+    842.1,
+    84.5
+   ],
+   [
+    1147.5,
+    75.3
+   ],
+   [
+    1657.1,
+    79.6
+   ],
+   [
+    1829.9,
+    78.4
+   ],
+   [
+    2121.7,
+    95.0
+   ],
+   [
+    2602.9,
+    99.3
+   ],
+   [
+    2708.4,
+    130.2
+   ]
+  ],
+  "right": [
+   [
+    2708.4,
+    130.2
+   ],
+   [
+    2738.1,
+    351.0
+   ],
+   [
+    2739.3,
+    816.2
+   ],
+   [
+    2748.5,
+    1557.8
+   ],
+   [
+    2754.1,
+    1801.5
+   ],
+   [
+    2760.3,
+    2120.5
+   ],
+   [
+    2761.5,
+    2608.5
+   ],
+   [
+    2757.2,
+    3509.2
+   ]
+  ],
+  "bottom": [
+   [
+    2757.2,
+    3509.2
+   ],
+   [
+    2401.2,
+    3552.4
+   ],
+   [
+    1757.1,
+    3578.3
+   ],
+   [
+    327.6,
+    3538.2
+   ]
+  ],
+  "left": [
+   [
+    327.6,
+    3538.2
+   ],
+   [
+    333.8,
+    131.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "human",
+  "status": "final",
+  "holes_source": "human-not-checked",
+  "opus_confidence": "high",
+  "opus_note": "SAM mask cuts out the brown root at bottom (false notch, not a hole) and rounds top-left corner low by ~6px; quad good left edge x~52.5: neighbour leaf with vertical text reaches x~50.5, kept outside; right x~445.5 (gap/gutter 446-449 beyond), own green leaf reaches x~443; top y~13-15, own blue flower strokes reach y~15; bottom ~579-583 with root ink near edge kept inside, layered stack below",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:21:15"
+ }
+}

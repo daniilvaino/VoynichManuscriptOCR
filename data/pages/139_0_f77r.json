@@ -1,0 +1,123 @@
+{
+ "image": "139_0_f77r",
+ "folio": "f77r",
+ "scan": "139.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    103.3,
+    125.2
+   ],
+   [
+    626.2,
+    131.5
+   ],
+   [
+    1252.5,
+    144.0
+   ],
+   [
+    1878.7,
+    166.0
+   ],
+   [
+    2254.4,
+    178.5
+   ],
+   [
+    2458.0,
+    187.9
+   ]
+  ],
+  "right": [
+   [
+    2458.0,
+    187.9
+   ],
+   [
+    2461.1,
+    375.7
+   ],
+   [
+    2448.6,
+    814.1
+   ],
+   [
+    2420.4,
+    1252.5
+   ],
+   [
+    2398.5,
+    1878.7
+   ],
+   [
+    2379.7,
+    2317.1
+   ],
+   [
+    2360.9,
+    3005.9
+   ],
+   [
+    2345.2,
+    3632.2
+   ]
+  ],
+  "bottom": [
+   [
+    2345.2,
+    3632.2
+   ],
+   [
+    1878.7,
+    3638.4
+   ],
+   [
+    1252.5,
+    3644.7
+   ],
+   [
+    626.2,
+    3647.8
+   ],
+   [
+    97.1,
+    3647.8
+   ]
+  ],
+  "left": [
+   [
+    97.1,
+    3647.8
+   ],
+   [
+    97.1,
+    3381.7
+   ],
+   [
+    95.8,
+    1878.7
+   ],
+   [
+    100.2,
+    375.7
+   ],
+   [
+    103.3,
+    125.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad right x~394-397 straight includes a wedge of lower leaves' edges (own fore-edge slants 393 -> 375); SAM mask ragged on right but right in bottom half left = gutter fold x~15.5 (f76v text to x~13 outside); right fore-edge slanted/cut: x~393 top, ~386 at y200, ~380 at y370, ~375 at bottom corner (left side of a dark shadow band; parallel strips beyond = next leaves); own ink at right max x~385 (y~85); top y~20->30, bottom ~582",
+  "human_note": null,
+  "saved_at": null
+ }
+}

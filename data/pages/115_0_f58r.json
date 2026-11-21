@@ -1,0 +1,111 @@
+{
+ "image": "115_0_f58r",
+ "folio": "f58r",
+ "scan": "115.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    121.8,
+    112.5
+   ],
+   [
+    624.8,
+    109.3
+   ],
+   [
+    1312.1,
+    106.2
+   ],
+   [
+    1874.5,
+    109.3
+   ],
+   [
+    2374.4,
+    112.5
+   ],
+   [
+    2555.6,
+    121.8
+   ]
+  ],
+  "right": [
+   [
+    2555.6,
+    121.8
+   ],
+   [
+    2561.8,
+    374.9
+   ],
+   [
+    2561.8,
+    1249.7
+   ],
+   [
+    2555.6,
+    2499.3
+   ],
+   [
+    2539.9,
+    3186.6
+   ],
+   [
+    2524.3,
+    3645.9
+   ]
+  ],
+  "bottom": [
+   [
+    2524.3,
+    3645.9
+   ],
+   [
+    1312.1,
+    3649.0
+   ],
+   [
+    75.0,
+    3645.9
+   ]
+  ],
+  "left": [
+   [
+    75.0,
+    3645.9
+   ],
+   [
+    87.5,
+    3124.2
+   ],
+   [
+    96.8,
+    2186.9
+   ],
+   [
+    112.5,
+    1562.1
+   ],
+   [
+    118.7,
+    749.8
+   ],
+   [
+    121.8,
+    112.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "none significant; mask slightly inside at top-left corner and lower right (x~404-406), separate mask blob on the stack at top-right left = gutter fold x~19.5->12, neighbour text at x<=12 outside; right fore-edge x~409-410, slanting in to ~404 at the bottom (band x405-411 there is ambiguous: edge thickness or next leaf, no ink); top ~17-19.5, bottom ~584",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "image": "120_0_f66v",
+ "folio": "f66v",
+ "scan": "120.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    490.1,
+    138.2
+   ],
+   [
+    1256.6,
+    128.8
+   ],
+   [
+    2199.1,
+    131.9
+   ],
+   [
+    2912.2,
+    138.2
+   ]
+  ],
+  "right": [
+   [
+    2912.2,
+    138.2
+   ],
+   [
+    2909.0,
+    628.3
+   ],
+   [
+    2899.6,
+    942.5
+   ],
+   [
+    2890.2,
+    2513.2
+   ],
+   [
+    2874.5,
+    2827.4
+   ],
+   [
+    2871.3,
+    3455.7
+   ],
+   [
+    2871.3,
+    3625.3
+   ]
+  ],
+  "bottom": [
+   [
+    2871.3,
+    3625.3
+   ],
+   [
+    2199.1,
+    3628.4
+   ],
+   [
+    1256.6,
+    3631.6
+   ],
+   [
+    499.5,
+    3634.7
+   ]
+  ],
+  "left": [
+   [
+    499.5,
+    3634.7
+   ],
+   [
+    499.5,
+    3455.7
+   ],
+   [
+    493.2,
+    1884.9
+   ],
+   [
+    490.1,
+    377.0
+   ],
+   [
+    490.1,
+    138.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad cuts diagonally from (455,480) to (80,575) losing the bottom (roots, folio annotation '8119'); SAM left contour at x~95-105 in the top half (own edge x~78), stray blobs in the stack verso: right = gutter, own edge 463.5 (top) -> 460 (y400) -> 457 (bottom) at the dark gap; neighbour leaf beyond outside (no foreign ink visible); left = fore-edge x~78-79.5, stacked leaves x15-77 excluded; tape at x75-90 near the bottom lies on the leaf",
+  "human_note": null,
+  "saved_at": null
+ }
+}

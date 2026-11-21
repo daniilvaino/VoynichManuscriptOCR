@@ -1,0 +1,135 @@
+{
+ "image": "173_0_f96r",
+ "folio": "f96r",
+ "scan": "173.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    65.6,
+    145.6
+   ],
+   [
+    641.0,
+    108.1
+   ],
+   [
+    1193.9,
+    98.7
+   ],
+   [
+    2112.3,
+    76.8
+   ],
+   [
+    2496.0,
+    92.5
+   ]
+  ],
+  "right": [
+   [
+    2496.0,
+    92.5
+   ],
+   [
+    2494.1,
+    993.4
+   ],
+   [
+    2519.1,
+    2011.1
+   ],
+   [
+    2496.6,
+    3567.4
+   ]
+  ],
+  "bottom": [
+   [
+    2496.6,
+    3567.4
+   ],
+   [
+    2403.5,
+    3589.3
+   ],
+   [
+    2187.9,
+    3590.5
+   ],
+   [
+    1790.0,
+    3603.0
+   ],
+   [
+    1548.2,
+    3611.8
+   ],
+   [
+    1288.9,
+    3606.2
+   ],
+   [
+    612.9,
+    3628.7
+   ],
+   [
+    434.8,
+    3624.3
+   ],
+   [
+    266.2,
+    3633.0
+   ],
+   [
+    133.1,
+    3613.7
+   ]
+  ],
+  "left": [
+   [
+    133.1,
+    3613.7
+   ],
+   [
+    136.8,
+    3272.5
+   ],
+   [
+    128.1,
+    2931.4
+   ],
+   [
+    111.8,
+    2321.0
+   ],
+   [
+    98.7,
+    1507.6
+   ],
+   [
+    84.3,
+    852.8
+   ],
+   [
+    74.3,
+    497.9
+   ],
+   [
+    65.6,
+    145.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "human",
+  "status": "final",
+  "holes_source": "human-not-checked",
+  "opus_confidence": null,
+  "opus_note": null,
+  "human_note": null,
+  "saved_at": "2026-11-21 11:10:15"
+ }
+}

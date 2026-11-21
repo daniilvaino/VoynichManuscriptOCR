@@ -1,0 +1,103 @@
+{
+ "image": "094_0_f47v",
+ "folio": "f47v",
+ "scan": "094.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    415.3,
+    154.2
+   ],
+   [
+    503.3,
+    144.7
+   ],
+   [
+    1573.0,
+    141.6
+   ],
+   [
+    2825.0,
+    141.6
+   ]
+  ],
+  "right": [
+   [
+    2825.0,
+    141.6
+   ],
+   [
+    2834.5,
+    629.2
+   ],
+   [
+    2834.5,
+    1887.6
+   ],
+   [
+    2837.6,
+    3523.4
+   ],
+   [
+    2834.5,
+    3633.5
+   ]
+  ],
+  "bottom": [
+   [
+    2834.5,
+    3633.5
+   ],
+   [
+    2768.4,
+    3643.0
+   ],
+   [
+    1887.6,
+    3649.3
+   ],
+   [
+    692.1,
+    3658.7
+   ],
+   [
+    352.3,
+    3658.7
+   ]
+  ],
+  "left": [
+   [
+    352.3,
+    3658.7
+   ],
+   [
+    361.8,
+    1887.6
+   ],
+   [
+    374.4,
+    377.5
+   ],
+   [
+    386.9,
+    201.3
+   ],
+   [
+    415.3,
+    154.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad right x~448 cuts ~2-3 px inside the fold next to the flower at y~100 (flower ink to x~446); mask fragments over the roots right = gutter fold dark line x~451-453, flower ink reaches x~446 inside, neighbour strip from x~455 outside; bottom: clean surface ends y~576-577.5 (root ink to 577.5), a darkened edge band below to ~581 included (mirrors f47r), layered stack below outside; left fore-edge x~56-60 with rounded TL corner",
+  "human_note": null,
+  "saved_at": null
+ }
+}

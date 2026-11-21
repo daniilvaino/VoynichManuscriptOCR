@@ -1,0 +1,139 @@
+{
+ "image": "052_0_f26v",
+ "folio": "f26v",
+ "scan": "052.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    295.6,
+    195.0
+   ],
+   [
+    327.0,
+    179.2
+   ],
+   [
+    503.1,
+    182.4
+   ],
+   [
+    943.4,
+    169.8
+   ],
+   [
+    1572.3,
+    157.2
+   ],
+   [
+    2201.2,
+    157.2
+   ],
+   [
+    2515.7,
+    150.9
+   ],
+   [
+    2773.5,
+    154.1
+   ]
+  ],
+  "right": [
+   [
+    2773.5,
+    154.1
+   ],
+   [
+    2773.5,
+    943.4
+   ],
+   [
+    2773.5,
+    1886.8
+   ],
+   [
+    2773.5,
+    2830.1
+   ],
+   [
+    2770.4,
+    3672.9
+   ]
+  ],
+  "bottom": [
+   [
+    2770.4,
+    3672.9
+   ],
+   [
+    2641.5,
+    3691.8
+   ],
+   [
+    2201.2,
+    3701.2
+   ],
+   [
+    1572.3,
+    3707.5
+   ],
+   [
+    943.4,
+    3707.5
+   ],
+   [
+    503.1,
+    3704.3
+   ],
+   [
+    364.8,
+    3691.8
+   ]
+  ],
+  "left": [
+   [
+    364.8,
+    3691.8
+   ],
+   [
+    295.6,
+    3647.7
+   ],
+   [
+    273.6,
+    3553.4
+   ],
+   [
+    273.6,
+    2830.1
+   ],
+   [
+    273.6,
+    1886.8
+   ],
+   [
+    283.0,
+    943.4
+   ],
+   [
+    289.3,
+    283.0
+   ],
+   [
+    295.6,
+    195.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad stop at transparent tape (x~76), leaf continues under tape to x~43-47 (rounded corners) - red root stroke at y571 runs under tape to x58; quad top badly tilted (y2.8 at left, outer stacks), own top y29->24.5; right gutter ~2 px further right (x441) bottom = ~589 between own outer line (587) and stack strip edge (591), keeps root strokes ending y587; text right edge x~432 inside gutter fold x441",
+  "human_note": null,
+  "saved_at": null
+ }
+}

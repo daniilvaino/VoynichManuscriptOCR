@@ -1,0 +1,107 @@
+{
+ "image": "092_0_f46v",
+ "folio": "f46v",
+ "scan": "092.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    471.8,
+    179.3
+   ],
+   [
+    943.7,
+    163.6
+   ],
+   [
+    1572.8,
+    151.0
+   ],
+   [
+    2805.9,
+    132.1
+   ]
+  ],
+  "right": [
+   [
+    2805.9,
+    132.1
+   ],
+   [
+    2812.2,
+    1132.4
+   ],
+   [
+    2815.3,
+    1887.4
+   ],
+   [
+    2818.5,
+    3636.3
+   ]
+  ],
+  "bottom": [
+   [
+    2818.5,
+    3636.3
+   ],
+   [
+    1572.8,
+    3642.6
+   ],
+   [
+    754.9,
+    3645.8
+   ],
+   [
+    368.0,
+    3645.8
+   ]
+  ],
+  "left": [
+   [
+    368.0,
+    3645.8
+   ],
+   [
+    374.3,
+    2831.0
+   ],
+   [
+    380.6,
+    1887.4
+   ],
+   [
+    393.2,
+    629.1
+   ],
+   [
+    399.5,
+    314.6
+   ],
+   [
+    408.9,
+    232.8
+   ],
+   [
+    427.8,
+    191.9
+   ],
+   [
+    471.8,
+    179.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "none significant; quad TL corner square while the leaf corner is rounded left fore-edge x~58.5-63.5 with rounded TL corner (holder strip x~67-80 at top), stacked leaves outside; right = gutter fold dark line x~448-449, neighbour text from x~455 outside; bottom y~579.5, root strokes end y~578.5 inside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

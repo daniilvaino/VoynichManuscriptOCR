@@ -1,0 +1,151 @@
+{
+ "image": "006_0_f2v",
+ "folio": "f2v",
+ "scan": "006.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    354.3,
+    110.7
+   ],
+   [
+    632.6,
+    107.6
+   ],
+   [
+    949.0,
+    104.4
+   ],
+   [
+    1581.6,
+    101.2
+   ],
+   [
+    2214.3,
+    98.1
+   ],
+   [
+    2631.8,
+    104.4
+   ]
+  ],
+  "right": [
+   [
+    2631.8,
+    104.4
+   ],
+   [
+    2628.7,
+    632.6
+   ],
+   [
+    2619.2,
+    1265.3
+   ],
+   [
+    2616.0,
+    1897.9
+   ],
+   [
+    2609.7,
+    2530.6
+   ],
+   [
+    2606.5,
+    3163.2
+   ],
+   [
+    2603.3,
+    3647.2
+   ]
+  ],
+  "bottom": [
+   [
+    2603.3,
+    3647.2
+   ],
+   [
+    2214.3,
+    3637.7
+   ],
+   [
+    1581.6,
+    3621.9
+   ],
+   [
+    949.0,
+    3590.3
+   ],
+   [
+    569.4,
+    3574.5
+   ],
+   [
+    379.6,
+    3558.6
+   ],
+   [
+    284.7,
+    3542.8
+   ],
+   [
+    227.8,
+    3511.2
+   ]
+  ],
+  "left": [
+   [
+    227.8,
+    3511.2
+   ],
+   [
+    234.1,
+    3163.2
+   ],
+   [
+    246.7,
+    2720.4
+   ],
+   [
+    272.0,
+    1897.9
+   ],
+   [
+    287.9,
+    1138.8
+   ],
+   [
+    310.0,
+    949.0
+   ],
+   [
+    322.7,
+    822.4
+   ],
+   [
+    338.5,
+    632.6
+   ],
+   [
+    348.0,
+    316.3
+   ],
+   [
+    354.3,
+    110.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad stop at right edge of transparent tape strip (x~71 top, 50 bottom); leaf continues under tape to the pale paper guard (x~56 top, 43 mid, 36 bottom) left edge = boundary of pale paper guard, leaf seen darkened under tape; leaf runs briefly outside tape at y145-180; right = gutter fold line x416-411.5, f3r strip beyond excluded; top edge y~16-17 below a thin outer layer; bottom tissue/repair layer below edge excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

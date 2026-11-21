@@ -1,0 +1,139 @@
+{
+ "image": "174_0_f96v",
+ "folio": "f96v",
+ "scan": "174.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    353.7,
+    133.3
+   ],
+   [
+    554.9,
+    109.9
+   ],
+   [
+    1120.4,
+    109.9
+   ],
+   [
+    1622.8,
+    112.3
+   ],
+   [
+    2266.0,
+    112.3
+   ],
+   [
+    2738.9,
+    140.7
+   ]
+  ],
+  "right": [
+   [
+    2738.9,
+    140.7
+   ],
+   [
+    2746.9,
+    661.1
+   ],
+   [
+    2747.5,
+    1073.4
+   ],
+   [
+    2746.9,
+    1206.8
+   ],
+   [
+    2745.7,
+    1364.2
+   ],
+   [
+    2746.9,
+    1490.7
+   ],
+   [
+    2755.5,
+    1564.2
+   ],
+   [
+    2762.9,
+    1766.0
+   ],
+   [
+    2771.0,
+    1865.4
+   ],
+   [
+    2766.0,
+    2062.3
+   ],
+   [
+    2769.7,
+    2395.0
+   ],
+   [
+    2745.0,
+    3583.9
+   ]
+  ],
+  "bottom": [
+   [
+    2745.0,
+    3583.9
+   ],
+   [
+    2259.9,
+    3620.3
+   ],
+   [
+    1980.8,
+    3609.8
+   ],
+   [
+    1383.9,
+    3598.1
+   ],
+   [
+    999.4,
+    3592.6
+   ],
+   [
+    736.4,
+    3581.5
+   ],
+   [
+    595.1,
+    3556.8
+   ],
+   [
+    394.4,
+    3556.1
+   ]
+  ],
+  "left": [
+   [
+    394.4,
+    3556.1
+   ],
+   [
+    353.7,
+    133.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "human",
+  "status": "final",
+  "holes_source": "human-not-checked",
+  "opus_confidence": null,
+  "opus_note": null,
+  "human_note": null,
+  "saved_at": "2026-11-21 11:08:12"
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "image": "040_0_f20v",
+ "folio": "f20v",
+ "scan": "040.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    484.3,
+    217.0
+   ],
+   [
+    628.9,
+    210.7
+   ],
+   [
+    1006.3,
+    201.3
+   ],
+   [
+    1383.6,
+    185.5
+   ],
+   [
+    1886.8,
+    176.1
+   ],
+   [
+    2389.9,
+    169.8
+   ],
+   [
+    2694.9,
+    176.1
+   ]
+  ],
+  "right": [
+   [
+    2694.9,
+    176.1
+   ],
+   [
+    2698.1,
+    943.4
+   ],
+   [
+    2704.3,
+    1886.8
+   ],
+   [
+    2710.6,
+    2830.1
+   ],
+   [
+    2723.2,
+    3333.3
+   ],
+   [
+    2726.4,
+    3616.3
+   ],
+   [
+    2716.9,
+    3660.3
+   ]
+  ],
+  "bottom": [
+   [
+    2716.9,
+    3660.3
+   ],
+   [
+    2672.9,
+    3682.3
+   ],
+   [
+    2515.7,
+    3694.9
+   ],
+   [
+    2201.2,
+    3698.0
+   ],
+   [
+    1886.8,
+    3701.2
+   ],
+   [
+    1572.3,
+    3701.2
+   ],
+   [
+    1194.9,
+    3694.9
+   ],
+   [
+    817.6,
+    3682.3
+   ],
+   [
+    566.0,
+    3669.7
+   ],
+   [
+    380.5,
+    3657.2
+   ]
+  ],
+  "left": [
+   [
+    380.5,
+    3657.2
+   ],
+   [
+    383.6,
+    3396.2
+   ],
+   [
+    396.2,
+    2893.0
+   ],
+   [
+    415.1,
+    2389.9
+   ],
+   [
+    430.8,
+    1886.8
+   ],
+   [
+    443.4,
+    1383.6
+   ],
+   [
+    459.1,
+    943.4
+   ],
+   [
+    471.7,
+    628.9
+   ],
+   [
+    481.1,
+    314.5
+   ],
+   [
+    484.3,
+    217.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "bottom-right: quad corner at y~596 in black background; own bottom ~588 with rounded corner at (432,582). Left/top/right SAM within ~1-2 px page slightly rotated: left edge slants 77->60.5 (tape only in top/bottom margins, edge visible); stacked fore-edge leaves x25-60 (green traces, crease at y225 belongs to underlying leaf) excluded; bottom-left lower band 582-589 = stacked leaves; right = gutter line",
+  "human_note": null,
+  "saved_at": null
+ }
+}

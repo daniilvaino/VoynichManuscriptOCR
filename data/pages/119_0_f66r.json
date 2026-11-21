@@ -1,0 +1,115 @@
+{
+ "image": "119_0_f66r",
+ "folio": "f66r",
+ "scan": "119.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    102.0,
+    108.1
+   ],
+   [
+    617.9,
+    111.2
+   ],
+   [
+    1544.8,
+    117.4
+   ],
+   [
+    2431.5,
+    126.7
+   ]
+  ],
+  "right": [
+   [
+    2431.5,
+    126.7
+   ],
+   [
+    2440.8,
+    494.3
+   ],
+   [
+    2477.9,
+    1544.8
+   ],
+   [
+    2490.2,
+    2039.1
+   ],
+   [
+    2493.3,
+    2595.3
+   ],
+   [
+    2481.0,
+    2966.0
+   ],
+   [
+    2453.1,
+    3213.2
+   ],
+   [
+    2453.1,
+    3550.0
+   ]
+  ],
+  "bottom": [
+   [
+    2453.1,
+    3550.0
+   ],
+   [
+    1853.8,
+    3556.1
+   ],
+   [
+    1235.8,
+    3565.4
+   ],
+   [
+    617.9,
+    3571.6
+   ],
+   [
+    71.1,
+    3577.8
+   ]
+  ],
+  "left": [
+   [
+    71.1,
+    3577.8
+   ],
+   [
+    71.1,
+    3089.6
+   ],
+   [
+    80.3,
+    2039.1
+   ],
+   [
+    86.5,
+    926.9
+   ],
+   [
+    102.0,
+    108.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad useless at bottom (diagonal from (17,485) to (405,590), cuts off the bottom-left text/drawings); right: SAM upper half at x~410-413 includes a larger leaf behind; mask lower half fragmented recto: left = gutter fold x~16.5 (top) -> 11.5 (bottom), f65v green ink at x0-6 outside; first glyph of the bottom-left word at y~538 touches the fold and is kept inside; right fore-edge is a faint uneven line 393.5 (top) -> ~403 (y330-420) -> 397 (bottom); region to x~418 and below y~575 is a larger leaf behind; no ink near the right edge",
+  "human_note": null,
+  "saved_at": null
+ }
+}

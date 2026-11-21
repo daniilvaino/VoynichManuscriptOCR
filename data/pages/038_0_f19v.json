@@ -1,0 +1,143 @@
+{
+ "image": "038_0_f19v",
+ "folio": "f19v",
+ "scan": "038.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    440.2,
+    173.0
+   ],
+   [
+    628.9,
+    173.0
+   ],
+   [
+    880.5,
+    169.8
+   ],
+   [
+    1132.1,
+    163.5
+   ],
+   [
+    1383.6,
+    147.8
+   ],
+   [
+    1635.2,
+    141.5
+   ],
+   [
+    2201.2,
+    141.5
+   ],
+   [
+    2729.5,
+    141.5
+   ]
+  ],
+  "right": [
+   [
+    2729.5,
+    141.5
+   ],
+   [
+    2732.7,
+    943.4
+   ],
+   [
+    2735.8,
+    2201.2
+   ],
+   [
+    2738.9,
+    3144.6
+   ],
+   [
+    2738.9,
+    3650.9
+   ]
+  ],
+  "bottom": [
+   [
+    2738.9,
+    3650.9
+   ],
+   [
+    2389.9,
+    3654.0
+   ],
+   [
+    1886.8,
+    3654.0
+   ],
+   [
+    1257.8,
+    3647.7
+   ],
+   [
+    628.9,
+    3638.3
+   ],
+   [
+    361.6,
+    3632.0
+   ]
+  ],
+  "left": [
+   [
+    361.6,
+    3632.0
+   ],
+   [
+    371.1,
+    3270.4
+   ],
+   [
+    377.4,
+    2767.2
+   ],
+   [
+    380.5,
+    2075.4
+   ],
+   [
+    386.8,
+    1886.8
+   ],
+   [
+    399.4,
+    1635.2
+   ],
+   [
+    402.5,
+    1257.8
+   ],
+   [
+    408.8,
+    1006.3
+   ],
+   [
+    421.4,
+    628.9
+   ],
+   [
+    440.2,
+    173.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad stop at right edge of transparent tape (x~98); leaf continues under tape and beyond to its edge x~70 (top) -> 57.5 (bottom), ~40 px further left; top-left quad corner at tape left edge = innermost continuous slanting line (70->60->57.5), bottom edge y~578 runs continuous from tape to corner at x57.5; line at x~80-82 (y140-557) is a crease, ends before bottom, not an edge; stacked fore-edge leaves x30-57 (green traces) excluded; width ratio matches f19r",
+  "human_note": null,
+  "saved_at": null
+ }
+}

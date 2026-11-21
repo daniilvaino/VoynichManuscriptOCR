@@ -1,0 +1,111 @@
+{
+ "image": "085_0_f43r",
+ "folio": "f43r",
+ "scan": "085.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    115.9,
+    87.7
+   ],
+   [
+    1252.5,
+    81.4
+   ],
+   [
+    2473.8,
+    84.5
+   ],
+   [
+    2517.6,
+    100.2
+   ]
+  ],
+  "right": [
+   [
+    2517.6,
+    100.2
+   ],
+   [
+    2523.9,
+    626.3
+   ],
+   [
+    2530.1,
+    1252.5
+   ],
+   [
+    2536.4,
+    1878.8
+   ],
+   [
+    2539.5,
+    2505.1
+   ],
+   [
+    2545.8,
+    3381.9
+   ],
+   [
+    2545.8,
+    3594.8
+   ]
+  ],
+  "bottom": [
+   [
+    2545.8,
+    3594.8
+   ],
+   [
+    1878.8,
+    3616.7
+   ],
+   [
+    1252.5,
+    3635.5
+   ],
+   [
+    626.3,
+    3651.2
+   ],
+   [
+    313.1,
+    3657.4
+   ],
+   [
+    81.4,
+    3635.5
+   ]
+  ],
+  "left": [
+   [
+    81.4,
+    3635.5
+   ],
+   [
+    81.4,
+    3131.3
+   ],
+   [
+    97.1,
+    1565.7
+   ],
+   [
+    115.9,
+    87.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "SAM mask cuts in at top-right corner (x~396, y15-45) and right x~397-400 at y 110-220; quad bottom-left (11,587) slightly below the leaf left = gutter: page starts right of dark gutter gap (x~13-16), neighbour teal ink at x 1-12 outside; right fore-edge x~402->406.5 (outer side of the thick edge), neighbour red ink on stacked leaf at x>=407 outside; bottom slants y~584 left -> 574 right, roots end above it",
+  "human_note": null,
+  "saved_at": null
+ }
+}

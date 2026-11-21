@@ -1,0 +1,127 @@
+{
+ "image": "125_0_f69r",
+ "folio": "f69r",
+ "scan": "125.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    91.0,
+    131.8
+   ],
+   [
+    941.5,
+    138.1
+   ],
+   [
+    1569.1,
+    141.2
+   ],
+   [
+    2134.0,
+    147.5
+   ],
+   [
+    2385.0,
+    169.5
+   ],
+   [
+    2526.3,
+    188.3
+   ]
+  ],
+  "right": [
+   [
+    2526.3,
+    188.3
+   ],
+   [
+    2523.1,
+    627.6
+   ],
+   [
+    2507.4,
+    1255.3
+   ],
+   [
+    2494.9,
+    1757.4
+   ],
+   [
+    2466.6,
+    2510.6
+   ],
+   [
+    2435.2,
+    3138.2
+   ],
+   [
+    2410.1,
+    3514.8
+   ],
+   [
+    2407.0,
+    3678.0
+   ]
+  ],
+  "bottom": [
+   [
+    2407.0,
+    3678.0
+   ],
+   [
+    1882.9,
+    3671.7
+   ],
+   [
+    1255.3,
+    3662.3
+   ],
+   [
+    627.6,
+    3652.9
+   ],
+   [
+    81.6,
+    3640.3
+   ]
+  ],
+  "left": [
+   [
+    81.6,
+    3640.3
+   ],
+   [
+    78.5,
+    3326.5
+   ],
+   [
+    87.9,
+    2510.6
+   ],
+   [
+    91.0,
+    1694.6
+   ],
+   [
+    91.0,
+    941.5
+   ],
+   [
+    91.0,
+    131.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad at x~400-405 straight, includes a strip of the leaf behind in the lower half (own fore-edge slants 402.5 -> 383.5); top: quad/mask at y~14-17 include stacked top strips (own top ~22-23, dropping to 30 at the top-right corner); mask broken around the bottom-right stain recto: left = gutter fold x~14.5 (12.5 near bottom); f68v text strip at x<12 outside; right fore-edge = slanted line, the band out to x~406 and below is a leaf behind; brown spot at (320,530) is a stain, not a hole",
+  "human_note": null,
+  "saved_at": null
+ }
+}

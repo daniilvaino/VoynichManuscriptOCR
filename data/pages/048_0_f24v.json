@@ -1,0 +1,139 @@
+{
+ "image": "048_0_f24v",
+ "folio": "f24v",
+ "scan": "048.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    299.0,
+    207.7
+   ],
+   [
+    346.2,
+    163.7
+   ],
+   [
+    629.5,
+    157.4
+   ],
+   [
+    944.2,
+    151.1
+   ],
+   [
+    1573.6,
+    132.2
+   ],
+   [
+    2077.2,
+    129.0
+   ],
+   [
+    2517.8,
+    132.2
+   ],
+   [
+    2757.0,
+    138.5
+   ]
+  ],
+  "right": [
+   [
+    2757.0,
+    138.5
+   ],
+   [
+    2757.0,
+    944.2
+   ],
+   [
+    2760.1,
+    1888.4
+   ],
+   [
+    2760.1,
+    2832.5
+   ],
+   [
+    2757.0,
+    3524.9
+   ],
+   [
+    2750.7,
+    3638.2
+   ]
+  ],
+  "bottom": [
+   [
+    2750.7,
+    3638.2
+   ],
+   [
+    2675.2,
+    3660.3
+   ],
+   [
+    2517.8,
+    3669.7
+   ],
+   [
+    1888.4,
+    3682.3
+   ],
+   [
+    1258.9,
+    3691.7
+   ],
+   [
+    629.5,
+    3698.0
+   ],
+   [
+    390.3,
+    3698.0
+   ]
+  ],
+  "left": [
+   [
+    390.3,
+    3698.0
+   ],
+   [
+    314.7,
+    3657.1
+   ],
+   [
+    289.5,
+    3556.4
+   ],
+   [
+    286.4,
+    2832.5
+   ],
+   [
+    286.4,
+    1888.4
+   ],
+   [
+    289.5,
+    944.2
+   ],
+   [
+    299.0,
+    207.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad stop at transparent tape strip x~73-78, leaf continues under tape to x~46 (rounded corners); bottom: quad on crease band y570-576, real edge 578-587 (folio no. '39' and dots y555-572 were outside quad); right: gutter ~3 px further right (x438) top = lowest continuous layer edge y25->21 among stacked top layers; bottom thin outer strip y587-590 = stacked leaves, excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

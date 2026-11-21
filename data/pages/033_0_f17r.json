@@ -1,0 +1,131 @@
+{
+ "image": "033_0_f17r",
+ "folio": "f17r",
+ "scan": "033.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    109.3,
+    131.2
+   ],
+   [
+    374.9,
+    128.1
+   ],
+   [
+    937.1,
+    128.1
+   ],
+   [
+    1561.9,
+    125.0
+   ],
+   [
+    2061.7,
+    128.1
+   ],
+   [
+    2511.6,
+    134.3
+   ]
+  ],
+  "right": [
+   [
+    2511.6,
+    134.3
+   ],
+   [
+    2517.8,
+    499.8
+   ],
+   [
+    2524.0,
+    937.1
+   ],
+   [
+    2533.4,
+    1874.3
+   ],
+   [
+    2542.8,
+    2811.4
+   ],
+   [
+    2533.4,
+    3373.7
+   ],
+   [
+    2530.3,
+    3536.2
+   ],
+   [
+    2517.8,
+    3592.4
+   ],
+   [
+    2486.6,
+    3623.6
+   ]
+  ],
+  "bottom": [
+   [
+    2486.6,
+    3623.6
+   ],
+   [
+    2124.2,
+    3626.8
+   ],
+   [
+    1561.9,
+    3626.8
+   ],
+   [
+    937.1,
+    3629.9
+   ],
+   [
+    374.9,
+    3629.9
+   ],
+   [
+    96.8,
+    3626.8
+   ]
+  ],
+  "left": [
+   [
+    96.8,
+    3626.8
+   ],
+   [
+    100.0,
+    3123.8
+   ],
+   [
+    106.2,
+    2186.7
+   ],
+   [
+    109.3,
+    1249.5
+   ],
+   [
+    109.3,
+    131.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad bottom-left corner at y 556 (real ~580, cut 25px of leaf); SAM bottom follows a stain line y 562-575; quad top at outer lips (y 12-17) vs own edge ~20.5; quad bottom-right corner (405,592) outside, own corner rounded ~(398,580) right fore-edge has a 4-6px strip of another leaf outside the own edge; bottom bands y 577-586 ambiguous at x 250-350 (+-3px)",
+  "human_note": null,
+  "saved_at": null
+ }
+}

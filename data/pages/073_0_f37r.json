@@ -1,0 +1,123 @@
+{
+ "image": "073_0_f37r",
+ "folio": "f37r",
+ "scan": "073.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    135.0,
+    156.8
+   ],
+   [
+    308.0,
+    132.5
+   ],
+   [
+    718.6,
+    121.8
+   ],
+   [
+    1312.1,
+    131.2
+   ],
+   [
+    1735.8,
+    164.3
+   ],
+   [
+    2186.9,
+    150.0
+   ]
+  ],
+  "right": [
+   [
+    2186.9,
+    150.0
+   ],
+   [
+    2230.7,
+    374.9
+   ],
+   [
+    2311.9,
+    937.2
+   ],
+   [
+    2380.6,
+    1249.7
+   ],
+   [
+    2430.6,
+    1562.1
+   ],
+   [
+    2474.3,
+    1874.5
+   ],
+   [
+    2465.0,
+    2811.7
+   ],
+   [
+    2458.7,
+    3633.4
+   ]
+  ],
+  "bottom": [
+   [
+    2458.7,
+    3633.4
+   ],
+   [
+    1869.5,
+    3623.4
+   ],
+   [
+    1253.4,
+    3624.0
+   ],
+   [
+    624.8,
+    3639.6
+   ],
+   [
+    82.5,
+    3640.3
+   ]
+  ],
+  "left": [
+   [
+    82.5,
+    3640.3
+   ],
+   [
+    95.0,
+    2749.3
+   ],
+   [
+    107.5,
+    1874.5
+   ],
+   [
+    120.0,
+    999.7
+   ],
+   [
+    135.0,
+    156.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad (399,23)->(393,582) includes a triangle of underlying leaves (f38/f39, with f39r's number '39' and text fragments) at the top right; own fore edge cut diagonally (350,24)->(396,300) left = gutter crease x21->13, f36v leaves at x<12 outside; right = diagonal edge (350,24)->(396,300) then x~394 down; tape strips x357-370 (top) and x377-393 (bottom)",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:42:57"
+ }
+}

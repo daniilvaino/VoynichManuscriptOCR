@@ -1,0 +1,115 @@
+{
+ "image": "117_0_f65r",
+ "folio": "f65r",
+ "scan": "117.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    139.0,
+    86.5
+   ],
+   [
+    741.5,
+    83.4
+   ],
+   [
+    1359.4,
+    83.4
+   ],
+   [
+    1977.3,
+    83.4
+   ],
+   [
+    2570.5,
+    83.4
+   ]
+  ],
+  "right": [
+   [
+    2570.5,
+    83.4
+   ],
+   [
+    2576.7,
+    370.8
+   ],
+   [
+    2573.6,
+    1328.5
+   ],
+   [
+    2570.5,
+    2471.7
+   ],
+   [
+    2567.5,
+    3608.7
+   ]
+  ],
+  "bottom": [
+   [
+    2567.5,
+    3608.7
+   ],
+   [
+    2409.9,
+    3624.1
+   ],
+   [
+    1853.8,
+    3621.0
+   ],
+   [
+    1359.4,
+    3617.9
+   ],
+   [
+    617.9,
+    3614.8
+   ],
+   [
+    80.3,
+    3611.7
+   ]
+  ],
+  "left": [
+   [
+    80.3,
+    3611.7
+   ],
+   [
+    98.9,
+    2780.6
+   ],
+   [
+    114.3,
+    1853.8
+   ],
+   [
+    120.5,
+    1112.3
+   ],
+   [
+    129.8,
+    741.5
+   ],
+   [
+    139.0,
+    86.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "none significant; mask slightly inside at the corners, separate mask blob on the stack at top-right left = gutter fold x~22.5->13, own green leaf touches the fold at x~20 (y160-200), boundary at the dark fold line x~19.5; right fore-edge taken at the outer rough edge x~416-417 (inner vertical lines at x~405-406 and ~395 near the bottom read as creases of the same leaf, no ink between); top ~13.5, bottom ~584-586.5",
+  "human_note": null,
+  "saved_at": null
+ }
+}

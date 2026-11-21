@@ -1,0 +1,135 @@
+{
+ "image": "193_0_f108r",
+ "folio": "f108r",
+ "scan": "193.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    116.9,
+    129.5
+   ],
+   [
+    568.6,
+    129.5
+   ],
+   [
+    1074.1,
+    145.3
+   ],
+   [
+    1895.5,
+    148.5
+   ],
+   [
+    2337.7,
+    151.6
+   ],
+   [
+    2467.2,
+    161.1
+   ]
+  ],
+  "right": [
+   [
+    2467.2,
+    161.1
+   ],
+   [
+    2467.2,
+    947.7
+   ],
+   [
+    2470.4,
+    1895.5
+   ],
+   [
+    2470.4,
+    2843.2
+   ],
+   [
+    2470.4,
+    3512.9
+   ],
+   [
+    2457.8,
+    3538.2
+   ]
+  ],
+  "bottom": [
+   [
+    2457.8,
+    3538.2
+   ],
+   [
+    2148.2,
+    3544.5
+   ],
+   [
+    1895.5,
+    3557.1
+   ],
+   [
+    1642.7,
+    3576.1
+   ],
+   [
+    1263.6,
+    3588.7
+   ],
+   [
+    758.2,
+    3601.4
+   ],
+   [
+    315.9,
+    3604.5
+   ],
+   [
+    142.2,
+    3604.5
+   ]
+  ],
+  "left": [
+   [
+    142.2,
+    3604.5
+   ],
+   [
+    142.2,
+    3411.8
+   ],
+   [
+    135.8,
+    2843.2
+   ],
+   [
+    126.4,
+    2211.4
+   ],
+   [
+    123.2,
+    1579.5
+   ],
+   [
+    116.9,
+    758.2
+   ],
+   [
+    116.9,
+    129.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "right: quad slants 381->401 (cuts the folio number '108' at top, includes the fore-edge stack at bottom); own edge is ~390.5-391 throughout; bottom-left: SAM cut the corner along a diagonal thread lying on the leaf gutter crease left (x18.5-22.5) with previous page text beyond; bottom edge rises from ~570.5 left to ~560 at the rounded bottom-right corner; layers below excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

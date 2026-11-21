@@ -1,0 +1,115 @@
+{
+ "image": "112_0_f56v",
+ "folio": "f56v",
+ "scan": "112.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    461.9,
+    157.1
+   ],
+   [
+    1005.6,
+    144.6
+   ],
+   [
+    1634.1,
+    135.1
+   ],
+   [
+    2262.5,
+    128.8
+   ],
+   [
+    2887.9,
+    125.7
+   ]
+  ],
+  "right": [
+   [
+    2887.9,
+    125.7
+   ],
+   [
+    2887.9,
+    1382.7
+   ],
+   [
+    2884.7,
+    2513.9
+   ],
+   [
+    2881.6,
+    3667.2
+   ]
+  ],
+  "bottom": [
+   [
+    2881.6,
+    3667.2
+   ],
+   [
+    2513.9,
+    3670.3
+   ],
+   [
+    1885.4,
+    3670.3
+   ],
+   [
+    1634.1,
+    3667.2
+   ],
+   [
+    1068.4,
+    3657.8
+   ],
+   [
+    565.6,
+    3648.3
+   ],
+   [
+    417.9,
+    3638.9
+   ]
+  ],
+  "left": [
+   [
+    417.9,
+    3638.9
+   ],
+   [
+    421.1,
+    3393.8
+   ],
+   [
+    433.7,
+    2513.9
+   ],
+   [
+    446.2,
+    1571.2
+   ],
+   [
+    458.8,
+    628.5
+   ],
+   [
+    461.9,
+    157.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "right: quad/mask at x~455-457 cut the green leaves/blue flower touching the gutter; own surface reaches x~459.5 before the dark gutter gap; mask excludes the root drawing (holes in mask) right = gutter at the left side of the dark gap x~459.5->458.5, green paint reaches x~458; left = fore-edge x~73.5 (top) -> 66.5 (bottom), stack and transparent holder strip x~65-80 left of it; bottom 579-584, root ink reaches y~583",
+  "human_note": null,
+  "saved_at": null
+ }
+}

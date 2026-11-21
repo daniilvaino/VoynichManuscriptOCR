@@ -1,0 +1,115 @@
+{
+ "image": "116_0_f58v",
+ "folio": "f58v",
+ "scan": "116.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    546.9,
+    100.6
+   ],
+   [
+    634.9,
+    97.4
+   ],
+   [
+    1760.2,
+    106.9
+   ],
+   [
+    2514.5,
+    113.2
+   ],
+   [
+    2888.6,
+    119.4
+   ]
+  ],
+  "right": [
+   [
+    2888.6,
+    119.4
+   ],
+   [
+    2891.7,
+    1068.7
+   ],
+   [
+    2888.6,
+    2514.5
+   ],
+   [
+    2885.4,
+    3608.3
+   ]
+  ],
+  "bottom": [
+   [
+    2885.4,
+    3608.3
+   ],
+   [
+    2514.5,
+    3602.1
+   ],
+   [
+    2074.5,
+    3595.8
+   ],
+   [
+    1760.2,
+    3592.6
+   ],
+   [
+    1257.3,
+    3586.3
+   ],
+   [
+    754.4,
+    3576.9
+   ],
+   [
+    509.2,
+    3564.3
+   ]
+  ],
+  "left": [
+   [
+    509.2,
+    3564.3
+   ],
+   [
+    506.0,
+    2828.8
+   ],
+   [
+    506.0,
+    2137.3
+   ],
+   [
+    521.8,
+    1257.3
+   ],
+   [
+    540.6,
+    251.5
+   ],
+   [
+    546.9,
+    100.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: quad/mask stop at the right side of the transparent holder strip (x~101->96); the leaf continues under the strip to its faint edge x~87 (top) -> 80.5 (bottom) fore-edge under transparent holder strip (strip slants x88-102 at top to 80-95 at bottom), placed at the faint line under its left part, consistent with f58r leaf width; right = gutter x~459-460 before the dark seam, neighbour f59r green at x>=464 outside; bottom 567->574, red stacked leaf below y~575 outside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

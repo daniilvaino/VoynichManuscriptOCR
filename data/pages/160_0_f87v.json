@@ -1,0 +1,119 @@
+{
+ "image": "160_0_f87v",
+ "folio": "f87v",
+ "scan": "160.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    521.2,
+    92.5
+   ],
+   [
+    1233.7,
+    92.5
+   ],
+   [
+    1973.9,
+    83.3
+   ],
+   [
+    2788.1,
+    89.4
+   ]
+  ],
+  "right": [
+   [
+    2788.1,
+    89.4
+   ],
+   [
+    2797.4,
+    925.3
+   ],
+   [
+    2803.6,
+    2159.0
+   ],
+   [
+    2809.7,
+    3331.0
+   ],
+   [
+    2806.6,
+    3543.8
+   ]
+  ],
+  "bottom": [
+   [
+    2806.6,
+    3543.8
+   ],
+   [
+    2745.0,
+    3553.0
+   ],
+   [
+    2621.6,
+    3580.8
+   ],
+   [
+    2467.4,
+    3593.1
+   ],
+   [
+    1850.5,
+    3599.3
+   ],
+   [
+    1233.7,
+    3590.0
+   ],
+   [
+    740.2,
+    3571.5
+   ],
+   [
+    552.1,
+    3559.2
+   ]
+  ],
+  "left": [
+   [
+    552.1,
+    3559.2
+   ],
+   [
+    545.9,
+    3084.2
+   ],
+   [
+    533.6,
+    2467.4
+   ],
+   [
+    521.2,
+    1542.1
+   ],
+   [
+    515.1,
+    740.2
+   ],
+   [
+    521.2,
+    92.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad bottom-right corner at y~588 includes torn delaminated layer/stack below (own edge ~575-583); SAM mask ok right = gutter x~452-455; left fore-edge under transparent tape x~84-89, neighbour leaf with vertical text (ink to x~79) outside; bottom-right corner torn, edge rises to y~575",
+  "human_note": null,
+  "saved_at": null
+ }
+}

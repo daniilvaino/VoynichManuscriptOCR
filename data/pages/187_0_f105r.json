@@ -1,0 +1,75 @@
+{
+ "image": "187_0_f105r",
+ "folio": "f105r",
+ "scan": "187.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    96.9,
+    154.2
+   ],
+   [
+    1152.3,
+    151.0
+   ],
+   [
+    2536.8,
+    166.8
+   ]
+  ],
+  "right": [
+   [
+    2536.8,
+    166.8
+   ],
+   [
+    2562.6,
+    1800.5
+   ],
+   [
+    2563.2,
+    2933.2
+   ],
+   [
+    2533.6,
+    3300.8
+   ]
+  ],
+  "bottom": [
+   [
+    2533.6,
+    3300.8
+   ],
+   [
+    1354.9,
+    3344.8
+   ],
+   [
+    157.3,
+    3429.8
+   ]
+  ],
+  "left": [
+   [
+    157.3,
+    3429.8
+   ],
+   [
+    96.9,
+    154.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "human",
+  "status": "final",
+  "holes_source": "human-not-checked",
+  "opus_confidence": null,
+  "opus_note": null,
+  "human_note": null,
+  "saved_at": "2026-11-21 10:46:09"
+ }
+}

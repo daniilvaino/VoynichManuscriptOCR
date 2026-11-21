@@ -1,0 +1,155 @@
+{
+ "image": "012_0_f5v",
+ "folio": "f5v",
+ "scan": "012.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    209.3,
+    171.2
+   ],
+   [
+    228.3,
+    139.5
+   ],
+   [
+    266.4,
+    123.7
+   ],
+   [
+    380.6,
+    111.0
+   ],
+   [
+    634.3,
+    107.8
+   ],
+   [
+    1014.8,
+    111.0
+   ],
+   [
+    1268.5,
+    123.7
+   ],
+   [
+    1585.6,
+    142.7
+   ],
+   [
+    1839.3,
+    161.7
+   ],
+   [
+    2219.9,
+    168.1
+   ],
+   [
+    2619.5,
+    177.6
+   ]
+  ],
+  "right": [
+   [
+    2619.5,
+    177.6
+   ],
+   [
+    2619.5,
+    634.3
+   ],
+   [
+    2616.3,
+    1902.8
+   ],
+   [
+    2613.1,
+    2854.1
+   ],
+   [
+    2610.0,
+    3659.6
+   ]
+  ],
+  "bottom": [
+   [
+    2610.0,
+    3659.6
+   ],
+   [
+    1902.8,
+    3666.0
+   ],
+   [
+    1268.5,
+    3666.0
+   ],
+   [
+    634.3,
+    3662.8
+   ],
+   [
+    317.1,
+    3653.3
+   ],
+   [
+    234.7,
+    3634.3
+   ],
+   [
+    196.6,
+    3602.6
+   ],
+   [
+    171.2,
+    3564.5
+   ]
+  ],
+  "left": [
+   [
+    171.2,
+    3564.5
+   ],
+   [
+    161.7,
+    3456.7
+   ],
+   [
+    171.2,
+    3044.4
+   ],
+   [
+    183.9,
+    2537.0
+   ],
+   [
+    193.4,
+    1902.8
+   ],
+   [
+    203.0,
+    1268.5
+   ],
+   [
+    209.3,
+    634.3
+   ],
+   [
+    209.3,
+    171.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "SAM/quad badly wrong at left and top: follow right edge of the slanted transparent holder strip (quad left from (68,41) to (7,578), crossing the leaf) and the lower boundary of a darker creased wedge along the top (y30-41 instead of ~17-28) left = outer boundary of leaf's dark rim (x33 top -> 25.5 near bottom), pale paper guard beyond excluded; top = thin edge line under outer stack layer, darker creased wedge below it kept inside; right = gutter fold x~413-411.5; rounded bottom-left corner partly under strip",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "image": "068_0_f34v",
+ "folio": "f34v",
+ "scan": "068.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    404.4,
+    161.1
+   ],
+   [
+    1074.1,
+    150.4
+   ],
+   [
+    1642.7,
+    145.3
+   ],
+   [
+    2211.3,
+    142.2
+   ],
+   [
+    2764.1,
+    142.2
+   ]
+  ],
+  "right": [
+   [
+    2764.1,
+    142.2
+   ],
+   [
+    2770.4,
+    379.1
+   ],
+   [
+    2783.1,
+    1010.9
+   ],
+   [
+    2792.5,
+    1895.4
+   ],
+   [
+    2798.9,
+    2843.1
+   ],
+   [
+    2802.0,
+    3651.8
+   ]
+  ],
+  "bottom": [
+   [
+    2802.0,
+    3651.8
+   ],
+   [
+    2211.3,
+    3667.6
+   ],
+   [
+    1642.7,
+    3680.2
+   ],
+   [
+    1074.1,
+    3689.7
+   ],
+   [
+    631.8,
+    3689.7
+   ],
+   [
+    391.7,
+    3670.7
+   ]
+  ],
+  "left": [
+   [
+    391.7,
+    3670.7
+   ],
+   [
+    366.4,
+    2843.1
+   ],
+   [
+    382.2,
+    1895.4
+   ],
+   [
+    394.9,
+    1010.9
+   ],
+   [
+    404.4,
+    161.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-checked",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "low",
+  "opus_note": "left: quad x81 stops at tape strip (x63-80); leaf continues under tape; right quad ~2-3 px left of gutter crease (fruit drawings at x~440) right = gutter crease x437.5->443.5 (high conf.); left = rightmost (topmost) edge line of the fore-edge stack x58-64, ink-free; recto f34r is ~20 px wider, so true fore edge could be up to ~15 px further left among the stacked strips",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:41:33"
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "image": "127_0_f70v2",
+ "folio": "f70v2",
+ "scan": "127.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    242.2,
+    157.3
+   ],
+   [
+    503.3,
+    160.4
+   ],
+   [
+    943.8,
+    157.3
+   ],
+   [
+    1132.5,
+    141.6
+   ],
+   [
+    1573.0,
+    129.0
+   ],
+   [
+    2202.2,
+    119.5
+   ],
+   [
+    2831.3,
+    110.1
+   ],
+   [
+    3507.7,
+    94.4
+   ]
+  ],
+  "right": [
+   [
+    3507.7,
+    94.4
+   ],
+   [
+    3507.7,
+    943.8
+   ],
+   [
+    3507.7,
+    1887.6
+   ],
+   [
+    3504.6,
+    2831.3
+   ],
+   [
+    3501.4,
+    3646.1
+   ]
+  ],
+  "bottom": [
+   [
+    3501.4,
+    3646.1
+   ],
+   [
+    3145.9,
+    3649.3
+   ],
+   [
+    2453.8,
+    3643.0
+   ],
+   [
+    2139.2,
+    3652.4
+   ],
+   [
+    1824.6,
+    3646.1
+   ],
+   [
+    1447.1,
+    3649.3
+   ],
+   [
+    755.0,
+    3655.6
+   ],
+   [
+    440.4,
+    3661.9
+   ],
+   [
+    264.3,
+    3671.3
+   ]
+  ],
+  "left": [
+   [
+    264.3,
+    3671.3
+   ],
+   [
+    239.1,
+    3460.5
+   ],
+   [
+    232.8,
+    3083.0
+   ],
+   [
+    226.5,
+    2799.9
+   ],
+   [
+    191.9,
+    2655.2
+   ],
+   [
+    157.3,
+    2516.7
+   ],
+   [
+    160.4,
+    1887.6
+   ],
+   [
+    176.2,
+    943.8
+   ],
+   [
+    207.6,
+    377.5
+   ],
+   [
+    242.2,
+    157.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: quad is a straight line at x22-28, but the panel boundary (fold/edge line toward the neighbouring panel with green drawing and text) is curved: ~38 at top, ~25 at y250-400, ~36-40 below y440; SAM mask broke up badly in the lower half (drawing area) foldout panel; left boundary follows the crease/edge line with the step in the bottom edge at x~40; fore-edge stack on right excluded at x~557; top-left takes the inner edge y~25 (outer layers 13-25 excluded)",
+  "human_note": null,
+  "saved_at": null
+ }
+}

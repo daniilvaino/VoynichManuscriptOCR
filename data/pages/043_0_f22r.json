@@ -1,0 +1,171 @@
+{
+ "image": "043_0_f22r",
+ "folio": "f22r",
+ "scan": "043.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    128.1,
+    128.1
+   ],
+   [
+    374.9,
+    125.0
+   ],
+   [
+    718.5,
+    125.0
+   ],
+   [
+    937.1,
+    142.4
+   ],
+   [
+    1312.0,
+    146.8
+   ],
+   [
+    1499.4,
+    156.2
+   ],
+   [
+    1624.4,
+    171.8
+   ],
+   [
+    1749.3,
+    181.2
+   ],
+   [
+    1874.3,
+    190.6
+   ],
+   [
+    2124.2,
+    196.8
+   ],
+   [
+    2280.4,
+    194.9
+   ],
+   [
+    2464.7,
+    190.6
+   ]
+  ],
+  "right": [
+   [
+    2464.7,
+    190.6
+   ],
+   [
+    2467.8,
+    624.8
+   ],
+   [
+    2470.9,
+    1561.9
+   ],
+   [
+    2474.1,
+    2499.1
+   ],
+   [
+    2474.1,
+    3248.8
+   ],
+   [
+    2467.8,
+    3529.9
+   ],
+   [
+    2455.3,
+    3592.4
+   ],
+   [
+    2424.1,
+    3626.8
+   ]
+  ],
+  "bottom": [
+   [
+    2424.1,
+    3626.8
+   ],
+   [
+    2361.6,
+    3645.5
+   ],
+   [
+    2186.7,
+    3653.6
+   ],
+   [
+    1561.9,
+    3654.9
+   ],
+   [
+    937.1,
+    3653.6
+   ],
+   [
+    562.3,
+    3651.7
+   ],
+   [
+    374.9,
+    3642.4
+   ],
+   [
+    218.7,
+    3633.0
+   ],
+   [
+    96.8,
+    3623.6
+   ]
+  ],
+  "left": [
+   [
+    96.8,
+    3623.6
+   ],
+   [
+    100.0,
+    3248.8
+   ],
+   [
+    103.1,
+    2811.4
+   ],
+   [
+    109.3,
+    2061.7
+   ],
+   [
+    118.7,
+    1249.5
+   ],
+   [
+    125.0,
+    499.8
+   ],
+   [
+    128.1,
+    128.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "top: quad on outer stacked layers y~16, own top dips from 20 to ~31 on the right half; right: SAM contour cut out the transparent tape strip (x~365-395, y15-270), quad itself ~own edge; bottom-right rounded corner cut by quad left = gutter line x20.5->15.5; right own edge x~395-396, stacked fore-edge layers 396-405 and a sheet to x~410 at y450-560 excluded; tape strip over top-right margin, leaf continues under it",
+  "human_note": null,
+  "saved_at": null
+ }
+}

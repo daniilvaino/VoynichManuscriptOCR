@@ -1,0 +1,131 @@
+{
+ "image": "074_0_f37v",
+ "folio": "f37v",
+ "scan": "074.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    654.4,
+    151.0
+   ],
+   [
+    1258.5,
+    146.6
+   ],
+   [
+    1887.8,
+    145.4
+   ],
+   [
+    2391.2,
+    144.7
+   ],
+   [
+    2734.1,
+    144.7
+   ]
+  ],
+  "right": [
+   [
+    2734.1,
+    144.7
+   ],
+   [
+    2743.6,
+    377.6
+   ],
+   [
+    2749.9,
+    1006.8
+   ],
+   [
+    2768.7,
+    1573.1
+   ],
+   [
+    2775.0,
+    2391.2
+   ],
+   [
+    2793.9,
+    2957.5
+   ],
+   [
+    2800.2,
+    3637.1
+   ]
+  ],
+  "bottom": [
+   [
+    2800.2,
+    3637.1
+   ],
+   [
+    2517.0,
+    3652.8
+   ],
+   [
+    1887.8,
+    3662.3
+   ],
+   [
+    1258.5,
+    3668.6
+   ],
+   [
+    629.3,
+    3671.7
+   ],
+   [
+    374.4,
+    3671.7
+   ]
+  ],
+  "left": [
+   [
+    374.4,
+    3671.7
+   ],
+   [
+    374.4,
+    2768.7
+   ],
+   [
+    377.6,
+    1887.8
+   ],
+   [
+    415.3,
+    1667.5
+   ],
+   [
+    478.2,
+    1258.5
+   ],
+   [
+    534.9,
+    943.9
+   ],
+   [
+    585.2,
+    503.4
+   ],
+   [
+    654.4,
+    151.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-checked",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left-top: quad x60 includes a triangle of underlying leaves; own fore edge cut diagonally (104,24)->(60,300) (mirror of f37r); right quad ~1-3 px left of gutter crease right = gutter crease x434.5->445, f38r drawing at x>447 outside; left = diagonal edge then x~59.5 below y300; widths match f37r (330 top, 380 bottom)",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:43:04"
+ }
+}

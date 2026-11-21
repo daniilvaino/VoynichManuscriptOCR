@@ -1,0 +1,135 @@
+{
+ "image": "111_0_f56r",
+ "folio": "f56r",
+ "scan": "111.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    102.0,
+    120.5
+   ],
+   [
+    617.9,
+    120.5
+   ],
+   [
+    1235.8,
+    126.7
+   ],
+   [
+    1730.2,
+    145.2
+   ],
+   [
+    2286.3,
+    157.6
+   ],
+   [
+    2428.4,
+    160.7
+   ],
+   [
+    2462.4,
+    185.4
+   ]
+  ],
+  "right": [
+   [
+    2462.4,
+    185.4
+   ],
+   [
+    2459.3,
+    370.8
+   ],
+   [
+    2450.1,
+    926.9
+   ],
+   [
+    2440.8,
+    1421.2
+   ],
+   [
+    2443.9,
+    2162.7
+   ],
+   [
+    2450.1,
+    2966.0
+   ],
+   [
+    2448.2,
+    3525.2
+   ],
+   [
+    2398.1,
+    3622.9
+   ]
+  ],
+  "bottom": [
+   [
+    2398.1,
+    3622.9
+   ],
+   [
+    2175.1,
+    3634.6
+   ],
+   [
+    1851.3,
+    3628.4
+   ],
+   [
+    1227.8,
+    3641.4
+   ],
+   [
+    618.5,
+    3638.3
+   ],
+   [
+    339.9,
+    3631.5
+   ],
+   [
+    62.4,
+    3591.4
+   ]
+  ],
+  "left": [
+   [
+    62.4,
+    3591.4
+   ],
+   [
+    71.1,
+    2780.6
+   ],
+   [
+    80.3,
+    1853.8
+   ],
+   [
+    92.7,
+    926.9
+   ],
+   [
+    102.0,
+    120.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "right: quad (x~409-414) and mask follow the next leaf's edge at x~410; own fore-edge is the shadowed line x~398.5 (top) -> 395 (y230) -> 396.5; green at x395-410 y440-510 is f57r's leaf on the next leaf, outside; top-right: quad includes stacked strip above own rounded corner (~398,28) left = gutter fold x~16.5->10.5; own blue leaf tips reach x~393-394 at y200-250, boundary 395 just outside them; top slants y19.5 -> 26; bottom ~586 with rounded BR corner",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:48:57"
+ }
+}

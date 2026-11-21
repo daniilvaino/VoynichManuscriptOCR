@@ -1,0 +1,99 @@
+{
+ "image": "064_0_f32v",
+ "folio": "f32v",
+ "scan": "064.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    367.9,
+    157.2
+   ],
+   [
+    943.4,
+    141.5
+   ],
+   [
+    1572.3,
+    128.9
+   ],
+   [
+    2735.8,
+    125.8
+   ]
+  ],
+  "right": [
+   [
+    2735.8,
+    125.8
+   ],
+   [
+    2748.4,
+    943.4
+   ],
+   [
+    2761.0,
+    1886.8
+   ],
+   [
+    2770.4,
+    2830.1
+   ],
+   [
+    2773.5,
+    3660.3
+   ]
+  ],
+  "bottom": [
+   [
+    2773.5,
+    3660.3
+   ],
+   [
+    2641.5,
+    3682.3
+   ],
+   [
+    2515.7,
+    3694.9
+   ],
+   [
+    1572.3,
+    3704.3
+   ],
+   [
+    367.9,
+    3704.3
+   ]
+  ],
+  "left": [
+   [
+    367.9,
+    3704.3
+   ],
+   [
+    367.9,
+    2830.1
+   ],
+   [
+    367.9,
+    1886.8
+   ],
+   [
+    367.9,
+    157.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "bottom: SAM excludes the page's own root drawing running along the bottom (x~110-265, y~568-585); quad bottom ~584-586 vs leaf ~587-589. left: SAM lower part (y>430) bulges out to x~45 onto stacked fore-edges; leaf edge x~58.5 bottom edge ~589 (light edge strip before black), rising to 582 at gutter; later foliation '89' at (405-415,565-584) inside. gutter fold 435->441",
+  "human_note": null,
+  "saved_at": null
+ }
+}

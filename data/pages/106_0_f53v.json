@@ -1,0 +1,123 @@
+{
+ "image": "106_0_f53v",
+ "folio": "f53v",
+ "scan": "106.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    634.5,
+    157.1
+   ],
+   [
+    1256.4,
+    147.6
+   ],
+   [
+    1884.6,
+    150.8
+   ],
+   [
+    2701.3,
+    160.2
+   ],
+   [
+    2808.1,
+    172.8
+   ],
+   [
+    2845.8,
+    194.7
+   ]
+  ],
+  "right": [
+   [
+    2845.8,
+    194.7
+   ],
+   [
+    2845.8,
+    1444.9
+   ],
+   [
+    2839.5,
+    2575.6
+   ],
+   [
+    2830.1,
+    3141.0
+   ],
+   [
+    2817.5,
+    3665.6
+   ]
+  ],
+  "bottom": [
+   [
+    2817.5,
+    3665.6
+   ],
+   [
+    2198.7,
+    3671.9
+   ],
+   [
+    1633.3,
+    3675.0
+   ],
+   [
+    628.2,
+    3671.9
+   ],
+   [
+    455.4,
+    3665.6
+   ]
+  ],
+  "left": [
+   [
+    455.4,
+    3665.6
+   ],
+   [
+    449.2,
+    3517.9
+   ],
+   [
+    461.7,
+    3141.0
+   ],
+   [
+    490.0,
+    2198.7
+   ],
+   [
+    508.8,
+    1444.9
+   ],
+   [
+    552.8,
+    942.3
+   ],
+   [
+    596.8,
+    596.8
+   ],
+   [
+    634.5,
+    157.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-checked",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: quad straight (89,23)->(67,585) and mask on f52's crease/strip at the top; own fore-edge is a curved slanted line (101,25)->(81,230)->(72,560), mirroring f53r's cut top-right; right quad ~2-4 px inside gutter fold (green leaf tip at x452,y220) right = gutter fold x453->448.5, f54r text at x>458 outside; left edge faint in the middle (y250-450, +-3 px, ink-free), faint green ghost at x68-78,y335-360 is on f52 beneath; TR corner curves into the fold; top ~24-25, bottom ~584.5",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:46:53"
+ }
+}

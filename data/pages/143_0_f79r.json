@@ -1,0 +1,123 @@
+{
+ "image": "143_0_f79r",
+ "folio": "f79r",
+ "scan": "143.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    90.9,
+    125.4
+   ],
+   [
+    627.0,
+    122.3
+   ],
+   [
+    1254.1,
+    128.5
+   ],
+   [
+    1630.3,
+    143.0
+   ],
+   [
+    1881.1,
+    158.6
+   ],
+   [
+    2131.9,
+    191.2
+   ],
+   [
+    2379.6,
+    219.5
+   ]
+  ],
+  "right": [
+   [
+    2379.6,
+    219.5
+   ],
+   [
+    2385.8,
+    376.2
+   ],
+   [
+    2379.6,
+    1003.2
+   ],
+   [
+    2376.4,
+    1818.4
+   ],
+   [
+    2373.3,
+    2821.6
+   ],
+   [
+    2363.9,
+    3323.2
+   ],
+   [
+    2360.8,
+    3614.8
+   ]
+  ],
+  "bottom": [
+   [
+    2360.8,
+    3614.8
+   ],
+   [
+    1881.1,
+    3624.2
+   ],
+   [
+    1254.1,
+    3633.6
+   ],
+   [
+    627.0,
+    3638.6
+   ],
+   [
+    84.6,
+    3639.9
+   ]
+  ],
+  "left": [
+   [
+    84.6,
+    3639.9
+   ],
+   [
+    87.8,
+    3135.1
+   ],
+   [
+    90.9,
+    1630.3
+   ],
+   [
+    94.1,
+    376.2
+   ],
+   [
+    90.9,
+    125.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad right x~385-392 and SAM mask (ragged x~380-395) include strips of lower leaves; quad top-right y~17 includes a taller lower leaf with foreign ink above own top (own top ~25-35 for x>260) left = gutter fold x~13.5-15, own drawings reach x~17; right fore-edge = innermost sharp line x~380.5 (top) -> 376.5 (bottom), own ink stroke ends at it (y~290); parallel strips x380-418 = later leaves; top y~20 for x<200, then slanting to 35 at corner, strip above with foreign text ('olla?') outside; same structure as f78r",
+  "human_note": null,
+  "saved_at": null
+ }
+}

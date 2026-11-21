@@ -1,0 +1,83 @@
+{
+ "image": "076_0_f38v",
+ "folio": "f38v",
+ "scan": "076.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    453.1,
+    141.6
+   ],
+   [
+    943.9,
+    138.4
+   ],
+   [
+    1887.8,
+    138.4
+   ],
+   [
+    2756.1,
+    138.4
+   ]
+  ],
+  "right": [
+   [
+    2756.1,
+    138.4
+   ],
+   [
+    2768.7,
+    1887.8
+   ],
+   [
+    2781.3,
+    3665.4
+   ]
+  ],
+  "bottom": [
+   [
+    2781.3,
+    3665.4
+   ],
+   [
+    1887.8,
+    3671.7
+   ],
+   [
+    943.9,
+    3674.9
+   ],
+   [
+    453.1,
+    3678.0
+   ]
+  ],
+  "left": [
+   [
+    453.1,
+    3678.0
+   ],
+   [
+    453.1,
+    1887.8
+   ],
+   [
+    453.1,
+    141.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad follow right edge of holder tape (x~82); leaf continues under tape (tape x~65-82), no visible edge line under it left placed at x=72 under the tape (ink-free margin, +-8 uncertain; line at x~60-64 left of tape taken as stacked fore-edges). top edge y~22 just above plant leaves/flower; bottom y~583 just below roots; right = gutter fold 438->442",
+  "human_note": null,
+  "saved_at": null
+ }
+}

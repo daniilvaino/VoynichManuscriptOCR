@@ -1,0 +1,143 @@
+{
+ "image": "005_0_f2r",
+ "folio": "f2r",
+ "scan": "005.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    100.6,
+    128.9
+   ],
+   [
+    628.7,
+    122.6
+   ],
+   [
+    1257.5,
+    116.3
+   ],
+   [
+    1886.2,
+    113.2
+   ],
+   [
+    2326.3,
+    116.3
+   ],
+   [
+    2439.5,
+    125.7
+   ],
+   [
+    2496.1,
+    144.6
+   ],
+   [
+    2521.2,
+    176.0
+   ]
+  ],
+  "right": [
+   [
+    2521.2,
+    176.0
+   ],
+   [
+    2533.8,
+    377.2
+   ],
+   [
+    2540.1,
+    943.1
+   ],
+   [
+    2543.2,
+    1886.2
+   ],
+   [
+    2549.5,
+    2829.3
+   ],
+   [
+    2552.7,
+    3332.3
+   ],
+   [
+    2552.7,
+    3558.7
+   ]
+  ],
+  "bottom": [
+   [
+    2552.7,
+    3558.7
+   ],
+   [
+    2452.1,
+    3571.2
+   ],
+   [
+    2263.5,
+    3596.4
+   ],
+   [
+    2074.8,
+    3627.8
+   ],
+   [
+    1886.2,
+    3637.3
+   ],
+   [
+    1257.5,
+    3640.4
+   ],
+   [
+    628.7,
+    3646.7
+   ],
+   [
+    251.5,
+    3649.8
+   ],
+   [
+    94.3,
+    3649.8
+   ]
+  ],
+  "left": [
+   [
+    94.3,
+    3649.8
+   ],
+   [
+    91.2,
+    3143.7
+   ],
+   [
+    94.3,
+    1886.2
+   ],
+   [
+    97.5,
+    1257.5
+   ],
+   [
+    100.6,
+    128.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: SAM/quad include outer strip of a leaf behind (sticks out to x~410-415, own corner y~560); quad bottom-right too low (576 vs own 566-568) left = gutter fold line x~15 (f1v strip beyond excluded); right = dark edge line x401-406 inside the outer strip; bottom-right has shadowed curled lip, edge taken at light surface end",
+  "human_note": null,
+  "saved_at": null
+ }
+}

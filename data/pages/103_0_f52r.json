@@ -1,0 +1,123 @@
+{
+ "image": "103_0_f52r",
+ "folio": "f52r",
+ "scan": "103.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    109.7,
+    147.3
+   ],
+   [
+    626.6,
+    137.9
+   ],
+   [
+    1253.2,
+    128.5
+   ],
+   [
+    1879.8,
+    131.6
+   ],
+   [
+    2403.0,
+    156.7
+   ]
+  ],
+  "right": [
+   [
+    2403.0,
+    156.7
+   ],
+   [
+    2415.6,
+    626.6
+   ],
+   [
+    2418.7,
+    1253.2
+   ],
+   [
+    2418.7,
+    2067.8
+   ],
+   [
+    2409.3,
+    2819.7
+   ],
+   [
+    2393.6,
+    3415.0
+   ],
+   [
+    2393.6,
+    3618.7
+   ]
+  ],
+  "bottom": [
+   [
+    2393.6,
+    3618.7
+   ],
+   [
+    1879.8,
+    3628.1
+   ],
+   [
+    1574.7,
+    3623.7
+   ],
+   [
+    1235.7,
+    3649.4
+   ],
+   [
+    641.6,
+    3671.9
+   ],
+   [
+    297.6,
+    3661.9
+   ],
+   [
+    87.7,
+    3646.9
+   ]
+  ],
+  "left": [
+   [
+    87.7,
+    3646.9
+   ],
+   [
+    94.0,
+    2819.7
+   ],
+   [
+    97.1,
+    1441.2
+   ],
+   [
+    103.4,
+    626.6
+   ],
+   [
+    109.7,
+    147.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad x~404-407 and mask x~385-395 both on the stack of later leaves' fore-edges; own edge x~382-386 (corner surfaces end at TR (383.5,25) and BR (382,577.5)); bottom: quad slant too steep, BL corner y593 in black left = gutter fold x17.5->14 (f51v berries at x<15 outside); right = leftmost continuous edge line; small dashes at x387-390 (y195-215, 320-350) and green smudge (400,470) lie on stacked leaves, outside; top ~20.5-25 below stack edge band; bottom slants 582.5->577.5",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:45:52"
+ }
+}

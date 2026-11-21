@@ -1,0 +1,115 @@
+{
+ "image": "046_0_f23v",
+ "folio": "f23v",
+ "scan": "046.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    324.6,
+    217.5
+   ],
+   [
+    945.5,
+    198.5
+   ],
+   [
+    1575.8,
+    179.6
+   ],
+   [
+    2206.1,
+    160.7
+   ],
+   [
+    2738.7,
+    151.3
+   ]
+  ],
+  "right": [
+   [
+    2738.7,
+    151.3
+   ],
+   [
+    2741.8,
+    630.3
+   ],
+   [
+    2751.3,
+    1890.9
+   ],
+   [
+    2760.8,
+    2836.4
+   ],
+   [
+    2767.1,
+    3529.7
+   ],
+   [
+    2767.1,
+    3658.9
+   ]
+  ],
+  "bottom": [
+   [
+    2767.1,
+    3658.9
+   ],
+   [
+    2521.2,
+    3687.3
+   ],
+   [
+    1890.9,
+    3693.6
+   ],
+   [
+    1260.6,
+    3696.8
+   ],
+   [
+    630.3,
+    3699.9
+   ],
+   [
+    327.8,
+    3699.9
+   ]
+  ],
+  "left": [
+   [
+    327.8,
+    3699.9
+   ],
+   [
+    327.8,
+    2836.4
+   ],
+   [
+    330.9,
+    1890.9
+   ],
+   [
+    330.9,
+    945.5
+   ],
+   [
+    324.6,
+    217.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "right: quad ~2-3 px inside gutter fold at bottom (fold x434.5->439); left/top/bottom quad within ~1-2 px gutter right = fold line; left edge x~52 just right of stacked fore-edge leaves (x20-50); tape strip at x60-75 top/bottom only, leaf continues under it",
+  "human_note": null,
+  "saved_at": null
+ }
+}

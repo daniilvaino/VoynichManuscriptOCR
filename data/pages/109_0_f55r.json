@@ -1,0 +1,135 @@
+{
+ "image": "109_0_f55r",
+ "folio": "f55r",
+ "scan": "109.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    115.3,
+    130.9
+   ],
+   [
+    374.1,
+    121.6
+   ],
+   [
+    748.1,
+    109.1
+   ],
+   [
+    1246.9,
+    115.3
+   ],
+   [
+    1745.6,
+    137.2
+   ],
+   [
+    2119.7,
+    152.7
+   ],
+   [
+    2369.1,
+    159.0
+   ]
+  ],
+  "right": [
+   [
+    2369.1,
+    159.0
+   ],
+   [
+    2375.3,
+    623.4
+   ],
+   [
+    2381.5,
+    1433.9
+   ],
+   [
+    2357.8,
+    2058.6
+   ],
+   [
+    2394.0,
+    2805.5
+   ],
+   [
+    2403.4,
+    3619.1
+   ]
+  ],
+  "bottom": [
+   [
+    2403.4,
+    3619.1
+   ],
+   [
+    1952.0,
+    3642.7
+   ],
+   [
+    1586.0,
+    3655.8
+   ],
+   [
+    1248.1,
+    3667.7
+   ],
+   [
+    832.3,
+    3683.3
+   ],
+   [
+    633.4,
+    3671.4
+   ],
+   [
+    337.9,
+    3657.7
+   ],
+   [
+    77.3,
+    3617.2
+   ]
+  ],
+  "left": [
+   [
+    77.3,
+    3617.2
+   ],
+   [
+    87.3,
+    2805.5
+   ],
+   [
+    96.6,
+    1870.3
+   ],
+   [
+    101.6,
+    1246.9
+   ],
+   [
+    109.1,
+    623.4
+   ],
+   [
+    115.3,
+    130.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad at x~405 and mask at x~388-390 include edge strips of the leaves below (f56r's blue leaf tips at x382-388 y200-260, a deeper leaf's green at x>=392 y440-490); top-right: quad includes stacked strip above own top (y~25 at x340-380) left = gutter fold x~18.5->13, neighbour blue ink up to x~15 outside; right fore-edge = thin edge line x~380-382 (top/mid) -> 385.5 at bottom corner, next to a shadowed line ~389 that I take as the next leaf; top slants y~17.5 (x120) -> 25.5 (x380)",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:48:22"
+ }
+}

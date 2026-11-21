@@ -1,0 +1,135 @@
+{
+ "image": "008_0_f3v",
+ "folio": "f3v",
+ "scan": "008.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    285.1,
+    107.7
+   ],
+   [
+    633.5,
+    107.7
+   ],
+   [
+    1267.0,
+    110.9
+   ],
+   [
+    1900.5,
+    120.4
+   ],
+   [
+    2217.2,
+    133.0
+   ],
+   [
+    2470.6,
+    152.0
+   ],
+   [
+    2622.6,
+    164.7
+   ]
+  ],
+  "right": [
+   [
+    2622.6,
+    164.7
+   ],
+   [
+    2622.6,
+    316.7
+   ],
+   [
+    2625.8,
+    950.2
+   ],
+   [
+    2616.3,
+    1900.5
+   ],
+   [
+    2606.8,
+    2850.7
+   ],
+   [
+    2603.6,
+    3610.9
+   ]
+  ],
+  "bottom": [
+   [
+    2603.6,
+    3610.9
+   ],
+   [
+    1900.5,
+    3591.9
+   ],
+   [
+    1267.0,
+    3572.9
+   ],
+   [
+    633.5,
+    3553.9
+   ],
+   [
+    316.7,
+    3544.4
+   ],
+   [
+    228.1,
+    3528.5
+   ]
+  ],
+  "left": [
+   [
+    228.1,
+    3528.5
+   ],
+   [
+    212.2,
+    3420.8
+   ],
+   [
+    215.4,
+    3167.4
+   ],
+   [
+    234.4,
+    2660.6
+   ],
+   [
+    253.4,
+    1900.5
+   ],
+   [
+    275.6,
+    950.2
+   ],
+   [
+    285.1,
+    253.4
+   ],
+   [
+    285.1,
+    107.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad stop at right edge of transparent holder strip (x~59->53); leaf continues under strip to its darkened rim (x~45 top ->33.5 bottom); quad bottom-right too low (576 vs ~570); top-right quad too high (19 vs ~26) left edge = dark rim of leaf under/left of strip, pale paper guard beyond excluded; right = gutter fold x414->411 (f4r strip beyond excluded); top below thin outer layer; bottom tissue/repair layer below dark rim excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

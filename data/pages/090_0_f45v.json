@@ -1,0 +1,119 @@
+{
+ "image": "090_0_f45v",
+ "folio": "f45v",
+ "scan": "090.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    490.7,
+    176.1
+   ],
+   [
+    566.2,
+    154.1
+   ],
+   [
+    1572.7,
+    138.4
+   ],
+   [
+    2799.3,
+    132.1
+   ]
+  ],
+  "right": [
+   [
+    2799.3,
+    132.1
+   ],
+   [
+    2808.8,
+    817.8
+   ],
+   [
+    2811.9,
+    1887.2
+   ],
+   [
+    2815.1,
+    3582.5
+   ]
+  ],
+  "bottom": [
+   [
+    2815.1,
+    3582.5
+   ],
+   [
+    2767.9,
+    3585.7
+   ],
+   [
+    2516.3,
+    3604.6
+   ],
+   [
+    1761.4,
+    3651.7
+   ],
+   [
+    943.6,
+    3651.7
+   ],
+   [
+    534.7,
+    3642.3
+   ],
+   [
+    374.3,
+    3642.3
+   ]
+  ],
+  "left": [
+   [
+    374.3,
+    3642.3
+   ],
+   [
+    377.4,
+    3334.1
+   ],
+   [
+    390.0,
+    1887.2
+   ],
+   [
+    405.7,
+    629.1
+   ],
+   [
+    412.0,
+    346.0
+   ],
+   [
+    421.5,
+    251.6
+   ],
+   [
+    446.6,
+    201.3
+   ],
+   [
+    490.7,
+    176.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "mask breaks up over the root drawing at the bottom; quad bottom-left corner y~596 is on stacked edges/background; quad right x~444 a few px inside the fold left fore-edge x~60-65 with rounded TL corner (partly under the holder strip x~67-82); root drawing reaches x~61 inside; right = gutter fold dark line x~447-450, neighbour text from x~460 outside; bottom y~579-580.5, rising to 570 at gutter, layered stack edges below",
+  "human_note": null,
+  "saved_at": null
+ }
+}

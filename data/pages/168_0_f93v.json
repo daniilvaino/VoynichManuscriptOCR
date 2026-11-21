@@ -1,0 +1,139 @@
+{
+ "image": "168_0_f93v",
+ "folio": "f93v",
+ "scan": "168.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    598.4,
+    76.5
+   ],
+   [
+    2735.0,
+    130.8
+   ]
+  ],
+  "right": [
+   [
+    2735.0,
+    130.8
+   ],
+   [
+    2749.2,
+    429.4
+   ],
+   [
+    2747.9,
+    905.1
+   ],
+   [
+    2765.2,
+    1820.0
+   ],
+   [
+    2772.0,
+    2682.5
+   ],
+   [
+    2777.5,
+    3217.4
+   ],
+   [
+    2783.7,
+    3467.3
+   ],
+   [
+    2757.2,
+    3550.0
+   ],
+   [
+    2749.8,
+    3604.3
+   ]
+  ],
+  "bottom": [
+   [
+    2749.8,
+    3604.3
+   ],
+   [
+    2726.3,
+    3614.7
+   ],
+   [
+    2665.3,
+    3620.3
+   ],
+   [
+    2598.6,
+    3627.1
+   ],
+   [
+    2519.0,
+    3625.2
+   ],
+   [
+    2388.9,
+    3643.1
+   ],
+   [
+    2057.6,
+    3631.4
+   ],
+   [
+    1794.7,
+    3623.4
+   ],
+   [
+    1579.4,
+    3621.5
+   ],
+   [
+    1320.3,
+    3605.5
+   ],
+   [
+    966.8,
+    3580.8
+   ],
+   [
+    476.3,
+    3506.8
+   ]
+  ],
+  "left": [
+   [
+    476.3,
+    3506.8
+   ],
+   [
+    480.0,
+    2887.4
+   ],
+   [
+    482.5,
+    1673.8
+   ],
+   [
+    532.4,
+    608.3
+   ],
+   [
+    598.4,
+    76.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "human",
+  "status": "final",
+  "holes_source": "human-not-checked",
+  "opus_confidence": null,
+  "opus_note": null,
+  "human_note": null,
+  "saved_at": "2026-11-21 11:17:52"
+ }
+}

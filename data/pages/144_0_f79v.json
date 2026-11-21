@@ -1,0 +1,131 @@
+{
+ "image": "144_0_f79v",
+ "folio": "f79v",
+ "scan": "144.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    476.8,
+    179.6
+   ],
+   [
+    743.0,
+    164.1
+   ],
+   [
+    990.7,
+    130.0
+   ],
+   [
+    1238.3,
+    120.7
+   ],
+   [
+    1981.3,
+    96.0
+   ],
+   [
+    2476.7,
+    105.3
+   ],
+   [
+    2681.0,
+    108.4
+   ]
+  ],
+  "right": [
+   [
+    2681.0,
+    108.4
+   ],
+   [
+    2681.0,
+    928.7
+   ],
+   [
+    2681.0,
+    1857.5
+   ],
+   [
+    2681.0,
+    2786.2
+   ],
+   [
+    2681.0,
+    3594.2
+   ]
+  ],
+  "bottom": [
+   [
+    2681.0,
+    3594.2
+   ],
+   [
+    2167.1,
+    3597.3
+   ],
+   [
+    1547.9,
+    3600.4
+   ],
+   [
+    990.7,
+    3597.3
+   ],
+   [
+    743.0,
+    3581.9
+   ],
+   [
+    523.2,
+    3547.8
+   ]
+  ],
+  "left": [
+   [
+    523.2,
+    3547.8
+   ],
+   [
+    517.0,
+    3095.8
+   ],
+   [
+    510.8,
+    2724.3
+   ],
+   [
+    495.3,
+    1857.5
+   ],
+   [
+    489.1,
+    1238.3
+   ],
+   [
+    479.9,
+    743.0
+   ],
+   [
+    473.7,
+    371.5
+   ],
+   [
+    476.8,
+    179.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "SAM mask bottom very wrong (cuts out the whole green pool/creatures y~470-580) and top-left bulges into stack; quad bottom y~569-572 cuts own drawing (beast feet to y~575); quad right x~428-431 slightly inside fold left fore-edge thin line x~77 (top) -> 84.5 (bottom corner), f79r-mirror slant; drawings x55-80 (figures, pipes) are on f78v underneath, outside; right = gutter fold x~433 (f80r text from x~436 outside); bottom ~581 (lowest own ink ~575), corner fold near (85,573); top: own edge ~y29->19.5 left part, ~15.5-17.5 right part, faint",
+  "human_note": null,
+  "saved_at": null
+ }
+}

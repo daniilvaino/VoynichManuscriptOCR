@@ -1,0 +1,163 @@
+{
+ "image": "019_0_f9r",
+ "folio": "f9r",
+ "scan": "019.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    109.0,
+    118.4
+   ],
+   [
+    137.0,
+    114.0
+   ],
+   [
+    218.0,
+    107.8
+   ],
+   [
+    373.8,
+    96.6
+   ],
+   [
+    498.3,
+    96.6
+   ],
+   [
+    622.9,
+    102.8
+   ],
+   [
+    996.7,
+    115.2
+   ],
+   [
+    1495.0,
+    121.5
+   ],
+   [
+    1775.3,
+    133.9
+   ],
+   [
+    2055.6,
+    151.4
+   ],
+   [
+    2304.8,
+    152.6
+   ],
+   [
+    2566.4,
+    149.5
+   ]
+  ],
+  "right": [
+   [
+    2566.4,
+    149.5
+   ],
+   [
+    2585.1,
+    249.2
+   ],
+   [
+    2591.3,
+    622.9
+   ],
+   [
+    2585.1,
+    1245.8
+   ],
+   [
+    2582.0,
+    1868.8
+   ],
+   [
+    2585.1,
+    2803.1
+   ],
+   [
+    2578.9,
+    3363.8
+   ],
+   [
+    2572.6,
+    3519.5
+   ],
+   [
+    2560.2,
+    3581.8
+   ],
+   [
+    2541.5,
+    3612.9
+   ]
+  ],
+  "bottom": [
+   [
+    2541.5,
+    3612.9
+   ],
+   [
+    2429.4,
+    3625.4
+   ],
+   [
+    2335.9,
+    3634.7
+   ],
+   [
+    1868.8,
+    3637.8
+   ],
+   [
+    1245.8,
+    3640.9
+   ],
+   [
+    622.9,
+    3644.1
+   ],
+   [
+    112.1,
+    3640.9
+   ]
+  ],
+  "left": [
+   [
+    112.1,
+    3640.9
+   ],
+   [
+    112.1,
+    2803.1
+   ],
+   [
+    109.0,
+    1868.8
+   ],
+   [
+    109.0,
+    934.4
+   ],
+   [
+    109.0,
+    118.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "top: SAM/quad include stacked leaf edges along top (leaf top 15.5 at left -> 24.5 at x>=330, quad ~12-16); bottom-right rounded corner cut by quad recto; left = gutter at x~17.5-18 (paper guard strip x11-16 excluded); right fore-edge has several stacked edges x405-418 and a crease line ~x395-405; took outermost continuous surface edge ~414-416, uncertain",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "image": "077_0_f39r",
+ "folio": "f39r",
+ "scan": "077.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    103.1,
+    115.6
+   ],
+   [
+    1249.7,
+    109.3
+   ],
+   [
+    2436.8,
+    103.1
+   ],
+   [
+    2593.1,
+    118.7
+   ]
+  ],
+  "right": [
+   [
+    2593.1,
+    118.7
+   ],
+   [
+    2605.6,
+    624.8
+   ],
+   [
+    2599.3,
+    1874.5
+   ],
+   [
+    2586.8,
+    3124.2
+   ],
+   [
+    2583.7,
+    3633.4
+   ]
+  ],
+  "bottom": [
+   [
+    2583.7,
+    3633.4
+   ],
+   [
+    1874.5,
+    3642.8
+   ],
+   [
+    937.2,
+    3652.1
+   ],
+   [
+    100.0,
+    3655.3
+   ]
+  ],
+  "left": [
+   [
+    100.0,
+    3655.3
+   ],
+   [
+    100.0,
+    1874.5
+   ],
+   [
+    103.1,
+    115.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "SAM mask includes neighbour's green strip left of gutter (x<15) and stacked leaf strip right (x 418-428); quad close to final left = gutter fold x~16 (neighbour green ink at x 1-10 outside); right fore-edge x~414-417 with dark stack band 415-420 and stacked leaf 420-430 outside; vertical crease lines at x~388 and ~411 taken as creases of this leaf (could be stacked edges, then edge ~388); bottom y~581-585 just below roots",
+  "human_note": null,
+  "saved_at": null
+ }
+}

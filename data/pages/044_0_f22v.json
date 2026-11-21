@@ -1,0 +1,179 @@
+{
+ "image": "044_0_f22v",
+ "folio": "f22v",
+ "scan": "044.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    497.0,
+    234.3
+   ],
+   [
+    633.1,
+    234.3
+   ],
+   [
+    886.4,
+    231.1
+   ],
+   [
+    1202.9,
+    218.4
+   ],
+   [
+    1582.8,
+    202.6
+   ],
+   [
+    1962.6,
+    193.1
+   ],
+   [
+    2342.5,
+    186.8
+   ],
+   [
+    2722.4,
+    180.4
+   ]
+  ],
+  "right": [
+   [
+    2722.4,
+    180.4
+   ],
+   [
+    2722.4,
+    1139.6
+   ],
+   [
+    2725.5,
+    2215.9
+   ],
+   [
+    2735.0,
+    3038.9
+   ],
+   [
+    2750.9,
+    3292.2
+   ],
+   [
+    2757.2,
+    3545.4
+   ],
+   [
+    2754.0,
+    3653.1
+   ]
+  ],
+  "bottom": [
+   [
+    2754.0,
+    3653.1
+   ],
+   [
+    2722.4,
+    3672.0
+   ],
+   [
+    2627.4,
+    3691.0
+   ],
+   [
+    2469.1,
+    3703.7
+   ],
+   [
+    2215.9,
+    3719.5
+   ],
+   [
+    1836.0,
+    3725.9
+   ],
+   [
+    1266.2,
+    3729.0
+   ],
+   [
+    633.1,
+    3722.7
+   ],
+   [
+    392.5,
+    3703.7
+   ],
+   [
+    354.5,
+    3678.4
+   ],
+   [
+    338.7,
+    3646.7
+   ]
+  ],
+  "left": [
+   [
+    338.7,
+    3646.7
+   ],
+   [
+    338.7,
+    3292.2
+   ],
+   [
+    348.2,
+    2912.3
+   ],
+   [
+    360.9,
+    2532.4
+   ],
+   [
+    373.5,
+    2026.0
+   ],
+   [
+    383.0,
+    1582.8
+   ],
+   [
+    392.5,
+    1329.5
+   ],
+   [
+    408.4,
+    1107.9
+   ],
+   [
+    427.4,
+    949.7
+   ],
+   [
+    455.8,
+    633.1
+   ],
+   [
+    481.2,
+    379.9
+   ],
+   [
+    497.0,
+    234.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left top: quad straight line cuts across the tape strip and includes a ~12 px wedge of stacked leaves at top-left (own edge slants 78.5->62 over y37-210); bottom: SAM/quad ~3 px high in the middle (own bottom ~588-589); right: gutter edge drifts to x~435.5 at bottom left edge seen through transparent tape at top (tape x61-76), then clear; trapezoid shape like f20v/f21v, verso/recto widths consistent with f22r; bottom-right ambiguous double band 582-587 (x380-435), took the upper curling line; stack leaves x30-55 excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

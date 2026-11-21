@@ -1,0 +1,135 @@
+{
+ "image": "163_0_f89v2",
+ "folio": "f89v2",
+ "scan": "163.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    114.3,
+    292.1
+   ],
+   [
+    139.7,
+    238.1
+   ],
+   [
+    222.3,
+    219.1
+   ],
+   [
+    762.1,
+    203.2
+   ],
+   [
+    1587.6,
+    222.3
+   ],
+   [
+    2222.7,
+    171.5
+   ],
+   [
+    3175.2,
+    152.4
+   ],
+   [
+    3988.1,
+    130.2
+   ]
+  ],
+  "right": [
+   [
+    3988.1,
+    130.2
+   ],
+   [
+    3972.2,
+    635.0
+   ],
+   [
+    3959.5,
+    1905.1
+   ],
+   [
+    3962.7,
+    2857.7
+   ],
+   [
+    3969.0,
+    3645.2
+   ]
+  ],
+  "bottom": [
+   [
+    3969.0,
+    3645.2
+   ],
+   [
+    3810.3,
+    3657.9
+   ],
+   [
+    2667.2,
+    3667.4
+   ],
+   [
+    1778.1,
+    3673.7
+   ],
+   [
+    952.6,
+    3683.3
+   ],
+   [
+    457.2,
+    3680.1
+   ]
+  ],
+  "left": [
+   [
+    457.2,
+    3680.1
+   ],
+   [
+    393.7,
+    3492.7
+   ],
+   [
+    292.1,
+    3314.9
+   ],
+   [
+    247.7,
+    3207.0
+   ],
+   [
+    184.2,
+    2698.9
+   ],
+   [
+    152.4,
+    2254.4
+   ],
+   [
+    108.0,
+    1270.1
+   ],
+   [
+    114.3,
+    292.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad left x~21 includes neighbour leaf text/green (own edge slants 24->72 from y355 to 579, SAM right there); quad right x~642 includes stack strips beyond fold ~624; quad top includes stack bands; SAM top at x20-280 ~5-10px low own leaf overlaps left neighbour leaf (text and green ink at x<24..38 kept outside, tight near y~480-500); right = fold groove x~623-628; top: layered stack bands, own edge chosen at lower edge of dark band (y~35-32 left, 27 at x350 where own green ink reaches y~28, 20.5 at right) - blank there, +-5; top-left corner rounded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

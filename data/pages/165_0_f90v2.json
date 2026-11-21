@@ -1,0 +1,127 @@
+{
+ "image": "165_0_f90v2",
+ "folio": "f90v2",
+ "scan": "165.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    294.4,
+    294.4
+   ],
+   [
+    626.3,
+    263.1
+   ],
+   [
+    1252.6,
+    203.6
+   ],
+   [
+    1503.2,
+    181.6
+   ],
+   [
+    1753.7,
+    159.7
+   ],
+   [
+    2254.7,
+    115.9
+   ],
+   [
+    2527.2,
+    93.9
+   ]
+  ],
+  "right": [
+   [
+    2527.2,
+    93.9
+   ],
+   [
+    2536.6,
+    375.8
+   ],
+   [
+    2558.5,
+    1252.6
+   ],
+   [
+    2586.7,
+    2192.1
+   ],
+   [
+    2608.6,
+    3006.3
+   ],
+   [
+    2618.0,
+    3601.3
+   ]
+  ],
+  "bottom": [
+   [
+    2618.0,
+    3601.3
+   ],
+   [
+    2505.3,
+    3610.7
+   ],
+   [
+    1878.9,
+    3617.0
+   ],
+   [
+    1252.6,
+    3620.1
+   ],
+   [
+    626.3,
+    3620.1
+   ],
+   [
+    297.5,
+    3613.8
+   ]
+  ],
+  "left": [
+   [
+    297.5,
+    3613.8
+   ],
+   [
+    285.0,
+    3382.1
+   ],
+   [
+    288.1,
+    2818.4
+   ],
+   [
+    291.2,
+    1878.9
+   ],
+   [
+    297.5,
+    939.5
+   ],
+   [
+    294.4,
+    294.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad bottom-left corner x~41 slightly outside own edge (~46-47); otherwise quad and SAM good leaf has cut slanted top edge (y47 at left -> 15 at right), other leaf behind visible above/left; own green flower reaches y~31 at x225-240 just under edge; right edge x404->418 with stack beyond; left edge x~46-47 with other leaves (neighbour text/green at x<30) outside; green ghost circles x60-110 are on own leaf",
+  "human_note": null,
+  "saved_at": null
+ }
+}

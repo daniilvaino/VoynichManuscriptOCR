@@ -1,0 +1,163 @@
+{
+ "image": "020_0_f9v",
+ "folio": "f9v",
+ "scan": "020.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    196.3,
+    199.5
+   ],
+   [
+    380.0,
+    193.2
+   ],
+   [
+    696.7,
+    180.5
+   ],
+   [
+    950.0,
+    161.5
+   ],
+   [
+    1203.3,
+    144.4
+   ],
+   [
+    1583.3,
+    142.5
+   ],
+   [
+    2090.0,
+    145.7
+   ],
+   [
+    2470.0,
+    152.0
+   ],
+   [
+    2707.5,
+    155.2
+   ]
+  ],
+  "right": [
+   [
+    2707.5,
+    155.2
+   ],
+   [
+    2707.5,
+    950.0
+   ],
+   [
+    2710.7,
+    1900.0
+   ],
+   [
+    2713.8,
+    2850.0
+   ],
+   [
+    2717.0,
+    3673.3
+   ]
+  ],
+  "bottom": [
+   [
+    2717.0,
+    3673.3
+   ],
+   [
+    2596.7,
+    3686.0
+   ],
+   [
+    2406.7,
+    3682.8
+   ],
+   [
+    2153.3,
+    3676.5
+   ],
+   [
+    1900.0,
+    3667.0
+   ],
+   [
+    1583.3,
+    3660.7
+   ],
+   [
+    1266.7,
+    3654.3
+   ],
+   [
+    823.3,
+    3651.2
+   ],
+   [
+    570.0,
+    3648.0
+   ],
+   [
+    392.7,
+    3644.8
+   ],
+   [
+    367.3,
+    3632.2
+   ],
+   [
+    285.0,
+    3625.8
+   ],
+   [
+    228.0,
+    3616.3
+   ],
+   [
+    199.5,
+    3584.7
+   ]
+  ],
+  "left": [
+   [
+    199.5,
+    3584.7
+   ],
+   [
+    190.0,
+    2850.0
+   ],
+   [
+    180.5,
+    1900.0
+   ],
+   [
+    186.8,
+    1266.7
+   ],
+   [
+    193.2,
+    633.3
+   ],
+   [
+    196.3,
+    199.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad follow a slanted crease (x~47 top -> 60 bottom); real leaf edge is x~28-31 (clean corner at (31,31), crease starts below top edge); top-left quad corner in stack; top slants 31->22.5 verso; right = gutter crease x~427.5-429; bottom has stacked lower-leaf bands, took innermost line ~577-582; leaf width with x~30 edge matches f9r (~397)",
+  "human_note": null,
+  "saved_at": null
+ }
+}

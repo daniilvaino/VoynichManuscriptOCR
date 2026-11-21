@@ -1,0 +1,139 @@
+{
+ "image": "011_0_f5r",
+ "folio": "f5r",
+ "scan": "011.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    127.4,
+    105.7
+   ],
+   [
+    373.0,
+    87.0
+   ],
+   [
+    621.7,
+    83.9
+   ],
+   [
+    1243.4,
+    83.9
+   ],
+   [
+    1865.1,
+    93.3
+   ],
+   [
+    2362.5,
+    96.4
+   ],
+   [
+    2424.6,
+    105.7
+   ],
+   [
+    2461.9,
+    136.8
+   ],
+   [
+    2486.8,
+    186.5
+   ]
+  ],
+  "right": [
+   [
+    2486.8,
+    186.5
+   ],
+   [
+    2496.1,
+    373.0
+   ],
+   [
+    2508.6,
+    932.5
+   ],
+   [
+    2514.8,
+    1865.1
+   ],
+   [
+    2514.8,
+    2797.6
+   ],
+   [
+    2511.7,
+    3481.5
+   ],
+   [
+    2502.3,
+    3556.1
+   ],
+   [
+    2480.6,
+    3605.8
+   ]
+  ],
+  "bottom": [
+   [
+    2480.6,
+    3605.8
+   ],
+   [
+    2393.5,
+    3615.2
+   ],
+   [
+    1865.1,
+    3618.3
+   ],
+   [
+    1243.4,
+    3618.3
+   ],
+   [
+    621.7,
+    3618.3
+   ],
+   [
+    124.3,
+    3618.3
+   ]
+  ],
+  "left": [
+   [
+    124.3,
+    3618.3
+   ],
+   [
+    121.2,
+    3108.5
+   ],
+   [
+    124.3,
+    1865.1
+   ],
+   [
+    127.4,
+    621.7
+   ],
+   [
+    127.4,
+    105.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: SAM/quad stop at left edge of transparent holder strip (x~381-383); leaf continues under strip to x~400-404.5 with rounded corners; SAM top blobs on text/stains left = gutter fold x~20 (f4v strip beyond excluded); right edge mostly under/at right edge of holder strip, leaves behind beyond (one sticks out to x~412 near bottom, ends y~565); top-right corner traced from curve seen through strip",
+  "human_note": null,
+  "saved_at": null
+ }
+}

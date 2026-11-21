@@ -1,0 +1,159 @@
+{
+ "image": "042_0_f21v",
+ "folio": "f21v",
+ "scan": "042.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    525.1,
+    213.8
+   ],
+   [
+    754.7,
+    210.7
+   ],
+   [
+    1006.3,
+    204.4
+   ],
+   [
+    1446.5,
+    195.0
+   ],
+   [
+    1886.8,
+    188.7
+   ],
+   [
+    2389.9,
+    182.4
+   ],
+   [
+    2726.4,
+    179.2
+   ]
+  ],
+  "right": [
+   [
+    2726.4,
+    179.2
+   ],
+   [
+    2726.4,
+    943.4
+   ],
+   [
+    2729.5,
+    1886.8
+   ],
+   [
+    2735.8,
+    2830.1
+   ],
+   [
+    2748.4,
+    3270.4
+   ],
+   [
+    2754.7,
+    3521.9
+   ],
+   [
+    2751.5,
+    3638.3
+   ]
+  ],
+  "bottom": [
+   [
+    2751.5,
+    3638.3
+   ],
+   [
+    2704.3,
+    3666.6
+   ],
+   [
+    2610.0,
+    3682.3
+   ],
+   [
+    2201.2,
+    3688.6
+   ],
+   [
+    1549.7,
+    3709.4
+   ],
+   [
+    952.2,
+    3703.1
+   ],
+   [
+    637.1,
+    3693.6
+   ],
+   [
+    471.7,
+    3666.6
+   ],
+   [
+    374.2,
+    3641.4
+   ]
+  ],
+  "left": [
+   [
+    374.2,
+    3641.4
+   ],
+   [
+    371.1,
+    3490.5
+   ],
+   [
+    380.5,
+    3176.0
+   ],
+   [
+    396.2,
+    3050.3
+   ],
+   [
+    415.1,
+    2924.5
+   ],
+   [
+    440.2,
+    2452.8
+   ],
+   [
+    471.7,
+    1823.9
+   ],
+   [
+    490.6,
+    1194.9
+   ],
+   [
+    506.3,
+    566.0
+   ],
+   [
+    525.1,
+    213.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "low",
+  "opus_note": "right: gutter edge drifts out to x~438 at bottom (quad 435); bottom-right quad corner squared into background (own corner rounded at 437.5,578.5); left: quad straight line cuts the bottom ~3-5 px inside (own edge bends to x~59 below y~480) LEFT UNCERTAIN: took the crisp texture edge 83.5->66 (SAM agrees, width matches f20v/f19v recto-verso ratios) merging into edge ~59 at bottom corner; alternative = leaf continues under a transparent strip to outer line ~57-65 (rounded corner at 57,33 collinear with own top) - check; stack leaves x30-57 excluded",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:41:23"
+ }
+}

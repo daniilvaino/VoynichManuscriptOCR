@@ -1,0 +1,79 @@
+{
+ "image": "088_0_f44v",
+ "folio": "f44v",
+ "scan": "088.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    519.1,
+    113.3
+   ],
+   [
+    1636.1,
+    119.6
+   ],
+   [
+    2756.1,
+    132.1
+   ]
+  ],
+  "right": [
+   [
+    2756.1,
+    132.1
+   ],
+   [
+    2762.4,
+    943.9
+   ],
+   [
+    2765.6,
+    1887.8
+   ],
+   [
+    2771.9,
+    3674.9
+   ]
+  ],
+  "bottom": [
+   [
+    2771.9,
+    3674.9
+   ],
+   [
+    1636.1,
+    3536.4
+   ],
+   [
+    506.6,
+    3404.3
+   ]
+  ],
+  "left": [
+   [
+    506.6,
+    3404.3
+   ],
+   [
+    512.8,
+    1887.8
+   ],
+   [
+    519.1,
+    113.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "none significant right = gutter fold x~438-440.5, neighbour f45r text from x~445 outside; bottom = slanted edge y541 (fore-edge) -> 584 (gutter), mirrors f44r; faint grass strokes below it at x~85-170 y~548-571 lie on the leaf behind (f43v roots), outside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "image": "039_0_f20r",
+ "folio": "f20r",
+ "scan": "039.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    146.8,
+    121.8
+   ],
+   [
+    374.9,
+    121.8
+   ],
+   [
+    937.1,
+    121.8
+   ],
+   [
+    1249.5,
+    125.0
+   ],
+   [
+    1624.4,
+    137.4
+   ],
+   [
+    1874.3,
+    143.7
+   ],
+   [
+    2186.7,
+    153.1
+   ],
+   [
+    2374.1,
+    162.4
+   ],
+   [
+    2511.6,
+    168.7
+   ]
+  ],
+  "right": [
+   [
+    2511.6,
+    168.7
+   ],
+   [
+    2508.4,
+    374.9
+   ],
+   [
+    2505.3,
+    937.1
+   ],
+   [
+    2505.3,
+    1561.9
+   ],
+   [
+    2502.2,
+    2499.1
+   ],
+   [
+    2492.8,
+    3123.8
+   ],
+   [
+    2486.6,
+    3436.2
+   ],
+   [
+    2480.3,
+    3548.7
+   ],
+   [
+    2461.6,
+    3611.1
+   ]
+  ],
+  "bottom": [
+   [
+    2461.6,
+    3611.1
+   ],
+   [
+    2405.3,
+    3623.6
+   ],
+   [
+    2311.6,
+    3636.1
+   ],
+   [
+    2186.7,
+    3648.6
+   ],
+   [
+    1874.3,
+    3654.9
+   ],
+   [
+    1249.5,
+    3651.7
+   ],
+   [
+    624.8,
+    3648.6
+   ],
+   [
+    312.4,
+    3645.5
+   ],
+   [
+    187.4,
+    3636.1
+   ],
+   [
+    115.6,
+    3629.9
+   ]
+  ],
+  "left": [
+   [
+    115.6,
+    3629.9
+   ],
+   [
+    118.7,
+    3248.8
+   ],
+   [
+    128.1,
+    2499.1
+   ],
+   [
+    134.3,
+    1561.9
+   ],
+   [
+    143.7,
+    624.8
+   ],
+   [
+    146.8,
+    121.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right/top-right: SAM contour includes stacked fore-edge leaves to x~407 (quad slants 388->405, cutting own leaf at top); own edge x~402->397; top: quad on outer stacked layer y~15, own top slopes 19.5->27 to the right; bottom-right rounded corner cut by quad left = gutter line x23.5->18.5; right edge chosen at the innermost continuous edge (~400) beyond thin wavy crease lines x386-395; stacked leaves 401-410 and a sheet to x~413 at y540-560 excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

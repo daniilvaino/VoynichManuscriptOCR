@@ -1,0 +1,103 @@
+{
+ "image": "113_0_f57r",
+ "folio": "f57r",
+ "scan": "113.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    137.1,
+    81.0
+   ],
+   [
+    1371.0,
+    74.8
+   ],
+   [
+    2461.6,
+    77.9
+   ],
+   [
+    2598.7,
+    90.4
+   ]
+  ],
+  "right": [
+   [
+    2598.7,
+    90.4
+   ],
+   [
+    2598.7,
+    373.9
+   ],
+   [
+    2595.5,
+    1869.5
+   ],
+   [
+    2595.5,
+    2928.9
+   ],
+   [
+    2592.4,
+    3639.4
+   ]
+  ],
+  "bottom": [
+   [
+    2592.4,
+    3639.4
+   ],
+   [
+    1371.0,
+    3645.6
+   ],
+   [
+    102.8,
+    3636.2
+   ]
+  ],
+  "left": [
+   [
+    102.8,
+    3636.2
+   ],
+   [
+    105.9,
+    2804.3
+   ],
+   [
+    112.2,
+    1869.5
+   ],
+   [
+    115.3,
+    1371.0
+   ],
+   [
+    127.8,
+    623.2
+   ],
+   [
+    134.0,
+    373.9
+   ],
+   [
+    137.1,
+    81.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "none significant; mask contour slightly inside at top-left/bottom-left corners, a separate mask blob on the stack right of the fore-edge left = gutter fold x~22->16.5 at the right side of the dark gutter gap, neighbour f56v green/blue ink up to x~16 outside; right fore-edge x~417->416 (green leaf reaches x~405 inside, stack beyond 418 excluded); top y~12-14.5, bottom ~584-585",
+  "human_note": null,
+  "saved_at": null
+ }
+}

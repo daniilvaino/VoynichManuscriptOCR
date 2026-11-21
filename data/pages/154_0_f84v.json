@@ -1,0 +1,123 @@
+{
+ "image": "154_0_f84v",
+ "folio": "f84v",
+ "scan": "154.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    373.3,
+    308.5
+   ],
+   [
+    394.9,
+    234.4
+   ],
+   [
+    422.6,
+    191.3
+   ],
+   [
+    468.9,
+    163.5
+   ],
+   [
+    617.0,
+    145.0
+   ],
+   [
+    1233.9,
+    129.6
+   ],
+   [
+    1850.9,
+    120.3
+   ],
+   [
+    2708.4,
+    123.4
+   ]
+  ],
+  "right": [
+   [
+    2708.4,
+    123.4
+   ],
+   [
+    2720.8,
+    617.0
+   ],
+   [
+    2733.1,
+    1542.4
+   ],
+   [
+    2736.2,
+    2591.2
+   ],
+   [
+    2733.1,
+    3362.4
+   ],
+   [
+    2726.9,
+    3590.7
+   ]
+  ],
+  "bottom": [
+   [
+    2726.9,
+    3590.7
+   ],
+   [
+    1850.9,
+    3593.8
+   ],
+   [
+    1233.9,
+    3590.7
+   ],
+   [
+    617.0,
+    3581.4
+   ],
+   [
+    431.9,
+    3578.3
+   ]
+  ],
+  "left": [
+   [
+    431.9,
+    3578.3
+   ],
+   [
+    413.4,
+    2776.3
+   ],
+   [
+    394.9,
+    1850.9
+   ],
+   [
+    379.4,
+    925.4
+   ],
+   [
+    373.3,
+    308.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad top-right (441,9) on the stack above the leaf (own top ~20); quad top-left square while own corner is rounded; SAM right side a few px inside the gutter mirror of f84r: fore-edge x~60.5->70 at bottom, rounded top-left corner; right = own leaf up to the dark gutter crevice x~444-447 (own margin text ends x~433); own drawing at top-right starts y~23, top edge y~19.5-20 there",
+  "human_note": null,
+  "saved_at": null
+ }
+}

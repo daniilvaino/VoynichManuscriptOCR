@@ -1,0 +1,131 @@
+{
+ "image": "031_0_f16r",
+ "folio": "f16r",
+ "scan": "031.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    112.8,
+    125.4
+   ],
+   [
+    376.1,
+    119.1
+   ],
+   [
+    940.3,
+    112.8
+   ],
+   [
+    1567.2,
+    109.7
+   ],
+   [
+    2068.7,
+    106.6
+   ],
+   [
+    2501.3,
+    103.4
+   ],
+   [
+    2526.4,
+    137.9
+   ],
+   [
+    2551.4,
+    213.1
+   ]
+  ],
+  "right": [
+   [
+    2551.4,
+    213.1
+   ],
+   [
+    2551.4,
+    940.3
+   ],
+   [
+    2548.3,
+    1880.7
+   ],
+   [
+    2542.0,
+    2821.0
+   ],
+   [
+    2535.8,
+    3510.6
+   ],
+   [
+    2526.4,
+    3592.1
+   ],
+   [
+    2498.1,
+    3632.8
+   ]
+  ],
+  "bottom": [
+   [
+    2498.1,
+    3632.8
+   ],
+   [
+    2382.2,
+    3639.1
+   ],
+   [
+    1880.7,
+    3645.3
+   ],
+   [
+    1253.8,
+    3648.5
+   ],
+   [
+    626.9,
+    3648.5
+   ],
+   [
+    106.6,
+    3648.5
+   ]
+  ],
+  "left": [
+   [
+    106.6,
+    3648.5
+   ],
+   [
+    106.6,
+    2821.0
+   ],
+   [
+    109.7,
+    1880.7
+   ],
+   [
+    112.8,
+    940.3
+   ],
+   [
+    112.8,
+    125.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad cuts the bevelled top-right corner (401,17)-(407,34) and the rounded bottom-right corner (own leaf ends ~(398,580), stacked layer below); SAM mask excludes root drawing at bottom simple page; top edge has a curled lip shadow at x 280-340",
+  "human_note": null,
+  "saved_at": null
+ }
+}

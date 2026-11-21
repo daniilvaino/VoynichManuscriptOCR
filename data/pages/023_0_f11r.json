@@ -1,0 +1,159 @@
+{
+ "image": "023_0_f11r",
+ "folio": "f11r",
+ "scan": "023.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    128.0,
+    96.8
+   ],
+   [
+    374.6,
+    96.8
+   ],
+   [
+    624.3,
+    99.9
+   ],
+   [
+    936.4,
+    109.3
+   ],
+   [
+    1248.6,
+    118.6
+   ],
+   [
+    1872.9,
+    121.7
+   ],
+   [
+    2122.6,
+    118.6
+   ],
+   [
+    2247.5,
+    106.1
+   ],
+   [
+    2400.4,
+    96.8
+   ]
+  ],
+  "right": [
+   [
+    2400.4,
+    96.8
+   ],
+   [
+    2400.4,
+    312.1
+   ],
+   [
+    2422.3,
+    749.2
+   ],
+   [
+    2434.8,
+    1248.6
+   ],
+   [
+    2444.1,
+    1560.7
+   ],
+   [
+    2450.4,
+    2060.2
+   ],
+   [
+    2466.0,
+    2559.6
+   ],
+   [
+    2472.2,
+    2934.2
+   ],
+   [
+    2478.5,
+    3121.5
+   ],
+   [
+    2491.0,
+    3371.2
+   ],
+   [
+    2497.2,
+    3571.0
+   ]
+  ],
+  "bottom": [
+   [
+    2497.2,
+    3571.0
+   ],
+   [
+    2372.3,
+    3586.6
+   ],
+   [
+    2185.0,
+    3605.3
+   ],
+   [
+    1872.9,
+    3617.8
+   ],
+   [
+    1248.6,
+    3620.9
+   ],
+   [
+    624.3,
+    3614.7
+   ],
+   [
+    280.9,
+    3608.4
+   ],
+   [
+    88.0,
+    3612.2
+   ]
+  ],
+  "left": [
+   [
+    88.0,
+    3612.2
+   ],
+   [
+    118.6,
+    2809.3
+   ],
+   [
+    124.9,
+    1872.9
+   ],
+   [
+    128.0,
+    936.4
+   ],
+   [
+    128.0,
+    96.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "low",
+  "opus_note": "right: SAM/quad include fore-edge strip of other leaves (to x~408-416) carrying a '6' and green paint that appear at the same image spot on f10r too; own edge taken at innermost line x~384.5 (top) -> 400 (bottom); top: quad ~4px above leaf (stack band y11-19 included) recto; left = gutter crease x~20; bottom over stacked bands, leaf surface ends ~578-580. Fore-edge ambiguous: if the line x384-400 is only a fold, edge is ~x405-416 (SAM)",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:40:24"
+ }
+}

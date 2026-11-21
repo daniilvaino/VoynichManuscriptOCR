@@ -1,0 +1,91 @@
+{
+ "image": "118_0_f65v",
+ "folio": "f65v",
+ "scan": "118.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    483.9,
+    119.4
+   ],
+   [
+    1571.0,
+    113.1
+   ],
+   [
+    2896.9,
+    122.5
+   ]
+  ],
+  "right": [
+   [
+    2896.9,
+    122.5
+   ],
+   [
+    2896.9,
+    628.4
+   ],
+   [
+    2893.7,
+    1885.2
+   ],
+   [
+    2887.5,
+    3142.0
+   ],
+   [
+    2884.3,
+    3629.0
+   ]
+  ],
+  "bottom": [
+   [
+    2884.3,
+    3629.0
+   ],
+   [
+    1885.2,
+    3638.4
+   ],
+   [
+    942.6,
+    3651.0
+   ],
+   [
+    483.9,
+    3657.2
+   ]
+  ],
+  "left": [
+   [
+    483.9,
+    3657.2
+   ],
+   [
+    480.7,
+    2827.8
+   ],
+   [
+    480.7,
+    1256.8
+   ],
+   [
+    483.9,
+    119.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "bottom: SAM mask rises to y~565-575 in the lower-left/lower-right corners (own bottom edge y~577-582); otherwise close verso: right = gutter fold crease x~461->459, f66r text strip (x>464) outside; left = own fore-edge x~76.5-77, stacked leaves x15-76 excluded; transparent tape at x78-93 lies on the leaf",
+  "human_note": null,
+  "saved_at": null
+ }
+}

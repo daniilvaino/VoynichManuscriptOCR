@@ -1,0 +1,67 @@
+{
+ "image": "198_0_f112v",
+ "folio": "f112v",
+ "scan": "198.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    421.8,
+    118.4
+   ],
+   [
+    2540.1,
+    117.8
+   ]
+  ],
+  "right": [
+   [
+    2540.1,
+    117.8
+   ],
+   [
+    2533.3,
+    3539.7
+   ]
+  ],
+  "bottom": [
+   [
+    2533.3,
+    3539.7
+   ],
+   [
+    279.4,
+    3423.1
+   ]
+  ],
+  "left": [
+   [
+    279.4,
+    3423.1
+   ],
+   [
+    358.9,
+    1301.2
+   ],
+   [
+    447.7,
+    790.6
+   ],
+   [
+    421.8,
+    118.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "human",
+  "status": "final",
+  "holes_source": "human-not-checked",
+  "opus_confidence": null,
+  "opus_note": null,
+  "human_note": null,
+  "saved_at": "2026-11-21 10:39:37"
+ }
+}

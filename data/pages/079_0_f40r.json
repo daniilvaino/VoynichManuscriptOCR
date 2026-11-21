@@ -1,0 +1,95 @@
+{
+ "image": "079_0_f40r",
+ "folio": "f40r",
+ "scan": "079.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    74.8,
+    130.9
+   ],
+   [
+    935.2,
+    127.8
+   ],
+   [
+    1683.3,
+    134.0
+   ],
+   [
+    1995.0,
+    146.5
+   ],
+   [
+    2431.4,
+    146.5
+   ],
+   [
+    2593.5,
+    134.0
+   ]
+  ],
+  "right": [
+   [
+    2593.5,
+    134.0
+   ],
+   [
+    2602.9,
+    623.4
+   ],
+   [
+    2606.0,
+    1870.3
+   ],
+   [
+    2602.9,
+    3366.6
+   ],
+   [
+    2587.3,
+    3634.6
+   ]
+  ],
+  "bottom": [
+   [
+    2587.3,
+    3634.6
+   ],
+   [
+    1246.9,
+    3637.8
+   ],
+   [
+    68.6,
+    3634.6
+   ]
+  ],
+  "left": [
+   [
+    68.6,
+    3634.6
+   ],
+   [
+    68.6,
+    1870.3
+   ],
+   [
+    74.8,
+    130.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad right x~423 includes dark stack band and outer stacked leaf (x 418-435); top quad y~14-16 on a band above the leaf at x>250 left = gutter fold x~11 (gutter blots at x 11-20 y 75-105 kept inside); right fore-edge with rolled/creased margin (lines x~403, 411) taken as this leaf up to x~417, rounded BR corner; top at shadow line y~21-24 under a lighter band (band taken as stacked leaf, ink-free, +-6)",
+  "human_note": null,
+  "saved_at": null
+ }
+}

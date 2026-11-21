@@ -1,0 +1,131 @@
+{
+ "image": "142_0_f78v",
+ "folio": "f78v",
+ "scan": "142.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    584.9,
+    229.0
+   ],
+   [
+    742.7,
+    204.3
+   ],
+   [
+    928.4,
+    188.8
+   ],
+   [
+    1114.1,
+    170.2
+   ],
+   [
+    1299.8,
+    139.3
+   ],
+   [
+    1547.4,
+    130.0
+   ],
+   [
+    2042.5,
+    126.9
+   ],
+   [
+    2723.4,
+    120.7
+   ]
+  ],
+  "right": [
+   [
+    2723.4,
+    120.7
+   ],
+   [
+    2726.5,
+    928.4
+   ],
+   [
+    2729.6,
+    1856.9
+   ],
+   [
+    2726.5,
+    2909.1
+   ],
+   [
+    2723.4,
+    3586.8
+   ]
+  ],
+  "bottom": [
+   [
+    2723.4,
+    3586.8
+   ],
+   [
+    2166.3,
+    3593.0
+   ],
+   [
+    1547.4,
+    3596.1
+   ],
+   [
+    928.4,
+    3580.7
+   ],
+   [
+    615.9,
+    3568.3
+   ]
+  ],
+  "left": [
+   [
+    615.9,
+    3568.3
+   ],
+   [
+    612.8,
+    3342.4
+   ],
+   [
+    600.4,
+    2475.8
+   ],
+   [
+    597.3,
+    1856.9
+   ],
+   [
+    591.1,
+    1237.9
+   ],
+   [
+    588.0,
+    742.7
+   ],
+   [
+    584.9,
+    371.4
+   ],
+   [
+    584.9,
+    229.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "SAM mask cuts a notch into own green drawing at right (x~420, y300-355) and its left side wanders into f77v strip (x~85); quad top-right at y~11 includes stack strips left fore-edge x~94.5 (top) -> 99.5 (bottom), thin line; figure/pipe drawings at x60-92 belong to f77v underneath, outside; right = gutter fold x~440-441, own drawing loop reaches x~440 at y~310, f79r ink from x~443 outside; top slopes y~37 (x95) -> 20.5 (x>250); bottom ~576.5-581; consistent with f78r mirror (scale ~0.97)",
+  "human_note": null,
+  "saved_at": null
+ }
+}

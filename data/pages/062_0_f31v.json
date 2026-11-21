@@ -1,0 +1,95 @@
+{
+ "image": "062_0_f31v",
+ "folio": "f31v",
+ "scan": "062.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    377.4,
+    251.6
+   ],
+   [
+    1572.3,
+    176.1
+   ],
+   [
+    2742.1,
+    125.8
+   ]
+  ],
+  "right": [
+   [
+    2742.1,
+    125.8
+   ],
+   [
+    2751.5,
+    943.4
+   ],
+   [
+    2764.1,
+    1886.8
+   ],
+   [
+    2767.2,
+    2830.1
+   ],
+   [
+    2767.2,
+    3672.9
+   ]
+  ],
+  "bottom": [
+   [
+    2767.2,
+    3672.9
+   ],
+   [
+    2201.2,
+    3685.5
+   ],
+   [
+    1572.3,
+    3691.8
+   ],
+   [
+    943.4,
+    3691.8
+   ],
+   [
+    374.2,
+    3685.5
+   ]
+  ],
+  "left": [
+   [
+    374.2,
+    3685.5
+   ],
+   [
+    374.2,
+    2830.1
+   ],
+   [
+    374.2,
+    1886.8
+   ],
+   [
+    377.4,
+    251.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "small: quad top-right y~14 on stacked top edges (leaf ~20); quad/SAM bottom ~584-586 vs leaf ~587; otherwise OK left = clear fore-edge line x~59.5 (cut top-left corner at (60,40), mirrors f31r); gutter fold ~436->440, green drawing reaches x~437 at y260-360 (inside)",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "image": "140_0_f77v",
+ "folio": "f77v",
+ "scan": "140.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    477.9,
+    191.1
+   ],
+   [
+    739.9,
+    181.9
+   ],
+   [
+    1233.2,
+    163.4
+   ],
+   [
+    1849.8,
+    138.7
+   ],
+   [
+    2343.1,
+    120.2
+   ],
+   [
+    2722.3,
+    107.9
+   ]
+  ],
+  "right": [
+   [
+    2722.3,
+    107.9
+   ],
+   [
+    2722.3,
+    616.6
+   ],
+   [
+    2725.3,
+    1664.8
+   ],
+   [
+    2725.3,
+    2774.7
+   ],
+   [
+    2722.3,
+    3579.3
+   ]
+  ],
+  "bottom": [
+   [
+    2722.3,
+    3579.3
+   ],
+   [
+    2466.4,
+    3582.4
+   ],
+   [
+    1849.8,
+    3582.4
+   ],
+   [
+    1233.2,
+    3579.3
+   ],
+   [
+    613.5,
+    3576.3
+   ]
+  ],
+  "left": [
+   [
+    613.5,
+    3576.3
+   ],
+   [
+    585.8,
+    2898.0
+   ],
+   [
+    561.1,
+    2404.7
+   ],
+   [
+    542.6,
+    2096.4
+   ],
+   [
+    524.1,
+    1603.1
+   ],
+   [
+    496.4,
+    986.6
+   ],
+   [
+    474.8,
+    308.3
+   ],
+   [
+    477.9,
+    191.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "SAM bottom ragged (cuts in to y~572); quad right x~436 cuts own ink (figure/fish to x~441, fold at ~442); otherwise quad close left fore-edge cut slanted x~77 (top) -> 99.5 (bottom), thin edge line; drawings beyond it (figures/pipes x60-88, y140-470) belong to f76v underneath and are outside; right = gutter fold x~441.5-442, f78r drawing from x~444 outside; top y~31 -> 17.5, bottom ~580-581 with stack/torn layers below; mirrors f77r slant",
+  "human_note": null,
+  "saved_at": null
+ }
+}

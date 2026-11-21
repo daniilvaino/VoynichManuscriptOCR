@@ -1,0 +1,123 @@
+{
+ "image": "152_0_f83v",
+ "folio": "f83v",
+ "scan": "152.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    409.6,
+    234.1
+   ],
+   [
+    443.5,
+    160.1
+   ],
+   [
+    554.4,
+    132.4
+   ],
+   [
+    1231.9,
+    117.0
+   ],
+   [
+    1847.8,
+    110.9
+   ],
+   [
+    2716.3,
+    107.8
+   ]
+  ],
+  "right": [
+   [
+    2716.3,
+    107.8
+   ],
+   [
+    2716.3,
+    923.9
+   ],
+   [
+    2716.3,
+    1847.8
+   ],
+   [
+    2716.3,
+    2771.8
+   ],
+   [
+    2716.3,
+    3584.8
+   ]
+  ],
+  "bottom": [
+   [
+    2716.3,
+    3584.8
+   ],
+   [
+    2155.8,
+    3587.9
+   ],
+   [
+    1539.9,
+    3587.9
+   ],
+   [
+    923.9,
+    3587.9
+   ],
+   [
+    625.2,
+    3587.9
+   ]
+  ],
+  "left": [
+   [
+    625.2,
+    3587.9
+   ],
+   [
+    569.8,
+    3264.5
+   ],
+   [
+    520.5,
+    2833.4
+   ],
+   [
+    474.3,
+    2463.8
+   ],
+   [
+    425.0,
+    2125.0
+   ],
+   [
+    391.1,
+    1539.9
+   ],
+   [
+    388.0,
+    923.9
+   ],
+   [
+    409.6,
+    234.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad left side (25,17 -> 101,583) runs over the stack of earlier leaves in the upper half (up to 40 px out); SAM contour right mirror of f83r: fore-edge x~63-66.5 down to y~300, then slanted cut to (101.5,582.5); scalloped foreign drawing at x55-63 (y130-180) cut by the edge, outside; top-left corner rounded; right = gutter x~441, f84r beyond",
+  "human_note": null,
+  "saved_at": null
+ }
+}

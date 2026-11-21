@@ -1,0 +1,99 @@
+{
+ "image": "065_0_f33r",
+ "folio": "f33r",
+ "scan": "065.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    112.4,
+    109.3
+   ],
+   [
+    1248.8,
+    115.5
+   ],
+   [
+    2060.5,
+    140.5
+   ],
+   [
+    2528.7,
+    162.3
+   ]
+  ],
+  "right": [
+   [
+    2528.7,
+    162.3
+   ],
+   [
+    2547.5,
+    374.6
+   ],
+   [
+    2560.0,
+    1248.8
+   ],
+   [
+    2560.0,
+    2497.5
+   ],
+   [
+    2556.8,
+    2997.0
+   ],
+   [
+    2544.3,
+    3434.1
+   ],
+   [
+    2535.0,
+    3646.4
+   ]
+  ],
+  "bottom": [
+   [
+    2535.0,
+    3646.4
+   ],
+   [
+    1873.1,
+    3655.7
+   ],
+   [
+    936.6,
+    3655.7
+   ],
+   [
+    68.7,
+    3655.7
+   ]
+  ],
+  "left": [
+   [
+    68.7,
+    3655.7
+   ],
+   [
+    87.4,
+    1873.1
+   ],
+   [
+    112.4,
+    109.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "right: quad/SAM (x~416-418) on stacked fore-edges of following leaves; leaf edge 405->410->406. top: quad y~13-15 on the stack near the right (leaf ~22-26) right edge = innermost sharp light-to-dark line; small rounded corners top-right (405,26) and bottom-right (406,584); gutter left ~11-18, no neighbour ink nearby",
+  "human_note": null,
+  "saved_at": null
+ }
+}

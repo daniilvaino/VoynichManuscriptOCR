@@ -1,0 +1,131 @@
+{
+ "image": "147_0_f81r",
+ "folio": "f81r",
+ "scan": "147.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    115.4,
+    102.9
+   ],
+   [
+    623.8,
+    102.9
+   ],
+   [
+    998.1,
+    112.3
+   ],
+   [
+    1372.4,
+    131.0
+   ],
+   [
+    1746.7,
+    159.1
+   ],
+   [
+    2058.6,
+    196.5
+   ],
+   [
+    2308.1,
+    230.8
+   ],
+   [
+    2389.2,
+    249.5
+   ]
+  ],
+  "right": [
+   [
+    2389.2,
+    249.5
+   ],
+   [
+    2370.5,
+    623.8
+   ],
+   [
+    2345.6,
+    1247.6
+   ],
+   [
+    2292.5,
+    1871.5
+   ],
+   [
+    2320.6,
+    2370.5
+   ],
+   [
+    2358.0,
+    2807.2
+   ],
+   [
+    2379.9,
+    3306.2
+   ],
+   [
+    2379.9,
+    3587.0
+   ]
+  ],
+  "bottom": [
+   [
+    2379.9,
+    3587.0
+   ],
+   [
+    1871.5,
+    3596.3
+   ],
+   [
+    1247.6,
+    3605.7
+   ],
+   [
+    623.8,
+    3615.0
+   ],
+   [
+    115.4,
+    3621.3
+   ]
+  ],
+  "left": [
+   [
+    115.4,
+    3621.3
+   ],
+   [
+    112.3,
+    2807.2
+   ],
+   [
+    112.3,
+    1871.5
+   ],
+   [
+    112.3,
+    935.7
+   ],
+   [
+    115.4,
+    102.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: SAM/quad (x~393-397) include the strip of following leaves; own fore-edge is the wavy line x~383 (top) -> 367.5 (y300) -> 381.5 (bottom); top-right: own top edge slants down from y~17 (x150) to corner (383,40), next leaf's folio '82' above it leaf f81 is narrow with cut top-right corner (mirrored on f81v: f80v drawings show beyond its left edge); '82' at (340-350,25-31) kept outside; strip x~370-395 blank (leaves beneath); gutter x~18-18.5 with f80v drawings left of it",
+  "human_note": null,
+  "saved_at": null
+ }
+}

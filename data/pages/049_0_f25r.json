@@ -1,0 +1,123 @@
+{
+ "image": "049_0_f25r",
+ "folio": "f25r",
+ "scan": "049.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    93.6,
+    124.8
+   ],
+   [
+    624.2,
+    99.9
+   ],
+   [
+    1248.4,
+    93.6
+   ],
+   [
+    1872.6,
+    103.0
+   ],
+   [
+    2371.9,
+    106.1
+   ],
+   [
+    2509.3,
+    106.1
+   ]
+  ],
+  "right": [
+   [
+    2509.3,
+    106.1
+   ],
+   [
+    2512.4,
+    936.3
+   ],
+   [
+    2518.6,
+    1872.6
+   ],
+   [
+    2524.9,
+    2808.9
+   ],
+   [
+    2528.0,
+    3495.5
+   ],
+   [
+    2528.0,
+    3667.1
+   ]
+  ],
+  "bottom": [
+   [
+    2528.0,
+    3667.1
+   ],
+   [
+    2371.9,
+    3679.6
+   ],
+   [
+    1872.6,
+    3682.7
+   ],
+   [
+    1248.4,
+    3679.6
+   ],
+   [
+    624.2,
+    3679.6
+   ],
+   [
+    187.3,
+    3673.4
+   ],
+   [
+    65.5,
+    3654.7
+   ]
+  ],
+  "left": [
+   [
+    65.5,
+    3654.7
+   ],
+   [
+    74.9,
+    3121.0
+   ],
+   [
+    87.4,
+    2184.7
+   ],
+   [
+    90.5,
+    936.3
+   ],
+   [
+    93.6,
+    124.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "right: quad on stacked fore-edge leaves at top (x406.6 vs own 402); top-right quad ~3 px high on outer curled layer; else within ~2 px left = gutter fold x15->10.5 at bottom; root paint reaches y583, bottom edge 589-590 keeps it inside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

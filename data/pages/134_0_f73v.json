@@ -1,0 +1,131 @@
+{
+ "image": "134_0_f73v",
+ "folio": "f73v",
+ "scan": "134.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    558.6,
+    186.2
+   ],
+   [
+    806.8,
+    158.3
+   ],
+   [
+    1551.6,
+    136.5
+   ],
+   [
+    2172.2,
+    124.1
+   ],
+   [
+    2764.9,
+    117.9
+   ]
+  ],
+  "right": [
+   [
+    2764.9,
+    117.9
+   ],
+   [
+    2768.0,
+    372.4
+   ],
+   [
+    2792.8,
+    930.9
+   ],
+   [
+    2805.2,
+    1737.8
+   ],
+   [
+    2799.0,
+    2482.5
+   ],
+   [
+    2783.5,
+    3103.1
+   ],
+   [
+    2777.3,
+    3612.0
+   ]
+  ],
+  "bottom": [
+   [
+    2777.3,
+    3612.0
+   ],
+   [
+    2482.5,
+    3612.0
+   ],
+   [
+    1861.9,
+    3602.7
+   ],
+   [
+    1241.2,
+    3593.4
+   ],
+   [
+    620.6,
+    3581.0
+   ],
+   [
+    409.6,
+    3574.8
+   ]
+  ],
+  "left": [
+   [
+    409.6,
+    3574.8
+   ],
+   [
+    403.4,
+    3444.5
+   ],
+   [
+    425.1,
+    2916.9
+   ],
+   [
+    437.5,
+    1861.9
+   ],
+   [
+    462.4,
+    993.0
+   ],
+   [
+    484.1,
+    620.6
+   ],
+   [
+    527.5,
+    279.3
+   ],
+   [
+    558.6,
+    186.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: quad at x~45-47 takes in a strip of the leaf below (x45-65..80); SAM mask itself followed the own edge but broke up at the top-left; quad top y~16 includes a stacked top strip on the left verso: left fore-edge = faint line 90 (y30, rounded top-left corner) -> 74.5 (y160) -> 70.5 (y300) -> 65 (y555), mirrors f73r's curved fore-edge; at the bottom the own leaf (bottom 576) and the leaf below (bottom 583) are clearly separate at x~65; right = gutter edge 445.5-452 before the guard strip / f74r; no ink near either side",
+  "human_note": null,
+  "saved_at": null
+ }
+}

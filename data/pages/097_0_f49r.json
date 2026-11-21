@@ -1,0 +1,95 @@
+{
+ "image": "097_0_f49r",
+ "folio": "f49r",
+ "scan": "097.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    122.4,
+    147.5
+   ],
+   [
+    627.7,
+    150.6
+   ],
+   [
+    1569.1,
+    153.8
+   ],
+   [
+    2573.4,
+    156.9
+   ]
+  ],
+  "right": [
+   [
+    2573.4,
+    156.9
+   ],
+   [
+    2576.5,
+    627.7
+   ],
+   [
+    2585.9,
+    1255.3
+   ],
+   [
+    2598.5,
+    1883.0
+   ],
+   [
+    2604.8,
+    2510.6
+   ],
+   [
+    2607.9,
+    3138.3
+   ],
+   [
+    2611.0,
+    3659.2
+   ]
+  ],
+  "bottom": [
+   [
+    2611.0,
+    3659.2
+   ],
+   [
+    1255.3,
+    3665.5
+   ],
+   [
+    81.6,
+    3665.5
+   ]
+  ],
+  "left": [
+   [
+    81.6,
+    3665.5
+   ],
+   [
+    94.1,
+    1883.0
+   ],
+   [
+    122.4,
+    147.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "top: quad/mask on stacked edge band (y11-22), own top ~23.5-25; right: quad TR corner too high left = gutter fold x~19.5->13; right fore-edge x410 (top) -> 412 (y200) -> 415.5-416 (lower), stacked leaves outside; red flowers reach x~408-411 inside; top-edge band of stacked leaves excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

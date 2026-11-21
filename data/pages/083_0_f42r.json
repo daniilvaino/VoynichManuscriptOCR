@@ -1,0 +1,95 @@
+{
+ "image": "083_0_f42r",
+ "folio": "f42r",
+ "scan": "083.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    128.1,
+    106.2
+   ],
+   [
+    1249.7,
+    100.0
+   ],
+   [
+    2062.0,
+    103.1
+   ],
+   [
+    2499.3,
+    103.1
+   ],
+   [
+    2599.3,
+    112.5
+   ]
+  ],
+  "right": [
+   [
+    2599.3,
+    112.5
+   ],
+   [
+    2608.7,
+    624.8
+   ],
+   [
+    2611.8,
+    1874.5
+   ],
+   [
+    2611.8,
+    3124.2
+   ],
+   [
+    2605.6,
+    3624.0
+   ]
+  ],
+  "bottom": [
+   [
+    2605.6,
+    3624.0
+   ],
+   [
+    1874.5,
+    3639.7
+   ],
+   [
+    937.3,
+    3639.7
+   ],
+   [
+    100.0,
+    3639.7
+   ]
+  ],
+  "left": [
+   [
+    100.0,
+    3639.7
+   ],
+   [
+    112.5,
+    1874.5
+   ],
+   [
+    128.1,
+    106.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "SAM mask wanders into dark stack band at right (x 418-428, y 20-90); quad top y~14 on the stacked band above left = gutter fold x~16-20; right fore-edge x~417-418 at inner side of dark stack band, rounded BR corner (crease lines x~392-415 inside); top y~16-18 under the stacked band, green leaf ink starts y~21 inside; bottom y~582.5, root strokes inside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

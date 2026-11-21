@@ -1,0 +1,127 @@
+{
+ "image": "075_0_f38r",
+ "folio": "f38r",
+ "scan": "075.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    111.2,
+    144.3
+   ],
+   [
+    624.8,
+    137.5
+   ],
+   [
+    1249.7,
+    128.1
+   ],
+   [
+    1812.0,
+    120.6
+   ],
+   [
+    2099.4,
+    118.7
+   ]
+  ],
+  "right": [
+   [
+    2099.4,
+    118.7
+   ],
+   [
+    2121.3,
+    374.9
+   ],
+   [
+    2155.7,
+    624.8
+   ],
+   [
+    2246.3,
+    1178.4
+   ],
+   [
+    2386.9,
+    2133.2
+   ],
+   [
+    2468.1,
+    2655.5
+   ],
+   [
+    2505.6,
+    3186.6
+   ],
+   [
+    2508.7,
+    3595.9
+   ]
+  ],
+  "bottom": [
+   [
+    2508.7,
+    3595.9
+   ],
+   [
+    2021.3,
+    3595.3
+   ],
+   [
+    1279.7,
+    3602.2
+   ],
+   [
+    1004.7,
+    3620.9
+   ],
+   [
+    624.8,
+    3645.9
+   ],
+   [
+    312.4,
+    3647.1
+   ],
+   [
+    86.2,
+    3630.3
+   ]
+  ],
+  "left": [
+   [
+    86.2,
+    3630.3
+   ],
+   [
+    93.7,
+    2811.7
+   ],
+   [
+    100.0,
+    1874.5
+   ],
+   [
+    106.2,
+    937.2
+   ],
+   [
+    111.2,
+    144.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad runs straight (336,19)->(408,574) and mask stops at tape x378 in the lower half; own fore edge is cut diagonally (336,19)->(377,345) then bends to x~401 under the tape leaf narrower at top: right of the diagonal edge lie f39r's folio number '39' and text fragments (x340-370,y65-140) = other leaf, outside; lower right edge under vertical tape strip x380-400 traced from faint line (+-4 px, ink-free); left = gutter crease x18->14.5; roots reach y~582 inside",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:43:55"
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "image": "058_0_f29v",
+ "folio": "f29v",
+ "scan": "058.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    630.7,
+    201.8
+   ],
+   [
+    1576.8,
+    164.0
+   ],
+   [
+    2730.9,
+    132.4
+   ]
+  ],
+  "right": [
+   [
+    2730.9,
+    132.4
+   ],
+   [
+    2753.0,
+    946.1
+   ],
+   [
+    2765.6,
+    1892.1
+   ],
+   [
+    2775.1,
+    2365.1
+   ],
+   [
+    2778.2,
+    3153.5
+   ],
+   [
+    2775.1,
+    3601.3
+   ]
+  ],
+  "bottom": [
+   [
+    2775.1,
+    3601.3
+   ],
+   [
+    2522.8,
+    3620.2
+   ],
+   [
+    2081.3,
+    3648.6
+   ],
+   [
+    1797.5,
+    3658.1
+   ],
+   [
+    1324.5,
+    3639.1
+   ],
+   [
+    1009.1,
+    3626.5
+   ],
+   [
+    567.6,
+    3595.0
+   ],
+   [
+    413.1,
+    3604.5
+   ]
+  ],
+  "left": [
+   [
+    413.1,
+    3604.5
+   ],
+   [
+    435.2,
+    2838.2
+   ],
+   [
+    479.3,
+    2081.3
+   ],
+   [
+    510.9,
+    1576.8
+   ],
+   [
+    542.4,
+    1072.2
+   ],
+   [
+    586.6,
+    599.2
+   ],
+   [
+    630.7,
+    201.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad stop at right edge of transparent tape (x~80-84) below y~230; leaf continues under the tape (edge ~65 at bottom). quad left side x~81-83 straight, misses slanted cut top-left corner (edge at 100,32). bottom: quad/SAM ~575-580 partly on stacked edges near left (edge ~570 there) left = slanted cut fore-edge (mirror of f29r right side, widths cross-checked); under tape interpolated to shadow corner at (65.5,571.5), lower part medium/low. right = gutter crease 433->440, plant ink reaches x~437 at y~366 (inside). bottom slightly bowed (580 at x~285, root ink to ~576 inside)",
+  "human_note": null,
+  "saved_at": null
+ }
+}

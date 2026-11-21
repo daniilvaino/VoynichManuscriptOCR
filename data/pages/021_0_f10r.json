@@ -1,0 +1,127 @@
+{
+ "image": "021_0_f10r",
+ "folio": "f10r",
+ "scan": "021.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    118.6,
+    124.9
+   ],
+   [
+    374.6,
+    115.5
+   ],
+   [
+    624.4,
+    106.1
+   ],
+   [
+    1248.7,
+    101.8
+   ],
+   [
+    1873.1,
+    106.1
+   ],
+   [
+    2310.1,
+    106.1
+   ],
+   [
+    2365.7,
+    105.5
+   ]
+  ],
+  "right": [
+   [
+    2365.7,
+    105.5
+   ],
+   [
+    2403.8,
+    936.5
+   ],
+   [
+    2413.2,
+    1560.9
+   ],
+   [
+    2422.5,
+    1998.0
+   ],
+   [
+    2428.8,
+    2809.6
+   ],
+   [
+    2425.6,
+    3496.4
+   ],
+   [
+    2425.6,
+    3608.8
+   ]
+  ],
+  "bottom": [
+   [
+    2425.6,
+    3608.8
+   ],
+   [
+    2185.3,
+    3630.7
+   ],
+   [
+    1560.9,
+    3636.9
+   ],
+   [
+    936.5,
+    3636.9
+   ],
+   [
+    374.6,
+    3636.9
+   ],
+   [
+    121.8,
+    3633.8
+   ]
+  ],
+  "left": [
+   [
+    121.8,
+    3633.8
+   ],
+   [
+    121.8,
+    2809.6
+   ],
+   [
+    121.8,
+    1873.1
+   ],
+   [
+    121.8,
+    936.5
+   ],
+   [
+    118.6,
+    124.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "low",
+  "opus_note": "right: SAM/quad include 2+ stacked fore-edge leaves to x~414-418 (one carries a '6' and green paint of another drawing); own edge taken at innermost near-vertical line x~385-389; top: quad ~2px above leaf at right recto; left = gutter crease x~19.5. Fore-edge ambiguous: lines L1 x385->389 and L2 x392->404 (green paint of a lower leaf starts at L2); chose L1 because the same '6' sits at the same spot on f11r (so it belongs to the next leaf). If L1 is only a crease, edge = L2",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:39:59"
+ }
+}

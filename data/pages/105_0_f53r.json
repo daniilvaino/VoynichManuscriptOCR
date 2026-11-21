@@ -1,0 +1,131 @@
+{
+ "image": "105_0_f53r",
+ "folio": "f53r",
+ "scan": "105.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    111.2,
+    117.4
+   ],
+   [
+    384.3,
+    114.3
+   ],
+   [
+    634.0,
+    98.2
+   ],
+   [
+    1225.3,
+    95.2
+   ],
+   [
+    1456.4,
+    111.8
+   ],
+   [
+    1850.1,
+    108.8
+   ],
+   [
+    1989.1,
+    108.8
+   ],
+   [
+    2230.7,
+    123.6
+   ]
+  ],
+  "right": [
+   [
+    2230.7,
+    123.6
+   ],
+   [
+    2247.4,
+    216.9
+   ],
+   [
+    2291.9,
+    558.0
+   ],
+   [
+    2341.9,
+    1050.5
+   ],
+   [
+    2363.5,
+    1730.2
+   ],
+   [
+    2375.9,
+    2657.1
+   ],
+   [
+    2403.7,
+    3151.4
+   ],
+   [
+    2406.8,
+    3614.8
+   ]
+  ],
+  "bottom": [
+   [
+    2406.8,
+    3614.8
+   ],
+   [
+    1853.8,
+    3617.9
+   ],
+   [
+    1235.8,
+    3621.0
+   ],
+   [
+    617.9,
+    3624.1
+   ],
+   [
+    80.3,
+    3627.2
+   ]
+  ],
+  "left": [
+   [
+    80.3,
+    3627.2
+   ],
+   [
+    89.6,
+    2780.6
+   ],
+   [
+    92.7,
+    2039.1
+   ],
+   [
+    105.0,
+    494.3
+   ],
+   [
+    111.2,
+    117.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad/mask straight at x~390-395 include a wedge of the next leaf at top-right; own fore-edge slants from TR corner (361,20) to x~382 at y250 and 389 at the bottom; mask also notched at top-right left = gutter fold x18->13 (f52v green at x<12 outside); fore-edge slanted line (cut or folded-under corner); flower fragment (366-375,35-55), frond dashes (x382-388, y190-345) and green blob (400,470) are on a leaf beneath, outside; top ~18.5-20 below stacked edge band; bottom ~586",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:46:38"
+ }
+}

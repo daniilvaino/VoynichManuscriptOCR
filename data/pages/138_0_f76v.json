@@ -1,0 +1,135 @@
+{
+ "image": "138_0_f76v",
+ "folio": "f76v",
+ "scan": "138.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    411.7,
+    247.6
+   ],
+   [
+    445.7,
+    207.4
+   ],
+   [
+    928.6,
+    185.7
+   ],
+   [
+    1547.7,
+    164.1
+   ],
+   [
+    2166.8,
+    142.4
+   ],
+   [
+    2476.3,
+    130.0
+   ],
+   [
+    2727.0,
+    120.7
+   ]
+  ],
+  "right": [
+   [
+    2727.0,
+    120.7
+   ],
+   [
+    2727.0,
+    928.6
+   ],
+   [
+    2730.1,
+    1857.2
+   ],
+   [
+    2730.1,
+    2785.9
+   ],
+   [
+    2727.0,
+    3621.6
+   ]
+  ],
+  "bottom": [
+   [
+    2727.0,
+    3621.6
+   ],
+   [
+    2476.3,
+    3621.6
+   ],
+   [
+    2043.0,
+    3624.7
+   ],
+   [
+    1547.7,
+    3624.7
+   ],
+   [
+    928.6,
+    3615.4
+   ],
+   [
+    619.1,
+    3599.9
+   ],
+   [
+    445.7,
+    3596.8
+   ]
+  ],
+  "left": [
+   [
+    445.7,
+    3596.8
+   ],
+   [
+    439.5,
+    3466.8
+   ],
+   [
+    424.1,
+    3281.1
+   ],
+   [
+    408.6,
+    2971.6
+   ],
+   [
+    374.5,
+    1764.4
+   ],
+   [
+    393.1,
+    1238.2
+   ],
+   [
+    408.6,
+    619.1
+   ],
+   [
+    411.7,
+    247.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "SAM mask bottom very ragged (cuts into leaf up to y~555); quad right x~433 too far in (own ink dots to x~436, gutter fold x~441); quad bottom-left corner includes stack right = gutter fold x~440.5 (f77r text from x~447 outside); left fore-edge faint among stack lines: x~66 top, ~60.5 at y~285 (own vessel ink at x~62), sharp line 66->71 at y480-560; bottom ~585 with stack band below; bottom-left corner messy (creases), ~72,581",
+  "human_note": null,
+  "saved_at": null
+ }
+}

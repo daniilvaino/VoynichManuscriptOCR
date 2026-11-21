@@ -1,0 +1,131 @@
+{
+ "image": "148_0_f81v",
+ "folio": "f81v",
+ "scan": "148.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    491.0,
+    274.9
+   ],
+   [
+    728.8,
+    225.4
+   ],
+   [
+    988.2,
+    191.5
+   ],
+   [
+    1235.3,
+    166.8
+   ],
+   [
+    1544.1,
+    139.0
+   ],
+   [
+    2038.2,
+    126.6
+   ],
+   [
+    2705.3,
+    123.5
+   ]
+  ],
+  "right": [
+   [
+    2705.3,
+    123.5
+   ],
+   [
+    2702.2,
+    926.5
+   ],
+   [
+    2696.0,
+    1852.9
+   ],
+   [
+    2692.9,
+    2779.4
+   ],
+   [
+    2689.9,
+    3588.5
+   ]
+  ],
+  "bottom": [
+   [
+    2689.9,
+    3588.5
+   ],
+   [
+    2470.6,
+    3585.4
+   ],
+   [
+    2161.8,
+    3576.2
+   ],
+   [
+    1544.1,
+    3570.0
+   ],
+   [
+    926.5,
+    3557.6
+   ],
+   [
+    481.8,
+    3545.3
+   ]
+  ],
+  "left": [
+   [
+    481.8,
+    3545.3
+   ],
+   [
+    491.0,
+    3088.2
+   ],
+   [
+    494.1,
+    2717.6
+   ],
+   [
+    512.6,
+    2347.1
+   ],
+   [
+    543.5,
+    1852.9
+   ],
+   [
+    531.2,
+    1235.3
+   ],
+   [
+    506.5,
+    617.6
+   ],
+   [
+    491.0,
+    274.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "top-left: quad/SAM corner at (86,22) includes the cut-corner area showing f80v's crowned head (x110-135,y22-35); own top slants from (250,22.5) to corner (79.5,44.5); bottom-right quad y~588 on stack (own edge ~581) mirror of f81r (narrow leaf, cut corner); left fore-edge: wavy line x~82-88 (y100-300), x~79.5-80 at y440-574; f80v drawings at x<80 outside; right = gutter x~435.5-438, f82r beyond; own green blot (410-430,555-580) inside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

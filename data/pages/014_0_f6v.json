@@ -1,0 +1,151 @@
+{
+ "image": "014_0_f6v",
+ "folio": "f6v",
+ "scan": "014.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    196.2,
+    278.5
+   ],
+   [
+    221.5,
+    208.8
+   ],
+   [
+    253.1,
+    180.4
+   ],
+   [
+    632.9,
+    174.0
+   ],
+   [
+    886.0,
+    164.5
+   ],
+   [
+    1139.2,
+    155.1
+   ],
+   [
+    1392.3,
+    139.2
+   ],
+   [
+    1898.6,
+    136.1
+   ],
+   [
+    2278.3,
+    145.6
+   ],
+   [
+    2642.2,
+    158.2
+   ]
+  ],
+  "right": [
+   [
+    2642.2,
+    158.2
+   ],
+   [
+    2642.2,
+    949.3
+   ],
+   [
+    2642.2,
+    1898.6
+   ],
+   [
+    2642.2,
+    2847.9
+   ],
+   [
+    2642.2,
+    3651.7
+   ]
+  ],
+  "bottom": [
+   [
+    2642.2,
+    3651.7
+   ],
+   [
+    2215.1,
+    3648.5
+   ],
+   [
+    1582.2,
+    3648.5
+   ],
+   [
+    949.3,
+    3645.4
+   ],
+   [
+    506.3,
+    3644.1
+   ],
+   [
+    253.1,
+    3642.2
+   ],
+   [
+    196.2,
+    3626.4
+   ],
+   [
+    167.7,
+    3575.7
+   ]
+  ],
+  "left": [
+   [
+    167.7,
+    3575.7
+   ],
+   [
+    167.7,
+    3164.4
+   ],
+   [
+    167.7,
+    2531.5
+   ],
+   [
+    170.9,
+    1898.6
+   ],
+   [
+    186.7,
+    1645.5
+   ],
+   [
+    196.2,
+    1265.7
+   ],
+   [
+    196.2,
+    632.9
+   ],
+   [
+    196.2,
+    278.5
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "top: SAM ok but quad cuts slant (leaf top 28 at left -> 21.5 at x>=220); left-top corner damaged; bottom-left SAM cut rounded crease, leaf reaches y~576 over tape; right quad ~1.5px short of gutter crease verso; right = gutter crease x~417.5 (leaf beyond = conjugate/stub); left/top outer bands are stacked leaves and tape visible only outside leaf",
+  "human_note": null,
+  "saved_at": null
+ }
+}

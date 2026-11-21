@@ -1,0 +1,135 @@
+{
+ "image": "051_0_f26r",
+ "folio": "f26r",
+ "scan": "051.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    93.6,
+    115.4
+   ],
+   [
+    374.4,
+    118.6
+   ],
+   [
+    748.8,
+    134.2
+   ],
+   [
+    1310.5,
+    156.0
+   ],
+   [
+    1809.7,
+    174.7
+   ],
+   [
+    2184.1,
+    184.1
+   ],
+   [
+    2496.1,
+    187.2
+   ],
+   [
+    2533.6,
+    199.7
+   ]
+  ],
+  "right": [
+   [
+    2533.6,
+    199.7
+   ],
+   [
+    2527.3,
+    624.0
+   ],
+   [
+    2527.3,
+    1872.1
+   ],
+   [
+    2527.3,
+    2808.1
+   ],
+   [
+    2527.3,
+    3656.8
+   ]
+  ],
+  "bottom": [
+   [
+    2527.3,
+    3656.8
+   ],
+   [
+    2371.3,
+    3675.5
+   ],
+   [
+    1872.1,
+    3678.6
+   ],
+   [
+    1248.1,
+    3675.5
+   ],
+   [
+    624.0,
+    3675.5
+   ],
+   [
+    187.2,
+    3669.3
+   ],
+   [
+    68.6,
+    3656.8
+   ]
+  ],
+  "left": [
+   [
+    68.6,
+    3656.8
+   ],
+   [
+    68.6,
+    3557.0
+   ],
+   [
+    81.1,
+    3120.1
+   ],
+   [
+    96.7,
+    2184.1
+   ],
+   [
+    93.6,
+    1248.1
+   ],
+   [
+    90.5,
+    249.6
+   ],
+   [
+    93.6,
+    115.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "top: quad on outer stacked leaf edges (y13-16), own top slopes 18.5->30 (up to 15 px lower at right); right: quad ~3 px out on stacked fore-edge leaves left gutter fold x14.5-15.5; neighbour's green paint reaches x13.7 at y330-355, kept outside; blue berries y31+ under top edge y29.5 inside; root strokes reach y587.5, bottom 588.5-589",
+  "human_note": null,
+  "saved_at": null
+ }
+}

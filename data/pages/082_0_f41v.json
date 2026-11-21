@@ -1,0 +1,83 @@
+{
+ "image": "082_0_f41v",
+ "folio": "f41v",
+ "scan": "082.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    475.1,
+    147.9
+   ],
+   [
+    1573.1,
+    143.5
+   ],
+   [
+    2793.9,
+    138.4
+   ]
+  ],
+  "right": [
+   [
+    2793.9,
+    138.4
+   ],
+   [
+    2793.9,
+    1887.8
+   ],
+   [
+    2790.8,
+    3652.8
+   ]
+  ],
+  "bottom": [
+   [
+    2790.8,
+    3652.8
+   ],
+   [
+    1573.1,
+    3608.8
+   ],
+   [
+    881.0,
+    3586.8
+   ],
+   [
+    365.0,
+    3561.6
+   ]
+  ],
+  "left": [
+   [
+    365.0,
+    3561.6
+   ],
+   [
+    396.4,
+    2517.0
+   ],
+   [
+    421.6,
+    1887.8
+   ],
+   [
+    475.1,
+    147.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "none significant; SAM mask stub at x~55 y~380-395 on neighbour green leaf slightly skewed: fore-edge slants x76->58, bottom slants y566->580.5 (slanted line taken as edge; strip below to y~585 taken as next leaf, ink-free, could be a crease); green blob x53-63 y382-433 lies on the stacked leaf behind (f42r margin), outside; right = gutter x~444",
+  "human_note": null,
+  "saved_at": null
+ }
+}

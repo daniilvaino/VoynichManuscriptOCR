@@ -1,0 +1,111 @@
+{
+ "image": "128_0_f70v1",
+ "folio": "f70v1",
+ "scan": "128.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    404.0,
+    98.7
+   ],
+   [
+    925.2,
+    98.7
+   ],
+   [
+    1850.3,
+    104.9
+   ],
+   [
+    2590.4,
+    107.9
+   ],
+   [
+    2775.5,
+    129.5
+   ],
+   [
+    2843.3,
+    148.0
+   ]
+  ],
+  "right": [
+   [
+    2843.3,
+    148.0
+   ],
+   [
+    2843.3,
+    616.8
+   ],
+   [
+    2843.3,
+    1850.3
+   ],
+   [
+    2843.3,
+    2775.5
+   ],
+   [
+    2843.3,
+    3626.6
+   ]
+  ],
+  "bottom": [
+   [
+    2843.3,
+    3626.6
+   ],
+   [
+    2405.4,
+    3632.8
+   ],
+   [
+    1233.5,
+    3620.4
+   ],
+   [
+    431.7,
+    3608.1
+   ]
+  ],
+  "left": [
+   [
+    431.7,
+    3608.1
+   ],
+   [
+    428.7,
+    3330.6
+   ],
+   [
+    413.2,
+    2467.1
+   ],
+   [
+    407.1,
+    2035.3
+   ],
+   [
+    404.0,
+    925.2
+   ],
+   [
+    404.0,
+    98.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "close; quad top at y~15 sits on the stacked top strip at the right end (own corner drops to y~24); SAM right contour wavers inward to x~445 at y300-500 where the ring text is foldout panel shown as a verso: right = gutter at the dark gap x~461 (neighbour f71r text at x>467 outside; ring text at x~450-453 inside); left = own edge x~65.5-70, stack excluded; bottom kept below the foliation marks '10' and '1107' (y~575-585)",
+  "human_note": null,
+  "saved_at": null
+ }
+}

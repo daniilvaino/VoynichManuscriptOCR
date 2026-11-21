@@ -1,0 +1,155 @@
+{
+ "image": "108_0_f54v",
+ "folio": "f54v",
+ "scan": "108.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    440.1,
+    242.1
+   ],
+   [
+    628.7,
+    220.1
+   ],
+   [
+    817.3,
+    204.3
+   ],
+   [
+    1006.0,
+    188.6
+   ],
+   [
+    1194.6,
+    169.8
+   ],
+   [
+    1383.2,
+    150.9
+   ],
+   [
+    1634.7,
+    142.7
+   ],
+   [
+    2200.5,
+    142.7
+   ],
+   [
+    2703.5,
+    145.9
+   ],
+   [
+    2892.1,
+    154.0
+   ]
+  ],
+  "right": [
+   [
+    2892.1,
+    154.0
+   ],
+   [
+    2889.0,
+    440.1
+   ],
+   [
+    2879.5,
+    943.1
+   ],
+   [
+    2876.4,
+    1823.3
+   ],
+   [
+    2870.1,
+    2640.6
+   ],
+   [
+    2870.1,
+    3640.3
+   ]
+  ],
+  "bottom": [
+   [
+    2870.1,
+    3640.3
+   ],
+   [
+    2640.6,
+    3637.2
+   ],
+   [
+    2389.1,
+    3646.6
+   ],
+   [
+    1886.2,
+    3649.7
+   ],
+   [
+    1257.4,
+    3634.0
+   ],
+   [
+    628.7,
+    3627.7
+   ],
+   [
+    528.1,
+    3624.6
+   ],
+   [
+    490.4,
+    3612.0
+   ],
+   [
+    465.3,
+    3583.7
+   ],
+   [
+    452.7,
+    3539.7
+   ]
+  ],
+  "left": [
+   [
+    452.7,
+    3539.7
+   ],
+   [
+    452.7,
+    2829.2
+   ],
+   [
+    449.5,
+    1886.2
+   ],
+   [
+    446.4,
+    1257.4
+   ],
+   [
+    440.1,
+    503.0
+   ],
+   [
+    440.1,
+    242.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "top-left: quad cuts the slanted top edge (own top drops from y~23 at x220 to ~38.5 at x70; quad includes stacked leaves above); top-right: SAM rounds the corner off at a shadow, leaf reaches the gutter at y~24 slanted top-left edge; gutter crease on right; rounded bottom-left corner; fore-edge stack left excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

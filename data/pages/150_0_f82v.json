@@ -1,0 +1,170 @@
+{
+ "image": "150_0_f82v",
+ "folio": "f82v",
+ "scan": "150.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    476.4,
+    272.2
+   ],
+   [
+    556.8,
+    238.2
+   ],
+   [
+    680.5,
+    216.5
+   ],
+   [
+    804.2,
+    194.9
+   ],
+   [
+    989.8,
+    160.8
+   ],
+   [
+    1175.4,
+    136.1
+   ],
+   [
+    1484.7,
+    123.7
+   ],
+   [
+    2697.3,
+    114.4
+   ]
+  ],
+  "right": [
+   [
+    2697.3,
+    114.4
+   ],
+   [
+    2697.3,
+    928.0
+   ],
+   [
+    2697.3,
+    1855.9
+   ],
+   [
+    2697.3,
+    2783.9
+   ],
+   [
+    2697.3,
+    3600.5
+   ]
+  ],
+  "bottom": [
+   [
+    2697.3,
+    3600.5
+   ],
+   [
+    2165.2,
+    3594.3
+   ],
+   [
+    1546.6,
+    3588.1
+   ],
+   [
+    928.0,
+    3581.9
+   ],
+   [
+    668.1,
+    3575.7
+   ]
+  ],
+  "left": [
+   [
+    668.1,
+    3575.7
+   ],
+   [
+    634.1,
+    3093.2
+   ],
+   [
+    618.6,
+    2474.6
+   ],
+   [
+    569.1,
+    1855.9
+   ],
+   [
+    513.5,
+    1237.3
+   ],
+   [
+    473.3,
+    742.4
+   ],
+   [
+    476.4,
+    272.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    847.5,
+    1219.3
+   ],
+   [
+    857.4,
+    1190.9
+   ],
+   [
+    882.2,
+    1182.8
+   ],
+   [
+    902.0,
+    1195.8
+   ],
+   [
+    909.4,
+    1201.4
+   ],
+   [
+    911.9,
+    1228.0
+   ],
+   [
+    905.1,
+    1244.1
+   ],
+   [
+    887.1,
+    1251.5
+   ],
+   [
+    865.5,
+    1248.4
+   ],
+   [
+    851.9,
+    1231.7
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus+human-checked",
+  "status": "final",
+  "holes_source": "human-checked",
+  "opus_confidence": "medium",
+  "opus_note": "quad left side wrong (66,24 -> 118,579: cuts own edge at top, too far in at bottom); quad top-left corner square while own corner is rounded/slanted; SAM contour itself mostly right mirror of pilot f82r: slanted fore-edge x~76-77 (y44-150) -> 92 (y300) -> 101 (y450) -> 108 (bottom); straight line x~76-78 further left is an underlying leaf edge with foreign drawings (x60-90) outside; top-left rounded: own top from (77,44) to y~20 by x~200, crowned head at (113-125,24-35) above it is foreign (outside); right = gutter x~436",
+  "human_note": null,
+  "saved_at": "2026-11-21 12:03:42"
+ }
+}

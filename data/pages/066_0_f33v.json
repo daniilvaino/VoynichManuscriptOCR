@@ -1,0 +1,107 @@
+{
+ "image": "066_0_f33v",
+ "folio": "f33v",
+ "scan": "066.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    374.6,
+    163.7
+   ],
+   [
+    944.4,
+    157.4
+   ],
+   [
+    1574.0,
+    151.1
+   ],
+   [
+    2203.6,
+    141.7
+   ],
+   [
+    2764.0,
+    135.4
+   ]
+  ],
+  "right": [
+   [
+    2764.0,
+    135.4
+   ],
+   [
+    2767.1,
+    944.4
+   ],
+   [
+    2771.5,
+    1888.8
+   ],
+   [
+    2774.7,
+    2833.2
+   ],
+   [
+    2776.6,
+    3689.5
+   ]
+  ],
+  "bottom": [
+   [
+    2776.6,
+    3689.5
+   ],
+   [
+    2203.6,
+    3692.6
+   ],
+   [
+    1574.0,
+    3692.6
+   ],
+   [
+    944.4,
+    3692.6
+   ],
+   [
+    377.8,
+    3692.6
+   ]
+  ],
+  "left": [
+   [
+    377.8,
+    3692.6
+   ],
+   [
+    375.2,
+    2833.2
+   ],
+   [
+    372.7,
+    1888.8
+   ],
+   [
+    370.2,
+    944.4
+   ],
+   [
+    374.6,
+    163.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad within ~1-2 px; bottom 2 px high; mask contour cuts into bottom drawings right = gutter fold x439-441; left edge x~59 right of stacked fore-edge leaves; top edge = dark line under stacked strip y12-20; bottom ink-free band to edge y~586-590",
+  "human_note": null,
+  "saved_at": null
+ }
+}

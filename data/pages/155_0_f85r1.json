@@ -1,0 +1,135 @@
+{
+ "image": "155_0_f85r1",
+ "folio": "f85r1",
+ "scan": "155.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    84.4,
+    150.0
+   ],
+   [
+    625.0,
+    140.6
+   ],
+   [
+    1250.0,
+    140.6
+   ],
+   [
+    1875.0,
+    146.9
+   ],
+   [
+    2375.0,
+    153.1
+   ],
+   [
+    2543.8,
+    162.5
+   ]
+  ],
+  "right": [
+   [
+    2543.8,
+    162.5
+   ],
+   [
+    2543.8,
+    625.0
+   ],
+   [
+    2540.6,
+    1250.0
+   ],
+   [
+    2537.5,
+    1875.0
+   ],
+   [
+    2540.6,
+    2500.0
+   ],
+   [
+    2550.0,
+    3000.0
+   ],
+   [
+    2565.6,
+    3312.5
+   ],
+   [
+    2553.1,
+    3512.5
+   ]
+  ],
+  "bottom": [
+   [
+    2553.1,
+    3512.5
+   ],
+   [
+    2412.5,
+    3503.1
+   ],
+   [
+    2325.0,
+    3543.8
+   ],
+   [
+    2250.0,
+    3581.2
+   ],
+   [
+    1562.5,
+    3587.5
+   ],
+   [
+    937.5,
+    3590.6
+   ],
+   [
+    312.5,
+    3587.5
+   ],
+   [
+    81.2,
+    3581.2
+   ]
+  ],
+  "left": [
+   [
+    81.2,
+    3581.2
+   ],
+   [
+    78.1,
+    2812.5
+   ],
+   [
+    75.0,
+    1875.0
+   ],
+   [
+    78.1,
+    937.5
+   ],
+   [
+    84.4,
+    150.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad top-right (408,11.5) includes stack strips above own top (own y~24-26); SAM right side broken (stops at a diagonal crease x~385-400 in y230-560) foldout panel; right edge = straight line x~406-410 (darker stack beyond), diagonal line x~400->385 (y220-545) taken as a crease inside the leaf; bottom-right corner cut: own bottom rises from (360,573) to (386,560.5), small rectangular corner piece (385-410,520-562) kept inside; check whether the right edge is a fold to the next foldout panel; gutter x~12-13 with f84v margin text left of it",
+  "human_note": null,
+  "saved_at": null
+ }
+}

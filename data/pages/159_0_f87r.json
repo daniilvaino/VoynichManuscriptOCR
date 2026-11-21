@@ -1,0 +1,123 @@
+{
+ "image": "159_0_f87r",
+ "folio": "f87r",
+ "scan": "159.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    109.2,
+    137.3
+   ],
+   [
+    624.3,
+    134.2
+   ],
+   [
+    1248.5,
+    131.1
+   ],
+   [
+    1872.8,
+    128.0
+   ],
+   [
+    2372.2,
+    124.9
+   ],
+   [
+    2515.8,
+    131.1
+   ],
+   [
+    2553.2,
+    156.1
+   ]
+  ],
+  "right": [
+   [
+    2553.2,
+    156.1
+   ],
+   [
+    2553.2,
+    624.3
+   ],
+   [
+    2553.2,
+    1248.5
+   ],
+   [
+    2553.2,
+    1872.8
+   ],
+   [
+    2556.4,
+    2497.1
+   ],
+   [
+    2556.4,
+    3121.3
+   ],
+   [
+    2559.5,
+    3614.5
+   ]
+  ],
+  "bottom": [
+   [
+    2559.5,
+    3614.5
+   ],
+   [
+    1872.8,
+    3627.0
+   ],
+   [
+    1248.5,
+    3633.2
+   ],
+   [
+    624.3,
+    3636.3
+   ],
+   [
+    156.1,
+    3639.5
+   ]
+  ],
+  "left": [
+   [
+    156.1,
+    3639.5
+   ],
+   [
+    143.6,
+    2809.2
+   ],
+   [
+    128.0,
+    1872.8
+   ],
+   [
+    115.5,
+    936.4
+   ],
+   [
+    109.2,
+    137.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad top (y~9-20) and right (x~421-424) include stack strips; SAM right side broken around the root (y400-550) fore-edge taken at the full-height line x~409-410 (meets own rounded top-right corner at (403-409,21-25)); band x~410-421 (leaf with lower top y~32) and dark strips beyond taken as leaves beneath, no ink there; green leaf patches (400-408,225-280) and root tip (to x~407,y497) inside; top y~20-22; gutter x~17.5-25",
+  "human_note": null,
+  "saved_at": null
+ }
+}

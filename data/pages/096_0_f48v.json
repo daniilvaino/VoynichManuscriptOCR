@@ -1,0 +1,87 @@
+{
+ "image": "096_0_f48v",
+ "folio": "f48v",
+ "scan": "096.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    471.7,
+    151.0
+   ],
+   [
+    1635.4,
+    147.8
+   ],
+   [
+    2805.3,
+    144.7
+   ]
+  ],
+  "right": [
+   [
+    2805.3,
+    144.7
+   ],
+   [
+    2811.6,
+    1887.0
+   ],
+   [
+    2814.8,
+    3663.9
+   ]
+  ],
+  "bottom": [
+   [
+    2814.8,
+    3663.9
+   ],
+   [
+    1635.4,
+    3676.5
+   ],
+   [
+    452.9,
+    3667.1
+   ]
+  ],
+  "left": [
+   [
+    452.9,
+    3667.1
+   ],
+   [
+    396.3,
+    2516.0
+   ],
+   [
+    352.2,
+    1258.0
+   ],
+   [
+    361.7,
+    283.0
+   ],
+   [
+    396.3,
+    195.0
+   ],
+   [
+    471.7,
+    151.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad TL corner on stacked leaves at x48; mask fine left = fore-edge x~56-72 slanting, stacked leaves outside; rounded/folded TL corner; right = gutter x~446-447.5 (dark crease outside); bottom y~583-584.5 above stack band",
+  "human_note": null,
+  "saved_at": null
+ }
+}

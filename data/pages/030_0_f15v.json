@@ -1,0 +1,190 @@
+{
+ "image": "030_0_f15v",
+ "folio": "f15v",
+ "scan": "030.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    563.9,
+    195.3
+   ],
+   [
+    945.0,
+    192.2
+   ],
+   [
+    1260.0,
+    185.8
+   ],
+   [
+    1890.0,
+    173.2
+   ],
+   [
+    2520.0,
+    160.7
+   ],
+   [
+    2658.6,
+    160.7
+   ],
+   [
+    2705.8,
+    176.4
+   ]
+  ],
+  "right": [
+   [
+    2705.8,
+    176.4
+   ],
+   [
+    2709.0,
+    945.0
+   ],
+   [
+    2712.2,
+    1890.0
+   ],
+   [
+    2715.3,
+    2835.0
+   ],
+   [
+    2712.2,
+    3654.0
+   ]
+  ],
+  "bottom": [
+   [
+    2712.2,
+    3654.0
+   ],
+   [
+    2394.0,
+    3657.2
+   ],
+   [
+    1890.0,
+    3647.7
+   ],
+   [
+    1575.0,
+    3638.2
+   ],
+   [
+    1260.0,
+    3622.5
+   ],
+   [
+    945.0,
+    3609.9
+   ],
+   [
+    630.0,
+    3597.3
+   ],
+   [
+    516.6,
+    3594.2
+   ]
+  ],
+  "left": [
+   [
+    516.6,
+    3594.2
+   ],
+   [
+    516.6,
+    3402.0
+   ],
+   [
+    526.0,
+    3213.0
+   ],
+   [
+    538.6,
+    3024.0
+   ],
+   [
+    548.1,
+    2520.0
+   ],
+   [
+    551.2,
+    1890.0
+   ],
+   [
+    554.4,
+    1260.0
+   ],
+   [
+    557.5,
+    630.0
+   ],
+   [
+    563.9,
+    195.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    1467.9,
+    1814.4
+   ],
+   [
+    1499.4,
+    1817.5
+   ],
+   [
+    1515.1,
+    1845.9
+   ],
+   [
+    1521.5,
+    1890.0
+   ],
+   [
+    1515.1,
+    1927.8
+   ],
+   [
+    1493.1,
+    1959.3
+   ],
+   [
+    1461.6,
+    1971.9
+   ],
+   [
+    1442.7,
+    1946.7
+   ],
+   [
+    1427.0,
+    1902.6
+   ],
+   [
+    1423.8,
+    1864.8
+   ],
+   [
+    1436.4,
+    1833.3
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus+human-checked",
+  "status": "final",
+  "holes_source": "human-checked",
+  "opus_confidence": "high",
+  "opus_note": "quad close (within ~2-4px); quad top-right corner on outer lip (y~21) instead of edge y~26-28; bottom-left SAM/quad ~2px off; SAM mask excludes the root drawing at bottom left fore-edge x~82-89 with stacks of earlier leaves (f14 torn flap at y~170) to the left; real hole in green leaf at (226-242, 288-313)",
+  "human_note": null,
+  "saved_at": "2026-11-21 11:54:03"
+ }
+}

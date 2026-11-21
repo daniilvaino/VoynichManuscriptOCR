@@ -1,0 +1,115 @@
+{
+ "image": "101_0_f51r",
+ "folio": "f51r",
+ "scan": "101.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    122.6,
+    150.9
+   ],
+   [
+    628.6,
+    147.7
+   ],
+   [
+    1382.9,
+    150.9
+   ],
+   [
+    2530.1,
+    160.3
+   ]
+  ],
+  "right": [
+   [
+    2530.1,
+    160.3
+   ],
+   [
+    2533.3,
+    942.9
+   ],
+   [
+    2536.4,
+    1571.5
+   ],
+   [
+    2542.7,
+    2263.0
+   ],
+   [
+    2536.4,
+    3143.0
+   ],
+   [
+    2530.1,
+    3520.2
+   ],
+   [
+    2520.7,
+    3671.0
+   ]
+  ],
+  "bottom": [
+   [
+    2520.7,
+    3671.0
+   ],
+   [
+    2137.3,
+    3658.5
+   ],
+   [
+    1885.8,
+    3649.0
+   ],
+   [
+    1320.1,
+    3649.0
+   ],
+   [
+    628.6,
+    3655.3
+   ],
+   [
+    75.4,
+    3664.8
+   ]
+  ],
+  "left": [
+   [
+    75.4,
+    3664.8
+   ],
+   [
+    72.3,
+    3520.2
+   ],
+   [
+    84.9,
+    2514.4
+   ],
+   [
+    100.6,
+    691.5
+   ],
+   [
+    122.6,
+    150.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "mask cut a hole around the root drawing; quad bottom ~2-4 px low (stack band 581-589) and top ~3 px high on stacked edge band left = gutter fold x19.5->11.5 (f50v text at x<12 outside); right fore-edge x402.5-404.5, green leaf tips reach x~403 inside; bottom own edge ~580.5-584 (shadow + stack band below), roots end at the edge; no holes",
+  "human_note": null,
+  "saved_at": null
+ }
+}

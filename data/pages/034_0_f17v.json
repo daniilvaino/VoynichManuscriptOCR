@@ -1,0 +1,147 @@
+{
+ "image": "034_0_f17v",
+ "folio": "f17v",
+ "scan": "034.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    226.9,
+    195.4
+   ],
+   [
+    378.2,
+    189.1
+   ],
+   [
+    504.3,
+    186.0
+   ],
+   [
+    945.6,
+    176.5
+   ],
+   [
+    1386.8,
+    167.0
+   ],
+   [
+    1891.1,
+    151.3
+   ],
+   [
+    2206.3,
+    151.3
+   ],
+   [
+    2521.5,
+    160.7
+   ],
+   [
+    2679.1,
+    173.4
+   ],
+   [
+    2729.5,
+    195.4
+   ]
+  ],
+  "right": [
+   [
+    2729.5,
+    195.4
+   ],
+   [
+    2732.7,
+    945.6
+   ],
+   [
+    2735.8,
+    1891.1
+   ],
+   [
+    2735.8,
+    2836.7
+   ],
+   [
+    2732.7,
+    3662.5
+   ]
+  ],
+  "bottom": [
+   [
+    2732.7,
+    3662.5
+   ],
+   [
+    2521.5,
+    3662.5
+   ],
+   [
+    2080.2,
+    3659.3
+   ],
+   [
+    1575.9,
+    3653.0
+   ],
+   [
+    1071.6,
+    3646.7
+   ],
+   [
+    630.4,
+    3637.3
+   ],
+   [
+    378.2,
+    3634.1
+   ],
+   [
+    252.2,
+    3631.0
+   ]
+  ],
+  "left": [
+   [
+    252.2,
+    3631.0
+   ],
+   [
+    239.5,
+    3530.1
+   ],
+   [
+    236.4,
+    2836.7
+   ],
+   [
+    236.4,
+    1891.1
+   ],
+   [
+    230.1,
+    945.6
+   ],
+   [
+    223.8,
+    315.2
+   ],
+   [
+    226.9,
+    195.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: quad/SAM stop at right edge of transparent tape (x~72); leaf continues under tape (x 55-72) and beyond to edge x~36-40 (top edge and rounded bottom-left corner continue there); bottom-right: quad/SAM at y~567 cut the '29' mark, real edge ~580 left edge chosen = first shadowed edge left of tape, surface 38-55 has faint green paint and same top/bottom edges as the page; band x 25-37 = stacked leaves. Width vs f17r suggests edge ~45-50, so left side uncertain by up to ~10px",
+  "human_note": null,
+  "saved_at": null
+ }
+}

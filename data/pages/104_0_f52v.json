@@ -1,0 +1,115 @@
+{
+ "image": "104_0_f52v",
+ "folio": "f52v",
+ "scan": "104.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    458.8,
+    157.1
+   ],
+   [
+    565.6,
+    150.8
+   ],
+   [
+    1634.0,
+    144.6
+   ],
+   [
+    2702.5,
+    150.8
+   ],
+   [
+    2796.7,
+    169.7
+   ],
+   [
+    2837.6,
+    207.4
+   ]
+  ],
+  "right": [
+   [
+    2837.6,
+    207.4
+   ],
+   [
+    2834.4,
+    1539.8
+   ],
+   [
+    2831.3,
+    2074.0
+   ],
+   [
+    2825.0,
+    2828.2
+   ],
+   [
+    2818.7,
+    3657.8
+   ]
+  ],
+  "bottom": [
+   [
+    2818.7,
+    3657.8
+   ],
+   [
+    2199.7,
+    3645.2
+   ],
+   [
+    1634.0,
+    3635.8
+   ],
+   [
+    942.7,
+    3620.0
+   ],
+   [
+    534.2,
+    3610.6
+   ],
+   [
+    424.2,
+    3604.3
+   ]
+  ],
+  "left": [
+   [
+    424.2,
+    3604.3
+   ],
+   [
+    433.7,
+    3142.4
+   ],
+   [
+    439.9,
+    1885.4
+   ],
+   [
+    458.8,
+    754.2
+   ],
+   [
+    458.8,
+    157.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: mask stops at a vertical crease x~84-90 (region beyond shares the leaf's top/bottom edges); quad left x~70-73 is about right; bottom-right quad corner ~4 px low left = edge at/under the left border of the holder tape, x73 (top) -> 67.5 (bottom), +-3 px, ink-free; line x84-90 taken as crease; right = gutter fold strip start x451.5->448.5, green leaves reach x~446 inside; TR corner curves down into fold; bottom slants 574->582",
+  "human_note": null,
+  "saved_at": null
+ }
+}

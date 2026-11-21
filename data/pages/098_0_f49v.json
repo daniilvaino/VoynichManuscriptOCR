@@ -1,0 +1,99 @@
+{
+ "image": "098_0_f49v",
+ "folio": "f49v",
+ "scan": "098.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    414.8,
+    100.6
+   ],
+   [
+    942.7,
+    103.7
+   ],
+   [
+    1634.0,
+    113.1
+   ],
+   [
+    2840.7,
+    132.0
+   ]
+  ],
+  "right": [
+   [
+    2840.7,
+    132.0
+   ],
+   [
+    2843.9,
+    1257.0
+   ],
+   [
+    2847.0,
+    2513.9
+   ],
+   [
+    2847.0,
+    3654.6
+   ]
+  ],
+  "bottom": [
+   [
+    2847.0,
+    3654.6
+   ],
+   [
+    1634.0,
+    3657.8
+   ],
+   [
+    628.5,
+    3654.6
+   ],
+   [
+    439.9,
+    3638.9
+   ]
+  ],
+  "left": [
+   [
+    439.9,
+    3638.9
+   ],
+   [
+    433.7,
+    3268.1
+   ],
+   [
+    417.9,
+    2513.9
+   ],
+   [
+    411.7,
+    1885.4
+   ],
+   [
+    411.7,
+    628.5
+   ],
+   [
+    414.8,
+    100.6
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "left: SAM/quad stop at right edge of transparent holder tape (x~80-84); leaf continues under tape to x~66-70 left = edge at tape's left border x65.5 (top) -> 70 (bottom), ink-free, +-4 px; width consistent with f49r; stacked leaves x<65 outside; right = gutter fold x452.5-453 (brown stub strip beyond), green paint reaches x451 inside; bottom ~581.5 above stack band",
+  "human_note": null,
+  "saved_at": null
+ }
+}

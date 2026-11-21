@@ -1,0 +1,103 @@
+{
+ "image": "063_0_f32r",
+ "folio": "f32r",
+ "scan": "063.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    105.9,
+    118.3
+   ],
+   [
+    1245.6,
+    112.1
+   ],
+   [
+    2055.2,
+    137.0
+   ],
+   [
+    2472.4,
+    180.6
+   ]
+  ],
+  "right": [
+   [
+    2472.4,
+    180.6
+   ],
+   [
+    2469.3,
+    622.8
+   ],
+   [
+    2460.0,
+    1556.9
+   ],
+   [
+    2441.3,
+    2491.1
+   ],
+   [
+    2428.8,
+    2989.3
+   ],
+   [
+    2444.4,
+    3612.1
+   ]
+  ],
+  "bottom": [
+   [
+    2444.4,
+    3612.1
+   ],
+   [
+    2179.7,
+    3621.5
+   ],
+   [
+    1681.5,
+    3637.0
+   ],
+   [
+    934.2,
+    3643.3
+   ],
+   [
+    68.5,
+    3652.6
+   ]
+  ],
+  "left": [
+   [
+    68.5,
+    3652.6
+   ],
+   [
+    77.8,
+    2802.5
+   ],
+   [
+    90.3,
+    1868.3
+   ],
+   [
+    105.9,
+    118.3
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad (x~411) and SAM lower part (~402-410) include stacked fore-edges of following leaves; leaf edge = innermost line 397->390, corner at (392.5,580) where bottom line meets it. top: quad y~14-15 on the stack near the right (leaf ~22-29) gutter left ~12.5-17, f31v green/brown ink at x<13 outside; bottom ~580-586.5 below green grass ink (to y~582)",
+  "human_note": null,
+  "saved_at": null
+ }
+}

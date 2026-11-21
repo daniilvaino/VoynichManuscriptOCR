@@ -1,0 +1,171 @@
+{
+ "image": "017_0_f8r",
+ "folio": "f8r",
+ "scan": "017.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    130.2,
+    145.7
+   ],
+   [
+    186.0,
+    136.4
+   ],
+   [
+    248.0,
+    120.9
+   ],
+   [
+    310.0,
+    102.3
+   ],
+   [
+    403.0,
+    83.7
+   ],
+   [
+    620.0,
+    77.5
+   ],
+   [
+    1240.1,
+    80.6
+   ],
+   [
+    1550.1,
+    83.7
+   ],
+   [
+    1643.1,
+    93.0
+   ],
+   [
+    1736.1,
+    108.5
+   ],
+   [
+    1860.1,
+    114.7
+   ],
+   [
+    2046.2,
+    124.0
+   ],
+   [
+    2170.2,
+    133.3
+   ],
+   [
+    2294.2,
+    139.5
+   ],
+   [
+    2430.6,
+    145.7
+   ]
+  ],
+  "right": [
+   [
+    2430.6,
+    145.7
+   ],
+   [
+    2430.6,
+    248.0
+   ],
+   [
+    2449.2,
+    682.1
+   ],
+   [
+    2470.9,
+    1240.1
+   ],
+   [
+    2477.1,
+    1860.1
+   ],
+   [
+    2480.2,
+    2790.2
+   ],
+   [
+    2477.1,
+    3472.3
+   ],
+   [
+    2474.0,
+    3565.3
+   ]
+  ],
+  "bottom": [
+   [
+    2474.0,
+    3565.3
+   ],
+   [
+    2455.4,
+    3593.2
+   ],
+   [
+    2418.2,
+    3602.5
+   ],
+   [
+    2325.2,
+    3608.7
+   ],
+   [
+    1860.1,
+    3614.9
+   ],
+   [
+    1240.1,
+    3621.1
+   ],
+   [
+    620.0,
+    3624.2
+   ],
+   [
+    136.4,
+    3624.2
+   ]
+  ],
+  "left": [
+   [
+    136.4,
+    3624.2
+   ],
+   [
+    133.3,
+    2790.2
+   ],
+   [
+    130.2,
+    1860.1
+   ],
+   [
+    130.2,
+    930.1
+   ],
+   [
+    130.2,
+    145.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: SAM/quad stop at left edge of vertical tape (x~369-375); leaf continues under tape to edge x~392 (top) -> 400 (mid/bottom); quad top straight at y~13 misses dip to 18-23 at right and left corner; top-left quad corner in background recto; left = gutter crease x~21; small tape piece at bottom-left over leaf; stack edges right of x~400 excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}

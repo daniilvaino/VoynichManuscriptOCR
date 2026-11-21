@@ -1,0 +1,127 @@
+{
+ "image": "110_0_f55v",
+ "folio": "f55v",
+ "scan": "110.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    509.1,
+    157.1
+   ],
+   [
+    628.5,
+    147.7
+   ],
+   [
+    1005.6,
+    135.1
+   ],
+   [
+    1696.9,
+    128.8
+   ],
+   [
+    2513.9,
+    128.8
+   ],
+   [
+    2881.6,
+    132.0
+   ]
+  ],
+  "right": [
+   [
+    2881.6,
+    132.0
+   ],
+   [
+    2875.3,
+    1885.4
+   ],
+   [
+    2868.4,
+    3667.2
+   ]
+  ],
+  "bottom": [
+   [
+    2868.4,
+    3667.2
+   ],
+   [
+    2513.9,
+    3670.3
+   ],
+   [
+    2074.0,
+    3676.6
+   ],
+   [
+    1696.9,
+    3676.6
+   ],
+   [
+    1257.0,
+    3673.5
+   ],
+   [
+    754.2,
+    3667.2
+   ],
+   [
+    565.6,
+    3657.8
+   ],
+   [
+    452.5,
+    3632.6
+   ]
+  ],
+  "left": [
+   [
+    452.5,
+    3632.6
+   ],
+   [
+    430.5,
+    3519.5
+   ],
+   [
+    439.9,
+    3268.1
+   ],
+   [
+    455.6,
+    2828.2
+   ],
+   [
+    480.8,
+    2388.2
+   ],
+   [
+    496.5,
+    1885.4
+   ],
+   [
+    509.1,
+    628.5
+   ],
+   [
+    509.1,
+    157.1
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "left: quad straight at x~74-80 misses the slanted fore-edge (81 at top -> 68.5 at y560, leaf continues under the transparent holder strip x~66-82 at the bottom); top-left: quad corner at y18 is on the stack, own rounded corner at ~(81,25); mask excludes the root drawing at the bottom (hole in mask) left = fore-edge, stacked leaves left of it excluded; right = gutter x~458.5->456.4; bottom: root ink reaches y~583, boundary at 583.5-585 above the black (thin pale rim kept); top y~20.5-25",
+  "human_note": null,
+  "saved_at": null
+ }
+}

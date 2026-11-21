@@ -1,0 +1,123 @@
+{
+ "image": "135_0_f75r",
+ "folio": "f75r",
+ "scan": "135.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    150.4,
+    137.9
+   ],
+   [
+    626.8,
+    144.2
+   ],
+   [
+    1567.0,
+    163.0
+   ],
+   [
+    2507.3,
+    166.1
+   ],
+   [
+    2588.7,
+    175.5
+   ]
+  ],
+  "right": [
+   [
+    2588.7,
+    175.5
+   ],
+   [
+    2598.1,
+    564.1
+   ],
+   [
+    2610.7,
+    1567.0
+   ],
+   [
+    2595.0,
+    2413.2
+   ],
+   [
+    2579.3,
+    3134.1
+   ],
+   [
+    2560.5,
+    3447.5
+   ],
+   [
+    2557.4,
+    3616.7
+   ]
+  ],
+  "bottom": [
+   [
+    2557.4,
+    3616.7
+   ],
+   [
+    1880.4,
+    3616.7
+   ],
+   [
+    1253.6,
+    3613.6
+   ],
+   [
+    626.8,
+    3607.3
+   ],
+   [
+    150.4,
+    3601.0
+   ]
+  ],
+  "left": [
+   [
+    150.4,
+    3601.0
+   ],
+   [
+    150.4,
+    3416.1
+   ],
+   [
+    134.8,
+    2820.7
+   ],
+   [
+    131.6,
+    1880.4
+   ],
+   [
+    137.9,
+    940.2
+   ],
+   [
+    144.2,
+    313.4
+   ],
+   [
+    150.4,
+    137.9
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: quad slants out to x~418-438 and takes in edges of several larger leaves behind (own fore-edge is the ridge at x~408-416.5); top: quad/mask at y~12-16 on stacked top strips (own top ~22-27); bottom: quad at ~585-587 includes stacked bottom layers (own bottom ~574.5-577); mask fragmented on the right recto: left = gutter just right of the dark gap x~21-24, stub strips and neighbour at x<20 outside; right fore-edge picked as the first ridge line (confirmed by the bottom-right corner, where own parchment ends at x~408 while the leaf behind with bottom y~571 extends to 445); the drawing at x~395-405, y360-400 is inside; white thin lines at x~419-424 and the brown stain at x420-437 belong to leaves behind",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "image": "133_0_f73r",
+ "folio": "f73r",
+ "scan": "133.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    112.9,
+    131.7
+   ],
+   [
+    627.0,
+    137.9
+   ],
+   [
+    1567.5,
+    159.9
+   ],
+   [
+    2194.5,
+    185.0
+   ],
+   [
+    2482.9,
+    194.4
+   ]
+  ],
+  "right": [
+   [
+    2482.9,
+    194.4
+   ],
+   [
+    2492.3,
+    376.2
+   ],
+   [
+    2511.1,
+    627.0
+   ],
+   [
+    2523.6,
+    1254.0
+   ],
+   [
+    2536.2,
+    2069.1
+   ],
+   [
+    2545.6,
+    3385.8
+   ],
+   [
+    2536.2,
+    3611.5
+   ],
+   [
+    2508.0,
+    3664.8
+   ]
+  ],
+  "bottom": [
+   [
+    2508.0,
+    3664.8
+   ],
+   [
+    1881.0,
+    3667.9
+   ],
+   [
+    1254.0,
+    3671.0
+   ],
+   [
+    627.0,
+    3674.2
+   ],
+   [
+    100.3,
+    3674.2
+   ]
+  ],
+  "left": [
+   [
+    100.3,
+    3674.2
+   ],
+   [
+    97.2,
+    3448.5
+   ],
+   [
+    94.0,
+    2508.0
+   ],
+   [
+    94.0,
+    1630.2
+   ],
+   [
+    100.3,
+    940.5
+   ],
+   [
+    112.9,
+    131.7
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "top: quad at y~20 includes stacked top strips of leaves behind in the right two thirds (own top slopes 21 -> 31); SAM bottom-left cut diagonally (y~515-585, own corner is square); right a few px outside recto: left = gutter fold x~15-18, f72v text at x<12 outside, own brown stain at x~17-20 inside; right fore-edge follows a faint curved line 396 (top) -> 406 (y540), stack beyond; the exact right line in the top 100 px (396-401 vs ~405) is uncertain but there is no ink there",
+  "human_note": null,
+  "saved_at": null
+ }
+}

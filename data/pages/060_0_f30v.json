@@ -1,0 +1,115 @@
+{
+ "image": "060_0_f30v",
+ "folio": "f30v",
+ "scan": "060.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    349.0,
+    226.4
+   ],
+   [
+    1572.3,
+    169.8
+   ],
+   [
+    2723.2,
+    125.8
+   ]
+  ],
+  "right": [
+   [
+    2723.2,
+    125.8
+   ],
+   [
+    2742.1,
+    628.9
+   ],
+   [
+    2754.7,
+    1257.8
+   ],
+   [
+    2764.1,
+    2075.4
+   ],
+   [
+    2770.4,
+    2830.1
+   ],
+   [
+    2776.7,
+    3521.9
+   ],
+   [
+    2773.5,
+    3654.0
+   ]
+  ],
+  "bottom": [
+   [
+    2773.5,
+    3654.0
+   ],
+   [
+    2641.5,
+    3679.2
+   ],
+   [
+    1572.3,
+    3688.6
+   ],
+   [
+    456.0,
+    3685.5
+   ]
+  ],
+  "left": [
+   [
+    456.0,
+    3685.5
+   ],
+   [
+    440.2,
+    3144.6
+   ],
+   [
+    474.8,
+    2767.2
+   ],
+   [
+    509.4,
+    2452.8
+   ],
+   [
+    566.0,
+    1949.6
+   ],
+   [
+    465.4,
+    1572.3
+   ],
+   [
+    352.2,
+    1226.4
+   ],
+   [
+    349.0,
+    226.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "bottom: SAM excludes the page's own brown ground drawing (y~555-585) and quad cuts through it (y536-557); leaf bottom ~586. left: quad straight at x~50-55 includes the stack where the fore-edge is cut in (to x~90 at y~300, ~70 at y450-565); SAM lower left wanders into the stack irregular fore-edge mirrors f30r right side; gutter = fold line 436->441.5, red neighbour ink at x>446 outside",
+  "human_note": null,
+  "saved_at": null
+ }
+}

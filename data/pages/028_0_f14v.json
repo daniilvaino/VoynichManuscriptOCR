@@ -1,0 +1,210 @@
+{
+ "image": "028_0_f14v",
+ "folio": "f14v",
+ "scan": "028.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    503.3,
+    147.8
+   ],
+   [
+    597.6,
+    138.4
+   ],
+   [
+    943.6,
+    135.3
+   ],
+   [
+    1572.7,
+    129.0
+   ],
+   [
+    2201.8,
+    125.8
+   ],
+   [
+    2701.9,
+    122.7
+   ]
+  ],
+  "right": [
+   [
+    2701.9,
+    122.7
+   ],
+   [
+    2705.1,
+    943.6
+   ],
+   [
+    2708.2,
+    1887.2
+   ],
+   [
+    2711.3,
+    2830.9
+   ],
+   [
+    2714.5,
+    3645.5
+   ]
+  ],
+  "bottom": [
+   [
+    2714.5,
+    3645.5
+   ],
+   [
+    2201.8,
+    3648.7
+   ],
+   [
+    1509.8,
+    3645.5
+   ],
+   [
+    943.6,
+    3639.2
+   ],
+   [
+    503.3,
+    3633.0
+   ],
+   [
+    286.2,
+    3610.9
+   ]
+  ],
+  "left": [
+   [
+    286.2,
+    3610.9
+   ],
+   [
+    276.8,
+    3460.0
+   ],
+   [
+    279.9,
+    3271.2
+   ],
+   [
+    292.5,
+    3145.4
+   ],
+   [
+    320.8,
+    2799.4
+   ],
+   [
+    368.0,
+    2484.9
+   ],
+   [
+    402.6,
+    2138.9
+   ],
+   [
+    434.1,
+    1855.8
+   ],
+   [
+    449.8,
+    1623.0
+   ],
+   [
+    478.1,
+    1497.2
+   ],
+   [
+    481.2,
+    1258.2
+   ],
+   [
+    484.4,
+    1025.4
+   ],
+   [
+    490.7,
+    629.1
+   ],
+   [
+    500.1,
+    251.6
+   ],
+   [
+    503.3,
+    147.8
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [
+  [
+   [
+    484.4,
+    1025.4
+   ],
+   [
+    541.0,
+    1038.0
+   ],
+   [
+    629.1,
+    1038.0
+   ],
+   [
+    679.4,
+    1069.4
+   ],
+   [
+    704.6,
+    1119.8
+   ],
+   [
+    704.6,
+    1226.7
+   ],
+   [
+    679.4,
+    1289.6
+   ],
+   [
+    629.1,
+    1358.8
+   ],
+   [
+    566.2,
+    1390.3
+   ],
+   [
+    522.1,
+    1415.4
+   ],
+   [
+    503.3,
+    1459.5
+   ],
+   [
+    478.1,
+    1497.2
+   ],
+   [
+    481.2,
+    1258.2
+   ]
+  ]
+ ],
+ "provenance": {
+  "boundary_source": "opus+human-checked",
+  "status": "final",
+  "holes_source": "human-checked",
+  "opus_confidence": "high",
+  "opus_note": "left: quad is one straight line (102,21)-(36,575); real fore-edge is bent: ~x78-80 straight at y 20-240, then slants to x~44 at y 550; quad cut off ~20px at top-left and went out at bottom-left torn notch at left edge (x 76-112, y 163-238) given as hole (mirror of f14r notch); top has stacked lip bands above y~20",
+  "human_note": null,
+  "saved_at": "2026-11-21 12:17:06"
+ }
+}

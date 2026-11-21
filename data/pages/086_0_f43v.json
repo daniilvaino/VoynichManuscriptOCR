@@ -1,0 +1,87 @@
+{
+ "image": "086_0_f43v",
+ "folio": "f43v",
+ "scan": "086.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    503.4,
+    129.0
+   ],
+   [
+    1636.1,
+    132.1
+   ],
+   [
+    2771.9,
+    135.3
+   ]
+  ],
+  "right": [
+   [
+    2771.9,
+    135.3
+   ],
+   [
+    2778.2,
+    1887.8
+   ],
+   [
+    2784.5,
+    3674.9
+   ]
+  ],
+  "bottom": [
+   [
+    2784.5,
+    3674.9
+   ],
+   [
+    2517.0,
+    3662.3
+   ],
+   [
+    1636.1,
+    3630.8
+   ],
+   [
+    512.8,
+    3583.6
+   ]
+  ],
+  "left": [
+   [
+    512.8,
+    3583.6
+   ],
+   [
+    503.4,
+    2831.7
+   ],
+   [
+    500.3,
+    1887.8
+   ],
+   [
+    500.3,
+    1258.5
+   ],
+   [
+    503.4,
+    129.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "none significant; mask contour slightly wavy at bottom right left = fore-edge at x~79.5-80, stacked leaves behind (green blob x~57-65 y~410-450 is on the leaf behind, outside); plant leaves reach x~81 inside; right = gutter x~441-442; bottom slants y569.5->584, strip below is stack edge",
+  "human_note": null,
+  "saved_at": null
+ }
+}

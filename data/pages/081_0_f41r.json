@@ -1,0 +1,99 @@
+{
+ "image": "081_0_f41r",
+ "folio": "f41r",
+ "scan": "081.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    156.0,
+    112.4
+   ],
+   [
+    1248.4,
+    103.0
+   ],
+   [
+    2059.8,
+    106.1
+   ],
+   [
+    2371.9,
+    128.0
+   ],
+   [
+    2615.3,
+    143.6
+   ]
+  ],
+  "right": [
+   [
+    2615.3,
+    143.6
+   ],
+   [
+    2624.7,
+    624.2
+   ],
+   [
+    2627.8,
+    1872.5
+   ],
+   [
+    2627.8,
+    3120.9
+   ],
+   [
+    2618.4,
+    3620.2
+   ]
+  ],
+  "bottom": [
+   [
+    2618.4,
+    3620.2
+   ],
+   [
+    1872.5,
+    3632.7
+   ],
+   [
+    936.3,
+    3638.9
+   ],
+   [
+    115.5,
+    3638.9
+   ]
+  ],
+  "left": [
+   [
+    115.5,
+    3638.9
+   ],
+   [
+    128.0,
+    1872.5
+   ],
+   [
+    152.9,
+    374.5
+   ],
+   [
+    156.0,
+    112.4
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "quad top-right corner (425.7,15) on stacked leaf/dark band; SAM mask bottom follows wavy line ~578 at x>320 left = gutter: page starts right of the dark gutter gap (x~18.5-25, torn fold at top); right fore-edge at inner side of dark stack band x~420-421 with rounded corners (crease x~415); top cockled with fold lines y16-27 at x>330, ink-free (+-5); bottom y~580-583",
+  "human_note": null,
+  "saved_at": null
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "image": "059_0_f30r",
+ "folio": "f30r",
+ "scan": "059.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    129.3,
+    106.2
+   ],
+   [
+    936.9,
+    115.6
+   ],
+   [
+    1561.5,
+    140.5
+   ],
+   [
+    2061.2,
+    190.5
+   ],
+   [
+    2485.9,
+    224.9
+   ]
+  ],
+  "right": [
+   [
+    2485.9,
+    224.9
+   ],
+   [
+    2507.8,
+    936.9
+   ],
+   [
+    2429.7,
+    1417.8
+   ],
+   [
+    2279.8,
+    1873.8
+   ],
+   [
+    2286.0,
+    2248.6
+   ],
+   [
+    2361.0,
+    2810.7
+   ],
+   [
+    2407.8,
+    3198.0
+   ],
+   [
+    2326.6,
+    3647.7
+   ]
+  ],
+  "bottom": [
+   [
+    2326.6,
+    3647.7
+   ],
+   [
+    1374.1,
+    3647.7
+   ],
+   [
+    89.3,
+    3639.6
+   ]
+  ],
+  "left": [
+   [
+    89.3,
+    3639.6
+   ],
+   [
+    109.3,
+    1873.8
+   ],
+   [
+    129.3,
+    106.2
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "medium",
+  "opus_note": "right: SAM/quad (x~410) take the outer stacked edges and miss the irregular fore-edge: leaf narrows below y~185 to x~364 (y300-360) and again to ~373 at the bottom corner; f31r flower heads (x367-392,y300-350) and red root tip (x381-390,y535-570) show through and are outside. top: quad y13-17 on stack; edge slants to the corner (398,36) right edge followed in 7 zooms; spline is limited to 8 points, error ~2-3 px between 150 and 230. left = gutter ~15-21; bottom ~583",
+  "human_note": null,
+  "saved_at": null
+ }
+}

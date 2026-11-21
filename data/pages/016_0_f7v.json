@@ -1,0 +1,155 @@
+{
+ "image": "016_0_f7v",
+ "folio": "f7v",
+ "scan": "016.jpg",
+ "coords": "pixels of the scan file",
+ "boundary": {
+  "top": [
+   [
+    221.7,
+    152.0
+   ],
+   [
+    234.4,
+    145.7
+   ],
+   [
+    380.0,
+    139.3
+   ],
+   [
+    696.7,
+    133.0
+   ],
+   [
+    950.1,
+    126.7
+   ],
+   [
+    1456.8,
+    123.5
+   ],
+   [
+    2090.2,
+    126.7
+   ],
+   [
+    2597.0,
+    133.0
+   ],
+   [
+    2673.0,
+    142.5
+   ]
+  ],
+  "right": [
+   [
+    2673.0,
+    142.5
+   ],
+   [
+    2669.8,
+    950.1
+   ],
+   [
+    2666.7,
+    1900.2
+   ],
+   [
+    2666.7,
+    2850.3
+   ],
+   [
+    2663.5,
+    3661.1
+   ]
+  ],
+  "bottom": [
+   [
+    2663.5,
+    3661.1
+   ],
+   [
+    2597.0,
+    3664.3
+   ],
+   [
+    1900.2,
+    3663.0
+   ],
+   [
+    1266.8,
+    3654.8
+   ],
+   [
+    950.1,
+    3648.4
+   ],
+   [
+    633.4,
+    3642.1
+   ],
+   [
+    380.0,
+    3635.8
+   ],
+   [
+    285.0,
+    3623.1
+   ],
+   [
+    228.0,
+    3613.6
+   ],
+   [
+    202.7,
+    3585.1
+   ],
+   [
+    193.2,
+    3515.4
+   ]
+  ],
+  "left": [
+   [
+    193.2,
+    3515.4
+   ],
+   [
+    196.4,
+    2850.3
+   ],
+   [
+    202.7,
+    1900.2
+   ],
+   [
+    212.2,
+    1266.8
+   ],
+   [
+    215.4,
+    760.1
+   ],
+   [
+    218.5,
+    380.0
+   ],
+   [
+    221.7,
+    152.0
+   ]
+  ]
+ },
+ "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
+ "holes": [],
+ "provenance": {
+  "boundary_source": "opus",
+  "status": "unreviewed",
+  "holes_source": "opus-none-marked",
+  "opus_confidence": "high",
+  "opus_note": "quad top-left corner in stack (y18 vs leaf ~23-24); quad top ~2px above leaf in middle (included shadowed edge band); bottom-left rounded corner cut by quad (tape visible from y572) verso; right = gutter crease x~421-422; left stack edges x15-33 excluded",
+  "human_note": null,
+  "saved_at": null
+ }
+}
