@@ -122,6 +122,12 @@ $('b-download').onclick = () => { const all = INDEX.map(p => lsGet('edit:' + p.i
 $('b-submit').onclick = () => { const ed = lsGet('edit:' + E.image); if (!ed || !window.REPO) return;
   const body = 'Boundary edit from the page-boundary site.\n\n```json\n' + JSON.stringify({format: 'voynich-page-boundaries/edit-1', coords: 'scan pixels', pages: [ed]}) + '\n```\n';
   window.open(`https://github.com/${window.REPO}/issues/new?labels=boundary-edit&title=${encodeURIComponent('[boundary] ' + E.folio + ' (' + E.image + ')')}&body=${encodeURIComponent(body)}`, '_blank') };
+function saveJson(obj, name) { const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(obj, null, 1)], {type: 'application/json'})); a.download = name; a.click() }
+$('b-dl-page').onclick = async () => { if (!E) return; saveJson(await (await fetch(`data/pages/${E.image}.json`)).json(), `${E.image}.json`) };
+$('b-dl-all').onclick = async () => { const b = $('b-dl-all'), t = b.textContent; b.disabled = true; let n = 0;
+  const all = await Promise.all(INDEX.map(async p => { const j = await (await fetch(`data/pages/${p.image}.json`)).json(); b.textContent = `loading ${++n}/${INDEX.length}`; return j }));
+  saveJson({format: 'voynich-page-boundaries/1', coords: 'scan pixels', pages: all}, 'voynich-page-boundaries.json'); b.textContent = t; b.disabled = false };
 // ---------- pages ----------
 function provHtml(pg) { const p = pg.provenance, rows = [['Boundary', SRC[p.boundary_source] || p.boundary_source], ['Status', p.status],
   ['Holes', `${pg.holes.length} · ${HSRC[p.holes_source] || p.holes_source || '—'}`]];
