@@ -61,3 +61,33 @@ Each line is a polyline along the middle of a row, simplified to within 1 scan p
 - `leaf` and `side` (front = recto `r`, back = verso `v`);
 - for foldouts, `panel` and `position` (where the panel lies on the scan);
 - `section` and `quire`, from the page headers of the ZL transliteration.
+
+## `data/marks/<image>.json` (layer 4, objects)
+
+Marks on the page that are neither the main Voynich text nor a drawing. Opus (AI) found them, using the scans and the notes on voynich.nu. A human then checked every object.
+
+- `objects`: a list. Each object has:
+  - `type`: `folio_number`, `quire_mark`, `pencil_letter`, `colour_note`, `marginalia`, `month_name`, `alphabet_column`, `ex_libris`, `red_tick`, `red_spot`, `scribble`, `dirt`, `voynich_text` or `other`;
+  - `type_label`: the type in plain words;
+  - `text`: what the mark says or what it is;
+  - `status`: `confirmed`, `confirmed (edited)` or `unclear`;
+  - `bbox`: `[x0, y0, x1, y1]` in scan pixels;
+  - `poly` (optional): an outline in scan pixels;
+  - `evidence` (optional): the path of an image that supports the reading.
+- `not_found`: things that were expected on this page (from the literature) but were not found on the scan.
+
+`data/index.json` also gives `marks` (the number of objects) and `marks_by_type` for each page. An unclear object is counted under `unclear`.
+
+## `data/glyphs.json` and `glyphs.js` (Voynich characters in the text)
+
+The site draws Voynich characters wherever a text names a transliteration code. `glyphs.js` finds codes such as "EVA g", "EVA @221", "GC2a @155", "GC208" and "ZL @252". It replaces each one with the character, followed by the code in brackets.
+
+`data/glyphs.json` maps a scheme and a code to one of three things:
+- a font character. The fonts are Eva-2 (`fonts/EVA2.ttf`) and v101 (`fonts/voynich.ttf`), both from voynich.nu.
+- a cut-out of the voynich.nu character table, for characters the fonts lack. The white background is removed.
+- a cut-out of the scan, for the four ZL comment codes @252–@255. These have no glyph in any font.
+
+The schemes are:
+- `eva`: basic, capitalised and extended (@NNN);
+- `v101`: Glen Claston (GC);
+- `currier`, `fsg` and `bennett`: these are read through Table 1 of voynich.nu ("Transliteration of the text").

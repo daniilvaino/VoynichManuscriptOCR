@@ -7,20 +7,25 @@
 header{display:flex;align-items:center;gap:14px;padding:8px 12px;background:var(--pan);border-bottom:1px solid var(--bd);flex-wrap:wrap}
 header h1{font-size:16px;margin:0;font-weight:600}#task{font-size:15px}#prog{color:var(--mu)}#dirty{color:var(--wa);display:none}
 #tools{display:flex;gap:6px;padding:6px 12px;background:var(--pan);border-bottom:1px solid var(--bd);align-items:center;flex-wrap:wrap}
+#opts{background:var(--bg);border-bottom:1px solid var(--bd);padding:4px 12px;font-size:13px}
+.orow{display:flex;gap:6px 16px;align-items:center;flex-wrap:wrap;min-height:30px}.orow>b{color:var(--mu);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.04em;width:78px}
+.orow label{display:inline-flex;gap:5px;align-items:center;white-space:nowrap}.orow input[type=range]{width:110px}.ogrp{display:inline-flex;gap:6px 14px;align-items:center;flex-wrap:wrap}.orow>.ogrp{flex:1 1 0;min-width:280px}
 .main{flex:1;display:flex;min-height:0}#wrap{flex:1;position:relative;overflow:hidden;background:#0c0d10}canvas{position:absolute;inset:0;width:100%;height:100%}
 aside{width:340px;background:var(--pan);border-left:1px solid var(--bd);overflow:auto;padding:10px;display:flex;flex-direction:column;gap:10px}
+#pagesbar{width:250px;background:var(--pan);border-right:1px solid var(--bd);display:flex;flex-direction:column;padding:8px;gap:6px;min-height:0}
 .box{border:1px solid var(--bd);border-radius:8px;padding:8px}.box h3{margin:0 0 6px;font-size:12px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
 button,select{background:#2a303c;color:var(--tx);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font:inherit}
 button:hover{border-color:var(--ac)}button.on{background:var(--ac);color:#08111f;border-color:var(--ac);font-weight:600}button:disabled{opacity:.45;cursor:not-allowed}
 #hint{color:var(--mu);margin-left:8px}.sides{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-.lay label{display:flex;gap:6px;align-items:center;margin:3px 0}
-#list{max-height:340px;overflow:auto;font-size:13px}#list div{padding:3px 6px;border-radius:4px;cursor:pointer;display:flex;justify-content:space-between;gap:6px}
+#list{flex:1;min-height:0;overflow:auto;font-size:13px}#list div{padding:3px 6px;border-radius:4px;cursor:pointer;display:flex;justify-content:space-between;gap:6px}
 #list div:hover{background:#2a303c}#list div.cur{outline:1px solid var(--ac)}
 .badge{font-size:11px;padding:1px 6px;border-radius:9px;white-space:nowrap}
 .src-human{background:#1d4d32;color:#9ff0bf}.src-opus\+human-checked{background:#14424d;color:#9fe6f0}.src-opus\+human-corrected{background:#1c3a66;color:#a9cbff}.src-opus{background:#3a3f4b;color:#c3c8d4}
 .mine{color:var(--wa)}textarea{width:100%;height:50px;background:#12151b;color:var(--tx);border:1px solid var(--bd);border-radius:6px;font:inherit}
 kbd{background:#2a303c;border:1px solid var(--bd);border-radius:4px;padding:0 4px;font-size:12px}.keys{font-size:12px;color:var(--mu);line-height:1.7}
-#prov{font-size:13px;line-height:1.6}#prov b{color:var(--mu);font-weight:500}
+#prov{font-size:13px;line-height:1.6}.mk{padding:5px 6px;border-radius:6px;cursor:pointer;border:1px solid transparent;margin-top:4px}.mk:hover{background:#2a303c}.mk.cur{border-color:var(--ac)}.mkd{padding:2px 0 4px;cursor:default}.mk.cur{background:var(--bg);scroll-margin-top:6px}.mkd-l{font-size:11px;color:var(--mu);text-transform:uppercase;letter-spacing:.04em;margin:8px 0 3px}
+.mkd-i{max-width:100%;border-radius:4px;display:block}.mkd-g{font-size:30px;line-height:1.3}.mkd-g .vg-c{font-size:12px}.mkd-g .vg-n{height:1.1em}.mkd-g .vg-i{height:1.2em}
+.mkd-sy{display:grid;grid-template-columns:1fr;gap:3px}.mkd-s{display:flex;align-items:center;gap:8px;font-size:13px}.mkd-s img{height:34px;border-radius:3px}.mkd-s.unc{font-style:italic;color:var(--mu)}#prov b{color:var(--mu);font-weight:500}
 #tabs{display:flex;gap:4px;padding:6px 12px 0;background:var(--pan);border-bottom:1px solid var(--bd)}
 #tabs button{border-radius:8px 8px 0 0;border-bottom:none;padding:7px 14px}#tabs button.on{background:var(--bg);color:var(--tx);border-color:var(--ac);font-weight:600}
 .edit-only{display:none}.ledit-only{display:none}body.ledit button.ledit-only{display:inline-block}body.ledit div.ledit-only{display:block}body.editing .edit-only{display:block}body.editing span.edit-only,body.editing button.edit-only{display:inline-block}
@@ -29,7 +34,30 @@ kbd{background:#2a303c;border:1px solid var(--bd);border-radius:4px;padding:0 4p
 <div id="tabs">
   <button data-v="pages" class="on" title="key 1">1 · Page outline &amp; holes</button>
   <button data-v="lines" title="key 2">2 · Row lines</button>
-  <button data-v="all" title="key 3">All layers</button>
+  <button data-v="ink" title="key 3">3 · Ink + lines</button>
+  <button data-v="marks" title="key 4">4 · Objects</button>
+  <button data-v="all" title="key 5">5 · All layers</button>
+</div>
+<div id="opts">
+  <div class="orow"><b>View</b>
+    <label><input type="checkbox" id="l-con"> more contrast</label>
+    <label>grey outside the page <input type="range" id="l-fill" min="0" max="90" value="50"></label>
+    <button id="b-hide" title="hold: show only the page (or hold Space)">👁 Page only (hold / Space)</button>
+  </div>
+  <div class="orow"><b>This layer</b>
+    <span class="ogrp" id="pgopt"><label title="while you edit the outline, a thin blue line shows the outline as published, so you see what you moved"><input type="checkbox" id="l-pub" checked> show the original outline while editing (thin blue)</label></span>
+    <span class="ogrp" id="lnopt" style="display:none"><label>line width <input type="range" id="l-lw" min="1" max="8" step="0.5" value="3.5"></label></span>
+    <span class="ogrp" id="inkopt" style="display:none"><label><input type="checkbox" id="l-inkon" checked> <b style="color:var(--tx)">ink</b></label> <label><input type="checkbox" id="l-inklines" checked> <b style="color:var(--tx)">row lines</b></label> · ink source:
+      <label><input type="radio" name="inksrc" value="stage1" checked> stage 1 mask</label>
+      <label id="inkh" title="Hi-SAM 768, logit above -2 (pilot pages)"><input type="radio" name="inksrc" value="hisam"> Hi-SAM &gt; −2</label>
+      <label id="inkr" title="Hi-SAM 768 raw probability, no threshold (pilot pages)"><input type="radio" name="inksrc" value="hisam_raw"> Hi-SAM raw</label>
+      <label id="inkg" title="Hi-SAM 768 above -4, kept where it touches NAFNet man3 ink (pilot pages)"><input type="radio" name="inksrc" value="hisam_m4g"> Hi-SAM &gt; −4 gated</label>
+      <label id="inks" title="multispectral ink map, 38 bands (only pages with published multispectral images)"><input type="radio" name="inksrc" value="spectral"> multispectral (38 bands)</label>
+      <label>ink <input type="range" id="l-ink" min="10" max="100" value="100"></label>
+      <label>background <input type="range" id="l-bg" min="0" max="100" value="100"></label></span>
+    <span class="ogrp" id="mkopt" style="display:none"><span id="mkgroups" class="ogrp"></span>
+      <label><input type="checkbox" id="mk-names"> all names (otherwise on hover / selected)</label></span>
+  </div>
 </div>
 <div id="tools">
   <button id="b-edit" title="switch between viewing and editing">✎ Edit</button>
@@ -39,10 +67,10 @@ kbd{background:#2a303c;border:1px solid var(--bd);border-radius:4px;padding:0 4p
   <button id="lm-sel" class="ledit-only on" title="S">✋ Select</button>
   <button id="lm-spl" class="ledit-only" title="P">〰 Spline</button>
   <button id="lm-str" class="ledit-only" title="L">／ Straight</button>
-  <button id="b-hide" title="hold: show only the page (or hold Space)">👁 Page only (hold / Space)</button>
   <span id="hint"></span>
 </div>
 <div class="main">
+  <div id="pagesbar"><select id="flt" style="width:100%"></select><div id="list"></div></div>
   <div id="wrap"><canvas id="cv"></canvas></div>
   <aside>
     <div class="box"><h3 id="provh">Page outline: who marked it and how</h3><div id="prov"></div>
@@ -70,15 +98,8 @@ kbd{background:#2a303c;border:1px solid var(--bd);border-radius:4px;padding:0 4p
       </div>
       <div class="keys" style="margin-top:6px">Select: click a line · drag its squares · click on the selected line adds a point · right-click a square deletes it · <kbd>Del</kbd> deletes the line · <kbd>U</kbd> unclear · Spline: clicks, <kbd>Enter</kbd> finishes · Straight: two clicks · <kbd>Ctrl+Z</kbd> undo</div>
     </div>
-    <div class="box lay"><h3>Layers</h3>
-      <label>grey outside the page <input type="range" id="l-fill" min="0" max="90" value="50" style="flex:1"></label>
-      <label title="while you edit the outline, a thin blue line shows the outline as published, so you see what you moved"><input type="checkbox" id="l-pub" checked>show the original outline while editing (thin blue)</label>
-      <label><input type="checkbox" id="l-con">more contrast</label>
-    </div>
-    <div class="box"><h3>Pages</h3>
-      <select id="flt" style="width:100%;margin-bottom:6px"></select><div id="list"></div></div>
     <div class="box keys"><h3>Keys</h3>
-      <kbd>1</kbd> outline · <kbd>2</kbd> row lines · <kbd>3</kbd> all layers · <kbd>←</kbd>/<kbd>→</kbd> pages · wheel zoom · drag empty area to pan · <kbd>F</kbd> fit · hold <kbd>Space</kbd> page only<br>
+      <kbd>1</kbd> outline · <kbd>2</kbd> row lines · <kbd>3</kbd> ink + lines · <kbd>4</kbd> objects (click one to select) · <kbd>5</kbd> all layers · <kbd>←</kbd>/<kbd>→</kbd> pages · Ctrl+wheel zoom · wheel / tilt wheel scroll · drag empty area to pan · <kbd>F</kbd> fit · hold <kbd>Space</kbd> page only<br>
       editing: <kbd>E</kbd> points · <kbd>H</kbd> hole (click around it, <kbd>Enter</kbd> closes) · <kbd>Esc</kbd> cancel hole ·
       right-click / <kbd>Del</kbd> delete point · click inside a hole + <kbd>Del</kbd> deletes it · <kbd>Ctrl+Z</kbd> undo
     </div>
@@ -86,5 +107,6 @@ kbd{background:#2a303c;border:1px solid var(--bd);border-radius:4px;padding:0 4p
   </aside>
 </div>
 <script src="config.js?v=20261121155306"></script>
-<script src="app.js?v=20261121155948"></script>
+<script src="glyphs.js?v=20261122171027"></script>
+<script src="app.js?v=20261122171027"></script>
 </body></html>

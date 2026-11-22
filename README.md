@@ -5,15 +5,25 @@ been checked:
 
 1. **Page boundaries and holes**: the outline of each page's own leaf (or foldout panel) and the holes in the parchment.
 2. **Row lines**: a line along the middle of every row of text, including curved, circular and radial rows and labels.
-
-Ink masks and other layers will follow.
+3. **Ink**: masks of the ink on every page (stage 1), Hi-SAM text masks on 19 pilot pages, and an ink map made from
+   38 multispectral bands on the 9 pages here that have published multispectral images.
+4. **Objects**: everything on a page that is neither the main Voynich text nor a drawing: folio numbers, quire marks,
+   later notes, month names, key-like letter columns (on f1r every letter is marked), red symbols and red spots.
+   Opus (AI) found them; a human checked every one.
 
 ## Use it
 
 Open `index.html` through any static web server (for example `python -m http.server` in this folder), or open the
 GitHub Pages site of this repository.
 
-- **Views.** Tabs at the top: 1 page outline and holes, 2 row lines, 3 all layers together.
+- **Views.** The tabs at the top are:
+  1. page outline and holes;
+  2. row lines;
+  3. ink and row lines;
+  4. objects;
+  5. all layers together.
+
+  The page list is on the left. The settings for the open layer are under the tabs. Click an object to open its card, which shows a close-up of the scan, the multispectral map if the page has one, the Voynich characters named in its text, and the evidence.
 - **View.** The grey area is outside the page and inside holes. Use `←`/`→` to move between pages and hold `Space` to see the bare scan. The panel on the right says who marked the page and how.
 - **Edit.** Press **✎ Edit**, then:
   - drag points to move them;
@@ -31,6 +41,9 @@ GitHub Pages site of this repository.
 | `data/index.json` | every page: image id, folio, scan file, the scan region shown, provenance summary |
 | `data/pages/<image>.json` | boundary (four spline sides), holes, provenance and labels of one page, in pixels of the scan file |
 | `data/lines/<image>.json` | row lines of one page with their status (layer 2) |
+| `img/ink_<source>/<image>.png` | ink layer of one page, display frame, alpha = ink (layer 3) |
+| `data/marks/<image>.json` | objects of one page: type, reading, status, box or outline (layer 4) |
+| `data/glyphs.json`, `glyphs.js` | transliteration code → Voynich character (Eva-2 and v101 fonts) |
 | `img/<image>.jpg` | display image: the page's region of the scan, 1800 px high |
 
 The format is described in [DATA.md](DATA.md).
@@ -89,3 +102,8 @@ Nothing else on the page was changed.
 
 The scans are of Beinecke Rare Book & Manuscript Library, Yale University, MS 408, as distributed on archive.org. The
 display images here are crops and reductions of those scans.
+
+## Fonts
+
+`fonts/EVA2.ttf` is the Eva-2 font by Gabriel Landini. `fonts/voynich.ttf` is the v101 font by Glen Claston. Both
+were taken from voynich.nu (René Zandbergen), and they are used to draw the Voynich characters that the texts name.
