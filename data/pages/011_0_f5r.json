@@ -16,70 +16,66 @@
  "boundary": {
   "top": [
    [
-    127.4,
-    105.7
+    111.3,
+    126.8
    ],
    [
-    373.0,
-    87.0
+    242.5,
+    116.3
    ],
    [
-    621.7,
-    83.9
+    647.8,
+    125.0
    ],
    [
-    1243.4,
-    83.9
+    914.5,
+    134.9
    ],
    [
-    1865.1,
-    93.3
+    1232.8,
+    131.8
    ],
    [
-    2362.5,
-    96.4
+    1627.6,
+    185.3
    ],
    [
-    2424.6,
-    105.7
+    1832.8,
+    197.7
    ],
    [
-    2461.9,
-    136.8
+    2017.4,
+    199.6
    ],
    [
-    2486.8,
-    186.5
+    2238.7,
+    203.9
    ]
   ],
   "right": [
    [
-    2486.8,
-    186.5
+    2238.7,
+    203.9
    ],
    [
-    2496.1,
-    373.0
+    2318.9,
+    913.3
    ],
    [
-    2508.6,
-    932.5
+    2425.2,
+    1860.1
    ],
    [
-    2514.8,
-    1865.1
+    2449.5,
+    2269.2
    ],
    [
-    2514.8,
-    2797.6
+    2464.4,
+    2774.6
    ],
    [
-    2511.7,
-    3481.5
-   ],
-   [
-    2502.3,
-    3556.1
+    2478.7,
+    3402.6
    ],
    [
     2480.6,
@@ -96,30 +92,50 @@
     3615.2
    ],
    [
+    2102.6,
+    3613.3
+   ],
+   [
     1865.1,
     3618.3
    ],
    [
-    1243.4,
-    3618.3
+    1678.6,
+    3617.7
    ],
    [
-    621.7,
-    3618.3
+    1245.3,
+    3636.9
    ],
    [
-    124.3,
-    3618.3
+    1085.5,
+    3635.1
+   ],
+   [
+    880.3,
+    3636.9
+   ],
+   [
+    627.9,
+    3622.6
+   ],
+   [
+    286.0,
+    3620.8
+   ],
+   [
+    104.4,
+    3580.4
    ]
   ],
   "left": [
    [
-    124.3,
-    3618.3
+    104.4,
+    3580.4
    ],
    [
-    121.2,
-    3108.5
+    110.7,
+    3104.1
    ],
    [
     124.3,
@@ -130,20 +146,20 @@
     621.7
    ],
    [
-    127.4,
-    105.7
+    111.3,
+    126.8
    ]
   ]
  },
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "medium",
   "opus_note": "right: SAM/quad stop at left edge of transparent holder strip (x~381-383); leaf continues under strip to x~400-404.5 with rounded corners; SAM top blobs on text/stains left = gutter fold x~20 (f4v strip beyond excluded); right edge mostly under/at right edge of holder strip, leaves behind beyond (one sticks out to x~412 near bottom, ends y~565); top-right corner traced from curve seen through strip",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-22 06:07:03"
  }
 }

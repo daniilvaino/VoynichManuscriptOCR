@@ -74,26 +74,42 @@
     2836.7
    ],
    [
-    2732.7,
-    3662.5
+    2743.4,
+    3515.0
    ]
   ],
   "bottom": [
    [
-    2732.7,
-    3662.5
+    2743.4,
+    3515.0
    ],
    [
-    2521.5,
-    3662.5
+    2676.6,
+    3548.4
    ],
    [
-    2080.2,
-    3659.3
+    2554.3,
+    3570.5
    ],
    [
-    1575.9,
-    3653.0
+    2345.6,
+    3596.3
+   ],
+   [
+    2235.3,
+    3593.8
+   ],
+   [
+    2076.5,
+    3598.8
+   ],
+   [
+    1790.3,
+    3614.0
+   ],
+   [
+    1576.6,
+    3636.0
    ],
    [
     1071.6,
@@ -146,12 +162,12 @@
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "medium",
   "opus_note": "left: quad/SAM stop at right edge of transparent tape (x~72); leaf continues under tape (x 55-72) and beyond to edge x~36-40 (top edge and rounded bottom-left corner continue there); bottom-right: quad/SAM at y~567 cut the '29' mark, real edge ~580 left edge chosen = first shadowed edge left of tape, surface 38-55 has faint green paint and same top/bottom edges as the page; band x 25-37 = stacked leaves. Width vs f17r suggests edge ~45-50, so left side uncertain by up to ~10px",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-22 06:31:30"
  }
 }

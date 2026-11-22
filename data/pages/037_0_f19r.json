@@ -16,8 +16,8 @@
  "boundary": {
   "top": [
    [
-    121.8,
-    115.6
+    112.5,
+    128.7
    ],
    [
     374.9,
@@ -32,98 +32,122 @@
     117.5
    ],
    [
-    1561.9,
-    128.1
+    1548.2,
+    143.7
    ],
    [
-    1999.2,
-    146.8
+    1970.5,
+    167.4
    ],
    [
     2249.2,
     162.4
    ],
    [
-    2461.6,
-    165.6
-   ],
-   [
-    2492.8,
-    181.2
+    2326.0,
+    159.3
    ]
   ],
   "right": [
    [
-    2492.8,
-    181.2
+    2326.0,
+    159.3
    ],
    [
-    2495.9,
-    624.8
+    2366.6,
+    997.7
    ],
    [
-    2505.3,
-    1561.9
+    2370.4,
+    1315.8
    ],
    [
-    2502.2,
-    2811.4
+    2396.0,
+    1566.9
    ],
    [
-    2499.1,
-    3373.7
+    2401.0,
+    2046.7
    ],
    [
-    2489.7,
-    3548.7
+    2397.2,
+    2805.2
    ],
    [
-    2467.8,
-    3611.1
+    2410.3,
+    3305.6
+   ],
+   [
+    2401.6,
+    3505.6
    ]
   ],
   "bottom": [
    [
-    2467.8,
-    3611.1
+    2401.6,
+    3505.6
    ],
    [
-    2374.1,
-    3629.9
+    2359.1,
+    3520.5
    ],
    [
-    2249.2,
-    3639.3
+    2326.6,
+    3561.8
    ],
    [
-    2061.7,
-    3645.5
+    2291.0,
+    3608.6
+   ],
+   [
+    2224.8,
+    3621.8
+   ],
+   [
+    2164.2,
+    3626.8
+   ],
+   [
+    2108.6,
+    3632.4
+   ],
+   [
+    2048.0,
+    3634.3
+   ],
+   [
+    1785.6,
+    3633.0
    ],
    [
     1561.9,
     3642.4
    ],
    [
-    1062.1,
-    3645.5
+    1107.7,
+    3633.6
+   ],
+   [
+    928.4,
+    3638.6
    ],
    [
     374.9,
     3648.6
    ],
    [
-    156.2,
-    3639.3
+    126.2,
+    3627.4
    ],
    [
-    84.3,
-    3626.8
+    61.9,
+    3618.0
    ]
   ],
   "left": [
    [
-    84.3,
-    3626.8
+    61.9,
+    3618.0
    ],
    [
     87.5,
@@ -134,32 +158,32 @@
     2624.0
    ],
    [
-    109.3,
-    1874.3
+    101.8,
+    1873.0
    ],
    [
-    115.6,
-    1062.1
+    108.7,
+    1065.2
    ],
    [
-    118.7,
-    374.9
+    111.8,
+    374.2
    ],
    [
-    121.8,
-    115.6
+    112.5,
+    128.7
    ]
   ]
  },
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "high",
   "opus_note": "right: SAM/quad include 2-3 stacked fore-edge leaves (own edge x~399-401, quad ~404); top-right: quad at outer stacked layer y~12, own leaf top slopes to y~26 at right; bottom-right corner rounded, quad cuts it left = gutter line x19.5->13.5; top slopes 18->26.5 under stacked layers; thin vertical lines x372-395 are creases, surface continuous",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-22 06:42:40"
  }
 }

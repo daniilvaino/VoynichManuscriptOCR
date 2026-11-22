@@ -16,16 +16,28 @@
  "boundary": {
   "top": [
    [
-    109.2,
-    137.3
+    127.3,
+    169.2
    ],
    [
-    624.3,
-    134.2
+    335.2,
+    132.3
    ],
    [
-    1248.5,
-    131.1
+    486.3,
+    124.2
+   ],
+   [
+    842.1,
+    111.1
+   ],
+   [
+    1234.8,
+    123.0
+   ],
+   [
+    1536.3,
+    129.2
    ],
    [
     1872.8,
@@ -40,94 +52,118 @@
     131.1
    ],
    [
-    2553.2,
-    156.1
+    2542.6,
+    137.3
    ]
   ],
   "right": [
    [
-    2553.2,
-    156.1
+    2542.6,
+    137.3
    ],
    [
-    2553.2,
-    624.3
+    2523.9,
+    618.0
    ],
    [
-    2553.2,
-    1248.5
+    2501.4,
+    1239.2
    ],
    [
-    2553.2,
-    1872.8
+    2494.6,
+    1725.5
    ],
    [
-    2556.4,
-    2497.1
+    2500.2,
+    1990.2
+   ],
+   [
+    2545.7,
+    2501.4
    ],
    [
     2556.4,
     3121.3
    ],
    [
-    2559.5,
-    3614.5
+    2548.2,
+    3623.8
    ]
   ],
   "bottom": [
    [
-    2559.5,
-    3614.5
+    2548.2,
+    3623.8
    ],
    [
-    1872.8,
-    3627.0
+    2404.7,
+    3630.1
    ],
    [
-    1248.5,
-    3633.2
+    1882.2,
+    3646.3
    ],
    [
-    624.3,
-    3636.3
+    1257.9,
+    3652.6
    ],
    [
-    156.1,
-    3639.5
+    825.3,
+    3665.0
+   ],
+   [
+    632.4,
+    3658.2
+   ],
+   [
+    377.1,
+    3645.1
+   ],
+   [
+    168.6,
+    3616.4
    ]
   ],
   "left": [
    [
-    156.1,
-    3639.5
+    168.6,
+    3616.4
+   ],
+   [
+    162.3,
+    3225.6
    ],
    [
     143.6,
     2809.2
    ],
    [
-    128.0,
-    1872.8
+    122.4,
+    1881.5
    ],
    [
-    115.5,
-    936.4
+    104.3,
+    940.1
    ],
    [
-    109.2,
-    137.3
+    105.5,
+    469.4
+   ],
+   [
+    127.3,
+    169.2
    ]
   ]
  },
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "medium",
   "opus_note": "quad top (y~9-20) and right (x~421-424) include stack strips; SAM right side broken around the root (y400-550) fore-edge taken at the full-height line x~409-410 (meets own rounded top-right corner at (403-409,21-25)); band x~410-421 (leaf with lower top y~32) and dark strips beyond taken as leaves beneath, no ink there; green leaf patches (400-408,225-280) and root tip (to x~407,y497) inside; top y~20-22; gutter x~17.5-25",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-22 05:33:31"
  }
 }

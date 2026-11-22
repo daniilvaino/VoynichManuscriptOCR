@@ -16,8 +16,8 @@
  "boundary": {
   "top": [
    [
-    128.1,
-    128.1
+    122.5,
+    134.3
    ],
    [
     374.9,
@@ -60,52 +60,60 @@
     194.9
    ],
    [
-    2464.7,
-    190.6
+    2298.5,
+    189.9
    ]
   ],
   "right": [
    [
-    2464.7,
-    190.6
+    2298.5,
+    189.9
    ],
    [
-    2467.8,
-    624.8
+    2347.9,
+    634.1
    ],
    [
-    2470.9,
-    1561.9
+    2396.0,
+    1014.0
    ],
    [
-    2474.1,
-    2499.1
+    2447.8,
+    1445.7
+   ],
+   [
+    2449.7,
+    2155.4
+   ],
+   [
+    2466.6,
+    2502.2
    ],
    [
     2474.1,
     3248.8
    ],
    [
-    2467.8,
-    3529.9
+    2469.1,
+    3456.8
    ],
    [
-    2455.3,
-    3592.4
+    2462.8,
+    3603.6
    ],
    [
-    2424.1,
-    3626.8
+    2442.2,
+    3646.1
    ]
   ],
   "bottom": [
    [
-    2424.1,
-    3626.8
+    2442.2,
+    3646.1
    ],
    [
-    2361.6,
-    3645.5
+    2361.0,
+    3652.4
    ],
    [
     2186.7,
@@ -132,50 +140,74 @@
     3633.0
    ],
    [
-    96.8,
-    3623.6
+    74.3,
+    3614.9
    ]
   ],
   "left": [
    [
-    96.8,
-    3623.6
+    74.3,
+    3614.9
    ],
    [
-    100.0,
-    3248.8
+    80.0,
+    3243.8
    ],
    [
-    103.1,
-    2811.4
+    86.8,
+    2808.9
    ],
    [
-    109.3,
-    2061.7
+    95.6,
+    2301.6
    ],
    [
-    118.7,
-    1249.5
+    94.3,
+    2061.1
    ],
    [
-    125.0,
-    499.8
+    101.2,
+    1730.6
    ],
    [
-    128.1,
-    128.1
+    105.6,
+    1401.3
+   ],
+   [
+    106.2,
+    1154.6
+   ],
+   [
+    110.0,
+    783.5
+   ],
+   [
+    110.6,
+    644.8
+   ],
+   [
+    106.8,
+    539.8
+   ],
+   [
+    117.5,
+    376.7
+   ],
+   [
+    122.5,
+    134.3
    ]
   ]
  },
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "high",
   "opus_note": "top: quad on outer stacked layers y~16, own top dips from 20 to ~31 on the right half; right: SAM contour cut out the transparent tape strip (x~365-395, y15-270), quad itself ~own edge; bottom-right rounded corner cut by quad left = gutter line x20.5->15.5; right own edge x~395-396, stacked fore-edge layers 396-405 and a sheet to x~410 at y450-560 excluded; tape strip over top-right margin, leaf continues under it",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-22 06:44:14"
  }
 }

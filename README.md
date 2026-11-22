@@ -6,7 +6,7 @@ been checked:
 1. **Page boundaries and holes**: the outline of each page's own leaf (or foldout panel) and the holes in the parchment.
 2. **Row lines**: a line along the middle of every row of text, including curved, circular and radial rows and labels.
 3. **Ink**: masks of the ink on every page (stage 1), Hi-SAM text masks on 19 pilot pages, and an ink map made from
-   38 multispectral bands on the 9 pages here that have published multispectral images.
+   38 multispectral bands on the 10 pages that have published multispectral images.
 4. **Objects**: everything on a page that is neither the main Voynich text nor a drawing: folio numbers, quire marks,
    later notes, month names, key-like letter columns (on f1r every letter is marked), red symbols and red spots.
    Opus (AI) found them; a human checked every one.
@@ -48,7 +48,7 @@ GitHub Pages site of this repository.
 
 The format is described in [DATA.md](DATA.md).
 
-**Coverage.** 188 single pages and 38 foldout panels.
+**Coverage.** 189 single pages (f1r to f116v) and 38 foldout panels.
 
 - Foldout panels are cut at the real folds of each foldout scan.
 - Folio 101 is one page on each side, following voynich.nu: f101r covers the old f101r1 and f101r2.

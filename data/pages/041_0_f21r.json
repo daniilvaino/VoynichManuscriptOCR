@@ -16,8 +16,8 @@
  "boundary": {
   "top": [
    [
-    134.3,
-    140.6
+    123.7,
+    150.6
    ],
    [
     374.9,
@@ -28,138 +28,166 @@
     143.7
    ],
    [
-    1124.6,
-    153.1
+    902.2,
+    150.6
    ],
    [
-    1561.9,
-    162.4
+    1125.2,
+    154.9
    ],
    [
-    1874.3,
-    159.3
+    1559.4,
+    172.4
    ],
    [
-    2249.2,
-    156.2
+    1723.1,
+    172.4
    ],
    [
-    2470.9,
-    159.3
+    1880.5,
+    184.9
+   ],
+   [
+    2034.2,
+    178.1
+   ],
+   [
+    2098.6,
+    158.1
+   ],
+   [
+    2273.5,
+    161.2
    ]
   ],
   "right": [
    [
-    2470.9,
-    159.3
+    2273.5,
+    161.2
    ],
    [
-    2470.9,
-    624.8
+    2313.5,
+    635.4
    ],
    [
-    2470.9,
-    1561.9
+    2332.2,
+    1226.4
    ],
    [
-    2470.9,
-    2499.1
+    2351.0,
+    1558.8
    ],
    [
-    2474.1,
-    3311.2
+    2384.7,
+    2472.8
    ],
    [
-    2474.1,
-    3529.9
+    2436.0,
+    3286.9
    ],
    [
-    2464.7,
-    3598.6
+    2454.1,
+    3487.4
+   ],
+   [
+    2463.4,
+    3598.0
    ]
   ],
   "bottom": [
    [
-    2464.7,
-    3598.6
+    2463.4,
+    3598.0
    ],
    [
-    2405.3,
-    3620.5
+    2427.2,
+    3637.4
    ],
    [
-    2311.6,
-    3639.3
+    2344.7,
+    3654.2
    ],
    [
     2186.7,
+    3664.2
+   ],
+   [
+    1565.7,
+    3673.0
+   ],
+   [
+    1113.3,
+    3660.5
+   ],
+   [
+    1036.5,
+    3659.9
+   ],
+   [
+    909.7,
+    3666.7
+   ],
+   [
+    640.4,
+    3665.5
+   ],
+   [
+    381.7,
+    3663.6
+   ],
+   [
+    215.5,
     3651.7
    ],
    [
-    1561.9,
-    3654.9
-   ],
-   [
-    937.1,
-    3651.7
-   ],
-   [
-    374.9,
-    3648.6
-   ],
-   [
-    218.7,
-    3639.3
-   ],
-   [
-    84.3,
-    3626.8
+    64.4,
+    3632.4
    ]
   ],
   "left": [
    [
-    84.3,
-    3626.8
+    64.4,
+    3632.4
    ],
    [
-    90.6,
-    3373.7
+    74.3,
+    3367.5
    ],
    [
-    96.8,
-    2873.9
+    86.2,
+    2874.5
    ],
    [
-    106.2,
-    2374.1
+    102.5,
+    2377.2
    ],
    [
-    118.7,
-    1749.3
+    108.7,
+    1750.0
    ],
    [
-    125.0,
-    1124.6
+    119.3,
+    1125.2
    ],
    [
-    131.2,
-    624.8
+    126.2,
+    628.5
    ],
    [
-    134.3,
-    140.6
+    123.7,
+    150.6
    ]
   ]
  },
  "boundary_note": "four sides, clockwise from the top-left corner; each side is a Catmull-Rom spline through its points (a side with two points is a straight line); consecutive sides share their corner point",
  "holes": [],
  "provenance": {
-  "boundary_source": "opus",
-  "status": "unreviewed",
+  "boundary_source": "opus+human-corrected",
+  "status": "final",
   "holes_source": "opus-none-marked",
   "opus_confidence": "high",
   "opus_note": "top: quad on outer stacked layers y~13-17, own top y~22.5-26; bottom-right rounded corner cut by quad; right side quad ~ own edge (x395.5), SAM contour wanders into stack/creases left = gutter line x21.5->13.5; right: stacked fore-edge layers 396-404 excluded, thin wavy lines x370-390 are creases; discoloured brown margin band at bottom-right corner kept inside",
   "human_note": null,
-  "saved_at": null
+  "saved_at": "2026-11-22 06:46:17"
  }
 }
