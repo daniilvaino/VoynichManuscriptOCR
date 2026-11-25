@@ -218,7 +218,7 @@ function badge(p) {
   return VIEW === 'pages' ? ob : VIEW === 'lines' ? lb : `<span style="display:flex;gap:4px">${lb}${ob}</span>` }
 function renderList() { const f = $('flt').value;
   pages = INDEX.filter(p => keepPage(p, f));
-  $('list').innerHTML = pages.map((p, i) => `<div data-i="${i}" class="${E && p.image === E.image ? 'cur' : ''}"><span>${p.folio}${VIEW !== 'lines' && p.holes ? ' ⬡' + p.holes : ''}${lsGet('edit:' + p.image) ? ' <span class="mine">✎</span>' : ''}</span>${badge(p)}</div>`).join('');
+  $('list').innerHTML = pages.map((p, i) => `<div data-i="${i}" class="${E && p.image === E.image ? 'cur' : ''}"><span>${p.folio}${INDEX.filter(q => q.folio === p.folio).length > 1 ? ' · ' + p.image.split('_')[0] : ''}${VIEW !== 'lines' && p.holes ? ' ⬡' + p.holes : ''}${lsGet('edit:' + p.image) ? ' <span class="mine">✎</span>' : ''}</span>${badge(p)}</div>`).join('');
   document.querySelectorAll('#list div[data-i]').forEach(d => d.onclick = () => go(+d.dataset.i));
   cur = E ? pages.findIndex(p => p.image === E.image) : -1; $('prog').textContent = `${pages.length} pages` }
 $('flt').onchange = () => { renderList(); if (cur < 0 && pages.length) go(0) };
@@ -235,11 +235,11 @@ async function go(i) { if (i < 0 || i >= pages.length) return; E = pages[i]; cur
   S = ed ? stateFromPage({boundary: ed, holes: ed.holes}) : JSON.parse(JSON.stringify(PUB)); $('note').value = ed && ed.note || '';
   undo = []; sel = null; selHole = -1; drawHole = null;
   $('task').textContent = `${E.folio} — ${E.title || ''}`; PG = pg; renderProv();
-  history.replaceState(null, '', '#' + E.folio); VG.ready.then(() => { renderProv(); draw() });
+  history.replaceState(null, '', '#' + (INDEX.filter(p => p.folio === E.folio).length > 1 ? E.image : E.folio)); VG.ready.then(() => { renderProv(); draw() });
   img = new Image(); img.onload = () => { fit(); refresh() }; img.src = E.display.file; renderList(); refresh() }
 window.addEventListener('resize', fit);
 (async () => { INDEX = await (await fetch('data/index.json', {cache: 'no-cache'})).json(); setFilters(); renderList();
-  const want = decodeURIComponent(location.hash.slice(1)); const k = pages.findIndex(p => p.folio === want || p.image === want); go(k >= 0 ? k : 0) })();
+  const want = decodeURIComponent(location.hash.slice(1)); let k = pages.findIndex(p => p.image === want); if (k < 0) k = pages.findIndex(p => p.folio === want); go(k >= 0 ? k : 0) })();
 
 // ---------- row-line editing (lines view) ----------
 let LW = null, LXH = 18; const LE = {on: false, mode: 'sel', sel: -1, drag: -1, draw: [], undo: []};
