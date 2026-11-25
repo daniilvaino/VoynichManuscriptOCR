@@ -78,6 +78,24 @@ Marks on the page that are neither the main Voynich text nor a drawing. Opus (AI
 
 `data/index.json` also gives `marks` (the number of objects) and `marks_by_type` for each page. An unclear object is counted under `unclear`.
 
+## `data/drawings.json` (tab 2, drawings)
+
+`{"format": "voynich-drawings/1", "frame": ..., "pages": {<image>: {...}}}`, one entry per page with drawing masks:
+
+| field | meaning |
+|---|---|
+| `source` | `human`, `human-rough`, `human-partial` or `ai-start` (see README) |
+| `status`, `note`, `saved_at` | the human's page status, note (original language) and time |
+| `owner_edits` | number of edit operations the human made on the page |
+| `ai_model` | which image model and prompt made the GPT/Gemini layer |
+| `layers` | PNG layers present in `img/draw_<layer>/<image>.png`: `mask` (published), `start`, `sam3`, `ai` |
+
+The PNGs are greyscale, white = drawing, in the frame of the page image `img/<image>.jpg` (`display` in index.json:
+scan = display / scale + scan_x0/y0). `index.json` has `drawing` = the page's `source`.
+
+Edits downloaded from the site: `{"format": "voynich-drawings/edit-1", "pages": [{image, folio, frame, w, h, png,
+edited_at}]}`, `png` = data URL of the mask in the same frame.
+
 ## `data/glyphs.json` and `glyphs.js` (Voynich characters in the text)
 
 The site draws Voynich characters wherever a text names a transliteration code. `glyphs.js` finds codes such as "EVA g", "EVA @221", "GC2a @155", "GC208" and "ZL @252". It replaces each one with the character, followed by the code in brackets.

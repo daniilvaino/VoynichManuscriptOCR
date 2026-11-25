@@ -6,7 +6,7 @@ const SRC = {'human': 'marked by a human', 'opus': 'Opus (AI), not reviewed', 'o
   'opus+human-corrected': 'Opus (AI), corrected by a human'};
 const HSRC = {'human-checked': 'holes checked by a human', 'human': 'holes marked by a human', 'human-not-checked': 'holes not checked yet',
   'opus': 'holes marked by Opus, not reviewed', 'opus-none-marked': 'holes not checked yet (Opus marked none)'};
-const LCOL = {two_runs_agree: '#ff3b30', human_confirmed: '#ff9f0a', human_corrected: '#ffd60a', human_drawn: '#ff6a3d', unclear: '#ff2d92'};
+const LCOL = {two_runs_agree: '#ff3b30', human_confirmed: '#ff3b30', human_corrected: '#ff3b30', human_drawn: '#ff3b30', unclear: '#ff3b30', red_tick: '#ff3b30'};   // one colour for every row line; the status is in the text
 const LNAME = {two_runs_agree: 'two GPT runs agree', human_confirmed: 'confirmed by a human', human_corrected: 'corrected by a human',
   human_drawn: 'drawn by a human', unclear: 'unclear'};
 let LINES = [], VIEW = 'pages', PG = null, INKT = {}, MK = {objects: [], not_found: []}, MSEL = -1, MHOV = -1;
@@ -44,24 +44,28 @@ function draw() {
   const r = cv.getBoundingClientRect(); if (cv.width !== r.width * devicePixelRatio) { cv.width = r.width * devicePixelRatio; cv.height = r.height * devicePixelRatio }
   ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0); ctx.clearRect(0, 0, r.width, r.height); if (!S) return;
   ctx.save(); ctx.translate(view.x, view.y); ctx.scale(view.z, view.z); ctx.filter = VIEW === 'ink' ? 'grayscale(1) sepia(0.55) saturate(1.6) contrast(0.22) brightness(1.62)' : $('l-con').checked ? 'contrast(1.8) brightness(1.1)' : 'none';   // ink view: washed-out scan as in atomtool
-  if (VIEW === 'ink') { ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, img.width || 0, img.height || 0); ctx.globalAlpha = $('l-bg').value / 100 }
+  if (VIEW === 'ink' || VIEW === 'all') { ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, img.width || 0, img.height || 0); ctx.globalAlpha = (VIEW === 'all' ? $('a-bg').value : $('l-bg').value) / 100 }   // fade the page image towards white
   if (img.complete) ctx.drawImage(img, 0, 0); ctx.filter = 'none';
   ctx.globalAlpha = 1; ctx.restore(); ctx.filter = 'none'; if (hideAll) return;
   const path = (pts, close) => { pts.forEach((p, i) => { const s = toScr(p); i ? ctx.lineTo(...s) : ctx.moveTo(...s) }); if (close) ctx.closePath() };
   const line = (pts, col, w, close, dash) => { if (pts.length < 2) return; ctx.beginPath(); path(pts, close); ctx.setLineDash(dash || []); ctx.strokeStyle = col; ctx.lineWidth = w; ctx.stroke(); ctx.setLineDash([]) };
   ctx.beginPath(); ctx.rect(-10, -10, r.width + 20, r.height + 20); path(outline(S), true); S.holes.forEach(h => { if (h.length >= 3) path(h, true) });
-  ctx.fillStyle = VIEW === 'ink' ? '#ffffff' : VIEW === 'lines' ? '#0c0d10' : `rgba(110,110,110,${$('l-fill').value / 100})`; ctx.fill('evenodd');   // lines view: only the page itself
-  const src = (document.querySelector('input[name=inksrc]:checked') || {}).value || 'stage1';
-  if ((VIEW === 'ink' && $('l-inkon').checked || VIEW === 'all') && INKT[src]) { ctx.save(); ctx.globalAlpha = VIEW === 'all' ? .35 : $('l-ink').value / 100;
+  const ALL = VIEW === 'all', A = id => $(id).checked;   // all layers: every layer has its own switch and settings
+  if (!ALL || A('a-page')) { ctx.fillStyle = VIEW === 'ink' ? '#ffffff' : VIEW === 'lines' ? '#0c0d10' : `rgba(110,110,110,${$('l-fill').value / 100})`; ctx.fill('evenodd') }   // lines view: only the page itself
+  if (VIEW === 'draw') { if (typeof DR !== 'undefined') DR.render(ctx, view, toScr); return }   // tab 2: drawing masks (draw.js)
+  const src = ALL ? $('a-inksrc').value : (document.querySelector('input[name=inksrc]:checked') || {}).value || 'stage1';
+  const inkOn = VIEW === 'ink' ? A('l-inkon') : VIEW === 'lines' ? A('l-lnink') : ALL ? A('a-ink') : false;
+  if (inkOn && INKT[src]) { ctx.save(); ctx.globalAlpha = (ALL ? +$('a-ink-a').value : VIEW === 'lines' ? +$('l-lnink-a').value : +$('l-ink').value) / 100;
     ctx.translate(view.x, view.y); ctx.scale(view.z, view.z); ctx.drawImage(INKT[src], 0, 0); ctx.restore() }
-  if (VIEW === 'ink') { if ($('l-inklines').checked) { ctx.lineCap = 'round'; LINES.forEach(l => { const p = l.pts.map(s2d); if (p.length > 1) line(p, LCOL[l.status] || '#fff', 1.6, false) }) } return }
-  if (VIEW !== 'pages' && VIEW !== 'marks') { ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.globalAlpha = VIEW === 'all' ? .55 : 1;
-    (LW || LINES).forEach((l, i) => { if (l.deleted) return; const p = l.pts.map(s2d); if (p.length > 1) line(p, (LE.on && LE.sel === i) ? '#ffffff' : (LCOL[l.status] || '#fff'), VIEW === 'all' ? 1.5 : +$('l-lw').value, false) }); ctx.globalAlpha = 1;
+  if (VIEW === 'ink') return;   // tab 4: ink only
+  if (ALL && A('a-draw') && typeof DR !== 'undefined') DR.render(ctx, view, toScr, true);
+  if (VIEW === 'lines' || (ALL && A('a-lines'))) { ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.globalAlpha = ALL ? +$('a-lines-a').value / 100 : 1;
+    (LW || LINES).forEach((l, i) => { if (l.deleted) return; const p = l.pts.map(s2d); if (p.length > 1) line(p, (LE.on && LE.sel === i) ? '#ffffff' : (LCOL[l.status] || '#fff'), ALL ? +$('a-lw').value : +$('l-lw').value, false) }); ctx.globalAlpha = 1;
     if (LE.on) drawLineEdit(line) }
   if (VIEW === 'lines') return;
   if (editing && $('l-pub').checked && PUB) { line(outline(PUB), 'rgba(92,200,255,.9)', 1, true); PUB.holes.forEach(h => line(h, 'rgba(92,200,255,.9)', 1, true)) }
-  line(outline(S), 'rgba(255,255,255,.95)', 1, true); S.holes.forEach((h, i) => line(h, i === selHole ? '#ffb340' : 'rgba(255,255,255,.95)', 1, true));
-  if (VIEW === 'marks' || VIEW === 'all') drawMarks(line); if (VIEW === 'marks') return;
+  if (!ALL || A('a-page')) { line(outline(S), 'rgba(255,255,255,.95)', 1, true); S.holes.forEach((h, i) => line(h, i === selHole ? '#ffb340' : 'rgba(255,255,255,.95)', 1, true)) }
+  if (VIEW === 'marks' || (ALL && A('a-marks'))) drawMarks(line); if (VIEW === 'marks') return;
   if (!editing) return;
   if (drawHole) { line(drawHole, '#fff', 1, false, [4, 3]); drawHole.forEach(p => dot(p, '#fff', 2.5)) }
   SIDES.forEach(s => S.types[s] !== 'straight' && S.mids[s].forEach((p, i) => dot(p, '#fff', 2.5, sel && sel.k === 'm' && sel.s === s && sel.i === i)));
@@ -75,6 +79,8 @@ function refresh() { draw(); const N = {top: 'Top', right: 'Right', bottom: 'Bot
   $('holes').innerHTML = 'Holes: ' + (S.holes.length ? S.holes.map((h, i) => `#${i + 1} <button data-h="${i}">delete</button>`).join(' ') : 'none');
   document.querySelectorAll('[data-h]').forEach(b => b.onclick = () => { snap(); S.holes.splice(+b.dataset.h, 1); selHole = -1; refresh() });
   $('hint').textContent = !editing ? 'viewing — press ✎ Edit to change the boundary' : mode === 'hole' ? (drawHole ? `hole: ${drawHole.length} points — Enter closes, Esc cancels` : 'click around the hole') : 'drag points; click a side to add a point; right-click a point to delete';
+  if (VIEW === 'draw' && typeof DR !== 'undefined') DR.hint();
+  else if (VIEW !== 'pages') $('hint').textContent = {marks: 'click an object on the page or in the list to open its card', ink: 'ink masks; choose the source above', lines: 'press ✎ Edit lines to change the row lines', all: 'layers are switched and set up in the panel on the right · click an object to open its card'}[VIEW] || '';
   $('m-edit').classList.toggle('on', mode === 'edit'); $('m-hole').classList.toggle('on', mode === 'hole');
   $('b-edit').classList.toggle('on', editing); document.body.classList.toggle('editing', editing);
   const mine = !!lsGet('edit:' + E.image); $('dirty').style.display = mine ? 'inline' : 'none';
@@ -119,7 +125,8 @@ function fit() { const r = cv.getBoundingClientRect(); if (!img.width) return;
   const z = Math.min(r.width / w, r.height / h) * 0.96; view = {z, x: (r.width - w * z) / 2 - x0 * z, y: (r.height - h * z) / 2 - y0 * z}; draw() }
 window.addEventListener('keydown', e => { if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
   if (e.key === ' ') { if (!hideAll) { hideAll = true; draw() } e.preventDefault(); return }
-  if (!editing && '12345'.includes(e.key) && e.key.length === 1) { setView(['pages', 'lines', 'ink', 'marks', 'all'][+e.key - 1]); return }
+  if (!editing && '123456'.includes(e.key) && e.key.length === 1) { setView(TABS[+e.key - 1]); return }
+  if (e.key === 'Enter' && VIEW === 'draw') { go(cur + 1); return }
   if (e.key === 'ArrowRight') { go(cur + 1); return } if (e.key === 'ArrowLeft') { go(cur - 1); return } if (e.key === 'f') { fit(); return }
   if (!editing) return;
   if (e.ctrlKey && e.key === 'z') { if (undo.length) { S = JSON.parse(undo.pop()); sel = null; selHole = -1; persist(); refresh() } e.preventDefault(); return }
@@ -131,6 +138,11 @@ window.addEventListener('keyup', e => { if (e.key === ' ') { hideAll = false; dr
 { const b = $('b-hide'), on = () => { hideAll = true; draw() }, off = () => { if (hideAll) { hideAll = false; draw() } };
   b.addEventListener('mousedown', on); b.addEventListener('mouseup', off); b.addEventListener('mouseleave', off);
   b.addEventListener('touchstart', e => { e.preventDefault(); on() }); b.addEventListener('touchend', off) }
+const TABS = ['pages', 'draw', 'marks', 'ink', 'lines', 'all'];
+// all layers: every switch lives in the side panel (moved there and back, handlers stay attached)
+const SIDE = ['allopt', 'mkopt'].map(id => ({el: $(id), parent: $(id).parentNode, next: $(id).nextSibling}));
+function sidePanel(onSide) { SIDE.forEach(o => { if (onSide) $('allslot').appendChild(o.el); else o.parent.insertBefore(o.el, o.next) });
+  $('allbox').style.display = onSide ? '' : 'none'; $('thisrow').style.display = onSide ? 'none' : ''; const was = cv.getBoundingClientRect().width; requestAnimationFrame(() => cv.getBoundingClientRect().width !== was ? fit() : draw()) }   // two columns on the right: page info / object card, then the layer settings   // tab order = keys 1..6
 function setMode(m) { mode = m; drawHole = null; refresh() }
 $('m-edit').onclick = () => setMode('edit'); $('m-hole').onclick = () => setMode('hole');
 $('b-edit').onclick = () => { editing = !editing; sel = null; drawHole = null; refresh() };
@@ -152,19 +164,22 @@ $('b-dl-all').onclick = async () => { const b = $('b-dl-all'), t = b.textContent
   saveJson({format: 'voynich-page-boundaries/1', coords: 'scan pixels', pages: all}, 'voynich-page-boundaries.json'); b.textContent = t; b.disabled = false };
 // ---------- pages ----------
 function linesHtml() { const c = {}; LINES.forEach(l => c[l.status] = (c[l.status] || 0) + 1);
-  return `<div><b>Row lines:</b> ${LINES.length}</div>` + Object.keys(LNAME).filter(k => c[k]).map(k =>
-    `<div><span style="color:${LCOL[k]};font-weight:700">━━</span> ${LNAME[k]}: ${c[k]}</div>`).join('') +
+  return `<div><b><span style="color:#ff3b30">━━</span> Row lines:</b> ${LINES.length}</div>` + Object.keys(LNAME).filter(k => c[k]).map(k =>
+    `<div>· ${LNAME[k]}: ${c[k]}</div>`).join('') +
     `<div class="keys" style="margin-top:6px">Drawn by GPT-5.5 twice (two independent runs), registered onto the scan and clipped to the page. Lines both runs agree on are kept; lines drawn by only one run were decided by a human.</div>` }
 function renderProv() { if (!PG) return;
-  $('provh').textContent = {pages: 'Page outline: who marked it and how', lines: 'Row lines: where they come from', ink: 'Ink and row lines: where they come from', marks: 'Objects: marks that are not the main text', all: 'All layers'}[VIEW];
+  $('provh').textContent = {pages: 'Page outline: who marked it and how', lines: 'Row lines: where they come from', ink: 'Ink and row lines: where they come from', marks: 'Objects: marks that are not the main text', all: 'All layers: this page', draw: 'Drawings: who selected what'}[VIEW];
   $('inkopt').style.display = VIEW === 'ink' ? '' : 'none'; $('inkh').style.display = (E && (E.ink || []).includes('hisam')) ? '' : 'none'; $('inkg').style.display = (E && (E.ink || []).includes('hisam_m4g')) ? '' : 'none'; $('inkr').style.display = (E && (E.ink || []).includes('hisam_raw')) ? '' : 'none'; $('inks').style.display = (E && (E.ink || []).includes('spectral')) ? '' : 'none';
   { const c = document.querySelector('input[name=inksrc]:checked'); if (c && E && !(E.ink || []).includes(c.value)) document.querySelector('input[name=inksrc][value=stage1]').checked = true }
   const inkTxt = `<div><b>Page:</b> ${(PG.labels || {}).title || ''}</div><div><span style="color:#000;background:#fff;font-weight:700">██</span> ink</div>
-    <div class="keys" style="margin-top:6px"><b>Stage 1 mask</b>: blue channel with the parchment background flattened, adaptive (Sauvola) threshold with hysteresis; paint is not removed. <b>Hi-SAM</b>: text-segmentation model (SAM-TS-L, HierText weights, not fine-tuned), windows of 768 px with stride 576 averaged, mask = logit above -2; a second variant (block 14g final pack) uses logit above -4 and keeps only components touching the ink of a NAFNet model trained on hand masks (man3). A third view shows Hi-SAM's raw probability (sigmoid of the logit) with no threshold and no gating. All Hi-SAM variants only on 19 pilot pages. Both are clipped to the page.${(E.ink || []).includes('spectral') ? ' <b>Multispectral ink map</b> (only the 10 pages with published multispectral images): 38 spectral bands registered onto this scan, one linear discriminant (LDA) trained to separate ink from parchment; shows ink that is faded or invisible in colour. The spectral images themselves are not published here.' : ''}</div>`;
-  $('prov').innerHTML = VIEW === 'pages' ? provHtml(PG) : VIEW === 'lines' ? `<div><b>Page:</b> ${(PG.labels || {}).title || ''}</div>` + linesHtml() : VIEW === 'ink' ? inkTxt : VIEW === 'marks' ? marksHtml() : provHtml(PG) + '<hr style="border-color:#323846">' + linesHtml() }
+    <div class="keys" style="margin-top:6px"><b>Stage 1 mask</b>: blue channel with the parchment background flattened, adaptive (Sauvola) threshold with hysteresis; paint is not removed. <b>Hi-SAM</b>: text-segmentation model (SAM-TS-L, HierText weights, not fine-tuned), windows of 768 px with stride 576 averaged, mask = logit above -2; a second variant (block 14g final pack) uses logit above -4 and keeps only components touching the ink of a NAFNet model trained on hand masks (man3). A third view shows Hi-SAM's raw probability (sigmoid of the logit) with no threshold and no gating. All Hi-SAM variants on every page and foldout panel (19 pilot pages from the block-14 runs, the rest from the same settings run on all 204 scans). Both are clipped to the page.${(E.ink || []).includes('spectral') ? ' <b>Multispectral ink map</b> (only the 10 pages with published multispectral images): 38 spectral bands registered onto this scan, one linear discriminant (LDA) trained to separate ink from parchment; shows ink that is faded or invisible in colour. The spectral images themselves are not published here.' : ''}</div>`;
+  $('prov').innerHTML = VIEW === 'pages' ? provHtml(PG) : VIEW === 'lines' ? `<div><b>Page:</b> ${(PG.labels || {}).title || ''}</div>` + linesHtml() : VIEW === 'ink' ? inkTxt : VIEW === 'marks' ? marksHtml() : VIEW === 'draw' ? DR.provHtml() : allHtml() }
+function allHtml() { const hr = '<hr style="border-color:#323846">';
+  return provHtml(PG) + hr + (typeof DR !== 'undefined' ? DR.summaryHtml() : '') + hr + linesHtml() + hr + marksHtml() }
 function setView(v) { VIEW = v; if (v !== 'pages' && editing) { editing = false; sel = null; drawHole = null }
   document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.v === v)); $('b-edit').style.display = v === 'pages' ? '' : 'none';
-  $('lb-edit').style.display = v === 'lines' ? '' : 'none'; $('mkopt').style.display = v === 'marks' || v === 'all' ? '' : 'none'; $('pgopt').style.display = v === 'pages' ? '' : 'none'; $('lnopt').style.display = v === 'lines' ? '' : 'none'; if (v !== 'lines' && LE.on) lineEdit(false);
+  $('lb-edit').style.display = v === 'lines' ? '' : 'none'; $('mkopt').style.display = v === 'marks' || v === 'all' ? '' : 'none'; $('allopt').style.display = v === 'all' ? '' : 'none'; sidePanel(v === 'all'); $('pgopt').style.display = v === 'pages' ? '' : 'none'; $('lnopt').style.display = v === 'lines' ? '' : 'none'; if (v !== 'lines' && LE.on) lineEdit(false);
+  $('dropt').style.display = v === 'draw' ? '' : 'none'; $('dtools').style.display = v === 'draw' ? '' : 'none'; $('dbox').style.display = v === 'draw' ? '' : 'none'; if (v !== 'draw' && typeof DR !== 'undefined' && DR.isOn()) DR.setOn(false);
   setFilters(); renderList(); renderProv(); refresh() }   // zoom and position stay as they are
 document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => setView(b.dataset.v));
 function provHtml(pg) { const p = pg.provenance, L = pg.labels || {}, rows = [['Page', (L.title || '') + (L.position ? ' · ' + L.position : '')],
@@ -179,12 +194,14 @@ const FLT = {
   lines: [['', 'all pages'], ['panel', 'foldout panels'], ['l-human', 'some lines decided by a human'], ['l-unclear', 'some lines unclear'], ['l-none', 'no row lines']],
   ink: [['', 'all pages'], ['panel', 'foldout panels'], ['hisam', 'pages with Hi-SAM ink'], ['spectral', 'pages with a multispectral ink map']],
   marks: [['', 'all pages'], ['m-any', 'pages with objects'], ['m-unclear', 'objects still unclear'], ['g:numbers', 'group: folio and quire numbers'], ['g:notes', 'group: later notes'], ['g:alphabets', 'group: alphabets'], ['g:red', 'group: red'], ['g:other', 'group: other'], ...Object.keys(MCOL).map(k => ['m:' + k, 'type: ' + (k === 'red_spot' ? 'red' : k.replace('_', ' '))])],
-  all: [['', 'all pages'], ['panel', 'foldout panels'], ['holes', 'pages with holes'], ['l-human', 'some lines decided by a human']]};
+  all: [['', 'all pages'], ['panel', 'foldout panels'], ['holes', 'pages with holes'], ['l-human', 'some lines decided by a human']],
+  draw: [['', 'pages with drawing masks'], ['d:human', 'marked by a human'], ['d:human-rough', 'marked by a human, imprecise'], ['d:human-partial', 'partly corrected by a human'], ['d:ai-start', 'AI only (not reviewed)'], ['d-mine', 'edited by me'], ['d-all', 'all pages']]};
 function setFilters() { const keep = $('flt').value; $('flt').innerHTML = FLT[VIEW].map(([v, t]) => `<option value="${v}">${t}</option>`).join('');
   $('flt').value = FLT[VIEW].some(([v]) => v === keep) ? keep : '' }
 const nHuman = p => { const s = p.lines_by_status || {}; return (s.human_confirmed || 0) + (s.human_corrected || 0) + (s.human_drawn || 0) };
 function keepPage(p, f) {
-  if (!f) return true; if (f === 'panel') return p.kind === 'foldout panel'; if (f === 'holes') return p.holes > 0;
+  if (!f) return VIEW === 'draw' ? !!p.drawing : true; if (f === 'd-all') return true; if (f.startsWith('d:')) return p.drawing === f.slice(2); if (f === 'd-mine') return !!lsGet('draw:' + p.image);
+  if (f === 'panel') return p.kind === 'foldout panel'; if (f === 'holes') return p.holes > 0;
   if (f === 'unclear') return p.status === 'unclear'; if (f === 'mine') return !!lsGet('edit:' + p.image);
   if (f === 'hisam') return (p.ink || []).includes('hisam'); if (f === 'spectral') return (p.ink || []).includes('spectral');
   if (f === 'm-any') return p.marks > 0; if (f === 'm-unclear') return !!(p.marks_by_type || {}).unclear; if (f.startsWith('m:')) return !!(p.marks_by_type || {})[f.slice(2)];
@@ -194,6 +211,8 @@ function keepPage(p, f) {
 function badge(p) {
   const ob = `<span class="badge src-${p.boundary_source}">${p.boundary_source}</span>`;
   const lb = `<span class="badge" style="background:#4a2416;color:#ffb38a">${p.lines || 0} lines${nHuman(p) ? ' · ✓' + nHuman(p) : ''}${(p.lines_by_status || {}).unclear ? ' · ?' + p.lines_by_status.unclear : ''}</span>`;
+  if (VIEW === 'draw') return p.drawing ? `<span class="badge dsrc-${p.drawing}">${{'human': 'human', 'human-rough': 'human ≈', 'human-partial': 'human, partly', 'ai-start': 'AI only'}[p.drawing]}</span>${lsGet('draw:' + p.image) ? ' <span class="mine">✎</span>' : ''}` : '';
+  if (VIEW === 'all') return `<span style="display:flex;gap:4px">${p.drawing ? `<span class="badge dsrc-${p.drawing}" title="drawing mask">✿</span>` : ''}${p.marks ? `<span class="badge" style="background:#14424d;color:#9fe6f0" title="objects">${p.marks}</span>` : ''}<span class="badge src-${p.boundary_source}">${p.lines || 0} lines</span></span>`;
   if (VIEW === 'marks') return p.marks ? `<span class="badge" style="background:#14424d;color:#9fe6f0">${p.marks} object${p.marks > 1 ? 's' : ''}${(p.marks_by_type || {}).unclear ? ' · ?' + p.marks_by_type.unclear : ''}</span>` : '';
   if (VIEW === 'ink') return `<span class="badge" style="background:#26381a;color:#c8f08a">${((p.ink || []).includes('hisam') ? 'stage 1 + Hi-SAM ×3' : 'stage 1') + ((p.ink || []).includes('spectral') ? ' + spectral' : '')}</span>`;
   return VIEW === 'pages' ? ob : VIEW === 'lines' ? lb : `<span style="display:flex;gap:4px">${lb}${ob}</span>` }
@@ -211,6 +230,7 @@ async function go(i) { if (i < 0 || i >= pages.length) return; E = pages[i]; cur
   (E.ink || []).forEach(k => { const im = new Image(); im.onload = () => { const c = document.createElement('canvas'); c.width = im.width; c.height = im.height;
     const g = c.getContext('2d'); g.drawImage(im, 0, 0); g.globalCompositeOperation = 'source-in'; g.fillStyle = '#000000'; g.fillRect(0, 0, c.width, c.height);
     INKT[k] = c; draw() }; im.src = `img/ink_${k}/${E.image}.png` });
+  if (typeof DR !== 'undefined') DR.load();
   PUB = stateFromPage(pg); const ed = lsGet('edit:' + E.image);
   S = ed ? stateFromPage({boundary: ed, holes: ed.holes}) : JSON.parse(JSON.stringify(PUB)); $('note').value = ed && ed.note || '';
   undo = []; sel = null; selHole = -1; drawHole = null;
@@ -322,7 +342,7 @@ function drawMarks(line) { const all = VIEW === 'all';
         if (hov || ((mnames() || on) && tall && !all)) mlabel(toScr([a[0], b[1]]), y.label, col, hov, o.text.startsWith('col 1'), o.symbol_script === 'EVA') }) }
     else line(p, on ? '#ffffff' : col, all ? 1.2 : on ? 3 : 2, true, o.status === 'unclear' ? [6, 4] : null);
     if (on || (mnames() && !all)) mlabel(toScr(s2d([o.bbox[0], o.bbox[1]])), o.type_label + (o.status === 'unclear' ? ' ?' : ''), col, on) }) }
-function mpick(x, y) { const t = d2s(toImg(x, y)), pad = 6 / view.z / D().scale; let best = -1, ba = Infinity, sym = null;   // smallest object under the cursor wins
+function mpick(x, y) { if (VIEW === 'all' && !$('a-marks').checked) return -1; const t = d2s(toImg(x, y)), pad = 6 / view.z / D().scale; let best = -1, ba = Infinity, sym = null;   // smallest object under the cursor wins
   const inb = b => t[0] >= b[0] - pad && t[0] <= b[2] + pad && t[1] >= b[1] - pad && t[1] <= b[3] + pad;
   MK.objects.forEach((o, i) => { if (!mshown(o)) return; const b = o.bbox, a = (b[2] - b[0]) * (b[3] - b[1]);
     (o.symbols || []).forEach((y, k) => { const c = y.bbox, ca = (c[2] - c[0]) * (c[3] - c[1]); if (inb(c) && ca < ba) { ba = ca; best = i; sym = [i, k] } });
@@ -355,8 +375,9 @@ document.addEventListener('click', e => { const d = e.target.closest && e.target
     c.onchange = () => { lsSet(k, c.checked); if (MSEL >= 0 && !mshown(MK.objects[MSEL] || {})) MSEL = -1; renderProv(); draw() } }) }
 
 // view and layer settings are remembered in this browser
-['l-con', 'l-fill', 'l-lw', 'l-ink', 'l-bg', 'l-inkon', 'l-inklines', 'l-pub'].forEach(id => { const c = $(id), k = 'opt:' + id, v = lsGet(k), box = c.type === 'checkbox';
-  if (v !== null) box ? c.checked = v : c.value = v; c.addEventListener(box ? 'change' : 'input', () => { lsSet(k, box ? c.checked : c.value); draw() }) });
+['l-con', 'l-fill', 'l-lw', 'l-ink', 'l-bg', 'l-inkon', 'l-pub', 'l-lnink', 'l-lnink-a', 'a-bg', 'a-page', 'a-draw', 'a-draw-a', 'a-draw-s', 'a-marks', 'a-ink', 'a-ink-a', 'a-inksrc', 'a-lines', 'a-lines-a', 'a-lw'].forEach(id => { const c = $(id), k = 'opt:' + id, v = lsGet(k), box = c.type === 'checkbox';
+  if (v !== null) box ? c.checked = v : c.value = v; c.addEventListener(box || c.tagName === 'SELECT' ? 'change' : 'input', () => { lsSet(k, box ? c.checked : c.value); allSync(); if (VIEW === 'all') renderProv(); draw() }) });
+function allSync() { if (typeof DR !== 'undefined') DR.setAll($('a-draw-s').value, +$('a-draw-a').value) }
 
 // ---------- object card: what is shown beside the page when an object is selected ----------
 function mcrop(src, bb, maxW, maxH, padF = .18, white = false) {   // crop of a display-frame image around a scan-px box, as a data URL
