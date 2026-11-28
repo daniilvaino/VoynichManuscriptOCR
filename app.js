@@ -9,9 +9,13 @@ const HSRC = {'human-checked': 'holes checked by a human', 'human': 'holes marke
 const LCOL = {two_runs_agree: '#ff3b30', human_confirmed: '#ff3b30', human_corrected: '#ff3b30', human_drawn: '#ff3b30', unclear: '#ff3b30', red_tick: '#ff3b30'};   // one colour for every row line; the status is in the text
 const LNAME = {two_runs_agree: 'two GPT runs agree', human_confirmed: 'confirmed by a human', human_corrected: 'corrected by a human',
   human_drawn: 'drawn by a human', unclear: 'unclear'};
+const RCOL = {agree: '#3ecf72', partial: '#ffd60a', weak: '#ff7a1a', no_zl: '#c77dff', none: '#c77dff'};   // rows coloured by agreement with the ZL reading
+const RNAME = {agree: 'agrees with ZL (≥ 80 %)', partial: 'agrees in part (50–80 %)', weak: 'agrees weakly (< 50 %)', no_zl: 'no ZL match (flagged, not removed)'};
+let ROWS = {rows: [], lines_not_in_rows: []}, ROWOF = [], RSEL = -1;
 let LINES = [], VIEW = 'pages', PG = null, INKT = {}, MK = {objects: [], not_found: []}, MSEL = -1, MHOV = -1;
 const MCOL = {folio_number: '#4ea1ff', quire_mark: '#3ecf72', pencil_letter: '#b0b8c8', colour_note: '#ff8fd0', marginalia: '#7fd1ff', month_name: '#b98cff',
-  alphabet_column: '#00e5ff', ex_libris: '#9ff0bf', red_tick: '#ff2d55', red_spot: '#ff6b6b', scribble: '#e0a060', dirt: '#8a7a60', voynich_text: '#ff4fd8', other: '#ffffff'};
+  alphabet_column: '#00e5ff', ex_libris: '#9ff0bf', red_tick: '#ff2d55', red_spot: '#ff6b6b', scribble: '#e0a060', dirt: '#8a7a60', voynich_text: '#ff4fd8', other: '#ffffff',
+  under_paint: '#ffb340', show_through: '#a0a8ff'};
 let INDEX = [], pages = [], cur = -1, E = null, PUB = null, S = null, img = new Image(), undo = [], mode = 'edit', drawHole = null,
   sel = null, selHole = -1, editing = false, hideAll = false, view = {z: 1, x: 0, y: 0}, drag = null;
 const LS = k => 'vpb:' + k, lsGet = k => { try { return JSON.parse(localStorage.getItem(LS(k))) } catch (e) { return null } },
@@ -60,7 +64,11 @@ function draw() {
   if (VIEW === 'ink') return;   // tab 4: ink only
   if (ALL && A('a-draw') && typeof DR !== 'undefined') DR.render(ctx, view, toScr, true);
   if (VIEW === 'lines' || (ALL && A('a-lines'))) { ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.globalAlpha = ALL ? +$('a-lines-a').value / 100 : 1;
-    (LW || LINES).forEach((l, i) => { if (l.deleted) return; const p = l.pts.map(s2d); if (p.length > 1) line(p, (LE.on && LE.sel === i) ? '#ffffff' : (LCOL[l.status] || '#fff'), ALL ? +$('a-lw').value : +$('l-lw').value, false) }); ctx.globalAlpha = 1;
+    const agree = !LE.on && (ALL ? A('a-agree') : A('l-agree')), lw = ALL ? +$('a-lw').value : +$('l-lw').value;
+    (LW || LINES).forEach((l, i) => { if (l.deleted) return; const p = l.pts.map(s2d); if (p.length < 2) return; const r = ROWS.rows[ROWOF[i]], on = !LE.on && r && ROWOF[i] === RSEL;
+      const col = (LE.on && LE.sel === i) || on ? '#ffffff' : agree ? RCOL[r ? r.status : 'none'] : (LCOL[l.status] || '#fff');
+      line(p, col, on ? lw + 1.5 : lw, false, agree && (!r || r.status === 'no_zl') ? [lw * 2.5, lw * 2] : null) }); ctx.globalAlpha = 1;
+    if (!LE.on) drawRows(ALL, lw);
     if (LE.on) drawLineEdit(line) }
   if (VIEW === 'lines') return;
   if (editing && $('l-pub').checked && PUB) { line(outline(PUB), 'rgba(92,200,255,.9)', 1, true); PUB.holes.forEach(h => line(h, 'rgba(92,200,255,.9)', 1, true)) }
@@ -163,10 +171,59 @@ $('b-dl-all').onclick = async () => { const b = $('b-dl-all'), t = b.textContent
   const all = await Promise.all(INDEX.map(async p => { const j = await (await fetch(`data/pages/${p.image}.json`, {cache: 'no-cache'})).json(); b.textContent = `loading ${++n}/${INDEX.length}`; return j }));
   saveJson({format: 'voynich-page-boundaries/1', coords: 'scan pixels', pages: all}, 'voynich-page-boundaries.json'); b.textContent = t; b.disabled = false };
 // ---------- pages ----------
-function linesHtml() { const c = {}; LINES.forEach(l => c[l.status] = (c[l.status] || 0) + 1);
+function linesHtml() { const c = {}, rc = {}; LINES.forEach(l => c[l.status] = (c[l.status] || 0) + 1); ROWS.rows.forEach(r => rc[r.status] = (rc[r.status] || 0) + 1);
+  const nin = (ROWS.lines_not_in_rows || []).length;
   return `<div><b><span style="color:#ff3b30">━━</span> Row lines:</b> ${LINES.length}</div>` + Object.keys(LNAME).filter(k => c[k]).map(k =>
     `<div>· ${LNAME[k]}: ${c[k]}</div>`).join('') +
-    `<div class="keys" style="margin-top:6px">Drawn by GPT-5.5 twice (two independent runs), registered onto the scan and clipped to the page. Lines both runs agree on are kept; lines drawn by only one run were decided by a human.</div>` }
+    `<div style="margin-top:6px"><b>Rows:</b> ${ROWS.rows.length} (line pieces joined into rows, in reading order)</div>` +
+    Object.keys(RNAME).filter(k => rc[k]).map(k => `<div>· <span style="color:${RCOL[k]}">━━</span> ${RNAME[k]}: ${rc[k]}</div>`).join('') +
+    (nin ? `<div>· lines in no row: ${nin}</div>` : '') +
+    (RSEL >= 0 && ROWS.rows[RSEL] ? rowHtml(ROWS.rows[RSEL]) : `<div class="keys">click a row line to open its card (ZL text, our reading, direction, bridges)</div>`) +
+    `<div class="keys" style="margin-top:6px">Drawn by GPT-5.5 twice (two independent runs), registered onto the scan and clipped to the page. Lines both runs agree on are kept; lines drawn by only one run were decided by a human.
+    <b>Arrows</b>: the reading direction of each row (rings included). <b>Blue dashes</b> (bridges): how the pieces of one row continue each other, with the ZL line (locus) the row is tied to.
+    <b>Colours</b> (switch "colour by agreement"): our reader read every piece in its direction; agreement = 1 − edit distance to the ZL words of that piece / longer length. A row with no ZL match is drawn dashed and kept: the transliteration confirms rows, it does not remove them.</div>` }
+const pct = a => a == null ? '—' : Math.round(a * 100) + ' %';
+const GEOMN = {line: 'straight row', steep: 'steep or radial row', ring: 'ring (part of a circle)', curve: 'curved label'};
+const DSRC = {zl_order: 'the order of the ZL words along the row', zl_code: 'a direction code in ZL', manual: 'a human', owner: 'the owner', auto: 'geometry and the reader (automatic)',
+  object: 'the object it belongs to', geometry: 'geometry'};
+function rowHtml(r) { const st = `<span class="badge" style="background:${RCOL[r.status]}33;color:${RCOL[r.status]}">${RNAME[r.status]}</span>`;
+  const zl = Object.entries(r.zl_text || {}).map(([k, t]) => `<div class="keys" style="overflow-wrap:anywhere"><b>${esc(k)}</b> (whole ZL line): ${VG.eva(t)} <span class="vg-c">${esc(t)}</span></div>`).join('');
+  const agreeWith = (d, name) => d ? (d === r.dir ? `${name} agrees` : `${name} says the other way`) : '';
+  const dirTxt = !r.dir_source ? 'no recorded direction (shown in the stored order of the points)' : `decided by ${DSRC[r.dir_source] || r.dir_source}` +
+    [agreeWith(r.dir_zl_order, 'ZL word order'), agreeWith(r.dir_reader, 'the reader'), r.conf_fwd != null ? `reader confidence this way ${(r.dir === 'fwd' ? r.conf_fwd : r.conf_rev).toFixed(2)}, the other way ${(r.dir === 'fwd' ? r.conf_rev : r.conf_fwd).toFixed(2)}` : ''].filter(Boolean).map(x => ' · ' + x).join('');
+  const pcs = r.pieces.map((pc, k) => `<div class="keys" style="margin-top:3px;overflow-wrap:anywhere">${k + 1}. line #${pc.i + 1}${pc.rev ? ' (read against its point order)' : ''} → ${pc.loci.length ? esc(pc.loci.join(', ')) : '<b>no ZL</b>'}${pc.w.length ? ' words ' + pc.w.map(w => w[0] === w[1] ? w[0] + 1 : `${w[0] + 1}–${w[1] + 1}`).join(', ') : ''}
+    ${pc.tier ? ' · link ' + esc(pc.tier) : ''}${pc.how.length ? ' (' + esc(pc.how.join(', ')) + ')' : ''} · agreement ${pct(pc.agree)}<br>
+    ZL: ${pc.words ? VG.eva(pc.words) + ` <span class="vg-c">${esc(pc.words)}</span>` : '—'}<br>we read: ${pc.reading ? VG.eva(pc.reading) + ` <span class="vg-c">${esc(pc.reading)}</span>` : '—'}</div>`).join('');
+  return `<div class="mk cur" style="cursor:default"><div style="display:flex;justify-content:space-between;gap:6px"><b style="color:var(--tx)">Row ${esc(r.id.split(':').pop())}${r.loci.length ? ' — ' + esc(r.loci.join(', ')) : ''}</b><button id="row-x" title="close (Esc)" style="padding:0 8px">×</button></div>
+    <div>${st} agreement with ZL: <b style="color:var(--tx)">${pct(r.agree)}</b></div>
+    <div class="keys"><b>Direction</b>: ${GEOMN[r.geom] || 'row'}; ${dirTxt}</div>${zl}
+    <div class="mkd-l">pieces in reading order (bridges)</div>${pcs}</div>` }
+function drawRows(all, lw) { const arrows = all ? $('a-arrows').checked : $('l-arrows').checked, bridges = !all && $('l-bridges').checked; if (!arrows && !bridges) return;
+  const src = LW || LINES;
+  ROWS.rows.forEach(r => { const segs = r.pieces.map(pc => { const l = src[pc.i]; if (!l || l.deleted || l.pts.length < 2) return null; const p = l.pts.map(q => toScr(s2d(q))); return pc.rev ? p.reverse() : p }).filter(Boolean);
+    if (!segs.length) return;
+    if (bridges) for (let k = 0; k + 1 < segs.length; k++) { const a = segs[k].at(-1), b = segs[k + 1][0]; ctx.beginPath(); ctx.moveTo(...a); ctx.lineTo(...b); ctx.setLineDash([5, 4]); ctx.strokeStyle = '#4ea1ff'; ctx.lineWidth = 2; ctx.stroke(); ctx.setLineDash([]) }
+    if (arrows) segs.forEach(p => chevrons(p, Math.max(5, lw * 1.8)));
+    if (bridges) { const p = segs[0], len = segs.reduce((t, q) => t + q.slice(1).reduce((u, x, j) => u + Math.hypot(x[0] - q[j][0], x[1] - q[j][1]), 0), 0);
+      if (len > 90) { const t = r.loci.length ? r.loci.join(' + ') : 'no ZL'; ctx.font = '11px system-ui,sans-serif'; const w = ctx.measureText(t).width + 8, x = p[0][0] - w - 4, y = p[0][1];
+        ctx.fillStyle = r.loci.length ? 'rgba(20,40,70,.85)' : 'rgba(80,20,90,.9)'; ctx.fillRect(x, y - 8, w, 15); ctx.fillStyle = r.loci.length ? '#9fd0ff' : '#e9c8ff'; ctx.fillText(t, x + 4, y + 3) } } }) }
+function chevrons(p, sz) {   // arrow heads along a screen polyline, every 70 px and at its end
+  const M = []; let acc = 35;
+  for (let k = 1; k < p.length; k++) { const [x0, y0] = p[k - 1], [x1, y1] = p[k], d = Math.hypot(x1 - x0, y1 - y0); if (!d) continue; let t = 0;
+    while (t + (70 - acc) <= d) { t += 70 - acc; acc = 0; M.push([x0 + (x1 - x0) * t / d, y0 + (y1 - y0) * t / d, (x1 - x0) / d, (y1 - y0) / d]) } acc += d - t }
+  for (let k = p.length - 1; k > 0; k--) { const [x0, y0] = p[k - 1], [x1, y1] = p[k], d = Math.hypot(x1 - x0, y1 - y0); if (d) { M.push([x1, y1, (x1 - x0) / d, (y1 - y0) / d]); break } }
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  for (const [x, y, ux, uy] of M) { const bx = -ux * sz, by = -uy * sz, nx = -uy * sz * .75, ny = ux * sz * .75; ctx.beginPath(); ctx.moveTo(x + bx + nx, y + by + ny); ctx.lineTo(x, y); ctx.lineTo(x + bx - nx, y + by - ny);
+    ctx.strokeStyle = 'rgba(0,0,0,.8)'; ctx.lineWidth = 4.5; ctx.stroke(); ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 2; ctx.stroke() } }
+function rpick(x, y) { let best = -1, bd = 9; (LW || LINES).forEach((l, i) => { if (l.deleted || ROWOF[i] === undefined) return; const p = l.pts.map(q => toScr(s2d(q)));
+  for (let k = 0; k < p.length - 1; k++) { const d = dseg([x, y], p[k], p[k + 1]); if (d < bd) { bd = d; best = ROWOF[i] } } }); return best }
+{ let down = null; cv.addEventListener('mousedown', e => { down = [e.offsetX, e.offsetY] });
+  cv.addEventListener('mouseup', e => { const ok = (VIEW === 'lines' || (VIEW === 'all' && $('a-lines').checked && down && mpick(e.offsetX, e.offsetY) < 0)) && !LE.on && down && Math.hypot(e.offsetX - down[0], e.offsetY - down[1]) < 4; down = null;
+    if (!ok) return; const k = rpick(e.offsetX, e.offsetY); if (k !== RSEL) { RSEL = k; renderProv(); draw() } });
+  cv.addEventListener('mousemove', e => { if (VIEW !== 'lines' || LE.on || e.buttons) return; const k = rpick(e.offsetX, e.offsetY), r = ROWS.rows[k];
+    cv.title = r ? `${r.loci.join(' + ') || 'no ZL match'} · ${RNAME[r.status]} · agreement ${pct(r.agree)} · ${GEOMN[r.geom] || 'row'}` : ''; cv.style.cursor = r ? 'pointer' : '' }) }
+document.addEventListener('click', e => { if (e.target.id === 'row-x') { RSEL = -1; renderProv(); draw() } });
+window.addEventListener('keydown', e => { if (e.key === 'Escape' && (VIEW === 'lines' || VIEW === 'all') && RSEL >= 0 && !LE.on && MSEL < 0) { RSEL = -1; renderProv(); draw() } });
 function renderProv() { if (!PG) return;
   $('provh').textContent = {pages: 'Page outline: who marked it and how', lines: 'Row lines: where they come from', ink: 'Ink and row lines: where they come from', marks: 'Objects: marks that are not the main text', all: 'All layers: this page', draw: 'Drawings: who selected what'}[VIEW];
   $('inkopt').style.display = VIEW === 'ink' ? '' : 'none'; $('inkh').style.display = (E && (E.ink || []).includes('hisam')) ? '' : 'none'; $('inkg').style.display = (E && (E.ink || []).includes('hisam_m4g')) ? '' : 'none'; $('inkr').style.display = (E && (E.ink || []).includes('hisam_raw')) ? '' : 'none'; $('inks').style.display = (E && (E.ink || []).includes('spectral')) ? '' : 'none';
@@ -191,9 +248,10 @@ function provHtml(pg) { const p = pg.provenance, L = pg.labels || {}, rows = [['
 const FLT = {
   pages: [['', 'all pages'], ['panel', 'foldout panels'], ['human', 'outline marked by a human'], ['opus+human-checked', 'Opus, checked by a human'],
           ['opus+human-corrected', 'Opus, corrected by a human'], ['opus', 'Opus, not reviewed'], ['holes', 'pages with holes'], ['unclear', 'outline status: unclear'], ['mine', 'edited by me']],
-  lines: [['', 'all pages'], ['panel', 'foldout panels'], ['l-human', 'some lines decided by a human'], ['l-unclear', 'some lines unclear'], ['l-none', 'no row lines']],
+  lines: [['', 'all pages'], ['panel', 'foldout panels'], ['l-human', 'some lines decided by a human'], ['l-unclear', 'some lines unclear'], ['l-none', 'no row lines'],
+          ['r-noz', 'some rows without a ZL match'], ['r-weak', 'some rows agree weakly with ZL'], ['r-ring', 'pages with rings']],
   ink: [['', 'all pages'], ['panel', 'foldout panels'], ['hisam', 'pages with Hi-SAM ink'], ['spectral', 'pages with a multispectral ink map']],
-  marks: [['', 'all pages'], ['m-any', 'pages with objects'], ['m-unclear', 'objects still unclear'], ['g:numbers', 'group: folio and quire numbers'], ['g:notes', 'group: later notes'], ['g:alphabets', 'group: alphabets'], ['g:red', 'group: red'], ['g:other', 'group: other'], ...Object.keys(MCOL).map(k => ['m:' + k, 'type: ' + (k === 'red_spot' ? 'red' : k.replace('_', ' '))])],
+  marks: [['', 'all pages'], ['m-any', 'pages with objects'], ['m-unclear', 'objects still unclear'], ['m-ai', 'AI finds not reviewed yet'], ['g:hidden', 'group: under paint and show-through'], ['g:numbers', 'group: folio and quire numbers'], ['g:notes', 'group: later notes'], ['g:alphabets', 'group: alphabets'], ['g:red', 'group: red'], ['g:other', 'group: other'], ...Object.keys(MCOL).map(k => ['m:' + k, 'type: ' + (k === 'red_spot' ? 'red' : k.replace('_', ' '))])],
   all: [['', 'all pages'], ['panel', 'foldout panels'], ['holes', 'pages with holes'], ['l-human', 'some lines decided by a human']],
   draw: [['', 'pages with drawing masks'], ['d:human', 'marked by a human'], ['d:human-rough', 'marked by a human, imprecise'], ['d:human-partial', 'partly corrected by a human'], ['d:ai-start', 'AI only (not reviewed)'], ['d-mine', 'edited by me'], ['d-all', 'all pages']]};
 function setFilters() { const keep = $('flt').value; $('flt').innerHTML = FLT[VIEW].map(([v, t]) => `<option value="${v}">${t}</option>`).join('');
@@ -206,11 +264,13 @@ function keepPage(p, f) {
   if (f === 'hisam') return (p.ink || []).includes('hisam'); if (f === 'spectral') return (p.ink || []).includes('spectral');
   if (f === 'm-any') return p.marks > 0; if (f === 'm-unclear') return !!(p.marks_by_type || {}).unclear; if (f.startsWith('m:')) return !!(p.marks_by_type || {})[f.slice(2)];
   if (f.startsWith('g:')) return Object.keys(p.marks_by_type || {}).some(t => MGROUP_OF[t] === f.slice(2));
+  if (f === 'r-noz') return ((p.rows_by_status || {}).no_zl || 0) > 0; if (f === 'r-weak') return ((p.rows_by_status || {}).weak || 0) > 0; if (f === 'r-ring') return (p.rings || 0) > 0;
+  if (f === 'm-ai') return !!(p.marks_by_type || {}).ai_unreviewed;
   if (f === 'l-human') return nHuman(p) > 0; if (f === 'l-unclear') return (p.lines_by_status || {}).unclear > 0; if (f === 'l-none') return !p.lines;
   return p.boundary_source === f }
 function badge(p) {
   const ob = `<span class="badge src-${p.boundary_source}">${p.boundary_source}</span>`;
-  const lb = `<span class="badge" style="background:#4a2416;color:#ffb38a">${p.lines || 0} lines${nHuman(p) ? ' · ✓' + nHuman(p) : ''}${(p.lines_by_status || {}).unclear ? ' · ?' + p.lines_by_status.unclear : ''}</span>`;
+  const nz = (p.rows_by_status || {}).no_zl || 0, lb = `<span class="badge" style="background:#4a2416;color:#ffb38a">${p.lines || 0} lines${nHuman(p) ? ' · ✓' + nHuman(p) : ''}${(p.lines_by_status || {}).unclear ? ' · ?' + p.lines_by_status.unclear : ''}${nz && VIEW === 'lines' ? ' · no ZL ' + nz : ''}</span>`;
   if (VIEW === 'draw') return p.drawing ? `<span class="badge dsrc-${p.drawing}">${{'human': 'human', 'human-rough': 'human ≈', 'human-partial': 'human, partly', 'ai-start': 'AI only'}[p.drawing]}</span>${lsGet('draw:' + p.image) ? ' <span class="mine">✎</span>' : ''}` : '';
   if (VIEW === 'all') return `<span style="display:flex;gap:4px">${p.drawing ? `<span class="badge dsrc-${p.drawing}" title="drawing mask">✿</span>` : ''}${p.marks ? `<span class="badge" style="background:#14424d;color:#9fe6f0" title="objects">${p.marks}</span>` : ''}<span class="badge src-${p.boundary_source}">${p.lines || 0} lines</span></span>`;
   if (VIEW === 'marks') return p.marks ? `<span class="badge" style="background:#14424d;color:#9fe6f0">${p.marks} object${p.marks > 1 ? 's' : ''}${(p.marks_by_type || {}).unclear ? ' · ?' + p.marks_by_type.unclear : ''}</span>` : '';
@@ -225,7 +285,9 @@ $('flt').onchange = () => { renderList(); if (cur < 0 && pages.length) go(0) };
 async function go(i) { if (i < 0 || i >= pages.length) return; E = pages[i]; cur = i;
   const pg = await (await fetch(`data/pages/${E.image}.json`, {cache: 'no-cache'})).json();
   try { const LD = await (await fetch(`data/lines/${E.image}.json`, {cache: 'no-cache'})).json(); LINES = LD.lines; LXH = LD.xheight || 18 } catch (e) { LINES = []; LXH = 18 }
-  linesLoaded(); INKT = {}; MSEL = -1; MHOV = -1; MK = {objects: [], not_found: []};
+  linesLoaded(); INKT = {}; MSEL = -1; MHOV = -1; MK = {objects: [], not_found: []}; ROWS = {rows: [], lines_not_in_rows: []}; ROWOF = []; RSEL = -1;
+  try { const r = await fetch(`data/rows/${E.image}.json`, {cache: 'no-cache'}); if (r.ok) ROWS = await r.json() } catch (e) {}
+  ROWS.rows.forEach((r, k) => r.pieces.forEach(pc => ROWOF[pc.i] = k));
   try { const r = await fetch(`data/marks/${E.image}.json`, {cache: 'no-cache'}); if (r.ok) MK = await r.json() } catch (e) {}
   (E.ink || []).forEach(k => { const im = new Image(); im.onload = () => { const c = document.createElement('canvas'); c.width = im.width; c.height = im.height;
     const g = c.getContext('2d'); g.drawImage(im, 0, 0); g.globalCompositeOperation = 'source-in'; g.fillStyle = '#000000'; g.fillRect(0, 0, c.width, c.height);
@@ -319,6 +381,7 @@ document.querySelectorAll('input[name=inksrc]').forEach(r => r.onchange = draw);
 const MGROUPS = [['numbers', 'folio and quire numbers', ['folio_number', 'quire_mark']],
   ['notes', 'later notes (pencil, colour notes, months, marginalia, ex libris, scribbles)', ['pencil_letter', 'colour_note', 'marginalia', 'month_name', 'ex_libris', 'scribble']],
   ['alphabets', 'alphabets / key-like columns', ['alphabet_column']], ['red', 'red (GC birds, red spots)', ['red_tick', 'red_spot']],
+  ['hidden', 'under paint and show-through (AI finds; the other side of the leaf)', ['under_paint', 'show_through']],
   ['other', 'other (Voynich writing outside the transliterations, dirt, other)', ['voynich_text', 'dirt', 'other']]];
 const MGROUP_OF = Object.fromEntries(MGROUPS.flatMap(([g, , ts]) => ts.map(t => [t, g])));
 let MSYM = null;   // hovered symbol [object index, symbol index]
@@ -354,13 +417,15 @@ function mfocus(i) { const o = MK.objects[i]; if (!o) return; MSEL = i; const r 
   view = {z, x: r.width / 2 - (a[0] + w / 2) * z, y: r.height / 2 - (a[1] + h / 2) * z}; renderProv(); draw(); mscroll() }
 function marksHtml() { const O = MK.objects, hidden = O.filter(o => !mshown(o)).length;
   const items = O.map((o, i) => !mshown(o) ? '' : i === MSEL ? `<div class="mk cur" data-m="${i}">${mdetail(o)}</div>` : `<div class="mk" data-m="${i}"><span style="color:${MCOL[o.type] || '#fff'};font-weight:700">■</span> <b style="color:var(--tx)">${esc(o.type_label)}</b>
-    <span class="badge" style="${o.status === 'unclear' ? 'background:#5a1f3c;color:#ffb3d9' : 'background:#1d4d32;color:#9ff0bf'}">${esc(o.status)}</span>
+    <span class="badge" style="${o.status === 'unclear' ? 'background:#5a1f3c;color:#ffb3d9' : o.status.startsWith('AI') ? 'background:#5a3d10;color:#ffd48a' : 'background:#1d4d32;color:#9ff0bf'}">${esc(o.status)}</span>
     <div class="keys">${VG.auto(o.text)}</div>${o.symbols ? `<div class="keys">${o.symbols.length} symbols marked (${esc(o.symbol_script)}): ${o.symbols.map(y => { const l = o.symbol_script === 'EVA' ? VG.evaLabel(y.label) : esc(y.label); return y.status === 'unclear' ? `<i>${l}</i>` : l }).join(' · ')}</div>` : ''}
-    <div class="keys">found by ${esc(o.found_by)} · reviewed by ${esc(o.reviewed_by)}${o.poly ? ' · outline' : ''}${o.evidence ? ` · <a style="color:var(--ac)" href="${esc(o.evidence)}" target="_blank">evidence image</a>` : ''}</div></div>`).join('');
+    <div class="keys">found by ${esc(o.found_by)} · ${o.reviewed_by === 'owner' ? 'reviewed by owner' : esc(o.reviewed_by)}${o.poly ? ' · outline' : ''}${[].concat(o.evidence || []).map((v, k) => ` · <a style="color:var(--ac)" href="${esc(v)}" target="_blank">evidence${[].concat(o.evidence).length > 1 ? ' ' + (k + 1) : ' image'}</a>`).join('')}</div></div>`).join('');
   const nf = (MK.not_found || []).map(n => `<div class="keys">• <b>${esc(n.expected)}</b> — ${esc(n.result)}</div>`).join('');
   return `<div><b>Page:</b> ${esc((PG.labels || {}).title || '')}</div><div><b>Objects:</b> ${O.length}${hidden ? ` (${hidden} hidden by the group filter)` : ''}</div>` + (items || '<div class="keys">no objects marked on this page</div>') +
     (nf ? `<div style="margin-top:8px"><b>Expected but not found:</b></div>${nf}` : '') +
-    `<div class="keys" style="margin-top:8px">Everything on the page that is not the main Voynich text and not a drawing: folio numbers, quire marks, later notes, month names, key-like letter columns, red symbols and red spots (many red spots are offsets of paint from the facing page). Found by Opus (AI) from the scans and the notes on voynich.nu, then every object was checked by a human (boxes moved or redrawn where needed). Alphabet columns with marked symbols have a thin outer frame and one box per symbol (italic / dashed = unclear reading). Dashed = still unclear. Coordinates are scan pixels; data in <code>data/marks/&lt;image&gt;.json</code>.</div>` }
+    `<div class="keys" style="margin-top:8px">Everything on the page that is not the main Voynich text and not a drawing: folio numbers, quire marks, later notes, month names, key-like letter columns, red symbols and red spots (many red spots are offsets of paint from the facing page). Found by Opus (AI) from the scans and the notes on voynich.nu, then every object was checked by a human (boxes moved or redrawn where needed). Alphabet columns with marked symbols have a thin outer frame and one box per symbol (italic / dashed = unclear reading). Dashed = still unclear.
+    <b>AI finds, not reviewed</b> (amber): writing under paint and other finds of AI agents (Fable) with their multispectral evidence and reasoning; nobody has checked them in the object review yet.
+    <b>Show-through</b>: places where the other side of the same leaf shows through; the card puts this side next to the other side at the mirrored position. Only some of them are marked so far. Coordinates are scan pixels; data in <code>data/marks/&lt;image&gt;.json</code>.</div>` }
 document.addEventListener('click', e => { const d = e.target.closest && e.target.closest('[data-m]'); if (d && !e.target.closest('a') && !e.target.closest('.mkd')) mfocus(+d.dataset.m) });
 { let down = null; cv.addEventListener('mousedown', e => { down = [e.offsetX, e.offsetY] });
   cv.addEventListener('mouseup', e => { if (!down || (VIEW !== 'marks' && VIEW !== 'all') || editing || LE.on) { down = null; return }
@@ -375,7 +440,7 @@ document.addEventListener('click', e => { const d = e.target.closest && e.target
     c.onchange = () => { lsSet(k, c.checked); if (MSEL >= 0 && !mshown(MK.objects[MSEL] || {})) MSEL = -1; renderProv(); draw() } }) }
 
 // view and layer settings are remembered in this browser
-['l-con', 'l-fill', 'l-lw', 'l-ink', 'l-bg', 'l-inkon', 'l-pub', 'l-lnink', 'l-lnink-a', 'a-bg', 'a-page', 'a-draw', 'a-draw-a', 'a-draw-s', 'a-marks', 'a-ink', 'a-ink-a', 'a-inksrc', 'a-lines', 'a-lines-a', 'a-lw'].forEach(id => { const c = $(id), k = 'opt:' + id, v = lsGet(k), box = c.type === 'checkbox';
+['l-con', 'l-fill', 'l-lw', 'l-ink', 'l-bg', 'l-inkon', 'l-pub', 'l-lnink', 'l-lnink-a', 'l-arrows', 'l-bridges', 'l-agree', 'a-arrows', 'a-agree', 'a-bg', 'a-page', 'a-draw', 'a-draw-a', 'a-draw-s', 'a-marks', 'a-ink', 'a-ink-a', 'a-inksrc', 'a-lines', 'a-lines-a', 'a-lw'].forEach(id => { const c = $(id), k = 'opt:' + id, v = lsGet(k), box = c.type === 'checkbox';
   if (v !== null) box ? c.checked = v : c.value = v; c.addEventListener(box || c.tagName === 'SELECT' ? 'change' : 'input', () => { lsSet(k, box ? c.checked : c.value); allSync(); if (VIEW === 'all') renderProv(); draw() }) });
 function allSync() { if (typeof DR !== 'undefined') DR.setAll($('a-draw-s').value, +$('a-draw-a').value) }
 
@@ -396,7 +461,11 @@ function mdetail(o) { const W = 300, parts = [];
       const r = o.symbol_script === 'EVA' ? VG.evaLabel(y.label) : esc(y.label);
       return `<div class="mkd-s${y.status === 'unclear' ? ' unc' : ''}">${c ? `<img src="${c}">` : '<span></span>'}<span>${r}</span></div>` }).join('');
     parts.push(`<div class="mkd-l">symbols, top to bottom (scan → reading)</div><div class="mkd-sy">${rows}</div>`) }
-  if (o.evidence) parts.push(`<div class="mkd-l">evidence</div><a href="${esc(o.evidence)}" target="_blank"><img class="mkd-i" src="${esc(o.evidence)}"></a>`);
+  if (o.status && o.status !== 'confirmed') parts.push(`<div class="mkd-l">status</div><div class="keys">${esc(o.status)} · found by ${esc(o.found_by)}${o.confidence ? ' · confidence ' + esc(o.confidence) : ''}${o.other_side ? ' · other side of the leaf: ' + esc(o.other_side) : ''}</div>`);
+  if (o.match) parts.push(`<div class="mkd-l">match with the other side</div><div class="keys">NCC ${o.match.ncc} (1 = the same pattern, 0 = unrelated) at a shift of ${esc(o.match.shift_px.join(', '))} px — ${esc(o.match.how)}</div>`);
+  if (o.reasoning) parts.push(`<div class="mkd-l">reasoning</div><div class="keys">${VG.auto(o.reasoning)}</div>`);
+  if (o.summary_ru) parts.push(`<div class="mkd-l">summary (Russian, as written)</div><div class="keys">${esc(o.summary_ru)}</div>`);
+  [].concat(o.evidence || []).forEach((v, k, a) => parts.push(`<div class="mkd-l">evidence${a.length > 1 ? ' ' + (k + 1) + ' of ' + a.length : ''}</div><a href="${esc(v)}" target="_blank"><img class="mkd-i" src="${esc(v)}"></a>`));
   return `<div class="mkd"><div style="display:flex;justify-content:space-between;gap:6px"><b style="color:var(--tx)"><span style="color:${MCOL[o.type] || '#fff'}">■</span> ${esc(o.type_label)}</b><button id="mkd-x" title="close (Esc)" style="padding:0 8px">×</button></div>
     <div class="keys" style="color:var(--tx)">${VG.auto(o.text)}</div>${parts.join('')}</div>` }
 document.addEventListener('click', e => { if (e.target.id === 'mkd-x') { MSEL = -1; renderProv(); draw() } });

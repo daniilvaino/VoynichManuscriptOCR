@@ -59,6 +59,32 @@ Each line is a polyline along the middle of a row, simplified to within 1 scan p
 `drawn: spline` (drawn by a human), `ink-fit` (fitted to the ink), `owner` (a human), `joined: <a> + <b>` (pieces of one
 row joined end to end), an agent label for the few lines an agent added; `(corrected)` = a human moved or reshaped it.
 
+## `data/rows/<image>.json` (layer 2, rows)
+
+```json
+{"image": "...", "folio": "...", "coords": "line indices of data/lines/<image>.json; scan pixels",
+ "rows": [{"id": "003_0_f1r:R3", "kind": "single", "block": 1, "order": 3,
+           "dir": "fwd|rev", "geom": "line|steep|ring|curve", "dir_source": "zl_code|zl_order|manual|owner|auto|object|geometry",
+           "dir_reader": "fwd|rev", "dir_zl_order": "fwd|rev|null", "dir_zl_code": "...|null", "conf_fwd": 0.95, "conf_rev": 0.77,
+           "loci": ["f1r.3"], "zl_text": {"f1r.3": "syaiir sheky ..."}, "agree": 0.97, "status": "agree|partial|weak|no_zl",
+           "pieces": [{"i": 2, "id": "003_0_f1r:L3", "rev": true, "loci": ["f1r.3"], "words": "syaiir sheky ...", "w": [[0, 8]],
+                       "how": ["whole"], "tier": "gold", "reading": "syaiirshekyor...", "agree": 0.97,
+                       "hints": {"ryan": "agree", "voynichese": "agree"}}]}],
+ "lines_not_in_rows": []}
+```
+
+- `pieces` are in **reading order**; `i` is the index of the line in `data/lines/<image>.json`; `rev` = the piece is
+  read against the order of its stored points. `dir` is relative to the order in which the pieces are joined.
+- `loci`, `words`, `w` (word indices, 0-based, inclusive), `how`: the bridge of the piece to ZL. `tier`: `gold` /
+  `silver` / `review`, or `noise` / `not_zl` when the matcher found no ZL text for it.
+- `reading`: our reader's reading of the piece (Eva). `agree` = 1 − edit distance(reading, ZL words without spaces) /
+  longer length; the row's `agree` is the same over all its pieces with ZL words. `status`: `agree` ≥ 0.8, `partial`
+  0.5–0.8, `weak` < 0.5, `no_zl` = no piece of the row is linked to ZL (flagged, never removed).
+- `hints`: whether Ryan Allen's word boxes and the voynichese word boxes on the piece agree with the bridge (`agree`,
+  `disagree`, `none`); not used to decide.
+
+`index.json` gives `rows`, `rows_by_status` and `rings` (rows that are rings) for each page.
+
 ## Labels
 
 `data/pages/<image>.json` has `labels`:
@@ -71,16 +97,22 @@ row joined end to end), an agent label for the few lines an agent added; `(corre
 Marks on the page that are neither the main Voynich text nor a drawing. Opus (AI) found them, using the scans and the notes on voynich.nu. A human then checked every object.
 
 - `objects`: a list. Each object has:
-  - `type`: `folio_number`, `quire_mark`, `pencil_letter`, `colour_note`, `marginalia`, `month_name`, `alphabet_column`, `ex_libris`, `red_tick`, `red_spot`, `scribble`, `dirt`, `voynich_text` or `other`;
+  - `type`: `folio_number`, `quire_mark`, `pencil_letter`, `colour_note`, `marginalia`, `month_name`, `alphabet_column`, `ex_libris`, `red_tick`, `red_spot`, `scribble`, `dirt`, `voynich_text`, `under_paint` (writing under paint), `show_through` (the other side of the leaf seen through it) or `other`;
   - `type_label`: the type in plain words;
   - `text`: what the mark says or what it is;
-  - `status`: `confirmed`, `confirmed (edited)` or `unclear`;
+  - `status`: `confirmed`, `confirmed (edited)`, `unclear`, `AI find, not reviewed` (found by an AI agent, nobody checked it yet), `confirmed by a human` or `owner's verdict: show-through`;
+  - `found_by`, `reviewed_by`: who found it and who checked it;
   - `bbox`: `[x0, y0, x1, y1]` in scan pixels;
   - `poly` (optional): an outline in scan pixels;
-  - `evidence` (optional): the path of an image that supports the reading.
+  - `evidence` (optional): the path of an image, or a list of paths, that support the reading;
+  - AI finds also have `confidence` (the agent's own), `reasoning` (its notes, English) and `summary_ru` (its summary in
+    Russian, as written), and `id`;
+  - show-through objects also have `other_side` (the folio of the other side of the leaf) and `match`
+    (`ncc`: normalised cross-correlation of this crop with the flipped crop of the other side at the mirrored position,
+    `shift_px`, `how`).
 - `not_found`: things that were expected on this page (from the literature) but were not found on the scan.
 
-`data/index.json` also gives `marks` (the number of objects) and `marks_by_type` for each page. An unclear object is counted under `unclear`.
+`data/index.json` also gives `marks` (the number of objects) and `marks_by_type` for each page. An unclear object is counted under `unclear`; AI finds not reviewed yet are also counted under `ai_unreviewed`.
 
 ## `data/drawings.json` (tab 2, drawings)
 

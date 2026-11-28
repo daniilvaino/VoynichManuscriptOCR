@@ -4,12 +4,15 @@ Layered annotations of the Voynich manuscript (Beinecke MS 408) on its scans, ea
 been checked:
 
 1. **Page boundaries and holes**: the outline of each page's own leaf (or foldout panel) and the holes in the parchment.
-2. **Row lines**: a line along the middle of every row of text, including curved, circular and radial rows and labels.
+2. **Row lines**: a line along the middle of every row of text, including curved, circular and radial rows and labels;
+   the rows they form, each with its reading direction (rings included), its bridges to the ZL transliteration and how
+   well our reading agrees with ZL.
 3. **Ink**: masks of the ink on every page (stage 1), Hi-SAM text masks on every page (three variants), and an ink map made from
    38 multispectral bands on the 10 pages that have published multispectral images.
 4. **Objects**: everything on a page that is neither the main Voynich text nor a drawing: folio numbers, quire marks,
    later notes, month names, key-like letter columns (on f1r every letter is marked), red symbols and red spots.
-   Opus (AI) found them; a human checked every one.
+   Opus (AI) found them; a human checked every one. Also: writing under paint found by AI agents with their
+   multispectral evidence (not reviewed yet), and the show-through places found so far.
 5. **Drawings**: a mask of the drawings on the herbal, bathing and star pages (173 pages). Each page says whether a
    human marked it or the mask is still AI-only, and the view "who selected what" colours what the AI selected, what
    the human kept, added and removed. The mask can be edited in the browser (brush, eraser, lasso, magnetic lasso,
@@ -47,7 +50,9 @@ GitHub Pages site of this repository.
 | `data/pages/<image>.json` | boundary (four spline sides), holes, provenance and labels of one page, in pixels of the scan file |
 | `data/lines/<image>.json` | row lines of one page with their status (layer 2) |
 | `img/ink_<source>/<image>.png` | ink layer of one page, display frame, alpha = ink (layer 3) |
-| `data/marks/<image>.json` | objects of one page: type, reading, status, box or outline (layer 4) |
+| `data/rows/<image>.json` | rows of one page: pieces in reading order, direction, ZL bridges and agreement with ZL (layer 2) |
+| `data/marks/<image>.json` | objects of one page: type, reading, status, box or outline, evidence (layer 4) |
+| `img/evidence/*.jpg` | evidence images of objects (AI finds, show-through, some reviewed objects) |
 | `data/drawings.json` | drawing masks: per page where the mask comes from (human or AI), AI model, layers (tab 2) |
 | `img/draw_<layer>/<image>.png` | drawing masks in the display frame, white = drawing: `mask` (published), `start`, `sam3`, `ai` |
 | `data/glyphs.json`, `glyphs.js` | transliteration code → Voynich character (Eva-2 and v101 fonts) |
@@ -103,7 +108,33 @@ Each row line follows the middle of a row of writing. How they were made:
    cut / extend / join edits where two independent agents agreed; a human checked every page they touched and removed
    the few lines they had wrongly marked.
 
-On the site all row lines are drawn in one colour; the status below is in the data and in the side panel.
+### Rows, reading direction, bridges and agreement with ZL (2026-11-28)
+
+The pieces of line that belong to one row of writing are joined into a **row** (one ring of a zodiac page is one row
+of several arcs). For each row the site shows:
+
+- **Reading direction** (arrow heads along the row). Straight rows read left to right unless the evidence says
+  otherwise; rings read clockwise (letters stand with their tops outward); steep and radial rows and curved labels have
+  no geometric rule. The direction was decided, in this order of trust, by a direction code in ZL, the order of the ZL
+  words along the row, a human, or the reader (which way it reads with more confidence). The row card says which, and
+  whether the ZL word order and the reader agree.
+- **Bridges** (blue dashes and a label with the ZL locus): how the pieces of the row continue each other in reading
+  order, and for every piece the ZL line and the ZL words it carries (`whole` = the piece is the whole ZL line,
+  `partition` / `align` = the words were split between pieces by aligning our reading with the ZL text, `fros` /
+  `override` = set by a reviewer). The link of a piece to ZL is `gold` (the reading matched) or `silver` (placed by its
+  position among matched neighbours).
+- **Agreement with ZL** (colour): our reader (a model that never saw the page in training) read every piece in its
+  reading direction; agreement = 1 − edit distance between our reading and the piece's ZL words / the longer length
+  (Eva characters). Per row, the same over all its pieces. Green ≥ 80 %, yellow 50–80 %, orange < 50 %. A row tied to
+  no ZL line is drawn **violet dashed** and kept: the transliteration can confirm a row, it never removes one.
+
+Now: 6003 rows on 227 pages — agree 5507, in part 289, weakly 103, no ZL match 104 (89 of them are rings, on 21 pages). Agreement per
+piece: median 100 %, mean 94.5 %, 93 % of pieces at 80 % or more; weak agreement is mostly on zodiac rings and labels,
+where the reader is weakest. Click a row line to open its card: the whole ZL line, the ZL words and our reading for each
+piece, the direction and how it was decided.
+
+On the site all row lines are drawn in one colour unless "colour by agreement with ZL" is on; the line status below is
+in the data and in the side panel.
 Now (2026-11-28): 7064 lines on 227 pages — confirmed by a human 5315, corrected by a human 640, drawn by a human 191,
 both GPT runs agree (not checked by a human) 917, unclear 1.
 
@@ -119,6 +150,20 @@ both GPT runs agree (not checked by a human) 917, unclear 1.
 The image model refused a few pages with nude figures (f72v1, f75r, f77v, f83v and some runs of the f72 and f72v
 foldout panels). For those runs the figures were painted over with plain parchment colour before the page was sent.
 Nothing else on the page was changed.
+
+## Objects (tab 3): AI finds and show-through (2026-11-28)
+
+- **Writing under paint** (`under_paint`) and one more lost piece of writing (`voynich_text`), found by AI agents
+  (Fable) in the multispectral images: f102v1 (labels under the blue and red bands of the jars, marks in a red neck,
+  the end of a label that crosses the fold) and f2r (text under green paint). Each carries the agent's reasoning, its
+  confidence and its evidence images (crops of multispectral bands, band differences and principal components,
+  annotated readings). Status **AI find, not reviewed**: no human has checked them in the object review yet.
+- **Show-through** (`show_through`): places where the other side of the same leaf shows through — a row of text on
+  f89v2 (owner and main session), the mirrored folio number on f15v, red paint on f28v and on f101r (owner's verdicts).
+  The card puts this side next to the other side of the leaf at the mirrored position (mirrored through the outlines
+  of both pages, flipped), with a match score. **Only a few show-through places are marked so far**; most are not.
+  Known but not boxed: green leaf shapes through paragraphs 2–3 of f1r (likely the f1v plant), and the lobed leaf
+  ghosts in the right half of f18r (from f18v).
 
 ## Drawings (tab 2)
 
