@@ -94,8 +94,18 @@ Each row line follows the middle of a row of writing. How they were made:
 4. Lines that both runs agree on are kept. Lines drawn by only one run were decided by a human, who confirmed, corrected, drew or rejected each one.
 5. Every page where the lines disagreed with Ryan Allen's glyph map (CC BY 4.0: every word and letter of the
    manuscript tied to the pixels of the same Yale photographs) was gone through by a human as a whole: 108 pages,
-   lines fixed on 87 of them (2026-11-25). Lines on those pages count as checked by a human. On the site all row lines
-   are drawn in one colour; the status below is in the data and in the side panel.
+   lines fixed on 87 of them (2026-11-25). Lines on those pages count as checked by a human.
+6. Pieces of one row that touch end to end with the same direction were joined into one line (2026-11-26; source
+   `joined: <a> + <b>`, the joined line keeps the lower status of its pieces).
+7. More rounds by a human and by Claude agents (2026-11-26/27): every piece of line was tied to its row of the ZL
+   transliteration; doubtful pieces were looked at by Claude agents and the questions they could not settle went to a
+   human, who also confirmed or corrected the lines on the pages they flagged. Claude agents then made a small set of
+   cut / extend / join edits where two independent agents agreed; a human checked every page they touched and removed
+   the few lines they had wrongly marked.
+
+On the site all row lines are drawn in one colour; the status below is in the data and in the side panel.
+Now (2026-11-28): 7064 lines on 227 pages — confirmed by a human 5315, corrected by a human 640, drawn by a human 191,
+both GPT runs agree (not checked by a human) 917, unclear 1.
 
 | `status` | Meaning |
 |---|---|
@@ -104,7 +114,7 @@ Each row line follows the middle of a row of writing. How they were made:
 | `human_corrected` | moved or reshaped by a human |
 | `human_drawn` | drawn by a human |
 | `unclear` | a human could not decide |
-| `red_tick` | a red symbol (GC 'bird'), kept as geometry, not a row of text |
+| `red_tick` | a red symbol (GC 'bird'), kept as geometry, not a row of text (none left now: red symbols are in the objects layer) |
 
 The image model refused a few pages with nude figures (f72v1, f75r, f77v, f83v and some runs of the f72 and f72v
 foldout panels). For those runs the figures were painted over with plain parchment colour before the page was sent.

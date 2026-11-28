@@ -55,6 +55,10 @@ Same coordinates, one object per edited page:
 
 Each line is a polyline along the middle of a row, simplified to within 1 scan pixel.
 
+`source` says where the geometry comes from: `P8 & P8-r2` (both GPT runs), `P8` or `P8-r2` (one run), `drawn: straight` /
+`drawn: spline` (drawn by a human), `ink-fit` (fitted to the ink), `owner` (a human), `joined: <a> + <b>` (pieces of one
+row joined end to end), an agent label for the few lines an agent added; `(corrected)` = a human moved or reshaped it.
+
 ## Labels
 
 `data/pages/<image>.json` has `labels`:
