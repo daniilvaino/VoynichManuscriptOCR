@@ -283,7 +283,7 @@ function renderAtlasGrid() {
     const hasSpec = (p.ink || []).includes('spectral');
     return `<div class="atlas-item${E && p.image === E.image ? ' cur' : ''}" data-aimg="${esc(p.image)}">
       <div class="atlas-thumb">
-        <img loading="lazy" decoding="async" src="${esc(p.display.file)}" alt="${esc(p.folio)}">
+        <img loading="lazy" decoding="async" src="img/thumb/${esc(p.image)}.jpg" alt="${esc(p.folio)}">
         ${p.kind === 'foldout panel' ? '<span class="atlas-fold-tag">Foldout</span>' : ''}
         ${hasSpec ? '<span class="atlas-spec-tag">38-band</span>' : ''}
       </div>

@@ -1148,8 +1148,7 @@ details.method-box .method-body {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(8, 7, 6, 0.76);
-  backdrop-filter: blur(5px);
+  background: rgba(8, 7, 6, 0.88);   /* no backdrop blur: re-blurring the whole page behind the Atlas on every scroll frame made it lag */
   z-index: 100;
   display: none;
   align-items: center;
