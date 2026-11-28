@@ -123,17 +123,20 @@ of several arcs). For each row the site shows:
   `partition` / `align` = the words were split between pieces by aligning our reading with the ZL text, `fros` /
   `override` = set by a reviewer). The link of a piece to ZL is `gold` (the reading matched) or `silver` (placed by its
   position among matched neighbours).
-- **Agreement with ZL** (colour): our reader (a model that never saw the page in training) read every piece in its
+- **Colour = reading direction** (switch "colour by reading direction"): every step of a row line is coloured by the
+  way the row is read there: → red `#FF0040`, ↓ lime `#80FF00`, ← cyan `#00FFFF`, ↑ violet `#8000FF`, and the colours
+  in between for the directions in between, so a ring runs through the whole spectrum.
+- **Agreement with ZL** (in the row card, the side panel and the page filters): our reader (a model that never saw the page in training) read every piece in its
   reading direction; agreement = 1 − edit distance between our reading and the piece's ZL words / the longer length
-  (Eva characters). Per row, the same over all its pieces. Green ≥ 80 %, yellow 50–80 %, orange < 50 %. A row tied to
-  no ZL line is drawn **violet dashed** and kept: the transliteration can confirm a row, it never removes one.
+  (Eva characters). Per row, the same over all its pieces: agrees ≥ 80 %, in part 50–80 %, weakly < 50 %. A row tied to
+  no ZL line is drawn **dashed** and kept: the transliteration can confirm a row, it never removes one.
 
-Now: 6003 rows on 227 pages — agree 5507, in part 289, weakly 103, no ZL match 104 (89 of them are rings, on 21 pages). Agreement per
+Now: 6003 rows on 227 pages — agree 5507, in part 289, weakly 103, no ZL match 104; 89 rows are rings, on 21 pages. Agreement per
 piece: median 100 %, mean 94.5 %, 93 % of pieces at 80 % or more; weak agreement is mostly on zodiac rings and labels,
 where the reader is weakest. Click a row line to open its card: the whole ZL line, the ZL words and our reading for each
 piece, the direction and how it was decided.
 
-On the site all row lines are drawn in one colour unless "colour by agreement with ZL" is on; the line status below is
+On the site all row lines are drawn in one colour unless "colour by reading direction" is on; the line status below is
 in the data and in the side panel.
 Now (2026-11-28): 7064 lines on 227 pages — confirmed by a human 5315, corrected by a human 640, drawn by a human 191,
 both GPT runs agree (not checked by a human) 917, unclear 1.

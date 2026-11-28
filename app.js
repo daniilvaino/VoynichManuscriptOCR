@@ -64,10 +64,13 @@ function draw() {
   if (VIEW === 'ink') return;   // tab 4: ink only
   if (ALL && A('a-draw') && typeof DR !== 'undefined') DR.render(ctx, view, toScr, true);
   if (VIEW === 'lines' || (ALL && A('a-lines'))) { ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.globalAlpha = ALL ? +$('a-lines-a').value / 100 : 1;
-    const agree = !LE.on && (ALL ? A('a-agree') : A('l-agree')), lw = ALL ? +$('a-lw').value : +$('l-lw').value;
-    (LW || LINES).forEach((l, i) => { if (l.deleted) return; const p = l.pts.map(s2d); if (p.length < 2) return; const r = ROWS.rows[ROWOF[i]], on = !LE.on && r && ROWOF[i] === RSEL;
-      const col = (LE.on && LE.sel === i) || on ? '#ffffff' : agree ? RCOL[r ? r.status : 'none'] : (LCOL[l.status] || '#fff');
-      line(p, col, on ? lw + 1.5 : lw, false, agree && (!r || r.status === 'no_zl') ? [lw * 2.5, lw * 2] : null) }); ctx.globalAlpha = 1;
+    const dircol = !LE.on && (ALL ? A('a-dircol') : A('l-dircol')), lw = ALL ? +$('a-lw').value : +$('l-lw').value, src = LW || LINES, revOf = {};
+    if (dircol) ROWS.rows.forEach(r => r.pieces.forEach(pc => { revOf[pc.i] = !!pc.rev }));
+    src.forEach((l, i) => { if (l.deleted) return; const p = l.pts.map(s2d); if (p.length < 2) return; const r = ROWS.rows[ROWOF[i]], on = !LE.on && r && ROWOF[i] === RSEL;
+      const dash = dircol && (!r || r.status === 'no_zl') ? [lw * 2.5, lw * 2] : null, w = on ? lw + 1.5 : lw;
+      if ((LE.on && LE.sel === i) || on || !dircol || !(i in revOf)) { line(p, (LE.on && LE.sel === i) || on ? '#ffffff' : (LCOL[l.status] || '#fff'), w, false, dash); return }
+      const q = revOf[i] ? p.slice().reverse() : p;   // in reading order: each step coloured by the way it runs
+      for (let k = 1; k < q.length; k++) { const a = q[Math.max(0, k - 2)], b = q[Math.min(q.length - 1, k + 1)]; line([q[k - 1], q[k]], dirColour(b[0] - a[0], b[1] - a[1]), w, false, dash) } }); ctx.globalAlpha = 1;
     if (!LE.on) drawRows(ALL, lw);
     if (LE.on) drawLineEdit(line) }
   if (VIEW === 'lines') return;
@@ -176,12 +179,13 @@ function linesHtml() { const c = {}, rc = {}; LINES.forEach(l => c[l.status] = (
   return `<div><b><span style="color:#ff3b30">━━</span> Row lines:</b> ${LINES.length}</div>` + Object.keys(LNAME).filter(k => c[k]).map(k =>
     `<div>· ${LNAME[k]}: ${c[k]}</div>`).join('') +
     `<div style="margin-top:6px"><b>Rows:</b> ${ROWS.rows.length} (line pieces joined into rows, in reading order)</div>` +
-    Object.keys(RNAME).filter(k => rc[k]).map(k => `<div>· <span style="color:${RCOL[k]}">━━</span> ${RNAME[k]}: ${rc[k]}</div>`).join('') +
+    Object.keys(RNAME).filter(k => rc[k]).map(k => `<div>· ${RNAME[k]}: ${rc[k]}</div>`).join('') +
+    `<div>colour = reading direction: <b style="color:#ff0040">→</b> <b style="color:#80ff00">↓</b> <b style="color:#00ffff">←</b> <b style="color:#8000ff">↑</b></div>` +
     (nin ? `<div>· lines in no row: ${nin}</div>` : '') +
     (RSEL >= 0 && ROWS.rows[RSEL] ? rowHtml(ROWS.rows[RSEL]) : `<div class="keys">click a row line to open its card (ZL text, our reading, direction, bridges)</div>`) +
     `<div class="keys" style="margin-top:6px">Drawn by GPT-5.5 twice (two independent runs), registered onto the scan and clipped to the page. Lines both runs agree on are kept; lines drawn by only one run were decided by a human.
     <b>Arrows</b>: the reading direction of each row (rings included). <b>Blue dashes</b> (bridges): how the pieces of one row continue each other, with the ZL line (locus) the row is tied to.
-    <b>Colours</b> (switch "colour by agreement"): our reader read every piece in its direction; agreement = 1 − edit distance to the ZL words of that piece / longer length. A row with no ZL match is drawn dashed and kept: the transliteration confirms rows, it does not remove them.</div>` }
+    <b>Colours</b> (switch "colour by reading direction"): every step of a row line is coloured by the way the row is read there: → red, ↓ lime, ← cyan, ↑ violet, the colours in between for the directions in between (a ring runs through the whole spectrum). <b>Agreement with ZL</b> (in the row card): our reader read every piece in its direction; agreement = 1 − edit distance to the ZL words of that piece / longer length. A row with no ZL match is drawn dashed and kept: the transliteration confirms rows, it does not remove them.</div>` }
 const pct = a => a == null ? '—' : Math.round(a * 100) + ' %';
 const GEOMN = {line: 'straight row', steep: 'steep or radial row', ring: 'ring (part of a circle)', curve: 'curved label'};
 const DSRC = {zl_order: 'the order of the ZL words along the row', zl_code: 'a direction code in ZL', manual: 'a human', owner: 'the owner', auto: 'geometry and the reader (automatic)',
@@ -207,6 +211,9 @@ function drawRows(all, lw) { const arrows = all ? $('a-arrows').checked : $('l-a
     if (bridges) { const p = segs[0], len = segs.reduce((t, q) => t + q.slice(1).reduce((u, x, j) => u + Math.hypot(x[0] - q[j][0], x[1] - q[j][1]), 0), 0);
       if (len > 90) { const t = r.loci.length ? r.loci.join(' + ') : 'no ZL'; ctx.font = '11px system-ui,sans-serif'; const w = ctx.measureText(t).width + 8, x = p[0][0] - w - 4, y = p[0][1];
         ctx.fillStyle = r.loci.length ? 'rgba(20,40,70,.85)' : 'rgba(80,20,90,.9)'; ctx.fillRect(x, y - 8, w, 15); ctx.fillStyle = r.loci.length ? '#9fd0ff' : '#e9c8ff'; ctx.fillText(t, x + 4, y + 3) } } }) }
+function dirColour(dx, dy) {   // reading direction -> colour (owner, 28.11): → red #FF0040, ↓ lime #80FF00, ← cyan #00FFFF, ↑ violet #8000FF, in between along the hue circle
+  const a = (Math.atan2(dy, dx) * 180 / Math.PI + 360) % 360, h = a < 90 ? -15 + a * 105 / 90 : a < 270 ? a : 270 + (a - 270) * 75 / 90;
+  return `hsl(${(h + 360) % 360},100%,50%)` }
 function chevrons(p, sz) {   // arrow heads along a screen polyline, every 70 px and at its end
   const M = []; let acc = 35;
   for (let k = 1; k < p.length; k++) { const [x0, y0] = p[k - 1], [x1, y1] = p[k], d = Math.hypot(x1 - x0, y1 - y0); if (!d) continue; let t = 0;
@@ -440,7 +447,7 @@ document.addEventListener('click', e => { const d = e.target.closest && e.target
     c.onchange = () => { lsSet(k, c.checked); if (MSEL >= 0 && !mshown(MK.objects[MSEL] || {})) MSEL = -1; renderProv(); draw() } }) }
 
 // view and layer settings are remembered in this browser
-['l-con', 'l-fill', 'l-lw', 'l-ink', 'l-bg', 'l-inkon', 'l-pub', 'l-lnink', 'l-lnink-a', 'l-arrows', 'l-bridges', 'l-agree', 'a-arrows', 'a-agree', 'a-bg', 'a-page', 'a-draw', 'a-draw-a', 'a-draw-s', 'a-marks', 'a-ink', 'a-ink-a', 'a-inksrc', 'a-lines', 'a-lines-a', 'a-lw'].forEach(id => { const c = $(id), k = 'opt:' + id, v = lsGet(k), box = c.type === 'checkbox';
+['l-con', 'l-fill', 'l-lw', 'l-ink', 'l-bg', 'l-inkon', 'l-pub', 'l-lnink', 'l-lnink-a', 'l-arrows', 'l-bridges', 'l-dircol', 'a-arrows', 'a-dircol', 'a-bg', 'a-page', 'a-draw', 'a-draw-a', 'a-draw-s', 'a-marks', 'a-ink', 'a-ink-a', 'a-inksrc', 'a-lines', 'a-lines-a', 'a-lw'].forEach(id => { const c = $(id), k = 'opt:' + id, v = lsGet(k), box = c.type === 'checkbox';
   if (v !== null) box ? c.checked = v : c.value = v; c.addEventListener(box || c.tagName === 'SELECT' ? 'change' : 'input', () => { lsSet(k, box ? c.checked : c.value); allSync(); if (VIEW === 'all') renderProv(); draw() }) });
 function allSync() { if (typeof DR !== 'undefined') DR.setAll($('a-draw-s').value, +$('a-draw-a').value) }
 
