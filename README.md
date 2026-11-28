@@ -23,6 +23,14 @@ been checked:
 Open `index.html` through any static web server (for example `python -m http.server` in this folder), or open the
 GitHub Pages site of this repository.
 
+- **Page numbers and links.** Every page shows, grey next to its folio, its scan number in the Beinecke image series
+  (our scan files `003.jpg` … — the order of the images, not a Yale catalogue number): `#179`. A foldout panel cut from
+  one scan gets the panel too: `#121.1`, `#121.2` (f67r1, f67r2). The link of a page is that number (`…/#179`,
+  `…/#121.2`); old links by folio (`#f1r`) or image id (`#179_0_f101v`) still open. This also tells apart the two
+  f101v images (`#179`, `#180.1`); thanks to Ian (iandifilippo) for the report and the first fix (PR #3).
+- **Search** is full text: folio, `#number`, section, title, the ZL text (EVA) and loci of every row, and the objects
+  (type, reading). Several words must all match: `zodiac f72`, `qokeedy`, `folio number`.
+
 - **Views.** The tabs at the top are:
   1. page outline and holes;
   2. drawings (who selected what: AI or a human; editable);
@@ -47,6 +55,7 @@ GitHub Pages site of this repository.
 | | |
 |---|---|
 | `data/index.json` | every page: image id, folio, scan file, the scan region shown, provenance summary |
+| `data/search.json` | full-text search: per page its ZL lines (loci + EVA) and objects, lowercase |
 | `data/pages/<image>.json` | boundary (four spline sides), holes, provenance and labels of one page, in pixels of the scan file |
 | `data/lines/<image>.json` | row lines of one page with their status (layer 2) |
 | `img/ink_<source>/<image>.png` | ink layer of one page, display frame, alpha = ink (layer 3) |

@@ -276,7 +276,7 @@ function matchSection(p, k) {
 }
 function renderAtlasGrid() {
   const q = ($('atlas-search').value || '').trim().toLowerCase();
-  const items = INDEX.filter(p => matchSection(p, atlasSec) && (!q || p.folio.toLowerCase().includes(q) || (p.title || '').toLowerCase().includes(q) || (p.section || '').toLowerCase().includes(q) || (p.kind || '').toLowerCase().includes(q)));
+  const items = INDEX.filter(p => matchSection(p, atlasSec) && matchQuery(p, q));
   $('atlas-cnt').textContent = `· ${items.length} of ${INDEX.length} folios`;
   $('atlas-grid').innerHTML = items.map(p => {
     const sm = SEC_META[p.section] || {lbl: p.section || '', col: '#948d81'};
@@ -289,7 +289,7 @@ function renderAtlasGrid() {
       </div>
       <div class="atlas-info">
         <div class="atlas-row1">
-          <span class="atlas-folio">${esc(p.folio)}</span>
+          <span class="atlas-folio">${esc(p.folio)} <span class="pnum">#${pnum(p)}</span></span>
           <span class="atlas-sec"><span class="sec-dot" style="background:${sm.col}"></span>${esc(sm.lbl)}</span>
         </div>
         <div class="atlas-stats">
@@ -1179,16 +1179,28 @@ function badge(p) {
   return VIEW === 'pages' ? ob : VIEW === 'lines' ? lb : ob;
 }
 
+// scan number in the Beinecke series (our scan files 003.jpg ...): #179; a foldout panel cut from one scan: #121.2
+// (2026-11-28, owner; replaces PR #3 by iandifilippo: the two f101v images had one link)
+function pnum(p) { const [s, part] = p.image.split('_'); return String(parseInt(s, 10)) + (part && part[0] === 'P' ? '.' + (parseInt(part.slice(1), 10) + 1) : '') }
+let SEARCH = {}; const PTEXT = {};   // data/search.json: ZL text, loci and objects per page (full-text search)
+function pageText(p) { return PTEXT[p.image] || (PTEXT[p.image] = [p.folio, '#' + pnum(p), p.image, p.title, p.section, p.kind, SEARCH[p.image]].filter(Boolean).join(' ').toLowerCase()) }
+function matchQuery(p, q) { return !q || q.split(/\s+/).filter(Boolean).every(w => pageText(p).includes(w)) }
+function findPage(list, want) {   // a link: scan number (#179, #121.2, also 003), image id, or folio (old links)
+  want = (want || '').replace(/^#/, ''); const m = want.match(/^0*(\d+)(?:\.(\d+))?$/);
+  if (m) { const k = list.findIndex(p => pnum(p) === m[1] + (m[2] ? '.' + m[2] : '')); if (k >= 0) return k;
+    if (!m[2]) { const k2 = list.findIndex(p => pnum(p) === m[1] + '.1'); if (k2 >= 0) return k2 } }
+  let k = list.findIndex(p => p.image === want); if (k < 0) k = list.findIndex(p => p.folio === want); return k }
+
 function renderList() {
   const f = $('flt').value;
   const q = ($('qsearch').value || '').trim().toLowerCase();
   $('qsearch-x').classList.toggle('show', !!q);
-  pages = INDEX.filter(p => keepPage(p, f) && (!q || p.folio.toLowerCase().includes(q) || (p.title || '').toLowerCase().includes(q) || (p.section || '').toLowerCase().includes(q) || (p.kind || '').toLowerCase().includes(q)));
+  pages = INDEX.filter(p => keepPage(p, f) && matchQuery(p, q));
   $('list').innerHTML = pages.map((p, i) => {
     const edited = lsGet('edit:' + p.image) || lsGet('edit-lines:' + p.image) || lsGet('draw:' + p.image);
     const sm = SEC_META[p.section] || {lbl: p.section || '', col: '#948d81'};
-    return `<div class="pitem${E && p.image === E.image ? ' cur' : ''}" data-i="${i}" role="option" aria-selected="${E && p.image === E.image ? 'true' : 'false'}" title="${esc(p.folio + (p.title ? ' — ' + p.title : ''))}">
-      <span class="pitem-left"><span class="sec-dot" style="background:${sm.col}" title="${esc(sm.lbl)}"></span><span class="pfolio">${esc(p.folio)}</span>${p.holes ? `<span class="phole" title="${p.holes} parchment hole${p.holes > 1 ? 's' : ''}">⬡${p.holes}</span>` : ''}${edited ? '<span class="mine" title="Edited in this browser">✎</span>' : ''}</span>
+    return `<div class="pitem${E && p.image === E.image ? ' cur' : ''}" data-i="${i}" role="option" aria-selected="${E && p.image === E.image ? 'true' : 'false'}" title="${esc(p.folio + ' #' + pnum(p) + (p.title ? ' — ' + p.title : ''))}">
+      <span class="pitem-left"><span class="sec-dot" style="background:${sm.col}" title="${esc(sm.lbl)}"></span><span class="pfolio">${esc(p.folio)}</span><span class="pnum" title="scan number in the Beinecke series">#${pnum(p)}</span>${p.holes ? `<span class="phole" title="${p.holes} parchment hole${p.holes > 1 ? 's' : ''}">⬡${p.holes}</span>` : ''}${edited ? '<span class="mine" title="Edited in this browser">✎</span>' : ''}</span>
       ${badge(p)}
     </div>`;
   }).join('') || '<div class="keys" style="padding:12px 6px;text-align:center">No matching folios</div>';
@@ -1226,7 +1238,7 @@ async function go(i) {
   linesLoaded(); INKT = {}; MSEL = -1; MHOV = -1; MK = {objects: [], not_found: []}; ROWS = {rows: [], lines_not_in_rows: []}; ROWOF = []; RSEL = -1; RHOV = -1; trFilter = 'all';
   try { const r = await fetch(`data/rows/${E.image}.json`, {cache: 'no-cache'}); if (r.ok) ROWS = await r.json() } catch (e) {}
   ROWS.rows.forEach((r, k) => r.pieces.forEach(pc => ROWOF[pc.i] = k));
-  try { const r = await fetch(`data/marks/${E.image}.json`, {cache: 'no-cache'}); if (r.ok) MK = await r.json() } catch (e) {}
+  if (E.marks) try { const r = await fetch(`data/marks/${E.image}.json`, {cache: 'no-cache'}); if (r.ok) MK = await r.json() } catch (e) {}   // pages without objects have no file (no 404)
   (E.ink || []).forEach(k => { const im = new Image(); im.onload = () => { const c = document.createElement('canvas'); c.width = im.width; c.height = im.height;
     const g = c.getContext('2d'); g.drawImage(im, 0, 0); g.globalCompositeOperation = 'source-in'; g.fillStyle = '#121110'; g.fillRect(0, 0, c.width, c.height);
     INKT[k] = c; draw() }; im.src = `img/ink_${k}/${E.image}.png` });
@@ -1235,10 +1247,10 @@ async function go(i) {
   S = ed ? stateFromPage({boundary: ed, holes: ed.holes}) : JSON.parse(JSON.stringify(PUB)); $('note').value = ed && ed.note || '';
   undo = []; redo = []; sel = null; selHole = -1; drawHole = null;
   $('folio-code').textContent = E.folio;
-  $('task').textContent = E.title ? '· ' + E.title : '';
-  $('folio-pill').title = `${E.folio}${E.title ? ' — ' + E.title : ''} (Click to open Atlas)`;
+  $('task').innerHTML = `<span class="pnum">#${pnum(E)}</span>` + (E.title ? ' · ' + esc(E.title) : '');
+  $('folio-pill').title = `${E.folio} #${pnum(E)}${E.title ? ' — ' + E.title : ''} (Click to open Atlas)`;
   PG = pg; renderProv();
-  history.replaceState(null, '', '#' + E.folio);
+  history.replaceState(null, '', '#' + pnum(E));
   VG.ready.then(() => { renderProv(); draw() });
   imgCache = {washed: null, hiCon: null};
   WIPE.cache = null;
@@ -1258,7 +1270,9 @@ window.addEventListener('resize', () => { if (!isMobile()) closeMobileDrawers();
   setView(VIEW);
   syncSliderLabels();
   const want = decodeURIComponent(location.hash.slice(1));
-  const k = pages.findIndex(p => p.folio === want || p.image === want);
+  let k = findPage(pages, want);
+  if (k < 0 && want) { activeSec = ''; $('qsearch').value = ''; renderSecPills(); renderList(); k = findPage(pages, want) }
+  fetch('data/search.json', {cache: 'no-cache'}).then(r => r.ok ? r.json() : {}).then(j => { SEARCH = j; for (const x in PTEXT) delete PTEXT[x]; if ($('qsearch').value) renderList() }).catch(() => {});
   // If landing fresh with no hash, open f7r (iconic herbal folio with text, drawing, and objects) or f1r? Wait: f1r is folio 1 (classic opening) and has 28 full text rows + 13 marginalia objects + 27 holes + multispectral ink!
   go(k >= 0 ? k : 0);
 })();

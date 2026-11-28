@@ -14,6 +14,14 @@ A list, one entry per page:
 
 `display` maps the display image to the scan: `display_px = (scan_px - scan_x0/y0) * scale`.
 
+The site's page number is derived from `image` = `<scan>_<part>_<folio>`: `#<scan>` for a whole scan (`003_0_f1r` →
+`#3`), `#<scan>.<panel>` for a foldout panel, panel = `P<k>` + 1 (`121_P1_f67r2` → `#121.2`).
+
+## `data/search.json`
+
+`{image: text}`: the lowercase text the site searches besides folio, number, title, section and kind — every row's ZL
+locus and EVA text, every object's type, reading and status (made by `export_site_search.py`).
+
 ## `data/pages/<image>.json`
 
 ```json

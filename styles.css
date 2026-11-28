@@ -1376,3 +1376,9 @@ body.mobile-right-open #drawer-scrim { display: block; }
   .kb-grid, .guide-grid { grid-template-columns: 1fr; }
   .atlas-grid { grid-template-columns: repeat(auto-fill, minmax(126px, 1fr)); }
 }
+
+/* scan number in the Beinecke series (#179, #121.2), grey next to the folio (2026-11-28) */
+.pnum { font-family: var(--font-mono); font-size: 11px; color: var(--mu); margin-left: 6px; font-weight: 400; }
+#task .pnum { margin-left: 8px; }
+
+#qsearch::-webkit-search-cancel-button, #atlas-search::-webkit-search-cancel-button { display: none; }   /* one clear button, not two */
