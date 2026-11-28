@@ -1,135 +1,405 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Voynich page annotations</title>
-<style>
-:root{--bg:#16181d;--pan:#1f232b;--bd:#323846;--tx:#e6e8ee;--mu:#9aa3b5;--ac:#4ea1ff;--ok:#3ecf72;--wa:#ffb340}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px system-ui,Segoe UI,sans-serif;height:100vh;display:flex;flex-direction:column}
-header{display:flex;align-items:center;gap:14px;padding:8px 12px;background:var(--pan);border-bottom:1px solid var(--bd);flex-wrap:wrap}
-header h1{font-size:16px;margin:0;font-weight:600}#task{font-size:15px}#prog{color:var(--mu)}#dirty{color:var(--wa);display:none}
-#tools{display:flex;gap:6px;padding:6px 12px;background:var(--pan);border-bottom:1px solid var(--bd);align-items:center;flex-wrap:wrap}
-#opts{background:var(--bg);border-bottom:1px solid var(--bd);padding:4px 12px;font-size:13px}
-.orow{display:flex;gap:6px 16px;align-items:center;flex-wrap:wrap;min-height:30px}.orow>b{color:var(--mu);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.04em;width:78px}
-.orow label{display:inline-flex;gap:5px;align-items:center;white-space:nowrap}.orow input[type=range]{width:110px}.ogrp{display:inline-flex;gap:6px 14px;align-items:center;flex-wrap:wrap}.orow>.ogrp{flex:1 1 0;min-width:280px}
-.main{flex:1;display:flex;min-height:0}#wrap{flex:1;position:relative;overflow:hidden;background:#0c0d10}canvas{position:absolute;inset:0;width:100%;height:100%}
-aside{width:340px;background:var(--pan);border-left:1px solid var(--bd);overflow:auto;padding:10px;display:flex;flex-direction:column;gap:10px}
-#pagesbar{width:250px;background:var(--pan);border-right:1px solid var(--bd);display:flex;flex-direction:column;padding:8px;gap:6px;min-height:0}
-.box{border:1px solid var(--bd);border-radius:8px;padding:8px}.box h3{margin:0 0 6px;font-size:12px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
-button,select{background:#2a303c;color:var(--tx);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font:inherit}
-button:hover{border-color:var(--ac)}button.on{background:var(--ac);color:#08111f;border-color:var(--ac);font-weight:600}button:disabled{opacity:.45;cursor:not-allowed}
-#hint{color:var(--mu);margin-left:8px}.sides{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-#list{flex:1;min-height:0;overflow:auto;font-size:13px}#list div{padding:3px 6px;border-radius:4px;cursor:pointer;display:flex;justify-content:space-between;gap:6px}
-#list div:hover{background:#2a303c}#list div.cur{outline:1px solid var(--ac)}
-.badge{font-size:11px;padding:1px 6px;border-radius:9px;white-space:nowrap}
-.src-human{background:#1d4d32;color:#9ff0bf}.src-opus\+human-checked{background:#14424d;color:#9fe6f0}.src-opus\+human-corrected{background:#1c3a66;color:#a9cbff}.src-opus{background:#3a3f4b;color:#c3c8d4}
-.mine{color:var(--wa)}textarea{width:100%;height:50px;background:#12151b;color:var(--tx);border:1px solid var(--bd);border-radius:6px;font:inherit}
-kbd{background:#2a303c;border:1px solid var(--bd);border-radius:4px;padding:0 4px;font-size:12px}.keys{font-size:12px;color:var(--mu);line-height:1.7}
-#prov{font-size:13px;line-height:1.6}.mk{padding:5px 6px;border-radius:6px;cursor:pointer;border:1px solid transparent;margin-top:4px}.mk:hover{background:#2a303c}.mk.cur{border-color:var(--ac)}.mkleg{display:flex;flex-wrap:wrap;gap:2px 10px;font-size:12px;color:var(--mu);width:100%}.mkleg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}.mkd{padding:2px 0 4px;cursor:default}.mk.cur{background:var(--bg);scroll-margin-top:6px}.mkd-l{font-size:11px;color:var(--mu);text-transform:uppercase;letter-spacing:.04em;margin:8px 0 3px}
-.mkd-i{max-width:100%;border-radius:4px;display:block}.mkd-g{font-size:30px;line-height:1.3}.mkd-g .vg-c{font-size:12px}.mkd-g .vg-n{height:1.1em}.mkd-g .vg-i{height:1.2em}
-.mkd-sy{display:grid;grid-template-columns:1fr;gap:3px}.mkd-s{display:flex;align-items:center;gap:8px;font-size:13px}.mkd-s img{height:34px;border-radius:3px}.mkd-s.unc{font-style:italic;color:var(--mu)}#prov b{color:var(--mu);font-weight:500}
-#tabs{display:flex;gap:4px;padding:6px 12px 0;background:var(--pan);border-bottom:1px solid var(--bd)}
-#tabs button{border-radius:8px 8px 0 0;border-bottom:none;padding:7px 14px}#tabs button.on{background:var(--bg);color:var(--tx);border-color:var(--ac);font-weight:600}
-.bpop{position:fixed;z-index:10;background:#1f232b;border:1px solid #555;border-radius:7px;padding:8px 10px;box-shadow:0 4px 14px #000a;font-size:13px}
-.dedit-only-i{display:none}body.dedit .dedit-only-i{display:inline}.dedit-only{display:none}body.dedit .dedit-only{display:block}#dtools button{padding:5px 8px}
-.dsrc-human{background:#1d4d32;color:#9ff0bf}.dsrc-human-rough{background:#2d4d1d;color:#d0f09f}.dsrc-human-partial{background:#4d461d;color:#f0e49f}.dsrc-ai-start{background:#1c3a66;color:#a9cbff}
-.lay{display:inline-flex;gap:5px;align-items:center;padding:2px 8px;border:1px solid var(--bd);border-radius:6px;background:var(--pan)}.lay select{padding:2px 4px}.lay input[type=range]{width:80px}
-#allslot{display:flex;flex-direction:column;gap:8px}#allslot #allopt{display:flex!important;flex-direction:column;gap:6px;min-width:0}#allslot .lay{display:flex;flex-wrap:wrap;width:100%;gap:6px}#allslot .lay input[type=range]{width:90px}#allslot #mkopt{display:flex!important;flex-direction:column;align-items:flex-start;gap:4px;min-width:0}#allslot #mkgroups{display:flex;flex-direction:column;align-items:flex-start;gap:3px}
-.edit-only{display:none}.ledit-only{display:none}body.ledit button.ledit-only{display:inline-block}body.ledit div.ledit-only{display:block}body.editing .edit-only{display:block}body.editing span.edit-only,body.editing button.edit-only{display:inline-block}
-</style></head><body>
-<header><h1>Voynich page annotations</h1><span id="task">—</span><span id="prog"></span><span id="dirty">● edited (saved in this browser)</span></header>
-<div id="tabs">
-  <button data-v="pages" class="on" title="key 1">1 · Page outline &amp; holes</button>
-  <button data-v="draw" title="key 2">2 · Drawings</button>
-  <button data-v="marks" title="key 3">3 · Objects</button>
-  <button data-v="ink" title="key 4">4 · Ink</button>
-  <button data-v="lines" title="key 5">5 · Row lines + ink</button>
-  <button data-v="all" title="key 6">6 · All layers</button>
-</div>
-<div id="opts">
-  <div class="orow"><b>View</b>
-    <label><input type="checkbox" id="l-con"> more contrast</label>
-    <label>grey outside the page <input type="range" id="l-fill" min="0" max="90" value="50"></label>
-    <button id="b-hide" title="hold: show only the page (or hold Space)">👁 Page only (hold / Space)</button>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <title>Voynich MS 408 — Interactive Atlas &amp; Annotations</title>
+  <link rel="stylesheet" href="styles.css?v=20261128b">
+</head>
+<body>
+  <!-- Bar 1: Primary Top Navigation -->
+  <header id="topbar">
+    <button id="b-toggle-left" class="icon-btn" title="Toggle folio list ([)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+    </button>
+
+    <div class="brand">
+      <h1>Voynich</h1>
+      <span class="brand-tag">MS 408</span>
+    </div>
+
+    <button id="b-atlas" class="icon-btn" title="Browse all 227 folios visually by section (G)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      <span class="lbl">Atlas</span>
+    </button>
+
+    <nav id="tabs" aria-label="Annotation layers">
+      <button data-v="pages" class="on" title="Page outline &amp; parchment holes (key 1)"><span class="tk">1</span>Outline</button>
+      <button data-v="draw" title="Illustrations &amp; drawing masks (key 2)"><span class="tk">2</span>Drawings</button>
+      <button data-v="marks" title="Marginalia, notes &amp; objects (key 3)"><span class="tk">3</span>Objects</button>
+      <button data-v="ink" title="Extracted ink &amp; multispectral maps (key 4)"><span class="tk">4</span>Ink</button>
+      <button data-v="lines" title="Text lines &amp; live reading transcript (key 5)"><span class="tk">5</span>Read &amp; Lines</button>
+      <button data-v="all" title="Combine and blend all layers (key 6)"><span class="tk">6</span>Studio</button>
+    </nav>
+
+    <div class="topbar-spacer"></div>
+
+    <div class="folio-nav" aria-label="Folio navigation">
+      <button id="b-prev" title="Previous page (←)" aria-label="Previous page">‹</button>
+      <span id="folio-pill" title="Click to open Visual Atlas (G)"><span id="folio-code">—</span><span id="task"></span></span>
+      <button id="b-next" title="Next page (→)" aria-label="Next page">›</button>
+    </div>
+
+    <button id="b-my-edits" type="button" title="Review, download, or submit your local edits">✎ Edits (<span id="my-edits-cnt">0</span>)</button>
+
+    <div class="topbar-actions">
+      <button id="b-view-pop" class="icon-btn" title="Display &amp; contrast settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span class="lbl">View</span>
+        <span class="view-dot"></span>
+      </button>
+      <button id="b-keys" class="icon-btn" title="Guide &amp; keyboard shortcuts (?)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </button>
+      <button id="b-toggle-right" class="icon-btn" title="Toggle inspector (])">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Bar 2: Contextual Layer & Edit Toolbar -->
+  <div id="subbar">
+    <div id="tools">
+      <button id="b-edit" class="btn-edit" title="Edit page outline &amp; holes">✎ Edit boundary</button>
+      <span class="seg edit-only">
+        <button id="m-edit" class="on" title="Move / add points (E)">✋ Points</button>
+        <button id="m-hole" title="Draw hole polygon (H)">⬡ Hole</button>
+      </span>
+      <button id="b-undo" class="edit-only" title="Undo (Ctrl+Z)">↶</button>
+      <button id="b-redo" class="edit-only" title="Redo (Ctrl+Y)">↷</button>
+
+      <button id="lb-edit" class="btn-edit" style="display:none" title="Edit text row lines">✎ Edit lines</button>
+      <span class="seg ledit-only">
+        <button id="lm-sel" class="on" title="Select &amp; drag points (S)">✋ Select</button>
+        <button id="lm-spl" title="Draw curved spline (P)">〰 Spline</button>
+        <button id="lm-str" title="Draw straight line (L)">／ Straight</button>
+      </span>
+      <button id="lb-undo" class="ledit-only" title="Undo (Ctrl+Z)">↶</button>
+      <button id="lb-redo" class="ledit-only" title="Redo (Ctrl+Y)">↷</button>
+
+      <span id="dtools" style="display:none"></span>
+    </div>
+
+    <div id="thisrow">
+      <!-- Tab 1: Outline options -->
+      <span class="ogrp" id="pgopt">
+        <label class="chip-check edit-only" title="While editing, show the published outline as a thin blue reference line">
+          <input type="checkbox" id="l-pub" checked><span class="cdot"></span>Reference outline
+        </label>
+      </span>
+
+      <!-- Tab 2: Drawings options (populated by draw.js) -->
+      <span class="ogrp" id="dropt" style="display:none"></span>
+
+      <!-- Tab 3: Objects options -->
+      <span class="ogrp" id="mkopt" style="display:none">
+        <span id="mkgroups" class="ogrp"></span>
+        <label class="chip-check" title="Always show object labels on the scan">
+          <input type="checkbox" id="mk-names"><span class="cdot"></span>All labels
+        </label>
+        <button id="b-mkleg" type="button" title="Show colour legend for all object types">Legend ▾</button>
+      </span>
+
+      <!-- Tab 4: Ink options -->
+      <span class="ogrp" id="inkopt" style="display:none">
+        <button id="b-wipe-ink" class="btn-compare" type="button" title="Drag a split curtain across the scan to compare Original vs Extracted Ink (C)">⇄ Compare</button>
+        <span class="sub-sep"></span>
+        <label class="chip-check"><input type="checkbox" id="l-inkon" checked><span class="cdot"></span>Ink</label>
+        <input type="checkbox" id="l-inklines" style="display:none">
+        <span class="seg" role="radiogroup" aria-label="Ink extraction method">
+          <label class="seg-item" title="Simple universal mask: all dark ink &amp; drawing lines (Stage 1 Sauvola threshold)"><input type="radio" name="inksrc" value="stage1" checked>Simple ink</label>
+          <label class="seg-item" id="inkh" title="Neural text segmentation (Hi-SAM 768, threshold logit &gt; −2)"><input type="radio" name="inksrc" value="hisam">Hi-SAM</label>
+          <label class="seg-item" id="inkr" title="Unthresholded Hi-SAM probability map in grayscale shades — shows faint strokes"><input type="radio" name="inksrc" value="hisam_raw">Hi-SAM soft</label>
+          <label class="seg-item" id="inkg" title="Best AI text mask: Hi-SAM logit &gt; −4 gated by hand-trained NAFNet (man3)"><input type="radio" name="inksrc" value="hisam_m4g">Hi-SAM best</label>
+          <label class="seg-item" id="inks" title="38-band multispectral ink map — reveals faded or invisible ink"><input type="radio" name="inksrc" value="spectral">Multispectral</label>
+        </span>
+        <span class="slider-ctl">Ink <input type="range" id="l-ink" min="10" max="100" value="100"><span class="sval" id="v-ink">100%</span></span>
+        <span class="slider-ctl" title="Fade parchment scan towards clean paper inside the leaf">Paper <input type="range" id="l-bg" min="0" max="100" value="100"><span class="sval" id="v-bg">100%</span></span>
+      </span>
+
+      <!-- Tab 5: Row lines + reading transcript options -->
+      <span class="ogrp" id="lnopt" style="display:none">
+        <span class="slider-ctl">Width <input type="range" id="l-lw" min="1" max="8" step="0.5" value="2.5"><span class="sval" id="v-lw">2.5</span></span>
+        <label class="chip-check"><input type="checkbox" id="l-lnink" checked><span class="cdot"></span>Ink</label>
+        <span class="slider-ctl"><input type="range" id="l-lnink-a" min="5" max="100" value="40"><span class="sval" id="v-lnink">40%</span></span>
+        <label class="chip-check" title="Arrow heads along every row in its reading direction"><input type="checkbox" id="l-arrows" checked><span class="cdot"></span>Arrows</label>
+        <label class="chip-check" title="Blue dashes joining row pieces + ZL locus labels"><input type="checkbox" id="l-bridges" checked><span class="cdot"></span>Labels &amp; Bridges</label>
+        <label class="chip-check" title="Colour lines by reading direction: → red, ↓ lime, ← cyan, ↑ violet"><input type="checkbox" id="l-dircol" checked><span class="cdot"></span>Dir colour</label>
+      </span>
+
+      <!-- Tab 6: Layer Studio controls (relocated into right inspector Layers tab) -->
+      <span class="ogrp" id="allopt" style="display:none">
+        <span class="lay"><b>Parchment scan</b> <span class="slider-ctl">Fade <input type="range" id="a-bg" min="0" max="100" value="100"> <span class="sval" id="v-abg">100%</span></span></span>
+        <span class="lay"><label><input type="checkbox" id="a-page" checked> <b>Outline &amp; holes</b></label></span>
+        <span class="lay"><label><input type="checkbox" id="a-draw" checked> <b>Drawings</b></label>
+          <select id="a-draw-s"><option value="mask">Published mask</option><option value="start">AI consensus</option><option value="sam3">SAM 3</option><option value="ai">GPT / Gemini</option></select>
+          <span class="slider-ctl">Fill <input type="range" id="a-draw-a" min="5" max="90" value="30"><span class="sval" id="v-adraw">30%</span></span>
+        </span>
+        <span class="lay"><label><input type="checkbox" id="a-ink" checked> <b>Ink</b></label>
+          <select id="a-inksrc"><option value="stage1">Simple ink</option><option value="hisam">Hi-SAM</option><option value="hisam_raw">Hi-SAM soft</option><option value="hisam_m4g">Hi-SAM best</option><option value="spectral">Multispectral</option></select>
+          <span class="slider-ctl">Opacity <input type="range" id="a-ink-a" min="5" max="100" value="45"><span class="sval" id="v-aink">45%</span></span>
+        </span>
+        <span class="lay"><label><input type="checkbox" id="a-lines" checked> <b>Row lines</b></label>
+          <span class="slider-ctl">Opacity <input type="range" id="a-lines-a" min="5" max="100" value="60"><span class="sval" id="v-alines">60%</span></span>
+          <span class="slider-ctl">Width <input type="range" id="a-lw" min="0.5" max="6" step="0.5" value="1.5"><span class="sval" id="v-alw">1.5</span></span>
+          <label><input type="checkbox" id="a-arrows"> Arrows</label>
+          <label><input type="checkbox" id="a-dircol"> Dir colour</label>
+        </span>
+        <span class="lay"><label><input type="checkbox" id="a-marks" checked> <b>Objects</b> (click any to inspect)</label></span>
+      </span>
+
+      <span class="ogrp" id="all-bar-hint" style="display:none">
+        <span style="color:var(--mu);font-size:12px">Layer Studio — blend any combination of layers in the Inspector</span>
+        <button id="b-open-layers" type="button">Open Layers</button>
+      </span>
+    </div>
+
+    <span id="hint"></span>
   </div>
-  <div class="orow" id="thisrow"><b>This layer</b>
-    <span class="ogrp" id="pgopt"><label title="while you edit the outline, a thin blue line shows the outline as published, so you see what you moved"><input type="checkbox" id="l-pub" checked> show the original outline while editing (thin blue)</label></span>
-    <span class="ogrp" id="lnopt" style="display:none"><label>line width <input type="range" id="l-lw" min="1" max="8" step="0.5" value="3.5"></label>
-      <label><input type="checkbox" id="l-lnink" checked> ink under the lines</label><label>ink <input type="range" id="l-lnink-a" min="5" max="100" value="45"></label>
-      <label title="arrow heads along every row in its reading direction (rings too)"><input type="checkbox" id="l-arrows" checked> reading direction</label>
-      <label title="blue dashes join the pieces of one row in reading order; the label is the ZL line (locus) the row is tied to"><input type="checkbox" id="l-bridges" checked> bridges to ZL</label>
-      <label title="the colour of a row line follows its reading direction: → red, ↓ lime, ← cyan, ↑ violet (a ring runs through the whole spectrum); dashed = no ZL match"><input type="checkbox" id="l-dircol" checked> colour by reading direction</label></span>
-    <span class="ogrp" id="allopt" style="display:none">
-      <span class="lay"><b>page image</b> <label>faded ← <input type="range" id="a-bg" min="0" max="100" value="100"> → full</label></span>
-      <span class="lay"><label><input type="checkbox" id="a-page" checked> <b>outline &amp; holes</b></label></span>
-      <span class="lay"><label><input type="checkbox" id="a-draw" checked> <b>drawings</b></label> <select id="a-draw-s"><option value="mask">published mask (who made it)</option><option value="origin">who selected what</option><option value="start">start (AI agree)</option><option value="sam3">SAM 3</option><option value="ai">GPT / Gemini</option></select> <label>fill <input type="range" id="a-draw-a" min="5" max="90" value="30"></label></span>
-      <span class="lay"><label><input type="checkbox" id="a-ink" checked> <b>ink</b></label> <select id="a-inksrc"><option value="stage1">stage 1</option><option value="hisam">Hi-SAM</option><option value="hisam_m4g">Hi-SAM gated</option><option value="spectral">multispectral</option></select> <label>opacity <input type="range" id="a-ink-a" min="5" max="100" value="45"></label></span>
-      <span class="lay"><label><input type="checkbox" id="a-lines" checked> <b>row lines</b></label> <label>opacity <input type="range" id="a-lines-a" min="5" max="100" value="60"></label> <label>width <input type="range" id="a-lw" min="0.5" max="6" step="0.5" value="1.5"></label> <label><input type="checkbox" id="a-arrows"> reading direction</label> <label><input type="checkbox" id="a-dircol"> colour by reading direction</label></span>
-      <span class="lay"><label><input type="checkbox" id="a-marks" checked> <b>objects</b> (click one)</label></span></span>
-    <span class="ogrp" id="inkopt" style="display:none"><label><input type="checkbox" id="l-inkon" checked> <b style="color:var(--tx)">ink</b></label> <input type="checkbox" id="l-inklines" style="display:none"> ink source:
-      <label><input type="radio" name="inksrc" value="stage1" checked> stage 1 mask</label>
-      <label id="inkh" title="Hi-SAM 768, logit above -2"><input type="radio" name="inksrc" value="hisam"> Hi-SAM &gt; −2</label>
-      <label id="inkr" title="Hi-SAM 768 raw probability, no threshold"><input type="radio" name="inksrc" value="hisam_raw"> Hi-SAM raw</label>
-      <label id="inkg" title="Hi-SAM 768 above -4, kept where it touches NAFNet man3 ink"><input type="radio" name="inksrc" value="hisam_m4g"> Hi-SAM &gt; −4 gated</label>
-      <label id="inks" title="multispectral ink map, 38 bands (only pages with published multispectral images)"><input type="radio" name="inksrc" value="spectral"> multispectral (38 bands)</label>
-      <label>ink <input type="range" id="l-ink" min="10" max="100" value="100"></label>
-      <label>background <input type="range" id="l-bg" min="0" max="100" value="100"></label></span>
-    <span class="ogrp" id="dropt" style="display:none"></span>
-    <span class="ogrp" id="mkopt" style="display:none"><span id="mkgroups" class="ogrp"></span>
-      <label><input type="checkbox" id="mk-names"> all names (otherwise on hover / selected)</label></span>
+
+  <!-- Main Workspace -->
+  <div class="main">
+    <div id="drawer-scrim"></div>
+
+    <!-- Left Sidebar: Section-Aware Folio Navigator -->
+    <aside id="pagesbar" aria-label="Folio list">
+      <div class="nav-top-row">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="qsearch" placeholder="Find folio, herbal, zodiac…" autocomplete="off" spellcheck="false">
+          <button id="qsearch-x" type="button" title="Clear search">×</button>
+        </div>
+      </div>
+
+      <div id="sec-pills" class="sec-pills" role="group" aria-label="Filter by manuscript section"></div>
+
+      <div class="flt-row">
+        <select id="flt" aria-label="Filter pages by layer status"></select>
+        <div class="list-meta">
+          <span id="prog">0 pages</span>
+          <button id="b-next-unrev" type="button" title="Jump to next page needing human review">Next unreviewed →</button>
+        </div>
+      </div>
+
+      <div id="out-filter-banner">
+        <div id="out-filter-msg"></div>
+        <button id="b-show-all" type="button">Show all pages</button>
+      </div>
+      <div id="list" role="listbox" aria-label="Folios"></div>
+    </aside>
+
+    <!-- Center: Interactive Manuscript Canvas + Wipe Curtain + HUD -->
+    <main id="wrap">
+      <canvas id="cv"></canvas>
+
+      <!-- Interactive Split-Screen Wipe Comparator -->
+      <div id="wipe-lbl-l" class="wipe-tag">Original scan</div>
+      <div id="wipe-lbl-r" class="wipe-tag">Overlay</div>
+      <div id="wipe-bar" title="Drag left or right to compare Original vs Layer">
+        <div id="wipe-handle">⟨⟩</div>
+      </div>
+
+      <!-- On-Canvas Contextual Action Bar for Multi-Step Drawing -->
+      <div id="draw-action-pill">
+        <span id="draw-action-text"></span>
+        <button id="da-finish" class="btn-primary" type="button">✓ Finish</button>
+        <button id="da-undo" type="button">↶ Undo pt</button>
+        <button id="da-cancel" type="button">Cancel</button>
+      </div>
+
+      <!-- Floating Bottom Canvas HUD -->
+      <div id="canvas-hud" role="toolbar" aria-label="Viewport controls">
+        <button id="z-out" type="button" title="Zoom out (−)">−</button>
+        <button id="z-pct" type="button" title="Fit folio to window (F)">100%</button>
+        <button id="z-in" type="button" title="Zoom in (+)">+</button>
+        <button id="z-fit" type="button" title="Fit folio to window (F)">Fit</button>
+        <span class="hud-sep"></span>
+        <button id="b-hide" type="button" title="Hold (or press V / Space when viewing) to peek raw scan">👁 <span class="hud-lbl">Peek scan</span></button>
+      </div>
+    </main>
+
+    <!-- Unified Right Inspector -->
+    <aside id="inspector" aria-label="Page inspector">
+      <div id="insp-tabs">
+        <button id="itab-layers" class="on" type="button">Layers</button>
+        <button id="itab-info" type="button">Transcript &amp; Info</button>
+      </div>
+
+      <div id="insp-scroll">
+        <!-- Active Edit Cards ALWAYS pinned at the top -->
+        <div class="box edit-card edit-only">
+          <h3>Your boundary edit</h3>
+          <div class="btn-row">
+            <button id="b-submit" class="btn-primary" title="Opens a pre-filled GitHub issue with your boundary of this page">Submit (GitHub)</button>
+            <button id="b-download" title="All pages you edited in this browser, one JSON file">Download edits</button>
+            <button id="b-reset" class="btn-danger" title="Drop your edit of this page">Reset</button>
+          </div>
+          <div style="margin-top:8px"><textarea id="note" placeholder="Optional note about your boundary edit…"></textarea></div>
+          <div class="sides">
+            <button id="s-top"></button>
+            <button id="s-right"></button>
+            <button id="s-bottom"></button>
+            <button id="s-left"></button>
+          </div>
+          <div class="keys" style="margin-top:7px">Click a side to add a curve point · right-click deletes · hold <kbd>Space</kbd> + drag to pan.</div>
+          <div class="keys" style="margin-top:6px" id="holes"></div>
+        </div>
+
+        <div class="box edit-card ledit-only">
+          <h3>Your line edits</h3>
+          <div id="lsel" class="keys" style="color:var(--tx);margin-bottom:6px"></div>
+          <div class="btn-row">
+            <button id="lb-submit" class="btn-primary" title="Opens a pre-filled GitHub issue with your line edits of this page">Submit (GitHub)</button>
+            <button id="lb-download" title="All line edits made in this browser, one JSON file">Download edits</button>
+            <button id="lb-reset" class="btn-danger" title="Drop your line edits of this page">Reset</button>
+          </div>
+          <div class="keys" style="margin-top:7px">Drag squares · click line adds point · right-click deletes point · <kbd>Del</kbd> deletes line · <kbd>U</kbd> unclear · hold <kbd>Space</kbd> + drag pans.</div>
+        </div>
+
+        <div id="dbox" style="display:none"></div>
+
+        <!-- Tab 6 Layers Panel -->
+        <div id="allbox"><div id="allslot"></div></div>
+
+        <!-- Main Inspector Content (Transcript / Objects / Provenance) -->
+        <div class="box" id="prov-card">
+          <h3 id="provh">Page outline</h3>
+          <div id="prov"></div>
+        </div>
+      </div>
+
+      <div class="insp-footer">
+        <div class="btn-row">
+          <button id="b-dl-page" title="Published boundary and holes of this page (scan pixels)">Download page JSON</button>
+          <button id="b-dl-all" title="All pages in one file (scan pixels)">Download all data</button>
+        </div>
+        <div class="insp-credit">
+          <span>Beinecke MS 408 · scan px</span>
+          <a href="data/index.json" target="_blank">data/index.json</a>
+        </div>
+      </div>
+    </aside>
   </div>
-</div>
-<div id="tools">
-  <button id="b-edit" title="switch between viewing and editing">✎ Edit</button>
-  <button id="m-edit" class="on edit-only" title="E">✋ Points</button>
-  <button id="m-hole" class="edit-only" title="H">⬡ Hole</button>
-  <button id="lb-edit" style="display:none" title="edit the row lines of this page">✎ Edit lines</button>
-  <button id="lm-sel" class="ledit-only on" title="S">✋ Select</button>
-  <button id="lm-spl" class="ledit-only" title="P">〰 Spline</button>
-  <button id="lm-str" class="ledit-only" title="L">／ Straight</button>
-  <span id="dtools" style="display:none"></span>
-  <span id="hint"></span>
-</div>
-<div class="main">
-  <div id="pagesbar"><select id="flt" style="width:100%"></select><div id="list"></div></div>
-  <div id="wrap"><canvas id="cv"></canvas></div>
-  <aside>
-    <div class="box"><h3 id="provh">Page outline: who marked it and how</h3><div id="prov"></div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">
-        <button id="b-dl-page" title="published boundary and holes of this page (scan pixels)">Download page JSON</button>
-        <button id="b-dl-all" title="all pages in one file (scan pixels)">Download all data</button>
-      </div></div>
-    <div class="box edit-only"><h3>Your edit</h3>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <button id="b-submit" title="opens a pre-filled GitHub issue with your boundary of this page">Submit (GitHub issue)</button>
-        <button id="b-download" title="all pages you edited in this browser, one JSON file">Download my edits</button>
-        <button id="b-reset" title="drop your edit of this page">Reset page</button>
+
+  <!-- Visual Folio Atlas Modal -->
+  <div id="atlas-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Visual Folio Atlas">
+    <div class="modal-card atlas-card">
+      <div class="modal-head">
+        <h2>Voynich Manuscript Atlas <span style="font-family:var(--font-sans);font-size:12px;color:var(--mu);font-weight:400" id="atlas-cnt"></span></h2>
+        <button id="atlas-close" class="mk-close" type="button" title="Close (Esc)">×</button>
       </div>
-      <div style="margin-top:6px"><textarea id="note" placeholder="note (optional)"></textarea></div>
-      <div class="sides" style="margin-top:6px"><button id="s-top"></button><button id="s-right"></button><button id="s-bottom"></button><button id="s-left"></button></div>
-      <div class="keys" style="margin-top:6px">Each side is a straight line or a spline. Click on a side to add a point (a straight side becomes a spline); right-click a point to delete it.</div>
-      <div class="keys" style="margin-top:6px" id="holes"></div>
-    </div>
-    <div class="box ledit-only"><h3>Your line edits</h3>
-      <div id="lsel" class="keys" style="color:var(--tx)"></div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">
-        <button id="lb-submit" title="opens a pre-filled GitHub issue with your line edits of this page">Submit (GitHub issue)</button>
-        <button id="lb-download" title="all line edits made in this browser, one JSON file">Download my line edits</button>
-        <button id="lb-reset" title="drop your line edits of this page">Reset page</button>
+      <div class="atlas-bar">
+        <div class="atlas-top">
+          <input type="search" id="atlas-search" placeholder="Filter by folio (f75r), section (zodiac, herbal, bathing), or foldout…" autocomplete="off">
+        </div>
+        <div id="atlas-pills" class="atlas-pills"></div>
       </div>
-      <div class="keys" style="margin-top:6px">Select: click a line · drag its squares · click on the selected line adds a point · right-click a square deletes it · <kbd>Del</kbd> deletes the line · <kbd>U</kbd> unclear · Spline: clicks, <kbd>Enter</kbd> finishes · Straight: two clicks · <kbd>Ctrl+Z</kbd> undo</div>
+      <div class="modal-body">
+        <div id="atlas-grid" class="atlas-grid"></div>
+      </div>
     </div>
-    <div id="dbox" style="display:none"></div>
-    <div class="box keys"><h3>Keys</h3>
-      <kbd>1</kbd> outline · <kbd>2</kbd> drawings · <kbd>3</kbd> objects (click one to select) · <kbd>4</kbd> ink · <kbd>5</kbd> row lines + ink · <kbd>6</kbd> all layers (switch each layer, click objects) · <kbd>←</kbd>/<kbd>→</kbd> pages · Ctrl+wheel zoom · wheel / tilt wheel scroll · drag empty area to pan · <kbd>F</kbd> fit · hold <kbd>Space</kbd> page only<br>
-      editing: <kbd>E</kbd> points · <kbd>H</kbd> hole (click around it, <kbd>Enter</kbd> closes) · <kbd>Esc</kbd> cancel hole ·
-      right-click / <kbd>Del</kbd> delete point · click inside a hole + <kbd>Del</kbd> deletes it · <kbd>Ctrl+Z</kbd> undo<br>
-      drawings: <kbd>D</kbd> edit mask · <kbd>B</kbd> brush · <kbd>E</kbd> eraser · <kbd>F</kbd> lasso · <kbd>L</kbd> magnetic lasso · <kbd>Y</kbd> restore brush · <kbd>[</kbd>/<kbd>]</kbd> size · right-click size · <kbd>A</kbd>/<kbd>X</kbd> lasso adds / cuts out (<kbd>Alt</kbd> at the start = cut out) · <kbd>Ctrl+Z</kbd>/<kbd>Ctrl+Y</kbd> · middle button pans · <kbd>Esc</kbd> stop editing · <kbd>Enter</kbd> next page
+  </div>
+
+  <!-- My Edits & Contributions Modal -->
+  <div id="edits-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="My local edits">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>My Local Edits</h2>
+        <button id="edits-close" class="mk-close" type="button" title="Close (Esc)">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="keys" style="margin-bottom:12px">Your edits are saved automatically in this browser. Download them as JSON/PNG or submit individual pages via GitHub Issue.</div>
+        <div id="edits-list" class="edits-list"></div>
+      </div>
     </div>
-    <div class="box keys">Coordinates are pixels of the scan files (Beinecke MS 408). Data: <a style="color:var(--ac)" href="data/index.json">data/index.json</a>, <code>data/pages/&lt;image&gt;.json</code>; format in DATA.md.</div>
-  </aside>
-  <aside id="allbox" style="display:none;width:330px"><div class="box"><h3>Layers</h3><div id="allslot"></div></div></aside>
-</div>
-<script src="config.js?v=20261121155306"></script>
-<script src="glyphs.js?v=20261122171027"></script>
-<script src="app.js?v=20261125133549"></script>
-<script src="draw.js?v=20261125133549"></script>
-</body></html>
+  </div>
+
+  <!-- View Settings Popover -->
+  <div id="view-pop" class="pop-panel" role="dialog" aria-label="View settings">
+    <div class="pop-title">Display &amp; Backdrop</div>
+    <div class="pop-row">
+      <label for="l-con">Higher scan contrast</label>
+      <input type="checkbox" id="l-con">
+    </div>
+    <div class="pop-row">
+      <label for="l-fill">Dim outside page</label>
+      <span class="slider-ctl"><input type="range" id="l-fill" min="0" max="90" value="50"><span class="sval" id="v-fill">50%</span></span>
+    </div>
+    <div class="keys" style="margin-top:6px">Hold <kbd>V</kbd> (or <kbd>Space</kbd> while viewing) to hide overlays and inspect the raw parchment.</div>
+  </div>
+
+  <!-- Objects Colour Legend Popover -->
+  <div id="mkleg-pop" class="pop-panel" role="dialog" aria-label="Object colour legend">
+    <div class="pop-title">Object Types Legend</div>
+    <div id="mkleg-content" class="mkleg-grid"></div>
+  </div>
+
+  <!-- Guide & Keyboard Shortcuts Modal -->
+  <div id="keys-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Guide and shortcuts">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Guide &amp; Shortcuts</h2>
+        <div class="modal-tabs">
+          <button id="htab-guide" class="on" type="button">Quick Guide</button>
+          <button id="htab-keys" type="button">Shortcuts</button>
+        </div>
+        <button id="keys-close" class="mk-close" type="button" title="Close (Esc)">×</button>
+      </div>
+      <div class="modal-body">
+        <div id="help-guide">
+          <p class="keys" style="margin:0 0 12px;color:var(--tx-dim)">Interactive annotation &amp; OCR atlas of the 15th-century <b>Voynich Manuscript (Yale Beinecke MS 408)</b> — 189 single pages and 38 foldout panels across 8 thematic sections.</p>
+          <div class="guide-grid">
+            <div class="guide-card">
+              <h4>⊞ Visual Folio Atlas (G)</h4>
+              <p>Browse the entire manuscript visually by section (Herbal, Zodiac, Bathing, Cosmological, Pharmaceutical, Recipes, Foldouts) with lazy-loaded parchment thumbnails.</p>
+            </div>
+            <div class="guide-card">
+              <h4>5 · Live Reading Transcript</h4>
+              <p>Read every row of Voynich script (EVA-2 font + Latin EVA transliteration) synced with the parchment. Hover any line to highlight it on the scan; click to zoom in and compare OCR vs the ZL transliteration.</p>
+            </div>
+            <div class="guide-card">
+              <h4>⇄ Split-Screen Compare (C)</h4>
+              <p>In <b>Ink</b> and <b>Drawings</b> modes, toggle Compare to drag a vertical curtain across the folio — comparing raw parchment against extracted ink, multispectral maps, or AI vs Human masks.</p>
+            </div>
+            <div class="guide-card">
+              <h4>✎ Contributing Edits</h4>
+              <p>Fix page boundaries, holes, drawing masks, or row lines directly in the browser. Hold <b>Space + drag</b> to pan while editing (trackpad-friendly!). Open <b>✎ Edits</b> in the top bar anytime to download or submit.</p>
+            </div>
+          </div>
+          <div class="keys" style="margin-top:12px"><b>Glossary:</b> <b>EVA</b> = Extensible Voynich Alphabet (standard Latin transcription) · <b>ZL</b> = Zandbergen-Landini reference transliteration · <b>Hi-SAM</b> = neural text-segmentation ink mask · <b>Multispectral</b> = 38-band spectral scan revealing faded ink on 10 published folios.</div>
+        </div>
+
+        <div id="help-keys" class="kb-grid" style="display:none">
+          <div class="kb-sec">
+            <h4>Navigation &amp; View</h4>
+            <div class="kb-row"><span>Visual Folio Atlas</span><span><kbd>G</kbd></span></div>
+            <div class="kb-row"><span>Switch layers</span><span><kbd>1</kbd> – <kbd>6</kbd></span></div>
+            <div class="kb-row"><span>Previous / Next folio</span><span><kbd>←</kbd> / <kbd>→</kbd></span></div>
+            <div class="kb-row"><span>Search folios</span><span><kbd>/</kbd></span></div>
+            <div class="kb-row"><span>Toggle Split Compare</span><span><kbd>C</kbd></span></div>
+            <div class="kb-row"><span>Zoom / Fit</span><span><kbd>Ctrl</kbd>+Wheel / <kbd>+</kbd> <kbd>−</kbd> / <kbd>F</kbd></span></div>
+            <div class="kb-row"><span>Peek raw scan (hold)</span><span><kbd>V</kbd> or <kbd>Space</kbd></span></div>
+            <div class="kb-row"><span>Toggle side panels</span><span><kbd>[</kbd> / <kbd>]</kbd></span></div>
+          </div>
+          <div class="kb-sec">
+            <h4>Editing (All Modes)</h4>
+            <div class="kb-row"><span>Pan while editing</span><span>Hold <kbd>Space</kbd> + drag</span></div>
+            <div class="kb-row"><span>Undo / Redo</span><span><kbd>Ctrl+Z</kbd> / <kbd>Ctrl+Y</kbd></span></div>
+            <div class="kb-row"><span>Outline: Points / Hole</span><span><kbd>E</kbd> / <kbd>H</kbd></span></div>
+            <div class="kb-row"><span>Drawings: Edit toggle</span><span><kbd>D</kbd></span></div>
+            <div class="kb-row"><span>Drawings: Brush / Eraser / Pan</span><span><kbd>B</kbd> / <kbd>E</kbd> / <kbd>H</kbd></span></div>
+            <div class="kb-row"><span>Drawings: Lasso / Magnetic / Restore</span><span><kbd>F</kbd> / <kbd>L</kbd> / <kbd>Y</kbd></span></div>
+            <div class="kb-row"><span>Drawings: Size / Add / Cut</span><span><kbd>[</kbd> <kbd>]</kbd> / <kbd>A</kbd> / <kbd>X</kbd></span></div>
+            <div class="kb-row"><span>Lines: Select / Spline / Straight / Unclear</span><span><kbd>S</kbd> / <kbd>P</kbd> / <kbd>L</kbd> / <kbd>U</kbd></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js?v=20261128b"></script>
+  <script src="glyphs.js?v=20261128b"></script>
+  <script src="app.js?v=20261128b"></script>
+  <script src="draw.js?v=20261128b"></script>
+</body>
+</html>
